@@ -1,7 +1,7 @@
-import React from "react";
+import classes from "./index.module.scss";
 
 const Navbar = () => {
-  return <div>Navbar</div>;
+  return <div className={classes.root}>Navbar</div>;
 };
 
 export default Navbar;
