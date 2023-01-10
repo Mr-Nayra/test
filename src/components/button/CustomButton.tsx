@@ -1,18 +1,74 @@
 import React from "react";
-import { Button } from "@mantine/core";
 import { createStyles } from "@mantine/core";
+import { COLORS } from "../../colors";
 
-const useStyles = createStyles((theme, _params, getRef) => ({
-  root: {},
-}));
+interface Props {
+  label: string;
+  onClick?: () => void;
+  type?: "primary" | "secondary";
+  px?: number;
+  py?: number;
+  fontSize?: number;
+  fontWeight?: 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900;
+  ml?: number;
+  mr?: number;
+}
 
-const CustomButton = () => {
+const CustomButton: React.FC<Props> = ({
+  label,
+  onClick,
+  type = "primary",
+  fontSize = 16,
+  fontWeight = 600,
+  px = 19,
+  py = 13,
+  ml = 0,
+  mr = 0,
+}) => {
+  const useStyles = createStyles({
+    container: {
+      backgroundImage: COLORS.primaryGradient,
+      borderRadius: 24,
+      padding: type === "primary" ? 0 : 1,
+      display: "inline-block",
+      marginRight: mr,
+      marginLeft: ml,
+    },
+    root: {
+      backgroundColor: type === "primary" ? "transparent" : COLORS.white,
+      paddingTop: py,
+      paddingBottom: py,
+      paddingLeft: px,
+      paddingRight: px,
+      height: "auto",
+      border: "1px solid",
+      borderColor: COLORS.primaryGradient,
+      fontSize: fontSize,
+      fontWeight: fontWeight,
+      color: COLORS.white,
+      borderRadius: 24,
+      cursor: "pointer",
+    },
+    label: {
+      backgroundImage: type === "primary" ? "none" : COLORS.primaryGradient,
+      backgroundClip: type === "primary" ? "none" : "text",
+      WebkitTextFillColor: type === "primary" ? "none" : "transparent",
+    },
+  });
+
   const { classes } = useStyles();
   return (
-    <Button radius="xl" classNames={{ root: classes.root }}>
-      Get Started - GitHub
-    </Button>
+    <div className={classes.container}>
+      <button
+        className={classes.root}
+        onClick={() => {
+          onClick && onClick();
+        }}
+      >
+        <span className={classes.label}>{label}</span>
+      </button>
+    </div>
   );
 };
 
-export default CustomButton;
+export default React.memo(CustomButton);

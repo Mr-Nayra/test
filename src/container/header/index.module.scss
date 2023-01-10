@@ -44,6 +44,7 @@
     margin: 0px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     @media screen and (max-width: 950px) {
         display: block;
@@ -56,7 +57,7 @@
     color: $secondary;
     display: inline-block;
     margin-left: 3em;
-    font-size: 0.9em;
+    font-size: 14px;
 
     @media screen and (max-width: 950px) {
         padding: 10px 0px;
@@ -69,7 +70,7 @@
     display: none;
     position: absolute;
     right: 1em;
-    top: 12px;
+    top: 5px;
 
     @media screen and (max-width: 950px) {
         display: block;

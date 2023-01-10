@@ -2,6 +2,18 @@ import classes from "./index.module.scss";
 import { FiMenu } from "react-icons/fi";
 import { useEffect, useState } from "react";
 import { IMAGES } from "../../images";
+import CustomButton from "../../components/button/CustomButton";
+
+const getNavDisplay = (width: number, show: boolean) => {
+  if (width > 950) {
+    return "block";
+  }
+
+  if (show) {
+    return "block";
+  }
+  return "none";
+};
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
@@ -25,42 +37,40 @@ const Navbar = () => {
               <img className={classes.logo} src={IMAGES.logo} alt="logo" />
             </a>
           </div>
-          <div className={`${classes.menuBar} `}>
+          <div className={classes.menuBar}>
             <button className={classes.menuBtn} onClick={handleClose}>
-              <FiMenu className={`${classes.menuIcon} `} />
+              <FiMenu className={classes.menuIcon} />
             </button>
           </div>
           <div
             style={{
-              display: width <= 950 ? (show ? "block " : " none") : "block",
+              display: getNavDisplay(width, show),
             }}
           >
             <ul className={classes.menu}>
               <li>
-                <a className={`${classes.item} `} href="/">
+                <a className={classes.item} href="/">
                   Home
                 </a>
               </li>
               <li>
-                <a className={`${classes.item}`} href="/">
+                <a className={classes.item} href="/">
                   Docs
                 </a>
               </li>
 
               <li>
-                <a className={`${classes.item}`} href="/">
+                <a className={classes.item} href="/">
                   Career
                 </a>
               </li>
               <li>
-                <a className={`${classes.item}`} href="/">
+                <a className={classes.item} href="/">
                   Blogs
                 </a>
               </li>
-              <li>
-                <a className={`${classes.item}`} href="/">
-                  Github
-                </a>
+              <li className={classes.item}>
+                <CustomButton label="Github" type="primary" px={51} />
               </li>
             </ul>
           </div>
