@@ -1,34 +1,7 @@
 import { memo } from "react";
 import classes from "./heroBanner.module.scss";
 import CustomButton from "../../../../components/button/CustomButton";
-import Circle from "./Circle";
-
-interface IEclipse {
-  top?: number;
-  bottom?: number;
-  left?: number;
-  right?: number;
-  size: number;
-}
-
-const Eclipse = (props: IEclipse) => {
-  const { bottom, left, right, top, size } = props;
-  console.log("bottom", bottom);
-
-  return (
-    <div
-      style={{
-        position: "absolute",
-        top: top ? top : "auto",
-        bottom: bottom ? bottom : "auto",
-        right: right ? right : "auto",
-        left: left ? left : "auto",
-      }}
-    >
-      <Circle size={size} />
-    </div>
-  );
-};
+import Eclipse from "../../../../components/eclipse/Eclipse";
 
 const HeroBanner = () => {
   return (
