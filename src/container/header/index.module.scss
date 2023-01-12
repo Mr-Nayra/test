@@ -1,5 +1,109 @@
 @import "../../colors/colors";
 
-.root{
-    background-color: $primary;
+.container {
+    width: 100%;
+    // position: fixed;
+    // z-index: 1111;
+    // top:0px
+}
+
+.navbar {
+    width: 92%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1.2em;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    border-radius: 5px;
+
+    @media screen and (max-width: 950px) {
+        padding: 0.4em 1.2em;
+        display: block;
+        position: relative;
+        background-color: #fff;
+    }
+}
+
+.logo {
+    width: 100px;
+}
+
+
+
+.nav {
+    @media screen and (max-width: 950px) {
+        display: none;
+    }
+}
+
+.menu {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 950px) {
+        display: block;
+    }
+}
+
+.item {
+    text-decoration: none;
+    font-weight: 600;
+    color: $secondary;
+    display: inline-block;
+    margin-left: 3em;
+    font-size: 14px;
+
+    @media screen and (max-width: 950px) {
+        padding: 10px 0px;
+        margin-left: 0px;
+        color: $primary;
+    }
+}
+
+.menuBar {
+    display: none;
+    position: absolute;
+    right: 1em;
+    top: 5px;
+
+    @media screen and (max-width: 950px) {
+        display: block;
+    }
+}
+
+.menuScroll {
+    right: 2.1em !important;
+}
+
+.menuBtn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.menuIcon {
+    font-size: 30px;
+    color: #fff;
+
+    @media screen and (max-width: 950px) {
+        color: $primary;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .container {
+        top: 10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .container {
+        top: 25px;
+    }
 }
