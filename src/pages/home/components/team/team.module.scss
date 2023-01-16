@@ -1,8 +1,12 @@
 @import "../../../../colors/colors";
 
 .root {
-    background-color: $whiteSmoke;
+    // background-color: $whiteSmoke;
     padding: 4em 1em;
+    background-image: linear-gradient(101.06deg, rgba(98, 116, 231, 0.1) -1.13%, rgba(135, 82, 163, 0.1) 101.02%), url("../../../../images/teamImg/teamHomeBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .heading {
@@ -14,22 +18,22 @@
 }
 
 .description {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 16px;
     text-align: center;
-    width: 70%;
+    width: 60%;
     margin: 0px auto;
     padding: 20px 0px;
-    line-height: 24px;
 }
-.bgContainer{
-    height:81px;
-    width:80%;
+
+.bgContainer {
+    height: 81px;
+    width: 80%;
     margin: auto;
     background-color: #6F6F6F;
     border-radius: 11px;
     margin-bottom: 83px;
 }
-.gridContainer{
+
+.gridContainer {
     padding: 0px 50px;
 }

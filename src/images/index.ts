@@ -21,6 +21,8 @@ import inputLogo from "./home/workFlow/inputLogo.png";
 import dashboardLogo from "./home/workFlow/dashboardLogo.png";
 import smartLogo from "./home/workFlow/smartLogo.png";
 import aboutBg from "./home/about/about-bg.png";
+import teamHomeBg from "./teamImg/teamHomeBg.png";
+// team (Home)
 export const IMAGES = {
   logo,
   nextArrow,
@@ -45,4 +47,6 @@ export const IMAGES = {
   dashboardLogo,
   smartLogo,
   aboutBg,
+  // team (Home)
+  teamHomeBg,
 };
