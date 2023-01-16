@@ -1,14 +1,18 @@
 import React, { Fragment } from "react";
 import BlogHome from "./components/blog/BlogHome";
+import CareersSection from "./components/careers/CareersSection";
 import HeroBanner from "./components/heroBanner/HeroBanner";
 import Testimonials from "./components/testimonials/Testimonials";
+import WorkFlow from "./components/workFlow/WorkFlow";
 
 const Home = () => {
   return (
     <Fragment>
       <HeroBanner />
+      <WorkFlow />
       <Testimonials />
       <BlogHome />
+      <CareersSection />
     </Fragment>
   );
 };
