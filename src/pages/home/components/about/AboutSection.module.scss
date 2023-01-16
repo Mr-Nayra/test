@@ -3,31 +3,67 @@
 .root {
     background-image: linear-gradient(101.06deg, rgba(98, 116, 231, 0.1) -1.13%, rgba(135, 82, 163, 0.1) 101.02%), url("../../../../images/homeBackground.png");
     width: 100%;
-    padding: 8em 0em;
+    // padding: 5em 0em;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    margin-top: 40px;
 }
 
+.row {
+    width: 100%;
+    // margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: 1512px;
+    margin: auto;
 
+    @media screen and (max-width: 790px) {
+        flex-direction: column;
+    }
+}
+
+.col {
+    width: 48%;
+
+    @media screen and (max-width: 790px) {
+        width: 100%;
+    }
+}
+
+.leftImg {
+    background-image: url("../../../../images/home/about/about-bg.png");
+    height: 666px;
+    background-size: 100%;
+    // background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
 
 .heading {
     margin: 0px;
     font-size: 24px;
     font-weight: 600;
+    color: $black;
 }
 
 .description {
-    margin: 0px;
+    margin: 20px 0px;
     font-size: 18px;
     font-weight: 400;
+    color: $black;
 }
 
 
 .whiteBox {
-    height: 392px;
+    margin-top: 40px;
+    height: 430px;
     width: 100%;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid $white;
     border-radius: 17px;
     display: flex;
     justify-content: center;
@@ -40,10 +76,41 @@
 }
 
 .blackBox {
-    height: 362px;
+    height: 398px;
     width: 95%;
     background-color: #030000;
     border-radius: 15px;
     opacity: 0.8;
 
+}
+
+// 
+.circle {
+    width: 334px;
+    height: 334px;
+    border: 2px dashed #FFFFFF;
+    border-radius: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.outerCircle {
+    width: 273px;
+    height: 273px;
+    background: #FFFFFF;
+    box-shadow: inset -6px -6px 14px rgba(0, 0, 0, 0.09);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerCircle {
+    width: 256.62px;
+    height: 256.62px;
+    background: #F7F7F7;
+    box-shadow: inset -6px -6px 14px #FFFFFF, inset 2px 2px 6px 1px rgba(0, 0, 0, 0.09);
+    border-radius: 100%;
 }

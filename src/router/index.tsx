@@ -1,11 +1,16 @@
 import { createBrowserRouter } from "react-router-dom";
 import About from "../pages/about";
-import Home from "../pages/home";
+import { lazy, Suspense } from "react";
+const Home = lazy(() => import("../pages/home"));
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: (
+      <Suspense fallback={<div></div>}>
+        <Home />
+      </Suspense>
+    ),
   },
   {
     path: "about",

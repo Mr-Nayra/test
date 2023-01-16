@@ -7,11 +7,12 @@ interface IEclipse {
   left?: number;
   right?: number;
   size: number;
+  opacity?: boolean;
+  lightShadow?: boolean;
 }
 
 const Eclipse = (props: IEclipse) => {
-  const { bottom, left, right, top, size } = props;
-  console.log("bottom", bottom);
+  const { bottom, left, right, top, size, opacity, lightShadow } = props;
   return (
     <div
       style={{
@@ -22,7 +23,7 @@ const Eclipse = (props: IEclipse) => {
         left: left ? left : "auto",
       }}
     >
-      <Circle size={size} />
+      <Circle size={size} opacity={opacity} lightShadow={lightShadow} />
     </div>
   );
 };
