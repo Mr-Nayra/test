@@ -1,12 +1,11 @@
 import { memo } from "react";
 import classes from "./heroBanner.module.scss";
 import CustomButton from "../../../../components/button/CustomButton";
-import Eclipse from "../../../../components/eclipse/Eclipse";
 
 const HeroBanner = () => {
   return (
     <div className={classes.root}>
-      <Eclipse size={26} top={30} left={100} />
+      {/* <Eclipse size={26} top={30} left={100} /> */}
       <div className={classes.row}>
         <div className={classes.col}>
           <h1 className={classes.heading}>
@@ -35,8 +34,8 @@ const HeroBanner = () => {
         </div>
         <div className={classes.col}>
           <div className={classes.whiteBox}>
-            <Eclipse size={60} bottom={-44} left={-27} />
-            <Eclipse size={30} top={-40} right={0} left={0} />
+            {/* <Eclipse size={60} bottom={-80} left={-33} />
+            <Eclipse size={30} top={-40} right={0} left={0} /> */}
             <div className={classes.blackBox}></div>
           </div>
         </div>

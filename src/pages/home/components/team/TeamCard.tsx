@@ -1,4 +1,4 @@
-import { Center, Grid } from "@mantine/core";
+import { Grid } from "@mantine/core";
 import React from "react";
 import classes from "./teamCard.module.scss";
 import TeamFirstImg from "../../../../images/teamImg/team1.png";
