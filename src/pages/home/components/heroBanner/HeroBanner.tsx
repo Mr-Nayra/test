@@ -35,7 +35,7 @@ const HeroBanner = () => {
         </div>
         <div className={classes.col}>
           <div className={classes.whiteBox}>
-            <Eclipse size={60} bottom={-44} left={-27} />
+            <Eclipse size={60} bottom={-80} left={-33} />
             <Eclipse size={30} top={-40} right={0} left={0} />
             <div className={classes.blackBox}></div>
           </div>

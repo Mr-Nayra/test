@@ -2,8 +2,14 @@ import React from "react";
 import { createStyles } from "@mantine/core";
 interface Props {
   size: number;
+  opacity?: boolean;
+  lightShadow?: boolean;
 }
-const Circle: React.FC<Props> = ({ size }) => {
+const Circle: React.FC<Props> = ({
+  size,
+  opacity = false,
+  lightShadow = false,
+}) => {
   const useStyle = createStyles({
     root: {
       width: size,
@@ -11,12 +17,17 @@ const Circle: React.FC<Props> = ({ size }) => {
       borderRadius: "50%",
       backgroundImage:
         "linear-gradient(135.85deg, #6274E7 11.98%, #8752A3 87.62%)",
-      opacity: 0.4,
-      boxShadow: "1px 3px 3px rgba(0, 0, 0, 0.25)",
+      opacity: opacity === true ? 0.4 : 1,
+      // opacity: 0.4,
+      boxShadow:
+        lightShadow === true
+          ? "1px 3px 3px rgba(0, 0, 0, 0.25)"
+          : "inset 5px 5px 10px rgba(255, 255, 255, 0.8)",
       overflow: "hidden",
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
+      zIndex: 9999,
     },
     innerCircle: {
       background: "#fff",

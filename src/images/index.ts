@@ -4,6 +4,7 @@ import previousArrow from "./previous-arrow.png";
 import homeBlog_1 from "./home/blog/blog-1.png";
 import homeBlog_2 from "./home/blog/blog-2.png";
 import homeBlog_3 from "./home/blog/blog-3.png";
+import aboutBg from "./home/about/about-bg.png";
 export const IMAGES = {
   logo,
   nextArrow,
@@ -11,4 +12,5 @@ export const IMAGES = {
   homeBlog_1,
   homeBlog_2,
   homeBlog_3,
+  aboutBg,
 };

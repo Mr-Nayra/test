@@ -3,6 +3,7 @@ import { FiMenu } from "react-icons/fi";
 import { useEffect, useState } from "react";
 import { IMAGES } from "../../images";
 import CustomButton from "../../components/button/CustomButton";
+import { COLORS } from "../../colors";
 
 const getNavDisplay = (width: number, show: boolean) => {
   if (width > 950) {
@@ -49,7 +50,11 @@ const Navbar = () => {
           >
             <ul className={classes.menu}>
               <li>
-                <a className={classes.item} href="/">
+                <a
+                  className={`${classes.item}`}
+                  href="/"
+                  style={{ color: COLORS.primary }}
+                >
                   Home
                 </a>
               </li>
