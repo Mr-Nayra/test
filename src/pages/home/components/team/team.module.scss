@@ -1,0 +1,35 @@
+@import "../../../../colors/colors";
+
+.root {
+    background-color: $whiteSmoke;
+    padding: 4em 1em;
+}
+
+.heading {
+    font-size: 24px;
+    margin: 0px;
+    color: $black;
+    font-weight: 600;
+    text-align: center;
+}
+
+.description {
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    width: 70%;
+    margin: 0px auto;
+    padding: 20px 0px;
+    line-height: 24px;
+}
+.bgContainer{
+    height:81px;
+    width:80%;
+    margin: auto;
+    background-color: #6F6F6F;
+    border-radius: 11px;
+    margin-bottom: 83px;
+}
+.gridContainer{
+    padding: 0px 50px;
+}
