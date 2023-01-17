@@ -22,6 +22,7 @@ import dashboardLogo from "./home/workFlow/dashboardLogo.png";
 import smartLogo from "./home/workFlow/smartLogo.png";
 import aboutBg from "./home/about/about-bg.png";
 import teamHomeBg from "./teamImg/teamHomeBg.png";
+import arrowRightGradient from "./arrow-right-gradient.png";
 // team (Home)
 export const IMAGES = {
   logo,
@@ -47,6 +48,7 @@ export const IMAGES = {
   dashboardLogo,
   smartLogo,
   aboutBg,
+  arrowRightGradient,
   // team (Home)
   teamHomeBg,
 };
