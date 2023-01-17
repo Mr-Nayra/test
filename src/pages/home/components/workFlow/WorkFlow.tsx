@@ -1,10 +1,14 @@
 import React from "react";
+import ShadowEclipse from "../../../../components/eclipse/ShadowEclipse";
 import { IMAGES } from "../../../../images";
 import classes from "./workFlow.module.scss";
 
 const WorkFlow = () => {
   return (
     <div className={classes.root}>
+      <ShadowEclipse size={278} bottom={-180} left={50} />
+      <ShadowEclipse size={198} top={-120} left={"30%"} />
+      <ShadowEclipse size={237} bottom={120} right={-40} />
       <div>
         <h1 className={classes.heading}>
           How upTrain works and helps you grow
