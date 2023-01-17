@@ -165,7 +165,9 @@ const WorkFlow = () => {
                 </div>
               </div>
             </div>
-            <div className={classes.improve_model}>
+            <div
+              className={`${classes.improve_model} ${classes.right_third_card}`}
+            >
               <div className={classes.card}>
                 <p className={classes.darkText} style={{ textAlign: "center" }}>
                   Improved Model
