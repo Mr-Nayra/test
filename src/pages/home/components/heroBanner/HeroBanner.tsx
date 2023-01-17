@@ -5,9 +5,8 @@ import CustomButton from "../../../../components/button/CustomButton";
 const HeroBanner = () => {
   return (
     <div className={classes.root}>
-      {/* <Eclipse size={26} top={30} left={100} /> */}
       <div className={classes.row}>
-        <div className={classes.col}>
+        <div className={`${classes.col} ${classes.textCol}`}>
           <h1 className={classes.heading}>
             Your <b>Open-source</b> toolkit to <br /> observe and refine{" "}
             <b>ML models</b>
@@ -21,6 +20,7 @@ const HeroBanner = () => {
               label="Get Started - GitHub"
               fontSize={17}
               fontWeight={700}
+              responsiveFont={12}
             />
             <CustomButton
               label="Book a Demo"
@@ -29,13 +29,12 @@ const HeroBanner = () => {
               fontWeight={700}
               px={31}
               ml={17}
+              responsiveFont={12}
             />
           </div>
         </div>
         <div className={classes.col}>
           <div className={classes.whiteBox}>
-            {/* <Eclipse size={60} bottom={-80} left={-33} />
-            <Eclipse size={30} top={-40} right={0} left={0} /> */}
             <div className={classes.blackBox}></div>
           </div>
         </div>

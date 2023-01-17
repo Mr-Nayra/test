@@ -17,6 +17,7 @@ const useStyles = createStyles({
     justifyContent: "center",
     alignItems: "center",
     padding: "64px 0px",
+    zIndex: 999,
   },
   logo: {
     width: 156,
@@ -34,6 +35,7 @@ const PoweredBy = () => {
   const { classes } = useStyles();
   return (
     <div className={classes.container}>
+      <WhiteCircle size={285} top={-180} left={-20} />
       <WhiteCircle size={114} top={-50} right={170} />
       <WhiteCircle size={114} bottom={-70} left={100} />
       <WhiteCircle size={189} bottom={-100} right={-20} />

@@ -15,6 +15,7 @@ const ShadowEclipse: React.FC<Props> = ({ size, bottom, left, right, top }) => {
       bottom: bottom ? bottom : "auto",
       right: right ? right : "auto",
       left: left ? left : "auto",
+      zIndex: 99,
     },
     innerCircle: {
       width: size,

@@ -23,6 +23,7 @@
         display: block;
         position: relative;
         background-color: #fff;
+        padding-top: 0.8em;
     }
 }
 
@@ -59,6 +60,10 @@
     margin-left: 3em;
     font-size: 14px;
 
+    &:hover {
+        color: $primary;
+    }
+
     @media screen and (max-width: 950px) {
         padding: 10px 0px;
         margin-left: 0px;
@@ -73,7 +78,7 @@
     display: none;
     position: absolute;
     right: 1em;
-    top: 5px;
+    top: 11px;
 
     @media screen and (max-width: 950px) {
         display: block;
