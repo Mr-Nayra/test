@@ -42,7 +42,7 @@ const TestimonialCarousel = () => {
           <Carousel.Slide key={index}>
             <div className={classes.upperBlock}>
               <div className={classes.card}>
-                <Eclipse size={17} top={20} right={20} />
+                <Eclipse size={28} top={20} right={20} />
                 <div className={classes.cardHeadingSection}>
                   <div className={classes.avatar}></div>
                   <div className={classes.userInfo}>

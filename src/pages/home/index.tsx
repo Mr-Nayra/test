@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-// import AboutSection from "./components/about/AboutSection";
+import AboutSection from "./components/about/AboutSection";
 import BlogHome from "./components/blog/BlogHome";
 import CareersSection from "./components/careers/CareersSection";
 import HeroBanner from "./components/heroBanner/HeroBanner";
@@ -12,7 +12,7 @@ const Home = () => {
     <Fragment>
       <HeroBanner />
       <WorkFlow />
-      {/* <AboutSection /> */}
+      <AboutSection />
       <Testimonials />
       <BlogHome />
       <Team />

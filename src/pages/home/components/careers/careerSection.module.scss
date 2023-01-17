@@ -1,13 +1,14 @@
 @import "../../../../colors/colors";
 
 .root {
-    background-image: linear-gradient(101.06deg, rgba(98, 116, 231, 0.1) -1.13%, rgba(135, 82, 163, 0.1) 101.02%), url("../../../../images/homeBackground.png");
+    background-image: linear-gradient(101.06deg, rgba(98, 116, 231, 0.1) -1.13%, rgba(135, 82, 163, 0.1) 101.02%), url("../../../../images/home/career/careerHomeBg.png");
     width: 100%;
-    padding: 5em 0em;
+    padding: 77px 16px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     backdrop-filter: blur(100px);
+    background-position: center;
 }
 
 .row {
@@ -19,6 +20,7 @@
 
     @media screen and (max-width: 790px) {
         flex-direction: column;
+        width: 100%;
     }
 }
 
@@ -27,6 +29,19 @@
 
     @media screen and (max-width: 790px) {
         width: 100%;
+    }
+}
+
+.boxCol {
+    @media screen and (max-width: 790px) {
+        order: 2;
+        margin-top: 40px;
+    }
+}
+
+.TextCol {
+    @media screen and (max-width: 790px) {
+        order: 1;
     }
 }
 
@@ -41,8 +56,8 @@
     font-size: 18px;
     font-weight: 400;
     margin: 0px;
-    padding: 25px 0px;
     color: $black;
+    padding-top: 25px;
 }
 
 
@@ -57,4 +72,8 @@
 
 .btnSection {
     margin-top: 50px;
+
+    @media screen and (max-width: 790px) {
+        margin-top: 20px;
+    }
 }

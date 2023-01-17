@@ -12,6 +12,7 @@ interface Props {
   fontWeight?: 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900;
   ml?: number;
   mr?: number;
+  responsiveFont?: number;
 }
 
 const CustomButton: React.FC<Props> = ({
@@ -24,6 +25,7 @@ const CustomButton: React.FC<Props> = ({
   py = 13,
   ml = 0,
   mr = 0,
+  responsiveFont,
 }) => {
   const useStyles = createStyles({
     container: {
@@ -48,6 +50,9 @@ const CustomButton: React.FC<Props> = ({
       color: COLORS.white,
       borderRadius: 24,
       cursor: "pointer",
+      "@media(max-width:650px)": {
+        fontSize: responsiveFont,
+      },
     },
     label: {
       backgroundImage: type === "primary" ? "none" : COLORS.primaryGradient,

@@ -6,10 +6,10 @@ const CareersSection = () => {
   return (
     <div className={classes.root}>
       <div className={classes.row}>
-        <div className={classes.col}>
+        <div className={`${classes.col} ${classes.boxCol}`}>
           <div className={classes.blackBox}></div>
         </div>
-        <div className={classes.col}>
+        <div className={`${classes.col} ${classes.TextCol}`}>
           <h3 className={classes.heading}>we are hiring</h3>
           <p className={classes.description}>
             Arize provides production ML analytics and workflows to quickly
