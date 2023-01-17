@@ -318,14 +318,24 @@
         content: "";
         position: absolute;
         background-color: #6274E7;
-        width: 5px;
+        width: 4px;
         top: -120%;
-        bottom: -58%;
+        bottom: calc(-46% + 8px);
         left: 50%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
         z-index: -1;
+
+        @media screen and (max-width:1235px) {
+            width: 3px;
+        }
+
+        @media screen and (max-width:1000px) {
+            width: 2px;
+            bottom: calc(-46% + 8.5px);
+        }
+
     }
 
     &::after {
@@ -334,7 +344,7 @@
         background-image: url(../../../../images/arrow-left-gradient.png);
         width: 227%;
         height: 20px;
-        top: calc(163% - 15px);
+        bottom: -46%;
         right: 50%;
         background-position: center;
         background-repeat: no-repeat;
