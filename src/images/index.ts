@@ -23,7 +23,7 @@ import smartLogo from "./home/workFlow/smartLogo.png";
 import aboutBg from "./home/about/about-bg.png";
 import teamHomeBg from "./teamImg/teamHomeBg.png";
 // About (Home)
-import aboutBlockImg from "./home/about/about-img-left.jpeg";
+import aboutBlockImg from "./home/about/about-img-left.png";
 export const IMAGES = {
   logo,
   nextArrow,
