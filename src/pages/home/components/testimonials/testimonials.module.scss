@@ -24,4 +24,8 @@
     width: 60%;
     margin: 0px auto;
     padding: 20px 0px;
+
+    @media screen and (max-width: 450px) {
+        width: 100%;
+    }
 }

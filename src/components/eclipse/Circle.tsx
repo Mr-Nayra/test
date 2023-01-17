@@ -15,14 +15,14 @@ const Circle: React.FC<Props> = ({
       width: size,
       height: size,
       borderRadius: "50%",
-      backgroundImage:
-        "linear-gradient(135.85deg, #6274E7 11.98%, #8752A3 87.62%)",
+      backgroundImage: true
+        ? "linear-gradient(135.85deg, #AEB6F2 11.98%, #BFA7D3 87.62%)"
+        : "linear-gradient(135.85deg, #6274E7 11.98%, #8752A3 87.62%)",
       opacity: opacity === true ? 0.4 : 1,
-      // opacity: 0.4,
       boxShadow:
         lightShadow === true
           ? "1px 3px 3px rgba(0, 0, 0, 0.25)"
-          : "inset 5px 5px 10px rgba(255, 255, 255, 0.8)",
+          : "inset 2px 2px 4px rgba(255, 255, 255, 0.88)",
       overflow: "hidden",
       display: "flex",
       justifyContent: "center",
