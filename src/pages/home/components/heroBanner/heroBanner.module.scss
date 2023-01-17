@@ -41,7 +41,7 @@
     margin: 0px;
     font-weight: 400;
 
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 1170px) {
         font-size: 28px;
     }
 }
@@ -54,8 +54,10 @@
 }
 
 .whiteBox {
-    height: 392px;
+    padding: 16px;
     width: 100%;
+    // height: 392px;
+    aspect-ratio: 2/1.5;
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid $white;
     border-radius: 17px;
@@ -66,8 +68,8 @@
 }
 
 .blackBox {
-    height: 362px;
-    width: 95%;
+    height: 100%;
+    width: 100%;
     background-color: #030000;
     border-radius: 15px;
     opacity: 0.8;

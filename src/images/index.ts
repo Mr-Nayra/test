@@ -25,7 +25,7 @@ import teamHomeBg from "./teamImg/teamHomeBg.png";
 import arrowRightGradient from "./arrow-right-gradient.png";
 // team (Home)
 // About (Home)
-import aboutBlockImg from "./home/about/about-img-left.jpeg";
+import aboutBlockImg from "./home/about/about-img-left.png";
 export const IMAGES = {
   logo,
   nextArrow,
