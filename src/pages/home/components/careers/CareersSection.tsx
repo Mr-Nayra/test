@@ -17,7 +17,15 @@ const CareersSection = () => {
             continuously improve performance.
           </p>
           <div className={classes.btnSection}>
-            <CustomButton label="View Careers" fontSize={17} fontWeight={700} />
+            <CustomButton
+              label="View Careers"
+              fontSize={17}
+              fontWeight={700}
+              px={64}
+              py={12}
+              responsiveFont={14}
+              responsivePx={50}
+            />
           </div>
         </div>
       </div>

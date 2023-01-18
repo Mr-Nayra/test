@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { IMAGES } from "../../images";
 import CustomButton from "../../components/button/CustomButton";
 import { COLORS } from "../../colors";
+import { Link } from "react-router-dom";
 
 const getNavDisplay = (width: number, show: boolean) => {
   if (width > 950) {
@@ -34,9 +35,9 @@ const Navbar = () => {
       <div className={classes.container}>
         <div className={classes.navbar}>
           <div>
-            <a href="/">
+            <Link to="/">
               <img className={classes.logo} src={IMAGES.logo} alt="logo" />
-            </a>
+            </Link>
           </div>
           <div className={classes.menuBar}>
             <button className={classes.menuBtn} onClick={handleClose}>
@@ -50,29 +51,29 @@ const Navbar = () => {
           >
             <ul className={classes.menu}>
               <li>
-                <a
+                <Link
                   className={`${classes.item}`}
-                  href="/"
+                  to="/"
                   style={{ color: COLORS.primary }}
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a className={classes.item} href="/">
+                <Link className={classes.item} to="/">
                   Docs
-                </a>
+                </Link>
               </li>
 
               <li>
-                <a className={classes.item} href="/">
+                <Link className={classes.item} to="/">
                   Career
-                </a>
+                </Link>
               </li>
               <li>
-                <a className={classes.item} href="/">
+                <Link className={classes.item} to="/">
                   Blogs
-                </a>
+                </Link>
               </li>
               <li className={classes.item}>
                 <CustomButton label="Github" type="primary" px={51} />
