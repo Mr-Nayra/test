@@ -161,7 +161,7 @@ const WorkFlow = () => {
                   <img src={IMAGES.smartLogo} alt="single" />
                 </div>
                 <div className={classes.right_content}>
-                  <h4 className={classes.darkText}>Dashboards and Alerts</h4>
+                  <h4 className={classes.darkText}>Smart</h4>
                   <p className={classes.description_smallCard}>
                     Retraining data to capture edge cases and problematic data
                     points

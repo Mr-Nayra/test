@@ -10,7 +10,7 @@ const CareersSection = () => {
           <div className={classes.blackBox}></div>
         </div>
         <div className={`${classes.col} ${classes.TextCol}`}>
-          <h3 className={classes.heading}>we are hiring</h3>
+          <h3 className={classes.heading}>We Are Hiring</h3>
           <p className={classes.description}>
             Arize provides production ML analytics and workflows to quickly
             catch model and data issues, diagnose the root cause, and
