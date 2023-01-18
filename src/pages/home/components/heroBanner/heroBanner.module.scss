@@ -7,6 +7,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+
+    @media screen and (max-width: 650px) {
+        padding: 6em 0em;
+    }
 }
 
 .row {
@@ -16,7 +20,7 @@
     justify-content: space-between;
     align-items: center;
 
-    @media screen and (max-width: 1022px) {
+    @media screen and (max-width: 1033px) {
         flex-direction: column;
     }
 }
@@ -24,13 +28,13 @@
 .col {
     width: 45%;
 
-    @media screen and (max-width: 1022px) {
+    @media screen and (max-width: 1033px) {
         width: 100%;
     }
 }
 
 .textCol {
-    @media screen and (max-width: 1022px) {
+    @media screen and (max-width: 1033px) {
         margin-bottom: 40px;
     }
 }
@@ -44,6 +48,10 @@
     @media screen and (max-width: 1170px) {
         font-size: 28px;
     }
+
+    @media screen and (max-width: 470px) {
+        font-size: 22px;
+    }
 }
 
 .description {
@@ -51,12 +59,15 @@
     font-weight: 400;
     margin: 0px;
     padding: 25px 0px;
+
+    @media screen and (max-width: 470px) {
+        font-size: 15px;
+    }
 }
 
 .whiteBox {
     padding: 16px;
     width: 100%;
-    // height: 392px;
     aspect-ratio: 2/1.5;
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid $white;

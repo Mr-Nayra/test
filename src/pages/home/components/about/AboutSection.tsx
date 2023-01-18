@@ -9,7 +9,7 @@ const AboutSection = () => {
       <ShadowEclipse size={237} bottom={-100} left={-50} />
       <ShadowEclipse size={192} top={-100} left={160} />
       <div className={classes.row}>
-        <div className={`${classes.col} ${classes.leftImg}`}>
+        <div className={` ${classes.leftImg}`}>
           {/* <div className={classes.circle}>
             <CircleImg
               size={90}
@@ -64,7 +64,7 @@ const AboutSection = () => {
           </div> */}
           <img src={IMAGES.aboutBlockImg} alt="img" width={"100%"} />
         </div>
-        <div className={`${classes.col} ${classes.rightSideCol}`}>
+        <div className={` ${classes.rightSideCol}`}>
           <div className={classes.content}>
             <h1 className={classes.heading}>
               The observability platform designed for ML
