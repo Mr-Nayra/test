@@ -13,6 +13,8 @@ interface Props {
   ml?: number;
   mr?: number;
   responsiveFont?: number;
+  responsivePx?: number;
+  responsivePy?: number;
 }
 
 const CustomButton: React.FC<Props> = ({
@@ -26,6 +28,8 @@ const CustomButton: React.FC<Props> = ({
   ml = 0,
   mr = 0,
   responsiveFont,
+  responsivePx,
+  responsivePy,
 }) => {
   const useStyles = createStyles({
     container: {
@@ -52,6 +56,10 @@ const CustomButton: React.FC<Props> = ({
       cursor: "pointer",
       "@media(max-width:650px)": {
         fontSize: responsiveFont,
+        paddingTop: responsivePy,
+        paddingBottom: responsivePy,
+        paddingLeft: responsivePx,
+        paddingRight: responsivePx,
       },
     },
     label: {
