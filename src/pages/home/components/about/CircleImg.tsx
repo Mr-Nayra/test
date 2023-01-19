@@ -10,15 +10,18 @@ interface IEclipse {
   size: number;
   opacity?: boolean;
   lightShadow?: boolean;
+  onClick?: () => void;
 }
 
 const CircleImg = (props: IEclipse) => {
-  const { bottom, left, right, top, size, opacity, lightShadow } = props;
+  const { bottom, left, right, top, size, opacity, lightShadow, onClick } =
+    props;
   const calcSize = `calc(${size + 15} * (100vw - 300px) / 1000)`;
   const useStyle = createStyles({
     root: {
       display: "flex",
       alignItems: "center",
+      cursor: "pointer",
     },
     heading: {
       fontSize: `calc(3px + 15 * (100vw - 300px) / 1000)`,
@@ -78,7 +81,7 @@ const CircleImg = (props: IEclipse) => {
         left: left ? left : "auto",
       }}
     >
-      <div className={classes.root}>
+      <div className={classes.root} onClick={onClick}>
         <div className={classes.circle}>
           <div className={classes.outerCircle}>
             <div className={classes.innerCircle}>
