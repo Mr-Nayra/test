@@ -30,7 +30,7 @@ const Circle: React.FC<Props> = ({
       zIndex: 9999,
     },
     innerCircle: {
-      background: "#fff",
+      backgroundColor: "#ebe8f7",
       width: "50%",
       height: "50%",
       borderRadius: "50%",

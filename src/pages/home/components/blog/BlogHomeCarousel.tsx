@@ -40,7 +40,7 @@ const BlogHomeCarousel = () => {
         onMouseLeave={autoplay.current.reset}
       >
         {BlogHomeCarouselData.map((item, index) => (
-          <Carousel.Slide key={index}>
+          <Carousel.Slide key={`${"_" + index}`}>
             <div className={classes.card}>
               <img src={item.cardImg} alt="" width={"100%"} />
               <div className={classes.textSection}>

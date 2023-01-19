@@ -7,8 +7,7 @@ interface ITeamCard {
   name: string;
   memberPost?: string;
   description?: string;
-  padding?: string;
-  href?: string;
+  link?: string;
 }
 
 const TeamCard = (props: ITeamCard) => {
@@ -28,9 +27,9 @@ const TeamCard = (props: ITeamCard) => {
             </a>
           </div>
         </div>
-        {description && (
+        <div className={classes.animationText}>
           <p className={classes.cardDescription}>{description}</p>
-        )}
+        </div>
       </div>
     </>
   );
