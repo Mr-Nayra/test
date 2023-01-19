@@ -10,6 +10,7 @@ const Circle: React.FC<Props> = ({
   opacity = false,
   lightShadow = false,
 }) => {
+  const calcSize = `calc(${size} * (100vw - 300px) / 1000)`;
   const useStyle = createStyles({
     root: {
       width: size,

@@ -15,7 +15,7 @@ const AboutSection = () => {
             <div className={classes.circle}>
               <CircleImg
                 size={50}
-                top={"-50%"}
+                top={"-45%"}
                 right={"-1%"}
                 opacity={true}
                 lightShadow={true}
@@ -72,7 +72,9 @@ const AboutSection = () => {
                 lightShadow={true}
               />
               <div className={classes.outerCircle}>
-                <div className={classes.innerCircle}></div>
+                <div className={classes.innerCircle}>
+                  <h2 className={classes.circleText}>Sample Text</h2>
+                </div>
               </div>
             </div>
           </div>
