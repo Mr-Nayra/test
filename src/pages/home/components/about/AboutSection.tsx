@@ -1,6 +1,7 @@
+import Eclipse from "../../../../components/eclipse/Eclipse";
 import ShadowEclipse from "../../../../components/eclipse/ShadowEclipse";
-import { IMAGES } from "../../../../images";
 import classes from "./AboutSection.module.scss";
+import CircleImg from "./CircleImg";
 
 const AboutSection = () => {
   return (
@@ -10,59 +11,72 @@ const AboutSection = () => {
       <ShadowEclipse size={192} top={-100} left={160} />
       <div className={classes.row}>
         <div className={` ${classes.leftImg}`}>
-          {/* <div className={classes.circle}>
-            <CircleImg
-              size={90}
-              top={-115}
-              right={1}
-              opacity={true}
-              lightShadow={true}
-            />
-            <CircleImg
-              size={90}
-              bottom={-127}
-              right={45}
-              opacity={true}
-              lightShadow={true}
-            />
-            <CircleImg size={90} top={-20} right={-150} lightShadow={true} />
-            <CircleImg
-              size={90}
-              top={130}
-              right={-195}
-              opacity={true}
-              lightShadow={true}
-            />
-            <CircleImg
-              size={90}
-              bottom={-40}
-              right={-135}
-              opacity={true}
-              lightShadow={true}
-            />
-            
-            <Eclipse size={17} top={-9} opacity={true} lightShadow={true} />
-            <Eclipse size={17} bottom={-9} opacity={true} lightShadow={true} />
-            <Eclipse
-              size={17}
-              bottom={33}
-              right={46}
-              opacity={true}
-              lightShadow={true}
-            />
-            <Eclipse size={17} top={33} right={46} lightShadow={true} />
-            <Eclipse
-              size={17}
-              top={166}
-              right={-8}
-              opacity={true}
-              lightShadow={true}
-            />
-            <div className={classes.outerCircle}>
-              <div className={classes.innerCircle}></div>
+          <div className={classes.contentLeft}>
+            <div className={classes.circle}>
+              <CircleImg
+                size={50}
+                top={"-50%"}
+                right={"-1%"}
+                opacity={true}
+                lightShadow={true}
+              />
+              <CircleImg
+                size={50}
+                bottom={"-45%"}
+                right={"-4%"}
+                opacity={true}
+                lightShadow={true}
+              />
+              <CircleImg
+                size={50}
+                top={"-13%"}
+                right={"-66%"}
+                lightShadow={true}
+              />
+              <CircleImg
+                size={50}
+                top={"34%"}
+                right={"-82%"}
+                opacity={true}
+                lightShadow={true}
+              />
+              <CircleImg
+                size={50}
+                bottom={"-16%"}
+                right={"-63%"}
+                opacity={true}
+                lightShadow={true}
+              />
+
+              <Eclipse size={17} top={-9} opacity={true} lightShadow={true} />
+              <Eclipse
+                size={17}
+                bottom={-9}
+                opacity={true}
+                lightShadow={true}
+              />
+              <Eclipse
+                size={17}
+                bottom={0}
+                right={"-5%"}
+                opacity={true}
+                lightShadow={true}
+              />
+              <Eclipse size={17} top={"11%"} right={"8%"} lightShadow={true} />
+              <Eclipse
+                size={17}
+                top={0}
+                right={"9%"}
+                bottom={"11%"}
+                opacity={true}
+                lightShadow={true}
+              />
+              <div className={classes.outerCircle}>
+                <div className={classes.innerCircle}></div>
+              </div>
             </div>
-          </div> */}
-          <img src={IMAGES.aboutBlockImg} alt="img" width={"100%"} />
+          </div>
+          {/* <img src={IMAGES.aboutBlockImg} alt="img" width={"100%"} /> */}
         </div>
         <div className={` ${classes.rightSideCol}`}>
           <div className={classes.content}>

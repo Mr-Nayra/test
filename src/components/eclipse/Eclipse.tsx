@@ -2,10 +2,10 @@ import { memo } from "react";
 import Circle from "./Circle";
 
 interface IEclipse {
-  top?: number;
-  bottom?: number;
-  left?: number;
-  right?: number;
+  top?: number | string;
+  bottom?: number | string;
+  left?: number | string;
+  right?: number | string;
   size: number;
   opacity?: boolean;
   lightShadow?: boolean;

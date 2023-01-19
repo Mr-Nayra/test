@@ -2,10 +2,10 @@ import { createStyles } from "@mantine/core";
 import React from "react";
 
 interface IEclipse {
-  top?: number;
-  bottom?: number;
-  left?: number;
-  right?: number;
+  top?: number | string;
+  bottom?: number | string;
+  left?: number | string;
+  right?: number | string;
   size: number;
   opacity?: boolean;
   lightShadow?: boolean;
@@ -13,22 +13,23 @@ interface IEclipse {
 
 const CircleImg = (props: IEclipse) => {
   const { bottom, left, right, top, size, opacity, lightShadow } = props;
+  const calcSize = `calc(${size + 15} * (100vw - 300px) / 1000)`;
   const useStyle = createStyles({
     root: {
       display: "flex",
       alignItems: "center",
     },
     heading: {
-      fontSize: 18,
+      fontSize: `calc(3px + 15 * (100vw - 300px) / 1000)`,
       fontWeight: 500,
       margin: "0px",
       paddingLeft: "10px",
-        color: "#7C00BD",
-        opacity: opacity === true ? 0.4 : 1,
+      color: "#7C00BD",
+      opacity: opacity === true ? 0.4 : 1,
     },
     circle: {
-      width: size,
-      height: size,
+      width: calcSize,
+      height: calcSize,
       borderRadius: "100%",
       backgroundColor: "transparent",
       display: "flex",
@@ -38,8 +39,8 @@ const CircleImg = (props: IEclipse) => {
       border: "1px dashed #FDFDFD",
     },
     outerCircle: {
-      width: size - 20,
-      height: size - 20,
+      width: "80%",
+      height: "80%",
       borderRadius: "50%",
       backgroundImage:
         "linear-gradient(135.85deg, #6274E7 11.98%, #8752A3 87.62%)",
