@@ -20,7 +20,7 @@
 }
 
 .description {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
     width: 60%;
     margin: 0px auto;
@@ -75,7 +75,6 @@
 }
 
 // 
-@import "../../../../colors/colors";
 
 
 .card {
@@ -84,8 +83,16 @@
     border-radius: 25px;
     padding: 23px 10px;
     position: relative;
+    // max-height: 100%;
+
+    &:hover .animationText {
+        // transform: scaleY(1);
+        max-height: 500px;
+
+    }
 
 }
+
 
 .cardHeading {
     font-size: 14px;
@@ -121,6 +128,8 @@
 
 .cardHeader {
     margin-left: 127px;
+
+
 }
 
 .socialLink {
@@ -129,7 +138,15 @@
 
     & img {
         width: 100%;
+
+
     }
+}
+
+.animationText {
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 0.5s;
 }
 
 .cardDescription {

@@ -1,13 +1,11 @@
 import { Carousel } from "@mantine/carousel";
-import { useRef, memo } from "react";
+import { memo } from "react";
 import Eclipse from "../../../../components/eclipse/Eclipse";
 import { IMAGES } from "../../../../images";
 import classes from "./testimonialCarousel.module.scss";
-import Autoplay from "embla-carousel-autoplay";
 import { TestimonialsCarouselData } from "../data/TestimonialsCarouseldata";
 
 const TestimonialCarousel = () => {
-  const autoplay = useRef(Autoplay({ delay: 4000 }));
   return (
     <div className={classes.root}>
       <Carousel
@@ -18,7 +16,6 @@ const TestimonialCarousel = () => {
         loop
         dragFree
         align="start"
-        // slidesToScroll={3}
         classNames={{
           indicator: classes.indicator,
           controls: classes.controls,
@@ -34,12 +31,9 @@ const TestimonialCarousel = () => {
           { maxWidth: "md", slideSize: "50%" },
           { maxWidth: "sm", slideSize: "100%", slideGap: 0 },
         ]}
-        plugins={[autoplay.current]}
-        onMouseEnter={autoplay.current.stop}
-        onMouseLeave={autoplay.current.reset}
       >
         {TestimonialsCarouselData.map((item, index) => (
-          <Carousel.Slide key={index}>
+          <Carousel.Slide key={`${"_" + index}`}>
             <div className={classes.upperBlock}>
               <div className={classes.card}>
                 <Eclipse size={28} top={20} right={20} />

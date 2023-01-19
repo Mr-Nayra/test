@@ -19,7 +19,9 @@ const TopHeader = () => {
 
   return (
     <div className={classes.container}>
-      <p className={classes.heading}>⭐ Star us on Github →</p>
+      <p className={classes.heading}>
+        Start your ML Observability journey today →
+      </p>
     </div>
   );
 };

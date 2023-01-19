@@ -3,7 +3,6 @@ import "./App.css";
 import PoweredBy from "./container/footer/PoweredBy";
 import TheFooter from "./container/footer/TheFooter";
 import Navbar from "./container/header/Navbar";
-import TopHeader from "./container/header/TopHeader";
 import About from "./pages/about";
 import Home from "./pages/home";
 
@@ -11,7 +10,6 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <TopHeader />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

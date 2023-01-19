@@ -23,11 +23,11 @@ const ShadowEclipse: React.FC<Props> = ({ size, bottom, left, right, top }) => {
       borderRadius: "50%",
       backgroundImage:
         "linear-gradient(135.85deg, #6274E7 11.98%, #8752A3 87.62%)",
-      filter: "blur(45px)",
       overflow: "hidden",
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
+      filter: "blur(45px)",
     },
     whiteShadow: {
       width: size - 60,

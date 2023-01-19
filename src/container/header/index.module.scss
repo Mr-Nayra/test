@@ -2,9 +2,9 @@
 
 .container {
     width: 100%;
-    // position: fixed;
-    // z-index: 1111;
-    // top:0px
+    position: sticky;
+    z-index: 1111;
+    top: 0px;
     background-color: #ffffff;
 }
 

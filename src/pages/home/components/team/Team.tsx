@@ -20,17 +20,24 @@ const Team = () => {
 
       <div className={classes.row}>
         <div className={classes.col}>
-          <TeamCard name="Mr. Raghav" memberPost="UI/UX Designer" />
-        </div>
-        <div className={classes.col}>
-          <TeamCard name="Mr. Raghav" memberPost="UI/UX Designer" />
+          <TeamCard
+            name="Mr. Raghav"
+            memberPost="UI/UX Designer"
+            description="Arize provides production ML analytics and workflows to quickly catch model and data issues, diagnose the root cause, and continuously improve performance. Arize provides production ML analytics and workflows to quickly catch model and data issues, diagnose the root cause"
+          />
         </div>
         <div className={classes.col}>
           <TeamCard
             name="Mr. Raghav"
             memberPost="UI/UX Designer"
             description="Arize provides production ML analytics and workflows to quickly catch model and data issues, diagnose the root cause, and continuously improve performance. Arize provides production ML analytics and workflows to quickly catch model and data issues, diagnose the root cause"
-            padding="40px 28px"
+          />
+        </div>
+        <div className={classes.col}>
+          <TeamCard
+            name="Mr. Raghav"
+            memberPost="UI/UX Designer"
+            description="Arize provides production ML analytics and workflows to quickly catch model and data issues, diagnose the root cause, and continuously improve performance. Arize provides production ML analytics and workflows to quickly catch model and data issues, diagnose the root cause"
           />
         </div>
       </div>

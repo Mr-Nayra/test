@@ -5,6 +5,7 @@ import { IMAGES } from "../../images";
 import CustomButton from "../../components/button/CustomButton";
 import { COLORS } from "../../colors";
 import { Link } from "react-router-dom";
+import TopHeader from "./TopHeader";
 
 const getNavDisplay = (width: number, show: boolean) => {
   if (width > 950) {
@@ -33,6 +34,7 @@ const Navbar = () => {
   return (
     <>
       <div className={classes.container}>
+        <TopHeader />
         <div className={classes.navbar}>
           <div>
             <Link to="/">
