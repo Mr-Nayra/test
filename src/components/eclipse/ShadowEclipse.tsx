@@ -28,6 +28,7 @@ const ShadowEclipse: React.FC<Props> = ({ size, bottom, left, right, top }) => {
       justifyContent: "center",
       alignItems: "center",
       filter: "blur(45px)",
+      WebkitBackdropFilter: "blur(10px)",
     },
     whiteShadow: {
       width: size - 60,
