@@ -18,82 +18,98 @@ const AboutSection = () => {
             <div className={classes.circle}>
               <CircleImg
                 size={50}
-                top={"-45%"}
-                right={"-1%"}
+                top={"-48%"}
+                right={"32%"}
+                lightShadow={true}
                 opacity={active === "firstPosition" ? false : true}
-                lightShadow={active === "firstPosition" ? true : false}
                 onClick={() => setActive("firstPosition")}
+                textPosition={true}
+                topPositionHeadingSection={"-48%"}
+                rightPositionHeadingSection={"-73%"}
               />
               <CircleImg
                 size={50}
-                top={"-13%"}
-                right={"-66%"}
+                top={"-21%"}
+                right={"-59%"}
+                lightShadow={true}
                 opacity={active === "secondPosition" ? false : true}
-                lightShadow={active === "secondPosition" ? true : false}
                 onClick={() => setActive("secondPosition")}
               />
               <CircleImg
                 size={50}
                 top={"34%"}
                 right={"-82%"}
-                opacity={true}
                 lightShadow={true}
+                opacity={active === "thirdPosition" ? false : true}
+                onClick={() => setActive("thirdPosition")}
               />
               <CircleImg
                 size={50}
-                bottom={"-16%"}
+                bottom={"-19%"}
                 right={"-63%"}
-                opacity={true}
                 lightShadow={true}
+                opacity={active === "fourthPosition" ? false : true}
+                onClick={() => setActive("fourthPosition")}
               />
               <CircleImg
                 size={50}
-                bottom={"-45%"}
-                right={"-4%"}
-                opacity={true}
+                bottom={"-49%"}
+                right={"30%"}
                 lightShadow={true}
+                opacity={active === "fifthPosition" ? false : true}
+                onClick={() => setActive("fifthPosition")}
+                textPosition={true}
+                rightPositionHeadingSection={"-82%"}
+                bottomPositionHeadingSection={"-35%"}
               />
 
               <Eclipse
-                size={17}
-                top={-9}
+                size={"8.5558%"}
+                top={"-5%"}
+                right={"-45%"}
+                lightShadow={true}
                 opacity={active === "firstPosition" ? false : true}
-                lightShadow={active === "firstPosition" ? true : false}
                 backgroundImageDark={active === "firstPosition" ? true : false}
               />
 
               <Eclipse
-                size={17}
+                size={"8.5558%"}
                 top={"11%"}
-                right={"8%"}
+                right={"-83%"}
+                lightShadow={true}
                 opacity={active === "secondPosition" ? false : true}
-                lightShadow={active === "secondPosition" ? true : false}
                 backgroundImageDark={active === "secondPosition" ? true : false}
               />
               <Eclipse
-                size={17}
-                bottom={0}
-                right={"-5%"}
-                opacity={true}
+                size={"8.5558%"}
+                bottom={"-45%"}
+                right={"-96%"}
                 lightShadow={true}
+                opacity={active === "thirdPosition" ? false : true}
+                backgroundImageDark={active === "thirdPosition" ? true : false}
               />
               <Eclipse
-                size={17}
+                size={"8.5558%"}
                 top={0}
-                right={"9%"}
-                bottom={"11%"}
-                opacity={true}
+                right={"-86%"}
+                bottom={"-77%"}
                 lightShadow={true}
+                opacity={active === "fourthPosition" ? false : true}
+                backgroundImageDark={active === "fourthPosition" ? true : false}
               />
               <Eclipse
-                size={17}
-                bottom={-9}
-                opacity={true}
+                size={"8.5558%"}
+                bottom={"-96.5%"}
+                right={"-45%"}
                 lightShadow={true}
+                opacity={active === "fifthPosition" ? false : true}
+                backgroundImageDark={active === "fifthPosition" ? true : false}
               />
               <div className={classes.outerCircle}>
                 <div className={classes.innerCircle}>
-                  <h2 className={classes.circleText}>Sample Text</h2>
+                  <h2 className={classes.circleText}>
+                    Sample <br /> Text
+                  </h2>
                 </div>
               </div>
             </div>
@@ -117,6 +133,51 @@ const AboutSection = () => {
             </div>
           )}
           {active === "secondPosition" && (
+            <div className={classes.content}>
+              <h1 className={classes.heading}>
+                The observability platform designed for ML
+              </h1>
+              <p className={classes.description}>
+                Arize provides production ML analytics and workflows to quickly
+                catch model and data issues, diagnose the root cause, and
+                continuously improve performance.
+              </p>
+              <div className={classes.whiteBox}>
+                <div className={classes.blackBox}></div>
+              </div>
+            </div>
+          )}
+          {active === "thirdPosition" && (
+            <div className={classes.content}>
+              <h1 className={classes.heading}>
+                The observability platform designed for ML
+              </h1>
+              <p className={classes.description}>
+                Arize provides production ML analytics and workflows to quickly
+                catch model and data issues, diagnose the root cause, and
+                continuously improve performance.
+              </p>
+              <div className={classes.whiteBox}>
+                <div className={classes.blackBox}></div>
+              </div>
+            </div>
+          )}
+          {active === "fourthPosition" && (
+            <div className={classes.content}>
+              <h1 className={classes.heading}>
+                The observability platform designed for ML
+              </h1>
+              <p className={classes.description}>
+                Arize provides production ML analytics and workflows to quickly
+                catch model and data issues, diagnose the root cause, and
+                continuously improve performance.
+              </p>
+              <div className={classes.whiteBox}>
+                <div className={classes.blackBox}></div>
+              </div>
+            </div>
+          )}
+          {active === "fifthPosition" && (
             <div className={classes.content}>
               <h1 className={classes.heading}>
                 The observability platform designed for ML

@@ -6,7 +6,7 @@ interface IEclipse {
   bottom?: number | string;
   left?: number | string;
   right?: number | string;
-  size: number;
+  size: number | string;
   opacity?: boolean;
   lightShadow?: boolean;
   backgroundImageDark?: boolean;
@@ -31,6 +31,8 @@ const Eclipse = (props: IEclipse) => {
         bottom: bottom ? bottom : "auto",
         right: right ? right : "auto",
         left: left ? left : "auto",
+        width: "100%",
+        height: "100%",
       }}
     >
       <Circle

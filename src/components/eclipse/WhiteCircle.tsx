@@ -28,6 +28,10 @@ const WhiteCircle: React.FC<Props> = ({ size, bottom, left, right, top }) => {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
+      "@media(max-width:450px)": {
+        width: size - 20,
+        height: size - 20,
+      },
     },
   });
   const { classes } = useStyle();

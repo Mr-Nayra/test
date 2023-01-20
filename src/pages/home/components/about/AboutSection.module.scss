@@ -23,9 +23,9 @@
     max-width: 1512px;
     margin: auto;
 
-    // @media screen and (max-width: 1033px) {
-    //     flex-direction: column;
-    // }
+    @media screen and (max-width: 780px) {
+        flex-direction: column;
+    }
 }
 
 
@@ -40,11 +40,21 @@
     display: flex;
     width: 45%;
     aspect-ratio: 2/2.2;
+
+    @media screen and (max-width: 780px) {
+        width: 70%;
+        aspect-ratio: 2/2.2;
+        align-self: flex-start;
+    }
 }
 
 .rightSideCol {
-    padding: 2em 0em;
     width: 48%;
+
+    @media screen and (max-width: 780px) {
+        width: 100%;
+        padding: 30px 10px;
+    }
 }
 
 .content {
@@ -157,7 +167,7 @@
 }
 
 .circleText {
-    font-size: calc(14px + 15 * (100vw - 300px) / 1000);
+    font-size: calc(9px + 15 * (100vw - 300px) / 1000);
     font-weight: 600;
     text-align: center;
     color: #9C87A7;

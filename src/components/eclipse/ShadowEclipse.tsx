@@ -29,6 +29,11 @@ const ShadowEclipse: React.FC<Props> = ({ size, bottom, left, right, top }) => {
       alignItems: "center",
       filter: "blur(45px)",
       WebkitBackdropFilter: "blur(10px)",
+      "@media(max-width:400px)": {
+        width: size - 30,
+        height: size - 30,
+        filter: "blur(45px)",
+      },
     },
     whiteShadow: {
       width: size - 60,
@@ -38,6 +43,11 @@ const ShadowEclipse: React.FC<Props> = ({ size, bottom, left, right, top }) => {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
+      "@media(max-width:400px)": {
+        width: size - 60,
+        height: size - 60,
+        filter: "blur(45px)",
+      },
     },
   });
   const { classes } = useStyle();

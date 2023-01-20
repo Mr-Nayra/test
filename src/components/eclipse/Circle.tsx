@@ -1,26 +1,21 @@
 import React from "react";
 import { createStyles } from "@mantine/core";
 interface Props {
-  size?: number;
+  size: number | string;
   opacity?: boolean;
   lightShadow?: boolean;
   backgroundImageDark?: boolean;
-  autoChangeSize?: number;
 }
 const Circle: React.FC<Props> = ({
   size,
   opacity = false,
   lightShadow = false,
   backgroundImageDark = false,
-  autoChangeSize,
 }) => {
-  const calcSize = `calc(${
-    Number(autoChangeSize) + 15
-  } * (100vw - 300px) / 1000)`;
   const useStyle = createStyles({
     root: {
-      width: true ? size : calcSize,
-      height: true ? size : calcSize,
+      width: size,
+      height: size,
       borderRadius: "50%",
       backgroundImage: backgroundImageDark
         ? "linear-gradient(135.85deg, #6274E7 11.98%, #8752A3 87.62%)"
