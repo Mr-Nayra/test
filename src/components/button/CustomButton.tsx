@@ -47,7 +47,7 @@ const CustomButton: React.FC<Props> = ({
       paddingLeft: px,
       paddingRight: px,
       height: "auto",
-      border: "1px solid",
+      border: "1px solid transparent",
       borderColor: COLORS.primaryGradient,
       fontSize: fontSize,
       fontWeight: fontWeight,
