@@ -1,12 +1,13 @@
-import { useState } from "react";
-import CustomButton from "../../../../components/button/CustomButton";
-import classes from "./AboutSectionMobile.module.scss";
+// import { useState } from "react";
+// import CustomButton from "../../../../components/button/CustomButton";
+import { FeatureSectionMobileData } from "../data/FeatureSectionMobileData";
+import classes from "./FeatureSectionMobile.module.scss";
 
-const AboutSectionMobile = () => {
-  const [active, setActive] = useState("second");
+const FeatureSectionMobile = () => {
+  // const [active, setActive] = useState("second");
   return (
     <div className={classes.root}>
-      <div className={classes.tabbingSection}>
+      {/* <div className={classes.tabbingSection}>
         <span className={classes.tab}>
           <CustomButton
             label="Sample Text 1"
@@ -62,8 +63,8 @@ const AboutSectionMobile = () => {
             onClick={() => setActive("fifth")}
           />
         </span>
-      </div>
-      {active === "first" && (
+      </div> */}
+      {/* {active === "first" && (
         <div className={classes.content}>
           <h1 className={classes.heading}>
             1 The observability platform designed for ML
@@ -137,9 +138,22 @@ const AboutSectionMobile = () => {
             <div className={classes.blackBox}></div>
           </div>
         </div>
-      )}
+      )} */}
+      <h1 className={classes.title}>UpTrain Features</h1>
+
+      {FeatureSectionMobileData.map((item, index) => {
+        return (
+          <div className={classes.content} key={`${"_" + index}`}>
+            <h1 className={classes.heading}>{item.heading}</h1>
+            <p className={classes.description}>{item.description}</p>
+            <div className={classes.whiteBox}>
+              <div className={classes.blackBox}></div>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 };
 
-export default AboutSectionMobile;
+export default FeatureSectionMobile;

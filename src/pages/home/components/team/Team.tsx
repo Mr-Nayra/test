@@ -1,5 +1,6 @@
 import React from "react";
 import WhiteCircle from "../../../../components/eclipse/WhiteCircle";
+import { TeamMemberData } from "../data/TeamMemberData";
 import classes from "./team.module.scss";
 import TeamCard from "./TeamCard";
 
@@ -12,34 +13,22 @@ const Team = () => {
       <WhiteCircle size={134} right={-60} top={10} />
       <h1 className={classes.heading}>Team</h1>
       <p className={classes.description}>
-        Arize provides production ML analytics and workflows to quickly catch
-        model and data issues, diagnose the root cause, and continuously improve
-        performance.
+        UpTrain is built by passionate ML engineers who aim to leverage their
+        past experience and democratize the best-in-class ML observability and
+        Refinement tooling for the open-source community
       </p>
-      <div className={classes.bgContainer}></div>
+      {/* <div className={classes.bgContainer}></div> */}
 
       <div className={classes.row}>
-        <div className={classes.col}>
-          <TeamCard
-            name="Mr. Raghav"
-            memberPost="UI/UX Designer"
-            description="Arize provides production ML analytics and workflows to quickly catch model and data issues, diagnose the root cause, and continuously improve performance. Arize provides production ML analytics and workflows to quickly catch model and data issues, diagnose the root cause"
-          />
-        </div>
-        <div className={classes.col}>
-          <TeamCard
-            name="Mr. Raghav"
-            memberPost="UI/UX Designer"
-            description="Arize provides production ML analytics and workflows to quickly catch model and data issues, diagnose the root cause, and continuously improve performance. Arize provides production ML analytics and workflows to quickly catch model and data issues, diagnose the root cause"
-          />
-        </div>
-        <div className={classes.col}>
-          <TeamCard
-            name="Mr. Raghav"
-            memberPost="UI/UX Designer"
-            description="Arize provides production ML analytics and workflows to quickly catch model and data issues, diagnose the root cause, and continuously improve performance. Arize provides production ML analytics and workflows to quickly catch model and data issues, diagnose the root cause"
-          />
-        </div>
+        {TeamMemberData.map((item, index) => (
+          <div className={classes.col} key={`${"_" + index}`}>
+            <TeamCard
+              name={item.name}
+              memberPost={item.memberPost}
+              description={item.description}
+            />
+          </div>
+        ))}
       </div>
     </div>
   );

@@ -6,15 +6,16 @@ const CareersSection = () => {
   return (
     <div className={classes.root}>
       <div className={classes.row}>
-        <div className={`${classes.col} ${classes.boxCol}`}>
+        <div className={classes.boxCol}>
           <div className={classes.blackBox}></div>
         </div>
-        <div className={`${classes.col} ${classes.TextCol}`}>
+        <div className={classes.TextCol}>
           <h3 className={classes.heading}>We Are Hiring</h3>
           <p className={classes.description}>
-            Arize provides production ML analytics and workflows to quickly
-            catch model and data issues, diagnose the root cause, and
-            continuously improve performance.
+            We are looking for highly motivated folks to help us build the next
+            generation of ML tooling. We are hiring for ML Engineer, Backend
+            Engineer, Statistics Ninja, Community Manager and Technical Content
+            Writer
           </p>
           <div className={classes.btnSection}>
             <CustomButton

@@ -16,6 +16,8 @@ interface IEclipse {
   bottomPositionHeadingSection?: number | string;
   leftPositionHeadingSection?: number | string;
   rightPositionHeadingSection?: number | string;
+  topText?: string;
+  bottomText?: string;
 }
 
 const CircleImg = (props: IEclipse) => {
@@ -33,6 +35,8 @@ const CircleImg = (props: IEclipse) => {
     bottomPositionHeadingSection,
     leftPositionHeadingSection,
     rightPositionHeadingSection,
+    topText,
+    bottomText,
   } = props;
   const calcSize = `calc(${size + 15} * (100vw - 300px) / 1000)`;
   const calcSizeMobile = `calc(${size + 200} * (100vw - 300px) / 1000)`;
@@ -152,7 +156,7 @@ const CircleImg = (props: IEclipse) => {
           }`}
         >
           <h2 className={classes.heading}>
-            Sample <br /> Text
+            {topText} <br /> {bottomText}
           </h2>
         </div>
       </div>
