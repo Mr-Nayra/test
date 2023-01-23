@@ -1,23 +1,25 @@
 import React from "react";
 import { createStyles } from "@mantine/core";
 interface Props {
-  size: number;
+  size: number | string;
   opacity?: boolean;
   lightShadow?: boolean;
+  backgroundImageDark?: boolean;
 }
 const Circle: React.FC<Props> = ({
   size,
   opacity = false,
   lightShadow = false,
+  backgroundImageDark = false,
 }) => {
   const useStyle = createStyles({
     root: {
       width: size,
       height: size,
       borderRadius: "50%",
-      backgroundImage: true
-        ? "linear-gradient(135.85deg, #AEB6F2 11.98%, #BFA7D3 87.62%)"
-        : "linear-gradient(135.85deg, #6274E7 11.98%, #8752A3 87.62%)",
+      backgroundImage: backgroundImageDark
+        ? "linear-gradient(135.85deg, #6274E7 11.98%, #8752A3 87.62%)"
+        : "linear-gradient(135.85deg, #AEB6F2 11.98%, #BFA7D3 87.62%)",
       opacity: opacity === true ? 0.4 : 1,
       boxShadow:
         lightShadow === true

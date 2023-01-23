@@ -26,6 +26,7 @@ import arrowRightGradient from "./arrow-right-gradient.png";
 // team (Home)
 // About (Home)
 import aboutBlockImg from "./home/about/about-img-left.png";
+import graph_growth_about from "./home/about/graph_growth_about.png";
 export const IMAGES = {
   logo,
   nextArrow,
@@ -55,4 +56,5 @@ export const IMAGES = {
   teamHomeBg,
   // About (Home)
   aboutBlockImg,
+  graph_growth_about,
 };
