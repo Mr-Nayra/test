@@ -66,7 +66,7 @@ const FirstBlogPage = () => {
             </ol>
             <div style={{ paddingTop: 16 }}>
               <li className={classes.li}>
-                <a href="" className={classes.link}>
+                <a href="#conculsion" className={classes.link}>
                   - Conculsion
                 </a>
               </li>
@@ -148,7 +148,7 @@ const FirstBlogPage = () => {
         </div>
 
         <div className={classes.paddingTop}>
-          <p>
+          <p id="data-drift">
             <b>1. Data Drift: </b>
             In simple words, a data shift is a change in the dataset,overtime,
             that is initially used to train the model. This change in dataset
@@ -164,7 +164,7 @@ const FirstBlogPage = () => {
         </div>
 
         <div className={classes.paddingTop}>
-          <p>
+          <p id="concept-drift">
             <b>2. Concept Drift: </b>
             In simple words, a data shift is a change in the dataset,overtime,
             that is initially used to train the model. This change in dataset
@@ -180,7 +180,7 @@ const FirstBlogPage = () => {
         </div>
 
         <div className={classes.paddingTop}>
-          <p>
+          <p id="label-shift">
             <b>3. Label Shift: </b>
             Label shift occurs when the output distribution changes while the
             input distribution and their relationship remains the same. These
@@ -198,7 +198,7 @@ const FirstBlogPage = () => {
         </div>
 
         <div className={classes.paddingTop}>
-          <p>
+          <p id="edge-cases">
             <b>4. Edge Cases: </b>
             Edge cases are the occurrence of rare yet possible scenarios.
             Talking in quantitative terms, if there are events with a 99%
@@ -218,7 +218,7 @@ const FirstBlogPage = () => {
           </p>
         </div>
         <div className={classes.paddingTop}>
-          <p>
+          <p id="enabling-cases">
             <b>5. Enabling new use cases: </b>
             Retraining is triggered in these situations where a new class has
             been added to the output. For instance, previously movies were being
@@ -245,7 +245,7 @@ const FirstBlogPage = () => {
           <img src={Image1} alt="" className={classes.image} />
         </div>
 
-        <p>
+        <p id="conculsion">
           The above drifts are some of the most common issues encountered by ML
           practitioners and we at UpTrain AI are building a smart and automated
           pipeline to continuously monitor these issues and solve them by
