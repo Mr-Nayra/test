@@ -4,7 +4,7 @@ import TheFooter from "./container/footer/TheFooter";
 import Navbar from "./container/header/Navbar";
 import About from "./pages/about";
 import Home from "./pages/home";
-import BlogPage from "./pages/home/components/blog/BlogPage";
+import BlogPage from "./pages/blog-page/BlogPage";
 
 function App() {
   return (
