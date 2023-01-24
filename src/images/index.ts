@@ -49,6 +49,7 @@ import trade_graph from "./home/iconImg/trad_graph.png";
 import search_graph from "./home/iconImg/search_graph.png";
 import highlight_graph from "./home/iconImg/highlight_graph.png";
 import upload_icon from "./home/iconImg/upload_icon.png";
+import down_graph from "./home/iconImg/down_graph.png";
 
 export const IMAGES = {
   // social-logo
@@ -102,4 +103,5 @@ export const IMAGES = {
   search_graph,
   highlight_graph,
   upload_icon,
+  down_graph,
 };

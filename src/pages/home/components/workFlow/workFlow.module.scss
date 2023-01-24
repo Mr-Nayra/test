@@ -2,16 +2,27 @@
 
 .root {
     backdrop-filter: blur(100px);
-    // background-image: linear-gradient(101.06deg, rgba(98, 116, 231, 0.2) -1.13%, rgba(135, 82, 163, 0.2) 101.02%);
-    padding: calc(4em + (35 - 20) * ((100vw - 300px) / (1300 - 300))) 0em;
+    padding-top: calc(4em + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    padding-bottom: calc(7em + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
     background-color: #f5f5f5;
     position: relative;
     overflow: hidden;
+    // background-image: linear-gradient(101.06deg, rgba(98, 116, 231, 0.2) -1.13%, rgba(135, 82, 163, 0.2) 101.02%);
+
+    background-image: url("../../../../images/home/workFlow/work_flow_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width:790px) {
+        display: none;
+    }
 }
 
 .heading {
     margin: 0px;
-    // font-size: 24px;
     font-size: calc(8px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
     font-weight: 600;
     color: $black;
@@ -21,9 +32,14 @@
 .row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 80%;
     margin: auto;
     padding-top: calc(24px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+
+    @media screen and (max-width:1080px) {
+        width: 95%;
+    }
 
 }
 
@@ -43,6 +59,7 @@
     background-image: linear-gradient(136.83deg, #6274E7 0%, #8752A3 100%);
     border-radius: calc(10px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
     padding: 5px;
+    box-shadow: 0px 0px 17px 2px #E5B4FF;
 }
 
 .content {
@@ -56,6 +73,7 @@
 .logoSection {
     text-align: center;
     display: flex;
+    margin-bottom: calc(4px + 15 * (100vw - 300px) / 1000);
 }
 
 .logo {
@@ -96,15 +114,15 @@
 .innerCard {
     display: flex;
     align-items: center;
-
     padding: calc(4px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    padding-bottom: 0px;
 
 
     & h3 {
         margin: 0px;
         font-size: calc(-2px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
         font-weight: 600;
-        margin-left: calc(4px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+        margin-left: calc(4px + 1 * ((100vw - 300px) / (1300 - 300)));
     }
 }
 
@@ -121,6 +139,7 @@
     color: #5A5A5A;
     font-size: calc(-2px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
     font-weight: 600;
+    margin-bottom: calc(6px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
 }
 
 .darkText {
@@ -134,7 +153,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: calc(14px + (35 - 20) * ((100vw - 300px) / (1300 - 300))) calc(4px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    margin: calc(14px + (35 - 20) * ((100vw - 300px) / (1300 - 300))) calc(4px + (35 - 20) * ((100vw - 300px) / (1300 - 300))) 0px;
 }
 
 .modelsImgSection {
@@ -158,11 +177,15 @@
 .feedbackImgRow {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .feedbackCol {
-    flex: 1;
+    // flex: 1;
+    width: 50%;
     text-align: center;
+    margin-top: calc(8px * ((100vw - 300px) / (1300 - 300)));
+    margin-bottom: calc(8px + 10 * ((100vw - 300px) / (1300 - 300)));
 
     & p {
         font-size: calc(-2px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
@@ -178,7 +201,7 @@
 }
 
 .feedbackSection {
-    padding: calc(8px + (35 - 20) * ((100vw - 300px) / (1300 - 300))) calc(4px + (35 - 20) * ((100vw - 300px) / (1300 - 300))) calc(38px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    padding: calc(8px + (35 - 20) * ((100vw - 300px) / (1300 - 300))) calc(4px + (35 - 20) * ((100vw - 300px) / (1300 - 300))) calc(8px + (35 - 30) * ((100vw - 300px) / (1300 - 300)));
 }
 
 .description_smallCard {
@@ -221,42 +244,6 @@
 
 // Arrow Css
 
-.left_first_card {
-    position: relative;
-
-    &::before {
-        content: "";
-        position: absolute;
-        background-image: url(../../../../images/arrow-right-gradient.png);
-        width: 18%;
-        height: 30px;
-        top: 50%;
-        right: -16.5%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        z-index: -1;
-    }
-}
-
-.left_second_card {
-    position: relative;
-
-    &::before {
-        content: "";
-        position: absolute;
-        background-image: url(../../../../images/arrow-right-gradient.png);
-        width: 18%;
-        height: 30px;
-        top: calc(50% - 15px);
-        right: -16.5%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 100%;
-        z-index: -1;
-    }
-}
-
 .left_third_card {
     position: relative;
 
@@ -273,7 +260,49 @@
         background-size: 100%;
         z-index: -1;
     }
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url(../../../../images/upArrowGraidentLong.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 10.9%;
+        bottom: -75.2%;
+        right: 43.5%;
+        height: 113%;
+        background-size: 100%;
+        z-index: -1;
+
+        @media screen and (max-width:1072px) {
+            width: 8.9%;
+        }
+
+        @media screen and (max-width:945px) {
+            bottom: -73.2%;
+        }
+
+        @media screen and (max-width:945px) {
+            width: 9.9%;
+        }
+
+        @media screen and (max-width:814px) {
+            bottom: -74.2%;
+        }
+
+        // @media screen and (max-width:1167px) {
+        //     width: 31px;
+        //     bottom: -75.5%;
+        // }
+
+        // @media screen and (max-width:1000px) {
+        //     width: 2px;
+        //     bottom: calc(-46% + 8.5px);
+        // }
+
+    }
 }
+
 
 .right_first_card {
     position: relative;
@@ -319,21 +348,23 @@
         position: absolute;
         background-color: #6274E7;
         width: 4px;
-        top: -120%;
-        bottom: calc(-46% + 8px);
+        top: -128%;
+        bottom: calc(-132% + 8px);
         left: 50%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
         z-index: -1;
 
-        @media screen and (max-width:1235px) {
-            width: 3px;
+
+        @media screen and (max-width:1080px) {
+            bottom: calc(-181% + 8px);
+            top: -160%;
         }
 
-        @media screen and (max-width:1000px) {
-            width: 2px;
-            bottom: calc(-46% + 8.5px);
+        @media screen and (max-width:970px) {
+            // bottom: calc(-218% + 8px);
+            top: -200%;
         }
 
     }
@@ -341,15 +372,124 @@
     &::after {
         content: "";
         position: absolute;
-        background-image: url(../../../../images/arrow-left-gradient.png);
-        width: 227%;
+        background-image: url(../../../../images/bottomLineGraidentLong.png);
+        width: 288%;
         height: 20px;
-        bottom: -46%;
+        bottom: -132%;
         right: 50%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
         z-index: -1;
+
+        @media screen and (max-width:1080px) {
+            bottom: -182%;
+        }
+
+        // @media screen and (max-width:970px) {
+        //     bottom: -219%;
+        // }
     }
 
+}
+
+// 
+.shadowBoxCenterRow {
+    background: #F0F2FF;
+    box-shadow: -6px -6px 12px #FFFFFF, 6px 6px 12px rgba(135, 82, 163, 0.28);
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding: calc(4px + 9 * (100vw - 300px) / 1000) calc(1px + 6 * (100vw - 300px) / 1000);
+}
+
+.shadowBoxCenterCol {
+    width: 48%;
+
+}
+
+.shadowBoxCenterColBorder {
+    border-right: 1px dashed #C6CDFF;
+}
+
+.shadowBoxCenterImgBox {
+    display: flex;
+    justify-content: center;
+}
+
+.shadowBoxCenterImg {
+    width: calc(14px + 15 * (100vw - 300px) / 1000);
+    margin: auto;
+
+    & img {
+        width: 100%;
+    }
+}
+
+.centerCardText {
+    margin: 0px;
+    font-size: calc(-2px + 14 * (100vw - 300px) / 1000);
+    font-weight: 500;
+    text-align: center;
+    margin-top: calc(4px + 2 * (100vw - 300px) / 1000);
+}
+
+.darkTextCenter {
+    margin-top: calc(4px + 7 * (100vw - 300px) / 1000);
+    text-align: center;
+}
+
+.centerCard {
+    margin-top: calc(4px + 20 * (100vw - 300px) / 1000);
+}
+
+
+// 
+.arrow_right {
+    width: 7.5%;
+    height: 6%;
+    background-color: #6274E7;
+    position: absolute;
+    // top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(135deg);
+    border-radius: 2px;
+    bottom: -11%;
+
+    &::before {
+        // content: "";
+        // width: 25px;
+        // height: 3px;
+        // background: #6274E7;
+        // position: absolute;
+        // top: -150%;
+        // margin-top: -1px;
+        // right: -257%;
+        // transform: translate(-50%, -50%) rotate(135deg);
+        content: "";
+        position: absolute;
+        background-color: #6274E7;
+        width: 4px;
+        top: -97%;
+        bottom: calc(-221% + 8px);
+        right: -65%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        z-index: 9999999;
+        transform: translate(-302%, -50%) rotate(46deg);
+    }
+}
+
+.arrow_mask {
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f5;
+    backdrop-filter: blur(100px);
+    position: absolute;
+    left: 15%;
+    top: -15%;
+    right: 0%;
+    bottom: 0%;
+    z-index: -11;
 }
