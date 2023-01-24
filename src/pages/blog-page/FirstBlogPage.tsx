@@ -4,7 +4,7 @@ import classes from "./blogPage.module.scss";
 import Image from "../../images/blogPageImg/img1.png";
 import Image1 from "../../images/blogPageImg/img2.png";
 
-const BlogPage = () => {
+const FirstBlogPage = () => {
   return (
     <div className={classes.root} id="blogPage">
       <div className={classes.titleContainer}>
@@ -257,4 +257,4 @@ const BlogPage = () => {
   );
 };
 
-export default BlogPage;
+export default FirstBlogPage;
