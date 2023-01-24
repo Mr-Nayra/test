@@ -17,7 +17,7 @@ const TeamCard = (props: ITeamCard) => {
       <div className={classes.card}>
         <div className={classes.topSection}>
           <div className={classes.cardImg}>
-            <img src={memberImg} alt="" />
+            <img src={memberImg} alt="" className={classes.imageTeam} />
           </div>
           <div className={classes.cardHeader}>
             <h2 className={classes.cardHeading}>{name}</h2>
