@@ -1,4 +1,6 @@
-// Company-logo
+// social-logo
+import discordLogo from "./social/discordLogo.svg";
+//
 import logo from "./logo.svg";
 import combinatorLogo from "./combinatorLogo.png";
 import footerCompanyLogo from "./footerLogo.png";
@@ -25,14 +27,32 @@ import outputLogo from "./home/workFlow/outputLogo.png";
 import inputLogo from "./home/workFlow/inputLogo.png";
 import dashboardLogo from "./home/workFlow/dashboardLogo.png";
 import smartLogo from "./home/workFlow/smartLogo.png";
-import aboutBg from "./home/about/about-bg.png";
-import teamHomeBg from "./teamImg/teamHomeBg.png";
+import aboutBg from "./home/feature/about-bg.png";
 import arrowRightGradient from "./arrow-right-gradient.png";
 // team (Home)
-// About (Home)
-import aboutBlockImg from "./home/about/about-img-left.png";
-import graph_growth_about from "./home/about/graph_growth_about.png";
+import teamHomeBg from "./teamImg/teamHomeBg.png";
+import sourabh_agrawal from "./teamImg/sourabh_agrawal.png";
+import shikha_mohanty from "./teamImg/shikha_mohanty.png";
+import vipul_gupta from "./teamImg/vipul_gupta.png";
+// Feature (Home)
+import graph_growth_about from "./home/feature/graph_growth_about.png";
+import model_performance from "./home/feature/model_performance_img.png";
+import data_drift_img from "./home/feature/data_drift_img.png";
+import edge_case_signals_img from "./home/feature/edge_case_signals_img.png";
+import automated_refinement_img from "./home/feature/automated_refinement.png";
+import seamless_integration_img from "./home/feature/seamless_integration_img.png";
+// career (Home)
+import career_banner from "./home/career/career_banner.svg";
+// icon
+import grow_graph from "./home/iconImg/grow_graph.png";
+import trade_graph from "./home/iconImg/trad_graph.png";
+import search_graph from "./home/iconImg/search_graph.png";
+import highlight_graph from "./home/iconImg/highlight_graph.png";
+import upload_icon from "./home/iconImg/upload_icon.png";
+
 export const IMAGES = {
+  // social-logo
+  discordLogo,
   // Company-logo
   logo,
   combinatorLogo,
@@ -64,7 +84,22 @@ export const IMAGES = {
   arrowRightGradient,
   // team (Home)
   teamHomeBg,
-  // About (Home)
-  aboutBlockImg,
+  sourabh_agrawal,
+  shikha_mohanty,
+  vipul_gupta,
+  // Feature (Home)
   graph_growth_about,
+  model_performance,
+  data_drift_img,
+  edge_case_signals_img,
+  automated_refinement_img,
+  seamless_integration_img,
+  // career (Home)
+  career_banner,
+  // icon (Home)
+  grow_graph,
+  trade_graph,
+  search_graph,
+  highlight_graph,
+  upload_icon,
 };

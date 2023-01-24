@@ -3,6 +3,7 @@ import { COLORS } from "../../colors";
 const useStyles = createStyles({
   container: {
     backgroundImage: COLORS.primaryGradient,
+    textAlign: "center",
   },
   heading: {
     textAlign: "center",
@@ -11,6 +12,8 @@ const useStyles = createStyles({
     fontSize: "14px",
     fontWeight: 600,
     padding: 10,
+    display: "inline-block",
+    textDecoration: "none",
   },
 });
 
@@ -19,7 +22,14 @@ const TopHeader = () => {
 
   return (
     <div className={classes.container}>
-      <p className={classes.heading}>⭐ Star us on Github →</p>
+      <a
+        href="https://github.com/uptrain-ai/uptrain"
+        target={"_blank"}
+        rel="noreferrer"
+        className={classes.heading}
+      >
+        ⭐ Star us on Github →
+      </a>
     </div>
   );
 };

@@ -1,10 +1,7 @@
 import React from "react";
 import { IMAGES } from "../../images";
 import classes from "./TheFooter.module.scss";
-import {
-  TiSocialTwitterCircular,
-  TiSocialLinkedinCircular,
-} from "react-icons/ti";
+import { TiSocialLinkedinCircular } from "react-icons/ti";
 import { GrGithub } from "react-icons/gr";
 
 const TheFooter = () => {
@@ -20,28 +17,53 @@ const TheFooter = () => {
         <div>
           <ul className={classes.menu}>
             <li>
-              <a className={classes.item} href="/">
-                Privacy Policy
+              <a
+                className={classes.item}
+                href="https://docs.google.com/forms/d/e/1FAIpQLScGDf-1a8VmwhD63O_Sp9b1MryTh01oZTvC1CkbHIieuaWJ4g/viewform"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                Give Feedback
               </a>
             </li>
             <li>
-              <a className={classes.item} href="/">
-                Terms and Conditions
+              <a
+                className={classes.item}
+                href="https://github.com/uptrain-ai/uptrain/blob/main/LICENSE"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                Open-source License
               </a>
             </li>
             <li>
               <span className={classes.item}>Social Media</span>
               <div className={classes.SocialMedia}>
-                <a href="/">
-                  <TiSocialTwitterCircular
+                <a
+                  href=" https://discord.gg/zYXDMktp9P"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  <img
+                    src={IMAGES.discordLogo}
                     className={classes.socialIcon}
-                    size={26}
+                    alt=""
+                    width={20}
                   />
                 </a>
-                <a href="/" className={classes.iconMargin}>
+                <a
+                  href="https://github.com/uptrain-ai/uptrain"
+                  target={"_blank"}
+                  rel="noreferrer"
+                  className={classes.iconMargin}
+                >
                   <GrGithub className={classes.socialIcon} size={20} />
                 </a>
-                <a href="/">
+                <a
+                  href="https://www.linkedin.com/company/uptrain-ai/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
                   <TiSocialLinkedinCircular
                     className={classes.socialIcon}
                     size={26}

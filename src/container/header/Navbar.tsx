@@ -62,24 +62,28 @@ const Navbar = () => {
                 </Link>
               </li>
               <li>
-                <Link className={classes.item} to="/">
+                <a
+                  className={classes.item}
+                  href="https://uptrain-ai.gitbook.io/uptrain-documentation/"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
                   Docs
-                </Link>
-              </li>
-
-              <li>
-                <Link className={classes.item} to="/">
-                  Career
-                </Link>
+                </a>
               </li>
               <li>
-                <Link className={classes.item} to="/">
+                <a className={classes.item} href="#blog">
                   Blogs
-                </Link>
+                </a>
               </li>
-              <li className={classes.item}>
+              <a
+                href="https://github.com/uptrain-ai/uptrain"
+                target={"_blank"}
+                rel="noreferrer"
+                className={classes.item}
+              >
                 <CustomButton label="Github" type="primary" px={51} />
-              </li>
+              </a>
             </ul>
           </div>
         </div>

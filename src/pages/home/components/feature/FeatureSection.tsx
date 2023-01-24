@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import Eclipse from "../../../../components/eclipse/Eclipse";
-import ShadowEclipse from "../../../../components/eclipse/ShadowEclipse";
+// import ShadowEclipse from "../../../../components/eclipse/ShadowEclipse";
 import classes from "./FeatureSection.module.scss";
 import CircleImg from "./CircleImg";
 import FeatureSectionMobile from "./FeatureSectionMobile";
+import { IMAGES } from "../../../../images";
 
 const FeatureSection = () => {
   const [active, setActive] = useState("secondPosition");
@@ -19,9 +20,9 @@ const FeatureSection = () => {
 
   return (
     <div className={classes.root}>
-      <ShadowEclipse size={237} bottom={-70} right={-50} />
+      {/* <ShadowEclipse size={237} bottom={-70} right={-50} />
       <ShadowEclipse size={237} bottom={-100} left={-50} />
-      <ShadowEclipse size={192} top={-100} left={160} />
+      <ShadowEclipse size={192} top={-100} left={160} /> */}
       {width >= 790 ? (
         <div className={classes.row}>
           <div className={` ${classes.leftImg}`}>
@@ -39,6 +40,7 @@ const FeatureSection = () => {
                   rightPositionHeadingSection={"-138%"}
                   topText="Model"
                   bottomText={"Performance"}
+                  featureIcon={IMAGES.grow_graph}
                 />
                 <CircleImg
                   size={50}
@@ -49,6 +51,7 @@ const FeatureSection = () => {
                   onClick={() => setActive("secondPosition")}
                   topText={"Data "}
                   bottomText={"Drift"}
+                  featureIcon={IMAGES.trade_graph}
                 />
                 <CircleImg
                   size={50}
@@ -59,6 +62,7 @@ const FeatureSection = () => {
                   onClick={() => setActive("thirdPosition")}
                   topText={"Edge-case"}
                   bottomText={"Signals"}
+                  featureIcon={IMAGES.search_graph}
                 />
                 <CircleImg
                   size={50}
@@ -69,6 +73,7 @@ const FeatureSection = () => {
                   onClick={() => setActive("fourthPosition")}
                   topText={"Automated"}
                   bottomText={"Refinement"}
+                  featureIcon={IMAGES.highlight_graph}
                 />
                 <CircleImg
                   size={50}
@@ -82,6 +87,7 @@ const FeatureSection = () => {
                   bottomPositionHeadingSection={"-26%"}
                   topText={"Seamless"}
                   bottomText={"Integration"}
+                  featureIcon={IMAGES.upload_icon}
                 />
 
                 <Eclipse
@@ -158,6 +164,14 @@ const FeatureSection = () => {
                     pin-points (any) dip in model’s accuracy to a specific
                     feature combination
                   </p>
+                  <div className={classes.whiteBox}>
+                    <div className={classes.blackBox}>
+                      <img
+                        src={IMAGES.model_performance}
+                        alt="model_performance"
+                      />
+                    </div>
+                  </div>
                 </div>
               )}
               {active === "secondPosition" && (
@@ -170,6 +184,11 @@ const FeatureSection = () => {
                     against your training dataset and detects
                     out-of-distribution cases
                   </p>
+                  <div className={classes.whiteBox}>
+                    <div className={classes.blackBox}>
+                      <img src={IMAGES.data_drift_img} alt="data_drift_img" />
+                    </div>
+                  </div>
                 </div>
               )}
               {active === "thirdPosition" && (
@@ -183,6 +202,14 @@ const FeatureSection = () => {
                     filter out specific subsets of data which can be used to
                     retrain the model
                   </p>
+                  <div className={classes.whiteBox}>
+                    <div className={classes.blackBox}>
+                      <img
+                        src={IMAGES.edge_case_signals_img}
+                        alt="edge_case_signals_img"
+                      />
+                    </div>
+                  </div>
                 </div>
               )}
               {active === "fourthPosition" && (
@@ -195,6 +222,14 @@ const FeatureSection = () => {
                     model training, and deployment pipelines to activate a
                     completely automated continuous model improvement cycle
                   </p>
+                  <div className={classes.whiteBox}>
+                    <div className={classes.blackBox}>
+                      <img
+                        src={IMAGES.automated_refinement_img}
+                        alt="automated_refinement_img"
+                      />
+                    </div>
+                  </div>
                 </div>
               )}
               {active === "fifthPosition" && (
@@ -207,11 +242,16 @@ const FeatureSection = () => {
                     libraries and MLOps tools, allowing you to get started in{" "}
                     less than 5 minutes
                   </p>
+                  <div className={classes.whiteBox}>
+                    <div className={classes.blackBox}>
+                      <img
+                        src={IMAGES.seamless_integration_img}
+                        alt="seamless_integration_img"
+                      />
+                    </div>
+                  </div>
                 </div>
               )}
-              <div className={classes.whiteBox}>
-                <div className={classes.blackBox}></div>
-              </div>
             </div>
           </div>
         </div>

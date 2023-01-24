@@ -12,13 +12,14 @@ const BlogHomeCarousel = () => {
     <div className={classes.rootCarousel}>
       <Carousel
         withIndicators
+        initialSlide={1}
         height={"auto"}
         slideSize="33.333333%"
         slideGap="lg"
         loop
         dragFree
         align="start"
-        // slidesToScroll={3}
+        slidesToScroll={"auto"}
         classNames={{
           indicator: classes.indicator,
           controls: classes.controls,
