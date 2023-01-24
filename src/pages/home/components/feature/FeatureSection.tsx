@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 import Eclipse from "../../../../components/eclipse/Eclipse";
 import ShadowEclipse from "../../../../components/eclipse/ShadowEclipse";
-import classes from "./AboutSection.module.scss";
-import AboutSectionMobile from "./AboutSectionMobile";
+import classes from "./FeatureSection.module.scss";
 import CircleImg from "./CircleImg";
+import FeatureSectionMobile from "./FeatureSectionMobile";
 
-const AboutSection = () => {
+const FeatureSection = () => {
   const [active, setActive] = useState("secondPosition");
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -36,31 +36,39 @@ const AboutSection = () => {
                   onClick={() => setActive("firstPosition")}
                   textPosition={true}
                   topPositionHeadingSection={"-48%"}
-                  rightPositionHeadingSection={"-73%"}
+                  rightPositionHeadingSection={"-138%"}
+                  topText="Model"
+                  bottomText={"Performance"}
                 />
                 <CircleImg
                   size={50}
                   top={"-21%"}
-                  right={"-59%"}
+                  right={"-50%"}
                   lightShadow={true}
                   opacity={active === "secondPosition" ? false : true}
                   onClick={() => setActive("secondPosition")}
+                  topText={"Data "}
+                  bottomText={"Drift"}
                 />
                 <CircleImg
                   size={50}
                   top={"34%"}
-                  right={"-82%"}
+                  right={"-96%"}
                   lightShadow={true}
                   opacity={active === "thirdPosition" ? false : true}
                   onClick={() => setActive("thirdPosition")}
+                  topText={"Edge-case"}
+                  bottomText={"Signals"}
                 />
                 <CircleImg
                   size={50}
-                  bottom={"-19%"}
-                  right={"-63%"}
+                  bottom={"-14%"}
+                  right={"-86%"}
                   lightShadow={true}
                   opacity={active === "fourthPosition" ? false : true}
                   onClick={() => setActive("fourthPosition")}
+                  topText={"Automated"}
+                  bottomText={"Refinement"}
                 />
                 <CircleImg
                   size={50}
@@ -70,8 +78,10 @@ const AboutSection = () => {
                   opacity={active === "fifthPosition" ? false : true}
                   onClick={() => setActive("fifthPosition")}
                   textPosition={true}
-                  rightPositionHeadingSection={"-82%"}
-                  bottomPositionHeadingSection={"-35%"}
+                  rightPositionHeadingSection={"-118%"}
+                  bottomPositionHeadingSection={"-26%"}
+                  topText={"Seamless"}
+                  bottomText={"Integration"}
                 />
 
                 <Eclipse
@@ -129,97 +139,87 @@ const AboutSection = () => {
                 <div className={classes.outerCircle}>
                   <div className={classes.innerCircle}>
                     <h2 className={classes.circleText}>
-                      Sample <br /> Text
+                      UpTrain <br /> Features
                     </h2>
                   </div>
                 </div>
               </div>
             </div>
-            {/* <img src={IMAGES.aboutBlockImg} alt="img" width={"100%"} /> */}
           </div>
           <div className={` ${classes.rightSideCol}`}>
-            {active === "firstPosition" && (
-              <div className={classes.content}>
-                <h1 className={classes.heading}>
-                  The Changed(1) platform designed for ML
-                </h1>
-                <p className={classes.description}>
-                  Arize provides production ML analytics and workflows to
-                  quickly catch model and data issues, diagnose the root cause,
-                  and continuously improve performance.
-                </p>
-                <div className={classes.whiteBox}>
-                  <div className={classes.blackBox}></div>
+            <div className={classes.content}>
+              {active === "firstPosition" && (
+                <div>
+                  <h1 className={classes.heading}>
+                    Track Model Performance in Real-time
+                  </h1>
+                  <p className={classes.description}>
+                    UpTrain observes the performance of your model and
+                    pin-points (any) dip in model’s accuracy to a specific
+                    feature combination
+                  </p>
                 </div>
-              </div>
-            )}
-            {active === "secondPosition" && (
-              <div className={classes.content}>
-                <h1 className={classes.heading}>
-                  The observability platform designed for ML
-                </h1>
-                <p className={classes.description}>
-                  Arize provides production ML analytics and workflows to
-                  quickly catch model and data issues, diagnose the root cause,
-                  and continuously improve performance.
-                </p>
-                <div className={classes.whiteBox}>
-                  <div className={classes.blackBox}></div>
+              )}
+              {active === "secondPosition" && (
+                <div>
+                  <h1 className={classes.heading}>
+                    Track Data Distribution Shifts as they happen
+                  </h1>
+                  <p className={classes.description}>
+                    UpTrain compares your production data-points’ distribution
+                    against your training dataset and detects
+                    out-of-distribution cases
+                  </p>
                 </div>
-              </div>
-            )}
-            {active === "thirdPosition" && (
-              <div className={classes.content}>
-                <h1 className={classes.heading}>
-                  The observability platform designed for ML
-                </h1>
-                <p className={classes.description}>
-                  Arize provides production ML analytics and workflows to
-                  quickly catch model and data issues, diagnose the root cause,
-                  and continuously improve performance.
-                </p>
-                <div className={classes.whiteBox}>
-                  <div className={classes.blackBox}></div>
+              )}
+              {active === "thirdPosition" && (
+                <div>
+                  <h1 className={classes.heading}>
+                    Define Signals to Collect Edge-cases
+                  </h1>
+                  <p className={classes.description}>
+                    UpTrain allows you to define “Signals” as a way to
+                    incorporate your domain-specific knowledge which are used to
+                    filter out specific subsets of data which can be used to
+                    retrain the model
+                  </p>
                 </div>
-              </div>
-            )}
-            {active === "fourthPosition" && (
-              <div className={classes.content}>
-                <h1 className={classes.heading}>
-                  The observability platform designed for ML
-                </h1>
-                <p className={classes.description}>
-                  Arize provides production ML analytics and workflows to
-                  quickly catch model and data issues, diagnose the root cause,
-                  and continuously improve performance.
-                </p>
-                <div className={classes.whiteBox}>
-                  <div className={classes.blackBox}></div>
+              )}
+              {active === "fourthPosition" && (
+                <div>
+                  <h1 className={classes.heading}>
+                    Smart and Automated Model Retraining
+                  </h1>
+                  <p className={classes.description}>
+                    With UpTrain, you can attach your existing data annotation,
+                    model training, and deployment pipelines to activate a
+                    completely automated continuous model improvement cycle
+                  </p>
                 </div>
-              </div>
-            )}
-            {active === "fifthPosition" && (
-              <div className={classes.content}>
-                <h1 className={classes.heading}>
-                  The observability platform designed for ML
-                </h1>
-                <p className={classes.description}>
-                  Arize provides production ML analytics and workflows to
-                  quickly catch model and data issues, diagnose the root cause,
-                  and continuously improve performance.
-                </p>
-                <div className={classes.whiteBox}>
-                  <div className={classes.blackBox}></div>
+              )}
+              {active === "fifthPosition" && (
+                <div>
+                  <h1 className={classes.heading}>
+                    Seamless Integration into your existing pipelines
+                  </h1>
+                  <p className={classes.description}>
+                    UpTrain offers seamless integration with all the major ML
+                    libraries and MLOps tools, allowing you to get started in{" "}
+                    less than 5 minutes
+                  </p>
                 </div>
+              )}
+              <div className={classes.whiteBox}>
+                <div className={classes.blackBox}></div>
               </div>
-            )}
+            </div>
           </div>
         </div>
       ) : (
-        <AboutSectionMobile />
+        <FeatureSectionMobile />
       )}
     </div>
   );
 };
 
-export default AboutSection;
+export default FeatureSection;

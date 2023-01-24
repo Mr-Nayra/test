@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import PoweredBy from "./container/footer/PoweredBy";
 import TheFooter from "./container/footer/TheFooter";
 import Navbar from "./container/header/Navbar";
 import About from "./pages/about";
@@ -15,7 +14,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
         </Routes>
-        <PoweredBy />
         <TheFooter />
       </BrowserRouter>
     </>

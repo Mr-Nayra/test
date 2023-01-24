@@ -9,6 +9,7 @@
     position: relative;
     backdrop-filter: blur(100px);
     background-position: center;
+    margin-bottom: 14px;
 }
 
 .row {
@@ -18,30 +19,33 @@
     justify-content: space-between;
     align-items: center;
 
+    @media screen and (max-width: 1000px) {
+        width: 90%;
+    }
+
     @media screen and (max-width: 790px) {
         flex-direction: column;
         width: 100%;
     }
 }
 
-.col {
+
+.boxCol {
     width: 45%;
 
     @media screen and (max-width: 790px) {
+        order: 2;
+        margin-top: 40px;
         width: 100%;
     }
 }
 
-.boxCol {
-    @media screen and (max-width: 790px) {
-        order: 2;
-        margin-top: 40px;
-    }
-}
-
 .TextCol {
+    width: 48%;
+
     @media screen and (max-width: 790px) {
         order: 1;
+        width: 100%;
     }
 }
 

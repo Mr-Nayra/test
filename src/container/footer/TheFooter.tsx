@@ -12,9 +12,9 @@ const TheFooter = () => {
     <div className={classes.root}>
       <div className={classes.container}>
         <div>
-          <div className={classes.logo}>
-            <img src={IMAGES.logo} alt="logo" />
-          </div>
+          <a href="/" className={classes.logo}>
+            <img src={IMAGES.footerCompanyLogo} alt="logo" />
+          </a>
           <p className={classes.tagLine}>Tag line ML analytics and workflows</p>
         </div>
         <div>

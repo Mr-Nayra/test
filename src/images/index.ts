@@ -1,6 +1,11 @@
+// Company-logo
 import logo from "./logo.svg";
+import combinatorLogo from "./combinatorLogo.png";
+import footerCompanyLogo from "./footerLogo.png";
+// Arrow (Home)
 import nextArrow from "./next-arrow.png";
 import previousArrow from "./previous-arrow.png";
+// blog (Home)
 import homeBlog_1 from "./home/blog/blog-1.png";
 import homeBlog_2 from "./home/blog/blog-2.png";
 import homeBlog_3 from "./home/blog/blog-3.png";
@@ -28,9 +33,14 @@ import arrowRightGradient from "./arrow-right-gradient.png";
 import aboutBlockImg from "./home/about/about-img-left.png";
 import graph_growth_about from "./home/about/graph_growth_about.png";
 export const IMAGES = {
+  // Company-logo
   logo,
+  combinatorLogo,
+  footerCompanyLogo,
+  // Arrow (Home)
   nextArrow,
   previousArrow,
+  // blog(Home)
   homeBlog_1,
   homeBlog_2,
   homeBlog_3,

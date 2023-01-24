@@ -50,11 +50,7 @@
 }
 
 .container {
-    padding: 60px 0px;
-
-    @media screen and (max-width: 450px) {
-        padding-top: 20px;
-    }
+    padding-bottom: 60px;
 }
 
 .indicators {
