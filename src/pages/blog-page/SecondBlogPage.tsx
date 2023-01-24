@@ -22,94 +22,100 @@ const SecondBlogPage = () => {
           </div>
           <ul>
             <li className={classes.li}>
-              <a href="" className={classes.link}>
+              <a href="#introduction" className={classes.link}>
                 - Introduction
               </a>
             </li>
             <li className={classes.li}>
-              <a href="" className={classes.link}>
+              <a href="#user-interaction-adds-bias" className={classes.link}>
                 - User Interaction Adds Bias
               </a>
             </li>
 
             <ol>
               <li>
-                <a href="" className={classes.linkFirst}>
+                <a href="#selection-bias" className={classes.linkFirst}>
                   Selection Bias
                 </a>
               </li>
               <li>
-                <a href="" className={classes.linkFirst}>
+                <a href="#exposure-bias" className={classes.linkFirst}>
                   Exposure Bias
                 </a>
               </li>
               <li>
-                <a href="" className={classes.linkFirst}>
+                <a href="#conformity-bias" className={classes.linkFirst}>
                   Conformity Bias
                 </a>
               </li>
               <li>
-                <a href="" className={classes.linkFirst}>
+                <a href="#position-bias" className={classes.linkFirst}>
                   Position Bias
                 </a>
               </li>
             </ol>
 
             <li className={classes.li}>
-              <a href="" className={classes.link}>
+              <a href="#biases-present-in-data" className={classes.link}>
                 - Biases Present in Data
               </a>
             </li>
             <li className={classes.li}>
-              <a href="" className={classes.link}>
+              <a href="#how-to-solve-it" className={classes.link}>
                 - How to solve it?
               </a>
             </li>
             <ol>
               <li>
-                <a href="" className={classes.linkFirst}>
+                <a href="#propensity-score" className={classes.linkFirst}>
                   Propensity Score
                 </a>
               </li>
               <li>
-                <a href="" className={classes.linkFirst}>
+                <a href="#data-imputation" className={classes.linkFirst}>
                   Data Imputation
                 </a>
               </li>
               <li>
-                <a href="" className={classes.linkFirst}>
+                <a href="#model-popularity-influence" className={classes.linkFirst}>
                   Modeling Popularity Influence
                 </a>
               </li>
               <li>
-                <a href="" className={classes.linkFirst}>
+                <a href="#sampling" className={classes.linkFirst}>
                   Sampling
                 </a>
               </li>
               <li>
-                <a href="" className={classes.linkFirst}>
+                <a href="#click-models" className={classes.linkFirst}>
                   Click Models
                 </a>
               </li>
               <li>
-                <a href="" className={classes.linkFirst}>
+                <a href="#regularization" className={classes.linkFirst}>
                   Regularization
                 </a>
               </li>
               <li>
-                <a href="" className={classes.linkFirst}>
+                <a href="#rebalancing" className={classes.linkFirst}>
+                Rebalancing
+                </a>
+              </li>
+              
+              <li>
+                <a href="#adversarial-learning" className={classes.linkFirst}>
                   Adversarial Learning
                 </a>
               </li>
               <li>
-                <a href="" className={classes.linkFirst}>
+                <a href="#reinforcement-learning" className={classes.linkFirst}>
                   Reinforcement Learning
                 </a>
               </li>
             </ol>
             <div style={{ paddingTop: 16 }}>
               <li className={classes.li}>
-                <a href="" className={classes.link}>
+                <a href="#conculsion" className={classes.link}>
                   - Conculsion
                 </a>
               </li>
@@ -119,7 +125,7 @@ const SecondBlogPage = () => {
       </div>
 
       <div className={classes.tableCard}>
-        <p>
+        <p id="introduction">
           Modern-day web systems rely on user feedback (such as click activity
           or ratings) to build ML models to personalize recommendations. Such
           recommender systems form the core of several popular applications that
@@ -128,7 +134,7 @@ const SecondBlogPage = () => {
         </p>
 
         <div className={classes.paddingTop}>
-          <p className={classes.paraTop}>
+          <p className={classes.paraTop} id="user-interaction-adds-bias">
             <b>User Interaction Adds Bias</b>
           </p>
           <p className={classes.paraTop}>
@@ -139,7 +145,7 @@ const SecondBlogPage = () => {
         </div>
 
         <div className={classes.paddingTop}>
-          <p>
+          <p id="selection-bias">
             <b>1. Selection bias: </b>
             It arises due to the user’s self-selection behavior. For example, a
             user might rate a movie they like but rarely rate a movie they
@@ -157,7 +163,7 @@ const SecondBlogPage = () => {
         </div>
 
         <div className={classes.paddingTop}>
-          <p>
+          <p id="exposure-bias">
             <b>2. Exposure bias: </b>
             The user is likely to watch a recommended video, even if it is not
             the best fit. This action is then taken as positive feedback by the
@@ -167,7 +173,7 @@ const SecondBlogPage = () => {
         </div>
 
         <div className={classes.paddingTop}>
-          <p>
+          <p id="conformity-bias">
             <b>3. Conformity bias: </b>A user may be influenced by public
             opinions and might not select their true preferences. This results
             in conformity bias.
@@ -175,7 +181,7 @@ const SecondBlogPage = () => {
         </div>
 
         <div className={classes.paddingTop}>
-          <p>
+          <p id="position-bias">
             <b>4. Position bias: </b>
             The user will likely watch one of the top 5 videos in response to a
             YouTube search. The bias arising due to the display position of the
@@ -185,7 +191,7 @@ const SecondBlogPage = () => {
 
         <div className={classes.paddingTop}>
           <p className={classes.paraTop}>
-            <b>Biases present in data</b>
+            <b id="biases-present-in-data">Biases present in data</b>
           </p>
           <p className={classes.paraTop}>
             The above biases are due to user behaviors, but there are biases
@@ -238,7 +244,7 @@ const SecondBlogPage = () => {
         </div>
 
         <div className={classes.paddingTop}>
-          <p className={classes.paraTop}>
+          <p className={classes.paraTop} id="how-to-solve-it">
             <b>How to solve it?</b>
           </p>
           <p className={classes.paraTop}>
@@ -255,7 +261,7 @@ const SecondBlogPage = () => {
         </div>
 
         <div className={classes.paddingTop}>
-          <p>
+          <p id="propensity-score">
             <b>1. Propensity Score: </b>
             Propensity scores can be calculated and fed back into the training
             loop to reduce bias due to the user's observation of items. The
@@ -268,7 +274,7 @@ const SecondBlogPage = () => {
         </div>
 
         <div className={classes.paddingTop}>
-          <p>
+          <p id="data-imputation">
             <b>2. Data Imputation: </b>
             Selection bias happens due to missing data (e.g., users prefer to
             give high ratings than low ratings). Data imputation can be used to
@@ -277,7 +283,7 @@ const SecondBlogPage = () => {
           </p>
         </div>
         <div className={classes.paddingTop}>
-          <p>
+          <p id="model-popularity-influence">
             <b>3.Modeling Popularity Influence </b>
             Conformity bias occurs when users are influenced by popular opinion.
             One way to reduce its effect is to disentangle the effect caused by
@@ -286,7 +292,7 @@ const SecondBlogPage = () => {
           </p>
         </div>
         <div className={classes.paddingTop}>
-          <p>
+          <p id="sampling">
             <b>4. Sampling: </b>
             Apart from propensity-score based weighing, sampling of items while
             retraining can be used to address exposure bias. The sampling
@@ -296,7 +302,7 @@ const SecondBlogPage = () => {
           </p>
         </div>
         <div className={classes.paddingTop}>
-          <p>
+          <p id="click-models">
             <b>5. Click Models: </b>
             Position bias, where the item is more likely to be interacted with
             due to its display position, can be mitigated using click models.
@@ -307,7 +313,7 @@ const SecondBlogPage = () => {
           </p>
         </div>
         <div className={classes.paddingTop}>
-          <p>
+          <p id="regularization">
             <b>6. Regularization: </b>
             Regularization can be used to mitigate popularity bias and
             unfairness in recommender systems. It has been shown that
@@ -316,7 +322,7 @@ const SecondBlogPage = () => {
           </p>
         </div>
         <div className={classes.paddingTop}>
-          <p>
+          <p id="rebalancing">
             <b>7. Rebalancing: </b>A simple method to tackle unfairness is to
             rebalance the training dataset with specific fairness objectives
             like gender parity. This can be done using re-labeling the positive
@@ -325,7 +331,7 @@ const SecondBlogPage = () => {
           </p>
         </div>
         <div className={classes.paddingTop}>
-          <p>
+          <p id="adversarial-learning">
             <b>8. Adversarial Learning: </b>
             Apart from regularization, adversarial learning can be employed to
             ameliorate popularity bias and unfairness. The basic idea is to
@@ -338,7 +344,7 @@ const SecondBlogPage = () => {
           </p>
         </div>
         <div className={classes.paddingTop}>
-          <p>
+          <p id="reinforcement-learning">
             <b>9. Reinforcement Learning: </b>
             Finally, reinforcement learning can counter the loop amplification
             effect of biases by deploying a more intelligent strategy to balance
@@ -348,10 +354,10 @@ const SecondBlogPage = () => {
         </div>
 
         <div className={classes.imageContainer}>
-          <img src={Image1} alt="" className={classes.image} />
+          <img src={Image2} alt="" className={classes.image} />
         </div>
 
-        <p>
+        <p id="conculsion"  >
           We at UpTrain AI are passionate about solving this problem statement
           for our users so that they can go on with their day without worrying
           about the efficacy of their models. So if you are a ML
@@ -362,7 +368,7 @@ const SecondBlogPage = () => {
           <a href="https://github.com/uptrain-ai/uptrain"> here</a>
         </p>
         <div className={classes.paddingTop}>
-          <p className={classes.paraTop}>
+          <p className={classes.paraTop} >
             <b>Resources</b>
           </p>
           <p className={classes.paraTop}>

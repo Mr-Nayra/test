@@ -18,11 +18,11 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route
             path="/blog/bias-in-recommendation-systems"
-            element={<FirstBlogPage />}
+            element={<SecondBlogPage />}
           />
           <Route
             path="/blog/why-do-we-need-to-care-about-retraining"
-            element={<SecondBlogPage />}
+            element={<FirstBlogPage />}
           />
           <Route
             path="/blog/5-great-statistical-methods-for-data-drift-detection"
