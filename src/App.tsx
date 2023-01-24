@@ -5,6 +5,8 @@ import Navbar from "./container/header/Navbar";
 import About from "./pages/about";
 import Home from "./pages/home";
 import FirstBlogPage from "./pages/blog-page/FirstBlogPage";
+import SecondBlogPage from "./pages/blog-page/SecondBlogPage";
+import ThirdBlogPage from "./pages/blog-page/ThirdBlogPage";
 
 function App() {
   return (
@@ -14,7 +16,18 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/blog/:title" element={<FirstBlogPage />} />
+          <Route
+            path="/blog/bias-in-recommendation-systems"
+            element={<FirstBlogPage />}
+          />
+          <Route
+            path="/blog/why-do-we-need-to-care-about-retraining"
+            element={<SecondBlogPage />}
+          />
+          <Route
+            path="/blog/5-great-statistical-methods-for-data-drift-detection"
+            element={<ThirdBlogPage />}
+          />
         </Routes>
         <TheFooter />
       </BrowserRouter>
