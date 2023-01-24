@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import FeatureSection from "./components/about/FeatureSection";
+import FeatureSection from "./components/feature/FeatureSection";
 import BlogHome from "./components/blog/BlogHome";
 import CareersSection from "./components/careers/CareersSection";
 import HeroBanner from "./components/heroBanner/HeroBanner";
