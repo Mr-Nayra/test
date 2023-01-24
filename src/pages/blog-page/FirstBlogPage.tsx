@@ -23,43 +23,43 @@ const FirstBlogPage = () => {
           </div>
           <ul>
             <li className={classes.li}>
-              <a href="" className={classes.link}>
+              <a href="#introduction" className={classes.link}>
                 - Introduction
               </a>
             </li>
             <li className={classes.li}>
-              <a href="" className={classes.link}>
+              <a href="#model-retraining" className={classes.link}>
                 - What is Model Retraining?
               </a>
             </li>
             <li className={classes.li}>
-              <a href="" className={classes.link}>
+              <a href="#6-Reasons" className={classes.link}>
                 - 6 Reasons Why ▶ Retraining is Important
               </a>
             </li>
             <ol>
               <li>
-                <a href="" className={classes.linkFirst}>
+                <a href="#data-drift" className={classes.linkFirst}>
                   Data Drift
                 </a>
               </li>
               <li>
-                <a href="" className={classes.linkFirst}>
+                <a href="#concept-drift" className={classes.linkFirst}>
                   Concept Drift
                 </a>
               </li>
               <li>
-                <a href="" className={classes.linkFirst}>
+                <a href="#label-shift" className={classes.linkFirst}>
                   Label Shift
                 </a>
               </li>
               <li>
-                <a href="" className={classes.linkFirst}>
+                <a href="#edge-cases" className={classes.linkFirst}>
                   Edge Cases
                 </a>
               </li>
               <li>
-                <a href="" className={classes.linkFirst}>
+                <a href="#enabling-cases" className={classes.linkFirst}>
                   Enabling new use cases
                 </a>
               </li>
@@ -76,7 +76,7 @@ const FirstBlogPage = () => {
       </div>
 
       <div className={classes.tableCard}>
-        <p>
+        <p id="introduction">
           In our previous blog, we introduced you to the wonderful universe of
           ML and dug deep into the various steps involved in building and
           deploying the model. But there is one very integral step that one
@@ -119,7 +119,7 @@ const FirstBlogPage = () => {
         </div>
 
         <div className={classes.paddingTop}>
-          <p className={classes.paraTop}>
+          <p className={classes.paraTop} id="model-retraining">
             <b>But First, Let Me #EXPLAIN What is Model Retraining?</b>
           </p>
           <p className={classes.paraTop}>
@@ -134,7 +134,7 @@ const FirstBlogPage = () => {
         </div>
 
         <div className={classes.paddingTop}>
-          <p className={classes.paraTop}>
+          <p className={classes.paraTop} id="6-Reasons">
             <b>6 Reasons Why ▶ Retraining is Important</b>
           </p>
           <p className={classes.paraTop}>
@@ -251,6 +251,9 @@ const FirstBlogPage = () => {
           pipeline to continuously monitor these issues and solve them by
           retraining models so that they can meaningfully impact your business
           metrics.{" "}
+          <a href="https://github.com/uptrain-ai/uptrain">
+            Try out our open-source repo
+          </a>
         </p>
       </div>
     </div>
