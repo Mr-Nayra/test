@@ -5,6 +5,8 @@ import classes from "./blogHome.module.scss";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Autoplay from "embla-carousel-autoplay";
 import { BlogHomeCarouselData } from "../data/BlogHomeCarouselData";
+import { Link } from "react-router-dom";
+import { textToUrl } from "../../../../helpers/textToUrl";
 
 const BlogHomeCarousel = () => {
   const autoplay = useRef(Autoplay({ delay: 4000 }));
@@ -48,10 +50,17 @@ const BlogHomeCarousel = () => {
                 <p className={classes.author}> {item.author} </p>
                 <h3 className={classes.cardHeading}>{item.heading}</h3>
                 <p className={classes.cardDescription}>{item.description}</p>
-                <a href="/" className={classes.readMore}>
-                  <span>Read More</span>
+                <Link
+                  to={`/blog/${textToUrl(item.heading)}`}
+                  target={"_blank"}
+                  className={classes.readMore}
+                >
+                  <span> Read More</span>
                   <AiOutlineArrowRight size={14} />
-                </a>
+                </Link>
+                {/* <a href={item.href}>
+                  <span>Read More</span>
+                </a> */}
               </div>
             </div>
           </Carousel.Slide>
