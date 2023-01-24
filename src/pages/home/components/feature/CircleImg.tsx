@@ -1,6 +1,5 @@
 import { createStyles } from "@mantine/core";
 import React from "react";
-import { IMAGES } from "../../../../images";
 
 interface IEclipse {
   top?: number | string;
@@ -16,8 +15,9 @@ interface IEclipse {
   bottomPositionHeadingSection?: number | string;
   leftPositionHeadingSection?: number | string;
   rightPositionHeadingSection?: number | string;
-  topText?: string;
+  topText: string;
   bottomText?: string;
+  featureIcon: string;
 }
 
 const CircleImg = (props: IEclipse) => {
@@ -37,6 +37,7 @@ const CircleImg = (props: IEclipse) => {
     rightPositionHeadingSection,
     topText,
     bottomText,
+    featureIcon,
   } = props;
   const calcSize = `calc(${size + 15} * (100vw - 300px) / 1000)`;
   const calcSizeMobile = `calc(${size + 200} * (100vw - 300px) / 1000)`;
@@ -143,7 +144,7 @@ const CircleImg = (props: IEclipse) => {
             <div className={classes.innerCircle}>
               <img
                 className={classes.graphImg}
-                src={IMAGES.graph_growth_about}
+                src={featureIcon}
                 alt=""
                 width={"100%"}
               />

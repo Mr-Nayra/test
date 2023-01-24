@@ -1,29 +1,34 @@
 import React from "react";
 import classes from "./team.module.scss";
-import TeamFirstImg from "../../../../images/teamImg/team1.png";
 import LinkedinImg from "../../../../images/teamImg/linkedin.png";
 
 interface ITeamCard {
   name: string;
   memberPost?: string;
   description?: string;
-  link?: string;
+  linkedinLink: string;
+  memberImg: string;
 }
 
 const TeamCard = (props: ITeamCard) => {
-  const { name, memberPost, description } = props;
+  const { name, memberPost, description, linkedinLink, memberImg } = props;
   return (
     <>
       <div className={classes.card}>
         <div className={classes.topSection}>
           <div className={classes.cardImg}>
-            <img src={TeamFirstImg} alt="" />
+            <img src={memberImg} alt="" />
           </div>
           <div className={classes.cardHeader}>
             <h2 className={classes.cardHeading}>{name}</h2>
             <p className={classes.memberPost}>{memberPost}</p>
-            <a className={classes.socialLink} href="/">
-              <img src={LinkedinImg} alt="linden" />
+            <a
+              className={classes.socialLink}
+              href={linkedinLink}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={LinkedinImg} alt="Linkedin-logo" />
             </a>
           </div>
         </div>

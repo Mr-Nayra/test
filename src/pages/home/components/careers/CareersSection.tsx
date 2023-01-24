@@ -1,13 +1,16 @@
 import { memo } from "react";
 import classes from "./careerSection.module.scss";
 import CustomButton from "../../../../components/button/CustomButton";
+import { IMAGES } from "../../../../images";
 
 const CareersSection = () => {
   return (
     <div className={classes.root}>
       <div className={classes.row}>
         <div className={classes.boxCol}>
-          <div className={classes.blackBox}></div>
+          <div className={classes.blackBox}>
+            <img src={IMAGES.career_banner} alt="career img" />
+          </div>
         </div>
         <div className={classes.TextCol}>
           <h3 className={classes.heading}>We Are Hiring</h3>
@@ -18,15 +21,21 @@ const CareersSection = () => {
             Writer
           </p>
           <div className={classes.btnSection}>
-            <CustomButton
-              label="View Careers"
-              fontSize={17}
-              fontWeight={700}
-              px={64}
-              py={12}
-              responsiveFont={14}
-              responsivePx={50}
-            />
+            <a
+              href="https://uptrain-ai.gitbook.io/uptrain-documentation/"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              <CustomButton
+                label="View Careers"
+                fontSize={17}
+                fontWeight={700}
+                px={64}
+                py={12}
+                responsiveFont={14}
+                responsivePx={50}
+              />
+            </a>
           </div>
         </div>
       </div>

@@ -66,11 +66,13 @@
 
 
 .blackBox {
-    height: 322px;
     width: auto;
-    background-color: #030000;
     border-radius: 20px;
-    opacity: 0.8;
+
+    // opacity: 0.8;
+    & img {
+        width: 100%
+    }
 
 }
 

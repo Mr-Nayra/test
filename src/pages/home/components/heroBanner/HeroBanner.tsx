@@ -18,26 +18,32 @@ const HeroBanner = () => {
               in production
             </p>
             <div className={classes.btnSection}>
-              <CustomButton
-                label="Get Started - GitHub"
-                fontSize={17}
-                fontWeight={700}
-                responsiveFont={12}
-              />
-              <CustomButton
-                label="Book a Demo"
-                type="secondary"
-                fontSize={17}
-                fontWeight={700}
-                px={31}
-                ml={17}
-                responsiveFont={12}
-              />
+              <a href="https://github.com/uptrain-ai/uptrain">
+                <CustomButton
+                  label="Get Started - GitHub"
+                  fontSize={17}
+                  fontWeight={700}
+                  responsiveFont={12}
+                />
+              </a>
+              <a href="https://calendly.com/uptrain-ai/30min">
+                <CustomButton
+                  label="Book a Demo"
+                  type="secondary"
+                  fontSize={17}
+                  fontWeight={700}
+                  px={31}
+                  ml={17}
+                  responsiveFont={12}
+                />
+              </a>
             </div>
           </div>
           <div className={classes.col}>
             <div className={classes.whiteBox}>
-              <div className={classes.blackBox}></div>
+              <div className={classes.blackBox}>
+                <img src="https://i.gifer.com/74pZ.gif" alt="" />
+              </div>
             </div>
           </div>
         </div>

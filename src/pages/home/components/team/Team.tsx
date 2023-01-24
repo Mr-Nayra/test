@@ -17,7 +17,6 @@ const Team = () => {
         past experience and democratize the best-in-class ML observability and
         Refinement tooling for the open-source community
       </p>
-      {/* <div className={classes.bgContainer}></div> */}
 
       <div className={classes.row}>
         {TeamMemberData.map((item, index) => (
@@ -26,6 +25,8 @@ const Team = () => {
               name={item.name}
               memberPost={item.memberPost}
               description={item.description}
+              memberImg={item.memberImg}
+              linkedinLink={item.linkedinLink}
             />
           </div>
         ))}
