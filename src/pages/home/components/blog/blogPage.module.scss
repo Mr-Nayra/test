@@ -1,0 +1,110 @@
+.root{
+    padding: 2em;
+    & p {
+            font-size: 1.3em;
+            letter-spacing: 1.5;
+            line-height: 150%;
+            margin-top: 0px;
+            margin-bottom: 1rem;
+            font-family: 'Roboto', sans-serif;
+        }
+                li {
+                    padding-left: 1.1em;
+                    padding-top: .3em;
+                    list-style: disc;
+                    padding-bottom: 5px;
+                }
+                                ol {
+                                    padding-left: 3em;
+                                    padding-top: 1em;
+                                    cursor: pointer;
+                                    margin-bottom: 1em;
+                                }
+}
+.titleContainer{
+    overflow: auto;
+    padding-bottom:5em;
+    display: flex;
+    justify-content: center;
+}
+.title{
+    font-size: 2.1em;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+    width: 60%;
+    padding-bottom: .3em;
+    margin: 0px;
+    font-weight: 400;
+}
+.tableContainer{
+    margin: 0px auto;
+    height: auto;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(128 128 128 / 30%);
+    padding-bottom: 2em;
+}
+.tableFlex{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.barIcon{
+   padding-left:16px;
+}
+.tableHeading{
+text-transform: uppercase;
+font-size: 1.4em;
+font-weight: 400;
+padding-left: .5em;
+margin: 0px;
+display: inline-flex;
+justify-content: center;
+align-items: center;
+}
+.link{
+font-size: 1.2em;
+font-weight: bold;
+color: #000000bb;
+text-decoration: none;
+padding-top: 7px;
+}
+.link:hover{
+    color: #ae00ff;
+}
+
+.li{
+padding-left: 1.1em;
+    list-style: none !important;
+    padding-top: .3em;
+}
+.linkFirst{
+    font-size: 1.2em;
+        font-weight: bold;
+        color: #000000bb;
+        text-decoration: none;
+}
+.tableCard{
+    width: 80%;
+    padding-top: 3em;
+    margin: auto;
+}
+.imageContainer{
+    margin: auto;
+    width: 50%;
+    height: 130%;
+    padding-top: 5em;
+    overflow: hidden;
+    padding-bottom: 5em;
+}
+.image{
+    width: 90%;
+    height: 90%;
+    padding-top: 3em;
+}
+.paraTop{
+    padding-top: 22px !important;
+}
+.paddingTop{
+    padding-top: 2em;
+}
