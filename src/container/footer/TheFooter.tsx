@@ -12,7 +12,9 @@ const TheFooter = () => {
           <a href="/" className={classes.logo}>
             <img src={IMAGES.footerCompanyLogo} alt="logo" />
           </a>
-          <p className={classes.tagLine}>Tag line ML analytics and workflows</p>
+          <p className={classes.tagLine}>
+            Your Open-source toolkit to refine ML models
+          </p>
         </div>
         <div>
           <ul className={classes.menu}>

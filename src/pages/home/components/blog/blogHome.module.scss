@@ -107,6 +107,14 @@
     border-radius: 20px;
 }
 
+.cardImg {
+    width: 100% !important;
+
+    @media screen and (max-width: 650px) {
+        aspect-ratio: 2/0.7;
+    }
+}
+
 .cardHeadingSection {
     display: flex;
     align-items: center;

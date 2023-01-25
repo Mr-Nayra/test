@@ -36,7 +36,7 @@ const BlogHomeCarousel = () => {
         }
         breakpoints={[
           { maxWidth: "md", slideSize: "50%" },
-          { maxWidth: "sm", slideSize: "100%", slideGap: 0 },
+          { maxWidth: "sm", slideSize: "100%", slideGap: 50 },
         ]}
         plugins={[autoplay.current]}
         onMouseEnter={autoplay.current.stop}
@@ -45,7 +45,7 @@ const BlogHomeCarousel = () => {
         {BlogHomeCarouselData.map((item, index) => (
           <Carousel.Slide key={`${"_" + index}`}>
             <div className={classes.card}>
-              <img src={item.cardImg} alt="" width={"100%"} />
+              <img className={classes.cardImg} src={item.cardImg} alt="" />
               <div className={classes.textSection}>
                 <p className={classes.author}> {item.author} </p>
                 <h3 className={classes.cardHeading}>{item.heading}</h3>
