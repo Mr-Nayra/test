@@ -2,28 +2,38 @@
 
 .root {
     backdrop-filter: blur(100px);
-    padding-top: calc(4em + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
-    padding-bottom: calc(7em + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    padding-bottom: 2.2em;
     background-color: #f5f5f5;
     position: relative;
     overflow: hidden;
-    // background-image: linear-gradient(101.06deg, rgba(98, 116, 231, 0.2) -1.13%, rgba(135, 82, 163, 0.2) 101.02%);
-
     background-image: url("../../../../images/home/workFlow/work_flow_bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+
+    @media screen and (max-width:938px) {
+        padding-bottom: 0em;
+    }
 
     @media screen and (max-width:790px) {
         display: none;
     }
 }
 
+.transform_work {
+    transform: scale(76%);
+
+    @media screen and (max-width:938px) {
+        transform: scale(74%);
+    }
+}
+
 .heading {
     margin: 0px;
-    font-size: calc(8px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    font-size: 24px;
     font-weight: 600;
     color: $black;
     text-align: center;
@@ -33,102 +43,77 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 1200px;
     margin: auto;
-    padding-top: calc(24px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    padding-top: 38px;
 
-    @media screen and (max-width:1080px) {
-        width: 95%;
+    @media screen and (max-width:938px) {
+        transform: scale(85%);
     }
-
 }
 
 .col {
-    width: 30%;
+    width: 338px;
 }
 
 .center_col {
-    width: 35%;
+    width: 434px;
 }
 
 .right_col {
-    width: 25%;
+    width: 330px;
 }
 
 .borderGradient {
     background-image: linear-gradient(136.83deg, #6274E7 0%, #8752A3 100%);
-    border-radius: calc(10px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
     padding: 5px;
     box-shadow: 0px 0px 17px 2px #E5B4FF;
+    border-radius: 25px;
 }
 
-.content {
+.center_content {
     background-image: linear-gradient(136.83deg, rgba(98, 116, 231, 0.1) 0%, rgba(135, 82, 163, 0.1) 100%);
     background-color: #fff;
-    border-radius: calc(10px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
     z-index: 9999;
-    padding: calc(19px + (35 - 20) * ((100vw - 300px) / (1300 - 300))) calc(4px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    border-radius: 25px;
+    padding: 33px 18px;
 }
 
 .logoSection {
     text-align: center;
     display: flex;
-    margin-bottom: calc(4px + 15 * (100vw - 300px) / 1000);
+    margin-bottom: 15px;
 }
 
 .logo {
-    width: calc(74px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    width: 88px;
     margin: auto;
-}
-
-.count {
-    background-image: linear-gradient(116.93deg, rgba(98, 116, 231, 0.5) 8.29%, rgba(135, 82, 163, 0.5) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-size: calc(24px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
-    font-weight: 600;
-    margin: 0px;
-    text-align: center;
-    margin-top: calc(4px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
-}
-
-.description {
-    font-size: calc(-2px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
-    font-weight: 500;
-    color: $black;
-    text-align: center;
-    margin: 0px;
 }
 
 .card {
     background-color: #F0F2FF;
     box-shadow: -6px -6px 12px #FFFFFF,
         6px 6px 12px rgba(135, 82, 163, 0.28);
-    border-radius: calc(12px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
-    margin-bottom: calc(4px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
-
-
+    margin-bottom: 18px;
+    border-radius: 25px;
 }
 
-.innerCard {
+.innerCardLeft {
     display: flex;
-    align-items: center;
-    padding: calc(4px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    padding: 18px;
     padding-bottom: 0px;
 
 
     & h3 {
         margin: 0px;
-        font-size: calc(-2px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
         font-weight: 600;
-        margin-left: calc(4px + 1 * ((100vw - 300px) / (1300 - 300)));
+        font-size: 14px;
+        margin-left: 18px;
     }
 }
 
 .cardImg {
-    width: calc(14px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
-    margin-right: calc(-6px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    width: 24px;
 
     & img {
         width: 100%;
@@ -137,23 +122,23 @@
 
 .lightText {
     color: #5A5A5A;
-    font-size: calc(-2px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
     font-weight: 600;
-    margin-bottom: calc(6px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    font-size: 14px;
+    margin-bottom: 20px;
 }
 
 .darkText {
     color: $black;
-    font-size: calc(-2px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
     font-weight: 600;
     margin: 0px;
+    font-size: 14px;
 }
 
 .modelRow {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: calc(14px + (35 - 20) * ((100vw - 300px) / (1300 - 300))) calc(4px + (35 - 20) * ((100vw - 300px) / (1300 - 300))) 0px;
+    margin: 28px 18px 0px;
 }
 
 .modelsImgSection {
@@ -162,7 +147,7 @@
 }
 
 .modelsImg {
-    width: calc(14px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    width: 28.7px;
 
     & img {
         width: 100%;
@@ -171,7 +156,7 @@
 }
 
 .marginCenterImg {
-    margin: 0px calc(-3px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    margin: 0px 8px;
 }
 
 .feedbackImgRow {
@@ -181,47 +166,44 @@
 }
 
 .feedbackCol {
-    // flex: 1;
     width: 50%;
     text-align: center;
-    margin-top: calc(8px * ((100vw - 300px) / (1300 - 300)));
-    margin-bottom: calc(8px + 10 * ((100vw - 300px) / (1300 - 300)));
+    margin-bottom: 17px;
 
     & p {
-        font-size: calc(-2px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
         font-weight: 400;
         margin: 0px;
         color: $black;
-        margin-top: calc(-11px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+        font-size: 14px;
+        margin-top: 3px;
     }
 
     & img {
-        width: calc(4px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+        width: 18px;
     }
 }
 
 .feedbackSection {
-    padding: calc(8px + (35 - 20) * ((100vw - 300px) / (1300 - 300))) calc(4px + (35 - 20) * ((100vw - 300px) / (1300 - 300))) calc(8px + (35 - 30) * ((100vw - 300px) / (1300 - 300)));
+    padding: 20px 18px;
 }
 
 .description_smallCard {
     color: $black;
-    font-size: calc(-3.7px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
     font-weight: 400;
     margin: 0px;
-    padding-top: calc(-6px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    font-size: 12px;
+    padding-top: 5px;
 }
 
 // 
 .innerCardRight {
     display: flex;
-    flex-wrap: wrap;
-    padding: calc(16px + (35 - 20) * ((100vw - 300px) / (1300 - 300))) calc(0px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    padding: 30px 15px;
 }
 
 .innerCardRightImg {
-    width: calc(11px + (35 - 20) * ((100vw - 300px) / (1300 - 300))) !important;
-    margin-right: calc(-6px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    width: 28px !important;
+    margin-right: 10px;
 
     & img {
         width: 100%;
@@ -238,27 +220,27 @@
     margin-top: 60px;
 
     & div {
-        padding: calc(-4px + (35 - 20) * ((100vw - 300px) / (1300 - 300))) calc(24px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+        padding: 10px 38px;
     }
 }
 
 // Arrow Css
 
-.left_third_card {
+.left_first_card {
     position: relative;
 
     &::before {
         content: "";
         position: absolute;
         background-image: url(../../../../images/arrow-right-gradient.png);
-        width: 18%;
-        height: 30px;
-        top: 40%;
-        right: -16.5%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
         z-index: -1;
+        height: 30px;
+        width: 51px;
+        right: -44px;
+        top: 40%;
     }
 
     &::after {
@@ -267,39 +249,11 @@
         background-image: url(../../../../images/upArrowGraidentLong.png);
         background-repeat: no-repeat;
         background-position: center;
-        width: 10.9%;
-        bottom: -75.2%;
-        right: 43.5%;
-        height: 113%;
+        width: 33px;
+        right: 131px;
+        height: 142px;
         background-size: 100%;
         z-index: -1;
-
-        @media screen and (max-width:1072px) {
-            width: 8.9%;
-        }
-
-        @media screen and (max-width:945px) {
-            bottom: -73.2%;
-        }
-
-        @media screen and (max-width:945px) {
-            width: 9.9%;
-        }
-
-        @media screen and (max-width:814px) {
-            bottom: -74.2%;
-        }
-
-        // @media screen and (max-width:1167px) {
-        //     width: 31px;
-        //     bottom: -75.5%;
-        // }
-
-        // @media screen and (max-width:1000px) {
-        //     width: 2px;
-        //     bottom: calc(-46% + 8.5px);
-        // }
-
     }
 }
 
@@ -311,10 +265,10 @@
         content: "";
         position: absolute;
         background-image: url(../../../../images/arrow-right-gradient.png);
-        width: 18%;
+        width: 51px;
         height: 30px;
         top: calc(50% - 15px);
-        left: -21%;
+        left: -60px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -329,10 +283,10 @@
         content: "";
         position: absolute;
         background-image: url(../../../../images/arrow-right-gradient.png);
-        width: 18%;
+        width: 51px;
         height: 30px;
         top: calc(50% - 15px);
-        left: -21%;
+        left: -60px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
@@ -348,24 +302,14 @@
         position: absolute;
         background-color: #6274E7;
         width: 4px;
-        top: -128%;
-        bottom: calc(-132% + 8px);
-        left: 50%;
+        top: -175px;
+        bottom: -79px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
         z-index: -1;
 
 
-        @media screen and (max-width:1080px) {
-            bottom: calc(-181% + 8px);
-            top: -160%;
-        }
-
-        @media screen and (max-width:970px) {
-            // bottom: calc(-218% + 8px);
-            top: -200%;
-        }
 
     }
 
@@ -373,22 +317,15 @@
         content: "";
         position: absolute;
         background-image: url(../../../../images/bottomLineGraidentLong.png);
-        width: 288%;
-        height: 20px;
-        bottom: -132%;
-        right: 50%;
+        width: 849px;
+        height: 21px;
+        bottom: -89px;
+        right: 163px;
         background-position: center;
         background-repeat: no-repeat;
         background-size: 100%;
         z-index: -1;
 
-        @media screen and (max-width:1080px) {
-            bottom: -182%;
-        }
-
-        // @media screen and (max-width:970px) {
-        //     bottom: -219%;
-        // }
     }
 
 }
@@ -418,7 +355,7 @@
 }
 
 .shadowBoxCenterImg {
-    width: calc(14px + 15 * (100vw - 300px) / 1000);
+    width: 28px;
     margin: auto;
 
     & img {
@@ -428,19 +365,19 @@
 
 .centerCardText {
     margin: 0px;
-    font-size: calc(-2px + 14 * (100vw - 300px) / 1000);
+    font-size: 14px;
     font-weight: 500;
     text-align: center;
-    margin-top: calc(4px + 2 * (100vw - 300px) / 1000);
+    margin-top: 7px;
 }
 
 .darkTextCenter {
-    margin-top: calc(4px + 7 * (100vw - 300px) / 1000);
+    margin-top: 10px;
     text-align: center;
 }
 
 .centerCard {
-    margin-top: calc(4px + 20 * (100vw - 300px) / 1000);
+    margin-top: 16px;
 }
 
 

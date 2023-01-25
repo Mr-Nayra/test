@@ -1,5 +1,4 @@
 import React from "react";
-import ShadowEclipse from "../../../../components/eclipse/ShadowEclipse";
 import { IMAGES } from "../../../../images";
 import classes from "./workFlow.module.scss";
 
@@ -10,14 +9,14 @@ const WorkFlow = () => {
         {/* <ShadowEclipse size={278} bottom={-180} left={50} />
       <ShadowEclipse size={198} top={-120} left={"30%"} />
       <ShadowEclipse size={237} bottom={120} right={-40} /> */}
-        <div>
+        <div className={classes.transform_work}>
           <h1 className={classes.heading}>
             How UpTrain helps improve your models in production
           </h1>
           <div className={classes.row}>
             <div className={classes.col}>
-              <div className={`${classes.card} ${classes.left_third_card}`}>
-                <div className={classes.innerCard}>
+              <div className={`${classes.card} ${classes.left_first_card}`}>
+                <div className={classes.innerCardLeft}>
                   <div className={classes.cardImg}>
                     <img src={IMAGES.dataLogImg} alt="single" />
                   </div>
@@ -90,7 +89,7 @@ const WorkFlow = () => {
 
             <div className={classes.center_col}>
               <div className={classes.borderGradient}>
-                <div className={classes.content}>
+                <div className={classes.center_content}>
                   <div className={classes.logoSection}>
                     <img
                       src={IMAGES.logo}
@@ -215,10 +214,6 @@ const WorkFlow = () => {
             </div>
           </div>
         </div>
-      </div>
-
-      <div className={classes.pic}>
-        <div className={classes.button}></div>
       </div>
     </>
   );
