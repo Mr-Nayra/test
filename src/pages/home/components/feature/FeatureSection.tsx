@@ -37,7 +37,7 @@ const FeatureSection = () => {
           setActive((value) => value + 1);
         }
       }}
-      preventScroll={preventScroll}
+      preventScroll={width <= 790 ? false : preventScroll}
     >
       <div className={`${classes.root} feature-section`}>
         {/* <ShadowEclipse size={237} bottom={-70} right={-50} />
