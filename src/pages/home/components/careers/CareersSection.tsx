@@ -22,7 +22,7 @@ const CareersSection = () => {
           </p>
           <div className={classes.btnSection}>
             <a
-              href="https://uptrain-ai.gitbook.io/uptrain-documentation/"
+              href="https://forms.gle/SmWMkzzyxm3vy84s5"
               target={"_blank"}
               rel="noreferrer"
             >
