@@ -68,7 +68,7 @@ const Navbar = () => {
                   target={"_blank"}
                   rel="noreferrer"
                 >
-                  Docs
+                  Doc
                 </a>
               </li>
               <li>
