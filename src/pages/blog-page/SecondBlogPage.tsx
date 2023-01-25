@@ -77,7 +77,10 @@ const SecondBlogPage = () => {
                 </a>
               </li>
               <li>
-                <a href="#model-popularity-influence" className={classes.linkFirst}>
+                <a
+                  href="#model-popularity-influence"
+                  className={classes.linkFirst}
+                >
                   Modeling Popularity Influence
                 </a>
               </li>
@@ -98,10 +101,10 @@ const SecondBlogPage = () => {
               </li>
               <li>
                 <a href="#rebalancing" className={classes.linkFirst}>
-                Rebalancing
+                  Rebalancing
                 </a>
               </li>
-              
+
               <li>
                 <a href="#adversarial-learning" className={classes.linkFirst}>
                   Adversarial Learning
@@ -357,7 +360,7 @@ const SecondBlogPage = () => {
           <img src={Image2} alt="" className={classes.image} />
         </div>
 
-        <p id="conculsion"  >
+        <p id="conculsion">
           We at UpTrain AI are passionate about solving this problem statement
           for our users so that they can go on with their day without worrying
           about the efficacy of their models. So if you are a ML
@@ -368,7 +371,7 @@ const SecondBlogPage = () => {
           <a href="https://github.com/uptrain-ai/uptrain"> here</a>
         </p>
         <div className={classes.paddingTop}>
-          <p className={classes.paraTop} >
+          <p className={classes.paraTop}>
             <b>Resources</b>
           </p>
           <p className={classes.paraTop}>
@@ -399,12 +402,12 @@ const SecondBlogPage = () => {
           <p className={classes.paraTop}>
             (Note: Degenerate feedback loop is another name for Exposure bias)
           </p>
-          <p className={classes.paraTop}>
+          {/* <p className={classes.paraTop}>
             A detailed Survey:{" "}
             <a href="https://arxiv.org/pdf/2010.03240.pdf">
               https://arxiv.org/pdf/2010.03240.pdf
             </a>
-          </p>
+          </p> */}
           <p className={classes.paraTop}>
             3-page tutorial:{" "}
             <a
