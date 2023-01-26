@@ -5,7 +5,6 @@ import { IMAGES } from "../../images";
 import CustomButton from "../../components/button/CustomButton";
 import { COLORS } from "../../colors";
 import { Link } from "react-router-dom";
-import TopHeader from "./TopHeader";
 
 const getNavDisplay = (width: number, show: boolean) => {
   if (width > 950) {
@@ -34,7 +33,6 @@ const Navbar = () => {
   return (
     <>
       <div className={classes.container}>
-        <TopHeader />
         <div className={classes.navbar}>
           <div>
             <Link to="/">
@@ -67,12 +65,13 @@ const Navbar = () => {
                   href="https://uptrain-ai.gitbook.io/uptrain-documentation/"
                   target={"_blank"}
                   rel="noreferrer"
+                  onClick={handleClose}
                 >
                   Docs
                 </a>
               </li>
               <li>
-                <a className={classes.item} href="#blog">
+                <a className={classes.item} href="#blog" onClick={handleClose}>
                   Blogs
                 </a>
               </li>
@@ -81,6 +80,7 @@ const Navbar = () => {
                 target={"_blank"}
                 rel="noreferrer"
                 className={classes.item}
+                onClick={handleClose}
               >
                 <CustomButton label="Github" type="primary" px={51} />
               </a>

@@ -5,7 +5,7 @@ import Image from "../../images/blogPageImg/blog-second-1.png";
 import Image1 from "../../images/blogPageImg/blog-second-2.png";
 import Image2 from "../../images/blogPageImg/blog-second-3.png";
 
-const SecondBlogPage = () => {
+const BiasSystems = () => {
   return (
     <div className={classes.root} id="blogPage">
       <div className={classes.titleContainer}>
@@ -368,9 +368,16 @@ const SecondBlogPage = () => {
         <p>
           Practitioner, Data Scientist or Product Lead, we would love to hear
           from you. Try it out{" "}
-          <a href="https://github.com/uptrain-ai/uptrain"> here</a>
+          <a
+            href="https://github.com/uptrain-ai/uptrain"
+            target={"_blank"}
+            rel="noreferrer"
+          >
+            {" "}
+            here
+          </a>
         </p>
-        <div className={classes.paddingTop}>
+        {/* <div className={classes.paddingTop}>
           <p className={classes.paraTop}>
             <b>Resources</b>
           </p>
@@ -379,8 +386,8 @@ const SecondBlogPage = () => {
           </p>
           <p className={classes.paraTop}>
             <a
-              href="https://www.searchenginejournal.com/biases-search-recommender-systems/339319/
-"
+              href="https://www.searchenginejournal.com/biases-search-recommender-systems/339319/"
+              target={"_blank"} rel="noreferrer"
             >
               https://www.searchenginejournal.com/biases-search-recommender-systems/339319/
             </a>
@@ -390,8 +397,8 @@ const SecondBlogPage = () => {
           </p>
           <p className={classes.paraTop}>
             <a
-              href="https://huyenchip.com/2022/02/07/data-distribution-shifts-and-monitoring.html
-"
+              href="https://huyenchip.com/2022/02/07/data-distribution-shifts-and-monitoring.html"
+              target={"_blank"} rel="noreferrer"
             >
               https://huyenchip.com/2022/02/07/data-distribution-shifts-and-monitoring.html
             </a>
@@ -402,39 +409,37 @@ const SecondBlogPage = () => {
           <p className={classes.paraTop}>
             (Note: Degenerate feedback loop is another name for Exposure bias)
           </p>
-          {/* <p className={classes.paraTop}>
+          <p className={classes.paraTop}>
             A detailed Survey:{" "}
             <a href="https://arxiv.org/pdf/2010.03240.pdf">
               https://arxiv.org/pdf/2010.03240.pdf
             </a>
-          </p> */}
+          </p>
           <p className={classes.paraTop}>
             3-page tutorial:{" "}
             <a
-              href=" http://staff.ustc.edu.cn/~hexn/papers/recsys21-tutorial-bias.pdf
-"
+              href=" http://staff.ustc.edu.cn/~hexn/papers/recsys21-tutorial-bias.pdf" target={"_blank"} rel="noreferrer"
             >
               http://staff.ustc.edu.cn/~hexn/papers/recsys21-tutorial-bias.pdf
             </a>
           </p>
           <p className={classes.paraTop}>
             <a
-              href="http://staff.ustc.edu.cn/~hexn/slides/sigir21-tutorial-bias-slides.pdf
-"
+              href="http://staff.ustc.edu.cn/~hexn/slides/sigir21-tutorial-bias-slides.pdf" target={"_blank"} rel="noreferrer"
             >
               http://staff.ustc.edu.cn/~hexn/slides/sigir21-tutorial-bias-slides.pdf
             </a>
           </p>
           <p className={classes.paraTop}>
             GitHub link with a collection of papers:{" "}
-            <a href="  https://github.com/jiawei-chen/RecDebiasing">
+            <a href="https://github.com/jiawei-chen/RecDebiasing" target={"_blank"} rel="noreferrer">
               https://github.com/jiawei-chen/RecDebiasing
             </a>
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
 };
 
-export default SecondBlogPage;
+export default BiasSystems;

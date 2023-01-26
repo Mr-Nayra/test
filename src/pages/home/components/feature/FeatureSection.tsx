@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Eclipse from "../../../../components/eclipse/Eclipse";
-// import ShadowEclipse from "../../../../components/eclipse/ShadowEclipse";
 import classes from "./FeatureSection.module.scss";
 import CircleImg from "./CircleImg";
 import FeatureSectionMobile from "./FeatureSectionMobile";
@@ -40,9 +39,6 @@ const FeatureSection = () => {
       preventScroll={width <= 790 ? false : preventScroll}
     >
       <div className={`${classes.root} feature-section`}>
-        {/* <ShadowEclipse size={237} bottom={-70} right={-50} />
-      <ShadowEclipse size={237} bottom={-100} left={-50} />
-      <ShadowEclipse size={192} top={-100} left={160} /> */}
         {width >= 790 ? (
           <div className={classes.row}>
             <div className={` ${classes.leftImg}`}>

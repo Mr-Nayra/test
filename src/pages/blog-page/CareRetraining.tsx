@@ -4,7 +4,7 @@ import classes from "./blogPage.module.scss";
 import Image from "../../images/blogPageImg/img1.png";
 import Image1 from "../../images/blogPageImg/img2.png";
 
-const FirstBlogPage = () => {
+const CareRetraining = () => {
   return (
     <div className={classes.root} id="blogPage">
       <div className={classes.titleContainer}>
@@ -251,7 +251,11 @@ const FirstBlogPage = () => {
           pipeline to continuously monitor these issues and solve them by
           retraining models so that they can meaningfully impact your business
           metrics.{" "}
-          <a href="https://github.com/uptrain-ai/uptrain">
+          <a
+            href="https://github.com/uptrain-ai/uptrain"
+            target={"_blank"}
+            rel="noreferrer"
+          >
             Try out our open-source repo
           </a>
         </p>
@@ -260,4 +264,4 @@ const FirstBlogPage = () => {
   );
 };
 
-export default FirstBlogPage;
+export default CareRetraining;

@@ -10,7 +10,7 @@ import ImageSixth from "../../images/blogPageImg/blog-third-6.png";
 import ImageSeven from "../../images/blogPageImg/blog-third-7.png";
 import ImageEight from "../../images/blogPageImg/blog-third-8.png";
 
-const ThirdBlogPage = () => {
+const DataDrift = () => {
   return (
     <div className={classes.root} id="blogPage">
       <div className={classes.titleContainer}>
@@ -95,7 +95,7 @@ const ThirdBlogPage = () => {
             </ol>
             <div style={{ paddingTop: 16 }}>
               <li className={classes.li}>
-                <a href="" className={classes.link}>
+                <a href="#conclusion" className={classes.link}>
                   - Conclusion- When to use What?
                 </a>
               </li>
@@ -362,7 +362,7 @@ const ThirdBlogPage = () => {
             instances to consider, the threshold value and so on.
           </p>
         </div>
-        <div className={classes.paddingTop} id="page-hinkley-method">
+        <div className={classes.paddingTop} id="conclusion">
           <p>
             <b>- Conclusion : When To Use What?</b>
           </p>
@@ -389,7 +389,13 @@ const ThirdBlogPage = () => {
             open-source toolkit which has out-of-the-box implementations for all
             these measures and provides a single line interface for you to start
             monitoring drifts in your ML models. Try it out{" "}
-            <a href="https://github.com/uptrain-ai/uptrain">here</a>
+            <a
+              href="https://github.com/uptrain-ai/uptrain"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              here
+            </a>
           </p>
         </div>
       </div>
@@ -397,4 +403,4 @@ const ThirdBlogPage = () => {
   );
 };
 
-export default ThirdBlogPage;
+export default DataDrift;
