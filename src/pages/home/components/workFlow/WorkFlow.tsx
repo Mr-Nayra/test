@@ -6,9 +6,6 @@ const WorkFlow = () => {
   return (
     <>
       <div className={classes.root}>
-        {/* <ShadowEclipse size={278} bottom={-180} left={50} />
-      <ShadowEclipse size={198} top={-120} left={"30%"} />
-      <ShadowEclipse size={237} bottom={120} right={-40} /> */}
         <div className={classes.transform_work}>
           <h1 className={classes.heading}>
             How UpTrain helps improve your models in production
@@ -79,11 +76,6 @@ const WorkFlow = () => {
                     </div>
                   </div>
                 </div>
-                {/*  */}
-                {/* <div className={classes.arrow_right}>
-                  <div className={classes.arrow_mask}></div>
-                </div> */}
-                {/*  */}
               </div>
             </div>
 
