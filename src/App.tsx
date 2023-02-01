@@ -11,6 +11,7 @@ import DataDrift from "./pages/blog-page/DataDrift ";
 import BiasRecommenderSystems from "./pages/blog/BiasRecommenderSystems";
 import AboutRetraining from "./pages/blog/AboutRetraining";
 import DataDriftDetection from "./pages/blog/DataDriftDetection";
+import BlogPage from "./pages/blog";
 
 function App() {
   return (
@@ -21,18 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route
-            path="/blog/bias-in-recommendation-systems"
-            element={<BiasRecommenderSystems />}
-          />
-          <Route
-            path="/blog/why-do-we-need-to-care-about-retraining"
-            element={<AboutRetraining />}
-          />
-          <Route
-            path="/blog/5-great-statistical-methods-for-data-drift-detection"
-            element={<DataDriftDetection />}
-          />
+          <Route path="/blog/:id" element={<BlogPage />} />
         </Routes>
         <TheFooter />
       </BrowserRouter>
