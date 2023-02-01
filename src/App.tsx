@@ -5,9 +5,12 @@ import Navbar from "./container/header/Navbar";
 import About from "./pages/about";
 import Home from "./pages/home";
 import TopHeader from "./container/header/TopHeader";
-import CareRetraining from "./pages/blog-page/CareRetraining";
-import BiasSystems from "./pages/blog-page/BiasSystems";
+// import CareRetraining from "./pages/blog-page/CareRetraining";
+// import BiasSystems from "./pages/blog-page/BiasSystems";
 import DataDrift from "./pages/blog-page/DataDrift ";
+import BiasRecommenderSystems from "./pages/blog/BiasRecommenderSystems";
+import AboutRetraining from "./pages/blog/AboutRetraining";
+import DataDriftDetection from "./pages/blog/DataDriftDetection";
 
 function App() {
   return (
@@ -20,15 +23,15 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route
             path="/blog/bias-in-recommendation-systems"
-            element={<BiasSystems />}
+            element={<BiasRecommenderSystems />}
           />
           <Route
             path="/blog/why-do-we-need-to-care-about-retraining"
-            element={<CareRetraining />}
+            element={<AboutRetraining />}
           />
           <Route
             path="/blog/5-great-statistical-methods-for-data-drift-detection"
-            element={<DataDrift />}
+            element={<DataDriftDetection />}
           />
         </Routes>
         <TheFooter />

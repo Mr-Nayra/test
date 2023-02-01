@@ -1,0 +1,95 @@
+@import "../../colors//colors";
+
+.root {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+}
+
+.tableContainer {
+    background-image: linear-gradient(101.06deg, rgba(98, 116, 231, 0.1) -1.13%, rgba(135, 82, 163, 0.1) 101.02%);
+    width: 30%;
+    padding: 3em 1em;
+    height: 100vh;
+    position: sticky;
+    top: 0px;
+
+}
+
+.mainContainer {
+    width: 70%;
+    padding: 3em 2em;
+}
+
+.listItem {
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.nestedListItem {
+    list-style: disc;
+}
+
+.nestedListItemLink {
+    color: #000;
+    text-decoration: none;
+    margin: 2px 0px;
+    display: inline-block;
+}
+
+.listItemLink {
+    color: #000;
+    text-decoration: none;
+
+}
+
+.imageContainer {
+    margin: auto;
+    width: 50%;
+    padding-top: 5em;
+    overflow: hidden;
+    padding-bottom: 5em;
+
+    @media screen and (max-width:790px) {
+        padding-top: 0;
+        width: 75%
+    }
+}
+
+.mainContainerImage {
+    width: 100%;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: 600;
+    color: $black;
+    margin-bottom: 5px;
+}
+
+.publicDate {
+    font-size: 12px;
+    font-weight: 400;
+    color: $black;
+    margin: 0px;
+}
+
+.description {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: $black;
+
+    & b {
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 38px;
+}
