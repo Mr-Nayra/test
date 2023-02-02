@@ -139,10 +139,7 @@ const BiasRecommenderSystems = () => {
               </ul>
             </li>
             <li className={classes.listItem}>
-              <a
-                href="#reinforcement-learning"
-                className={classes.nestedListItemLink}
-              >
+              <a href="#Conculsion" className={classes.listItemLink}>
                 - Conculsion
               </a>
             </li>
@@ -150,14 +147,18 @@ const BiasRecommenderSystems = () => {
         </div>
         <div className={classes.mainContainer}>
           <div>
-            <img src={IMAGES.biasSystemBanner} alt="" width={"auto"} />
+            <img
+              className={classes.biasSystemBanner}
+              src={IMAGES.biasSystemBanner}
+              alt=""
+            />
           </div>
-          <div>
+          <div className={classes.topSpacing} id="introduction">
             <h1 className={classes.heading}>Bias in Recommender Systems</h1>
-            <h5 className={classes.publicDate}>UpTrain.ai | 20.01.2023</h5>
+            <h5 className={classes.publicDate}>UpTrain.ai | 21.01.2023</h5>
           </div>
           <div className={classes.mainContent}>
-            <p className={classes.description} id="introduction">
+            <p className={classes.description}>
               Modern-day web systems rely on user feedback (such as click
               activity or ratings) to build ML models to personalize
               recommendations. Such recommender systems form the core of several
@@ -165,7 +166,6 @@ const BiasRecommenderSystems = () => {
               TikTok, YouTube), timeline feeds (Twitter, Facebook), the next
               product to buy (Amazon, Ebay), etc.
             </p>
-
             <h2 id="user-interaction-adds-bias">
               <b>User Interaction Adds Bias</b>
             </h2>
@@ -175,7 +175,10 @@ const BiasRecommenderSystems = () => {
               following factors:
             </p>
 
-            <p className={classes.description} id="selection-bias">
+            <p
+              className={`${classes.description} ${classes.topSpacing}`}
+              id="selection-bias"
+            >
               <b>1. Selection bias: </b> It arises due to the user’s
               self-selection behavior. For example, a user might rate a movie
               they like but rarely rate a movie they dislike. Training on such a
@@ -195,7 +198,10 @@ const BiasRecommenderSystems = () => {
               />
             </div>
 
-            <p className={classes.description} id="exposure-bias">
+            <p
+              className={`${classes.description} ${classes.topSpacing}`}
+              id="exposure-bias"
+            >
               <b>2. Exposure bias: </b>
               The user is likely to watch a recommended video, even if it is not
               the best fit. This action is then taken as positive feedback by
@@ -203,21 +209,27 @@ const BiasRecommenderSystems = () => {
               exposure bias in the data.
             </p>
 
-            <p className={classes.description} id="conformity-bias">
+            <p
+              className={`${classes.description} ${classes.topSpacing}`}
+              id="conformity-bias"
+            >
               <b>3. Conformity bias: </b>A user may be influenced by public
               opinions and might not select their true preferences. This results
               in conformity bias.
             </p>
 
-            <p className={classes.description} id="position-bias">
+            <p
+              className={`${classes.description} ${classes.topSpacing}`}
+              id="position-bias"
+            >
               <b>4. Position bias: </b>
               The user will likely watch one of the top 5 videos in response to
               a YouTube search. The bias arising due to the display position of
               the item is referred to as Position bias.
             </p>
 
-            <h2 className={classes.paraTop}>
-              <b id="biases-present-in-data">Biases present in data</b>
+            <h2 id="biases-present-in-data">
+              <b>Biases present in data</b>
             </h2>
             <p className={classes.description}>
               The above biases are due to user behaviors, but there are biases
@@ -284,7 +296,10 @@ const BiasRecommenderSystems = () => {
             </p>
           </div>
 
-          <p className={classes.description} id="propensity-score">
+          <p
+            className={`${classes.description} ${classes.topSpacing}`}
+            id="propensity-score"
+          >
             <b>1. Propensity Score: </b>
             Propensity scores can be calculated and fed back into the training
             loop to reduce bias due to the user's observation of items. The
@@ -295,7 +310,10 @@ const BiasRecommenderSystems = () => {
             to reduce the effects of its exposure on the user.
           </p>
 
-          <p className={classes.description} id="data-imputation">
+          <p
+            className={`${classes.description} ${classes.topSpacing}`}
+            id="data-imputation"
+          >
             <b>2. Data Imputation: </b>
             Selection bias happens due to missing data (e.g., users prefer to
             give high ratings than low ratings). Data imputation can be used to
@@ -303,7 +321,10 @@ const BiasRecommenderSystems = () => {
             pseudo-labels.
           </p>
 
-          <p className={classes.description} id="model-popularity-influence">
+          <p
+            className={`${classes.description} ${classes.topSpacing}`}
+            id="model-popularity-influence"
+          >
             <b>3.Modeling Popularity Influence </b>
             Conformity bias occurs when users are influenced by popular opinion.
             One way to reduce its effect is to disentangle the effect caused by
@@ -311,7 +332,10 @@ const BiasRecommenderSystems = () => {
             offsetting it from the user’s ratings.
           </p>
 
-          <p className={classes.description} id="sampling">
+          <p
+            className={`${classes.description} ${classes.topSpacing}`}
+            id="sampling"
+          >
             <b>4. Sampling: </b>
             Apart from propensity-score based weighing, sampling of items while
             retraining can be used to address exposure bias. The sampling
@@ -320,7 +344,10 @@ const BiasRecommenderSystems = () => {
             exposure by choosing an appropriate sampling distribution.
           </p>
 
-          <p className={classes.description} id="click-models">
+          <p
+            className={`${classes.description} ${classes.topSpacing}`}
+            id="click-models"
+          >
             <b>5. Click Models: </b>
             Position bias, where the item is more likely to be interacted with
             due to its display position, can be mitigated using click models.
@@ -329,7 +356,10 @@ const BiasRecommenderSystems = () => {
             retraining, the effect of its position can be offset to determine
             the item's relevance.
           </p>
-          <p className={classes.description} id="regularization">
+          <p
+            className={`${classes.description} ${classes.topSpacing}`}
+            id="regularization"
+          >
             <b>6. Regularization: </b>
             Regularization can be used to mitigate popularity bias and
             unfairness in recommender systems. It has been shown that
@@ -337,7 +367,10 @@ const BiasRecommenderSystems = () => {
             balanced recommendation results.
           </p>
 
-          <p className={classes.description} id="rebalancing">
+          <p
+            className={`${classes.description} ${classes.topSpacing}`}
+            id="rebalancing"
+          >
             <b>7. Rebalancing: </b>A simple method to tackle unfairness is to
             rebalance the training dataset with specific fairness objectives
             like gender parity. This can be done using re-labeling the positive
@@ -345,7 +378,10 @@ const BiasRecommenderSystems = () => {
             data to balance the size of both classes.
           </p>
 
-          <p className={classes.description} id="adversarial-learning">
+          <p
+            className={`${classes.description} ${classes.topSpacing}`}
+            id="adversarial-learning"
+          >
             <b>8. Adversarial Learning: </b>
             Apart from regularization, adversarial learning can be employed to
             ameliorate popularity bias and unfairness. The basic idea is to
@@ -357,7 +393,10 @@ const BiasRecommenderSystems = () => {
             recommendations.
           </p>
 
-          <p className={classes.description} id="reinforcement-learning">
+          <p
+            className={`${classes.description} ${classes.topSpacing}`}
+            id="reinforcement-learning"
+          >
             <b>9. Reinforcement Learning: </b>
             Finally, reinforcement learning can counter the loop amplification
             effect of biases by deploying a more intelligent strategy to balance
@@ -373,7 +412,10 @@ const BiasRecommenderSystems = () => {
             />
           </div>
 
-          <p className={classes.description} id="Conculsion">
+          <p
+            className={`${classes.description} ${classes.topSpacing}`}
+            id="Conculsion"
+          >
             We at UpTrain AI are passionate about solving this problem statement
             for our users so that they can go on with their day without worrying
             about the efficacy of their models. So if you are a ML

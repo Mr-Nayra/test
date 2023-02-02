@@ -24,7 +24,7 @@ const BlogHomeCarousel = (props: IProps) => {
         slideGap="lg"
         loop
         dragFree
-        align="start"
+        align="center"
         slidesToScroll={"auto"}
         classNames={{
           indicator: classes.indicator,

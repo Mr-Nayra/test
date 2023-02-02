@@ -6,6 +6,10 @@
 
 .container {
     display: flex;
+
+    @media screen and (max-width:780px) {
+        flex-direction: column;
+    }
 }
 
 .tableContainer {
@@ -16,16 +20,51 @@
     position: sticky;
     top: 0px;
 
+    @media screen and (max-width:850px) {
+        width: 40%;
+    }
+
+    @media screen and (max-width:780px) {
+        width: 100%;
+        position: relative;
+        height: 100%;
+    }
+
 }
 
 .mainContainer {
     width: 70%;
     padding: 3em 2em;
+    background-color: #F5F5F5;
+
+    @media screen and (max-width:850px) {
+        width: 60%
+    }
+
+    @media screen and (max-width:780px) {
+        width: 100%;
+    }
+}
+
+.biasSystemBanner {
+    width: 100%;
 }
 
 .listItem {
     list-style: none;
     margin: 20px 0px;
+}
+
+.listItemLink {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover {
+        color: #7C00BD;
+    }
+
 }
 
 .nestedListItem {
@@ -37,24 +76,25 @@
     text-decoration: none;
     margin: 2px 0px;
     display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+
+    &:hover {
+        color: #7C00BD;
+    }
 }
 
-.listItemLink {
-    color: #000;
-    text-decoration: none;
 
-}
 
 .imageContainer {
     margin: auto;
     width: 50%;
-    padding-top: 5em;
+    padding-top: 1.5em;
     overflow: hidden;
-    padding-bottom: 5em;
+    padding-bottom: 2em;
 
-    @media screen and (max-width:790px) {
-        padding-top: 0;
-        width: 75%
+    @media screen and (max-width:780px) {
+        width: 100%;
     }
 }
 
@@ -83,7 +123,7 @@
     color: $black;
 
     & b {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 600;
     }
 }
@@ -92,4 +132,9 @@ h2 {
     font-size: 20px;
     font-weight: 500;
     padding-top: 38px;
+}
+
+.topSpacing {
+    padding-top: 38px;
+    margin: 0px !important;
 }

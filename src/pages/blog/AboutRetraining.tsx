@@ -60,10 +60,7 @@ const AboutRetraining = () => {
               </ul>
             </li>
             <li className={classes.listItem}>
-              <a
-                href="#reinforcement-learning"
-                className={classes.nestedListItemLink}
-              >
+              <a href="#conculsion" className={classes.listItemLink}>
                 - Conculsion
               </a>
             </li>
@@ -71,17 +68,21 @@ const AboutRetraining = () => {
         </div>
         <div className={classes.mainContainer}>
           <div>
-            <img src={IMAGES.biasSystemBanner} alt="" width={"auto"} />
+            <img
+              className={classes.biasSystemBanner}
+              src={IMAGES.biasSystemBanner}
+              alt=""
+            />
           </div>
-          <div>
+          <div className={classes.topSpacing} id="introduction">
             <h1 className={classes.heading}>
               {" "}
               Why do we need to care about Retraining?
             </h1>
-            <h5 className={classes.publicDate}>UpTrain.ai | 20.01.2023</h5>
+            <h5 className={classes.publicDate}>UpTrain.ai | 14.01.2023</h5>
           </div>
           <div className={classes.mainContent}>
-            <p className={classes.description} id="introduction">
+            <p className={classes.description}>
               In our previous blog, we introduced you to the wonderful universe
               of ML and dug deep into the various steps involved in building and
               deploying the model. But there is one very integral step that one
@@ -126,9 +127,9 @@ const AboutRetraining = () => {
               So, what next? Cue, model retraining
             </p>
 
-            <p className={classes.description} id="model-retraining">
+            <h2 id="model-retraining">
               <b>But First, Let Me #EXPLAIN What is Model Retraining?</b>
-            </p>
+            </h2>
             <p className={classes.description}>
               Model retraining is the process of updating the data of any
               deployed model. The updated data is used to retrain the model and
@@ -139,9 +140,9 @@ const AboutRetraining = () => {
               get accurate results even after a long time.
             </p>
 
-            <p className={classes.description} id="6-Reasons">
+            <h2 id="6-Reasons">
               <b>6 Reasons Why ▶ Retraining is Important</b>
-            </p>
+            </h2>
             <p className={classes.description}>
               The decay in model performance is generally due to reasons like
               data drifts, label drifts, and concept drifts. To accommodate
@@ -151,7 +152,10 @@ const AboutRetraining = () => {
               by one:
             </p>
 
-            <p className={classes.description} id="data-drift">
+            <p
+              className={`${classes.description} ${classes.topSpacing}`}
+              id="data-drift"
+            >
               <b>1. Data Drift: </b>
               In simple words, a data shift is a change in the dataset,overtime,
               that is initially used to train the model. This change in dataset
@@ -165,7 +169,10 @@ const AboutRetraining = () => {
               to collect fresh data and update our model accordingly.{" "}
             </p>
 
-            <p className={classes.description} id="concept-drift">
+            <p
+              className={`${classes.description} ${classes.topSpacing}`}
+              id="concept-drift"
+            >
               <b>2. Concept Drift: </b>
               In simple words, a data shift is a change in the dataset,overtime,
               that is initially used to train the model. This change in dataset
@@ -179,7 +186,10 @@ const AboutRetraining = () => {
               to collect fresh data and update our model accordingly.{" "}
             </p>
 
-            <p className={classes.description} id="label-shift">
+            <p
+              className={`${classes.description} ${classes.topSpacing}`}
+              id="label-shift"
+            >
               <b>3. Label Shift: </b>
               Label shift occurs when the output distribution changes while the
               input distribution and their relationship remains the same. These
@@ -196,7 +206,10 @@ const AboutRetraining = () => {
               output distribution.
             </p>
 
-            <p className={classes.description} id="edge-cases">
+            <p
+              className={`${classes.description} ${classes.topSpacing}`}
+              id="edge-cases"
+            >
               <b>4. Edge Cases: </b>
               Edge cases are the occurrence of rare yet possible scenarios.
               Talking in quantitative terms, if there are events with a 99%
@@ -214,7 +227,10 @@ const AboutRetraining = () => {
               happens, we need to collect such data intently and retrain our
               model to include these cases as well.
             </p>
-            <p className={classes.description} id="enabling-cases">
+            <p
+              className={`${classes.description} ${classes.topSpacing}`}
+              id="enabling-cases"
+            >
               <b>5. Enabling new use cases: </b>
               Retraining is triggered in these situations where a new class has
               been added to the output. For instance, previously movies were
@@ -242,7 +258,10 @@ const AboutRetraining = () => {
               />
             </div>
 
-            <p className={classes.description} id="conculsion">
+            <p
+              className={`${classes.description} ${classes.topSpacing}`}
+              id="conculsion"
+            >
               The above drifts are some of the most common issues encountered by
               ML practitioners and we at UpTrain AI are building a smart and
               automated pipeline to continuously monitor these issues and solve
