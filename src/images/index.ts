@@ -53,6 +53,8 @@ import down_graph from "./home/iconImg/down_graph.png";
 
 // blog page
 import biasSystemBanner from "./blogPageImg/bias-system-blog-banner.png";
+import retrainingBanner from "./blogPageImg/blog-2-hero-img.jpg";
+import driftBanner from "./blogPageImg/blog-3-hero-img.jpg";
 import biasRatingValues from "./blogPageImg/bias-rating-values.png";
 import biasSystemAmplification from "./blogPageImg/bias-system-amplification.png";
 import biasSystemEngineerUptrain from "./blogPageImg/bias-system-engineer-uptrain.png";
@@ -122,6 +124,8 @@ export const IMAGES = {
   down_graph,
   // blog page
   biasSystemBanner,
+  retrainingBanner,
+  driftBanner,
   biasRatingValues,
   biasSystemAmplification,
   biasSystemEngineerUptrain,

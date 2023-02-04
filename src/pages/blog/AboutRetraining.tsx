@@ -69,8 +69,8 @@ const AboutRetraining = () => {
         <div className={classes.mainContainer}>
           <div>
             <img
-              className={classes.biasSystemBanner}
-              src={IMAGES.biasSystemBanner}
+              className={`${classes.bannerImg} ${classes.bannerImgHeight}`}
+              src={IMAGES.retrainingBanner}
               alt=""
             />
           </div>
@@ -174,16 +174,18 @@ const AboutRetraining = () => {
               id="concept-drift"
             >
               <b>2. Concept Drift: </b>
-              In simple words, a data shift is a change in the dataset,overtime,
-              that is initially used to train the model. This change in dataset
-              values leads to inaccurate predictions of the model. The initial
-              data used to train the data is called source distribution, and the
-              data that the model actually works on is the target distribution.
-              Coming back to our previous IMDb example, the model was trained
-              using data collected in the years 2015 - 2018 and it is inevitable
-              that trends and preferences would have changed significantly since
-              then, which would lead to a data shift. Hence, it becomes crucial
-              to collect fresh data and update our model accordingly.{" "}
+              Concept drift refers to a phenomenon where the relationship
+              between the inputs and outputs change over time. In the context of
+              our example, say the audience's tastes evolve over time.
+              Previously having a big actor was enough to guarantee the success
+              of a movie (and since this was a clear pattern in the training
+              data, this is also what our model learnt). But now, people are
+              giving more preference to storyline as compared to actors and as a
+              result, movies with just popular artists but weak storylines are
+              now getting flopped. This necessitates a need to retrain the model
+              as the underlying relationship between the input features and
+              resultant output has changed and the model must be retrained to
+              the new reality.{" "}
             </p>
 
             <p

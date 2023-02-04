@@ -148,9 +148,9 @@ const BiasRecommenderSystems = () => {
         <div className={classes.mainContainer}>
           <div>
             <img
-              className={classes.biasSystemBanner}
+              className={`${classes.bannerImg}`}
               src={IMAGES.biasSystemBanner}
-              alt=""
+              alt="biasSystemBanner"
             />
           </div>
           <div className={classes.topSpacing} id="introduction">

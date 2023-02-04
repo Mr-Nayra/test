@@ -46,8 +46,13 @@
     }
 }
 
-.biasSystemBanner {
+.bannerImg {
     width: 100%;
+    border-radius: 15px;
+}
+
+.bannerImgHeight {
+    // aspect-ratio: 2/0.5;
 }
 
 .listItem {

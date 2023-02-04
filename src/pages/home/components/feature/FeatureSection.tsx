@@ -4,7 +4,6 @@ import classes from "./FeatureSection.module.scss";
 import CircleImg from "./CircleImg";
 import FeatureSectionMobile from "./FeatureSectionMobile";
 import { IMAGES } from "../../../../images";
-import ReactScrollWheelHandler from "react-scroll-wheel-handler";
 
 const FeatureSection = () => {
   const [active, setActive] = useState(1);
@@ -18,26 +17,7 @@ const FeatureSection = () => {
     return () => window.removeEventListener("resize", handleResize);
   }, [width]);
 
-  const [preventScroll, setPreventScroll] = useState(true);
-
-  useEffect(() => {
-    if (active === 5) {
-      setPreventScroll(false);
-    }
-    if (active === 1) {
-      setPreventScroll(true);
-    }
-  }, [active]);
-
   return (
-    // <ReactScrollWheelHandler
-    //   downHandler={() => {
-    //     if (preventScroll && active < 5) {
-    //       setActive((value) => value + 1);
-    //     }
-    //   }}
-    //   preventScroll={width <= 790 ? false : preventScroll}
-    // >
     <div className={`${classes.root} feature-section`}>
       {width >= 790 ? (
         <div className={classes.row}>
@@ -265,7 +245,6 @@ const FeatureSection = () => {
         <FeatureSectionMobile />
       )}
     </div>
-    // </ReactScrollWheelHandler>
   );
 };
 

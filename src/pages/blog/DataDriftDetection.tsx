@@ -92,9 +92,9 @@ const DataDriftDetection = () => {
         <div className={classes.mainContainer}>
           <div>
             <img
-              className={classes.biasSystemBanner}
-              src={IMAGES.biasSystemBanner}
-              alt=""
+              className={`${classes.bannerImg} ${classes.bannerImgHeight}`}
+              src={IMAGES.driftBanner}
+              alt="driftBanner"
             />
           </div>
           <div className={classes.topSpacing}>
