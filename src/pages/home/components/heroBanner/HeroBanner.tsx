@@ -18,7 +18,11 @@ const HeroBanner = () => {
               in production
             </p>
             <div className={classes.btnSection}>
-              <a href="https://github.com/uptrain-ai/uptrain">
+              <a
+                href="https://github.com/uptrain-ai/uptrain"
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 <CustomButton
                   label="Get Started - GitHub"
                   fontSize={17}
@@ -26,7 +30,11 @@ const HeroBanner = () => {
                   responsiveFont={12}
                 />
               </a>
-              <a href="https://calendly.com/uptrain-ai/30min">
+              <a
+                href="https://calendly.com/uptrain-ai/30min"
+                target={"_blank"}
+                rel="noreferrer"
+              >
                 <CustomButton
                   label="Book a Demo"
                   type="secondary"
