@@ -72,9 +72,7 @@
     }
 }
 
-// 
-
-
+// scss for card
 .card {
     background-color: #F0F2FF;
     box-shadow: -6px -6px 12px #FFFFFF, 6px 6px 12px rgba(135, 82, 163, 0.28);
@@ -84,9 +82,7 @@
 
     &:hover .animationText {
         max-height: 500px;
-
     }
-
 }
 
 
@@ -134,8 +130,6 @@
 
     & img {
         width: 100%;
-
-
     }
 }
 

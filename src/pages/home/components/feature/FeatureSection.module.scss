@@ -1,24 +1,12 @@
 @import "../../../../colors/colors";
 
 .root {
-    // background-image: linear-gradient(101.06deg, rgba(98, 116, 231, 0.1) -1.13%, rgba(135, 82, 163, 0.1) 101.02%);
-    // background-size: cover;
-    // background-repeat: no-repeat;
-
-
-
     background-image: linear-gradient(101.06deg, rgba(98, 116, 231, 0.1) -1.13%, rgba(135, 82, 163, 0.1) 101.02%), url("../../../../images/home/feature/feature-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
-
     width: 100%;
     position: relative;
     overflow: hidden;
-
-    // @media screen and (max-width:1033px) {
-    //     padding-top: 2em;
-    //     padding-bottom: 4em;
-    // }
 }
 
 .row {
@@ -42,7 +30,6 @@
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-
     align-items: center;
     display: flex;
     width: 45%;
@@ -114,7 +101,6 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    // aspect-ratio: 2/1.3;
 
     @media screen and (max-width: 980px) {
         margin-top: 20px;
@@ -124,17 +110,15 @@
 .blackBox {
     height: 100%;
     width: 100%;
-    // background-color: #030000;
     border-radius: 15px;
 
-    // opacity: 0.8;
     & img {
         width: 100%
     }
 
 }
 
-// 
+// scss for circle
 .circle {
     width: 43%;
     height: 33%;
@@ -181,6 +165,7 @@
     font-size: calc(9px + 15 * (100vw - 300px) / 1000);
     font-weight: 600;
     text-align: center;
-    color: #9C87A7;
+    color: #7C00BD;
     margin: 0px;
+    padding: 0px !important;
 }
