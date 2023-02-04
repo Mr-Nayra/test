@@ -1,9 +1,9 @@
 import React from "react";
 import { AiOutlineBars } from "react-icons/ai";
 import classes from "./blogPage.module.scss";
-import Image from "../../images/blogPageImg/blog-second-1.png";
-import Image1 from "../../images/blogPageImg/blog-second-2.png";
-import Image2 from "../../images/blogPageImg/blog-second-3.png";
+import Image from "../../images/blogPageImg/bias-rating-values.png";
+import Image1 from "../../images/blogPageImg/bias-system-amplification.png";
+import Image2 from "../../images/blogPageImg/bias-system-engineer-uptrain.png";
 
 const BiasSystems = () => {
   return (

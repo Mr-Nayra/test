@@ -51,6 +51,24 @@ import highlight_graph from "./home/iconImg/highlight_graph.png";
 import upload_icon from "./home/iconImg/upload_icon.png";
 import down_graph from "./home/iconImg/down_graph.png";
 
+// blog page
+import biasSystemBanner from "./blogPageImg/bias-system-blog-banner.png";
+import retrainingBanner from "./blogPageImg/blog-2-hero-img.jpg";
+import driftBanner from "./blogPageImg/blog-3-hero-img.jpg";
+import biasRatingValues from "./blogPageImg/bias-rating-values.png";
+import biasSystemAmplification from "./blogPageImg/bias-system-amplification.png";
+import biasSystemEngineerUptrain from "./blogPageImg/bias-system-engineer-uptrain.png";
+import retrainingBlog from "./blogPageImg/retraining-blog.png";
+import retrainingMlModelBlog from "./blogPageImg/retraining-ml-model-error-img.jpeg";
+import driftModelDeployedBlog from "./blogPageImg/drift-model-deployed-blog.png";
+import driftBlog_2 from "./blogPageImg/drift-blog-2.png";
+import driftBlog_3 from "./blogPageImg/drift-blog-3.png";
+import driftBlog_4 from "./blogPageImg/drift-blog-4.png";
+import driftBlog_5 from "./blogPageImg/drift-blog-5.png";
+import driftBlog_6 from "./blogPageImg/drift-blog-6.png";
+import driftBlog_7 from "./blogPageImg/drift-blog-7.png";
+import driftBlog_8 from "./blogPageImg/drift-blog-8.png";
+
 export const IMAGES = {
   // social-logo
   discordLogo,
@@ -104,4 +122,21 @@ export const IMAGES = {
   highlight_graph,
   upload_icon,
   down_graph,
+  // blog page
+  biasSystemBanner,
+  retrainingBanner,
+  driftBanner,
+  biasRatingValues,
+  biasSystemAmplification,
+  biasSystemEngineerUptrain,
+  retrainingBlog,
+  retrainingMlModelBlog,
+  driftModelDeployedBlog,
+  driftBlog_2,
+  driftBlog_3,
+  driftBlog_4,
+  driftBlog_5,
+  driftBlog_6,
+  driftBlog_7,
+  driftBlog_8,
 };

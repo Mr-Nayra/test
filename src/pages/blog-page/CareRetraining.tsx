@@ -1,8 +1,8 @@
 import React from "react";
 import { AiOutlineBars } from "react-icons/ai";
 import classes from "./blogPage.module.scss";
-import Image from "../../images/blogPageImg/img1.png";
-import Image1 from "../../images/blogPageImg/ml-model-error-img.jpeg";
+import Image from "../../images/blogPageImg/retraining-blog.png";
+import Image1 from "../../images/blogPageImg/retraining-ml-model-error-img.jpeg";
 
 const CareRetraining = () => {
   return (

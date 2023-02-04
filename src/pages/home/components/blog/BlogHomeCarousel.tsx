@@ -4,11 +4,15 @@ import { IMAGES } from "../../../../images";
 import classes from "./blogHome.module.scss";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Autoplay from "embla-carousel-autoplay";
-import { BlogHomeCarouselData } from "../data/BlogHomeCarouselData";
+import { IBlogHomeCarouselData } from "../data/BlogHomeCarouselData";
 import { Link } from "react-router-dom";
-import { textToUrl } from "../../../../helpers/textToUrl";
 
-const BlogHomeCarousel = () => {
+interface IProps {
+  data: IBlogHomeCarouselData[];
+}
+
+const BlogHomeCarousel = (props: IProps) => {
+  const { data } = props;
   const autoplay = useRef(Autoplay({ delay: 4000 }));
   return (
     <div className={classes.rootCarousel}>
@@ -20,7 +24,7 @@ const BlogHomeCarousel = () => {
         slideGap="lg"
         loop
         dragFree
-        align="start"
+        align="center"
         slidesToScroll={"auto"}
         classNames={{
           indicator: classes.indicator,
@@ -42,7 +46,7 @@ const BlogHomeCarousel = () => {
         onMouseEnter={autoplay.current.stop}
         onMouseLeave={autoplay.current.reset}
       >
-        {BlogHomeCarouselData.map((item, index) => (
+        {data.map((item, index) => (
           <Carousel.Slide key={`${"_" + index}`}>
             <div className={classes.card}>
               <img className={classes.cardImg} src={item.cardImg} alt="" />
@@ -51,7 +55,7 @@ const BlogHomeCarousel = () => {
                 <h3 className={classes.cardHeading}>{item.heading}</h3>
                 <p className={classes.cardDescription}>{item.description}</p>
                 <Link
-                  to={`/blog/${textToUrl(item.heading)}`}
+                  to={`/blog/${item.id}`}
                   target={"_blank"}
                   className={classes.readMore}
                 >

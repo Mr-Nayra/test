@@ -1,8 +1,8 @@
 import React from "react";
 import { AiOutlineBars } from "react-icons/ai";
 import classes from "./blogPage.module.scss";
-import ImageFirst from "../../images/blogPageImg/blog-third-1.png";
-import ImageSecond from "../../images/blogPageImg/blog-third-2.png";
+import ImageFirst from "../../images/blogPageImg/drift-model-deployed-blog.png";
+import ImageSecond from "../../images/blogPageImg/drift-blog-2.png";
 import ImageThird from "../../images/blogPageImg/blog-third-3.png";
 import ImageForth from "../../images/blogPageImg/blog-third-4.png";
 import ImageFifth from "../../images/blogPageImg/blog-third-5.png";

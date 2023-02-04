@@ -1,0 +1,147 @@
+@import "../../colors//colors";
+
+.root {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+
+    @media screen and (max-width:780px) {
+        flex-direction: column;
+    }
+}
+
+.tableContainer {
+    background-image: linear-gradient(101.06deg, rgba(98, 116, 231, 0.1) -1.13%, rgba(135, 82, 163, 0.1) 101.02%);
+    width: 30%;
+    padding: 3em 1em;
+    height: 100vh;
+    position: sticky;
+    top: 0px;
+
+    @media screen and (max-width:850px) {
+        width: 40%;
+    }
+
+    @media screen and (max-width:780px) {
+        width: 100%;
+        position: relative;
+        height: 100%;
+    }
+
+}
+
+.mainContainer {
+    width: 70%;
+    padding: 3em 2em;
+    background-color: #F5F5F5;
+
+    @media screen and (max-width:850px) {
+        width: 60%
+    }
+
+    @media screen and (max-width:780px) {
+        width: 100%;
+    }
+}
+
+.bannerImg {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.bannerImgHeight {
+    // aspect-ratio: 2/0.5;
+}
+
+.listItem {
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.listItemLink {
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover {
+        color: #7C00BD;
+    }
+
+}
+
+.nestedListItem {
+    list-style: disc;
+}
+
+.nestedListItemLink {
+    color: #000;
+    text-decoration: none;
+    margin: 2px 0px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+
+    &:hover {
+        color: #7C00BD;
+    }
+}
+
+
+
+.imageContainer {
+    margin: auto;
+    width: 50%;
+    padding-top: 1.5em;
+    overflow: hidden;
+    padding-bottom: 2em;
+
+    @media screen and (max-width:780px) {
+        width: 100%;
+    }
+}
+
+.mainContainerImage {
+    width: 100%;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: 600;
+    color: $black;
+    margin-bottom: 5px;
+}
+
+.publicDate {
+    font-size: 12px;
+    font-weight: 400;
+    color: $black;
+    margin: 0px;
+}
+
+.description {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    color: $black;
+    text-align: justify;
+
+    & b {
+        font-size: 18px;
+        font-weight: 600;
+        text-align: left !important;
+    }
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 38px;
+}
+
+.topSpacing {
+    padding-top: 38px;
+    margin: 0px !important;
+}
