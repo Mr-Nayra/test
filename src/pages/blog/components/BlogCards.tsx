@@ -17,8 +17,8 @@ const BlogCards = (props: IProps) => {
     if (!blogId) {
       return BlogHomeCarouselData;
     }
-
-    const blogData = BlogHomeCarouselData.filter((item) => item.id !== blogId);
+    const dataSlice = BlogHomeCarouselData.slice(0, 3);
+    const blogData = dataSlice.filter((item) => item.id !== blogId);
     return blogData;
   }, [blogId]);
 

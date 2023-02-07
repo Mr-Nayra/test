@@ -15,6 +15,7 @@ interface Props {
   responsiveFont?: number;
   responsivePx?: number;
   responsivePy?: number;
+  disabled?: boolean;
 }
 
 const CustomButton: React.FC<Props> = ({
@@ -30,6 +31,7 @@ const CustomButton: React.FC<Props> = ({
   responsiveFont,
   responsivePx,
   responsivePy,
+  disabled = false,
 }) => {
   const useStyles = createStyles({
     container: {
@@ -53,7 +55,7 @@ const CustomButton: React.FC<Props> = ({
       fontWeight: fontWeight,
       color: COLORS.white,
       borderRadius: 24,
-      cursor: "pointer",
+      cursor: disabled ? "not-allowed" : "pointer",
       "@media(max-width:650px)": {
         fontSize: responsiveFont,
         paddingTop: responsivePy,
@@ -77,6 +79,7 @@ const CustomButton: React.FC<Props> = ({
         onClick={() => {
           onClick && onClick();
         }}
+        disabled={disabled}
       >
         <span className={classes.label}>{label}</span>
       </button>
