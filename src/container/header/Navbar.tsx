@@ -66,7 +66,7 @@ const Navbar = () => {
               <li>
                 <a
                   className={classes.item}
-                  href="https://uptrain-ai.gitbook.io/uptrain-documentation/"
+                  href="https://docs.uptrain.ai/"
                   target={"_blank"}
                   rel="noreferrer"
                   onClick={handleClose}
