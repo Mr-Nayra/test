@@ -10,10 +10,11 @@ type TBlogData = {
   tableContent: {
     title: string;
     id: string;
-    nestedList: {
+    nestedList?: {
       title: string;
       id: string;
     }[];
   }[];
-  pageData: string;
+  pageData: any;
+  longDescription: string;
 };

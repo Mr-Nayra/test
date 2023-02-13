@@ -8,3 +8,8 @@ body {
   padding: 0px;
   background-color: #f8f9ff;
 }
+
+.blog-pt{
+  padding-top: 38px;
+    margin: 0px !important;
+}
