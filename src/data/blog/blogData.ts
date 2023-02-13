@@ -133,10 +133,10 @@ export const blogData: TBlogData[] = [
                     biases in the data.
                   </p>
 
-                  <p style={{ textAlign: "center" }}>
+                  <h3>
                     (Title) An illustration of how popularity bias can
                     exacerbate through feedback
-                  </p>
+                  </h3>
 
                   <img src=${IMAGES.biasSystemAmplification} alt="" />
 
@@ -540,8 +540,8 @@ export const blogData: TBlogData[] = [
                 to your mind when we think of any ML project pipeline?
               </p>
               <p>
-                Data collection & Processing {"->"} EDA {"->"} Feature
-                selection/manipulation {"->"} Model training & Tuning {"->"}{" "}
+                Data collection & Processing -> EDA -> Feature
+                selection/manipulation -> Model training & Tuning ->
                 Model deployed to production
               </p>
               <p>

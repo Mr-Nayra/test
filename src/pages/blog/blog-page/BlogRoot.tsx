@@ -1,7 +1,6 @@
 import { memo } from "react";
 import { Link } from "react-router-dom";
 import { blogData } from "../../../data/blog/blogData";
-import { IMAGES } from "../../../images";
 import BlogCards from "./BlogCards";
 import classes from "./blogRoot.module.scss";
 
