@@ -6,6 +6,7 @@ const DataDriftDetection = () => {
   return (
     <div className={classes.root}>
       <div className={classes.container}>
+        {/* table section */}
         <div className={classes.tableContainer}>
           <ul>
             <li className={classes.listItem}>
@@ -89,6 +90,7 @@ const DataDriftDetection = () => {
             </li>
           </ul>
         </div>
+        {/* main section */}
         <div className={classes.mainContainer}>
           <div>
             <img
@@ -97,14 +99,14 @@ const DataDriftDetection = () => {
               alt="driftBanner"
             />
           </div>
-          <div className={classes.topSpacing}>
-            <h1 className={classes.heading}>
-              5 Great Statistical Methods For Data Drift Detection
-            </h1>
-            <h5 className={classes.publicDate}>UpTrain.ai | 07.01.2023</h5>
-          </div>
-
           <div className={classes.mainContent}>
+            <div className={classes.topSpacing}>
+              <h1 className={classes.heading}>
+                5 Great Statistical Methods For Data Drift Detection
+              </h1>
+              <h5 className={classes.publicDate}>UpTrain.ai | 07.01.2023</h5>
+            </div>
+
             <h2 id="why-do-ml-modals-fail-after-production">
               <b>- Why Do ML Models Fail After Production?</b>
             </h2>

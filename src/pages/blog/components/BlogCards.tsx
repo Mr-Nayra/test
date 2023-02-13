@@ -3,7 +3,7 @@ import BlogHomeCarousel from "../../home/components/blog/BlogHomeCarousel";
 import {
   BlogHomeCarouselData,
   IBlogHomeCarouselData,
-} from "../../home/components/data/BlogHomeCarouselData";
+} from "../../../data/blog/BlogHomeCarouselData";
 
 import classes from "./blogHome.module.scss";
 
@@ -17,8 +17,7 @@ const BlogCards = (props: IProps) => {
     if (!blogId) {
       return BlogHomeCarouselData;
     }
-    const dataSlice = BlogHomeCarouselData.slice(0, 3);
-    const blogData = dataSlice.filter((item) => item.id !== blogId);
+    const blogData = BlogHomeCarouselData.filter((item) => item.id !== blogId);
     return blogData;
   }, [blogId]);
 

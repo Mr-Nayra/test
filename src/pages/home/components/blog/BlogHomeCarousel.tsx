@@ -4,7 +4,7 @@ import { IMAGES } from "../../../../images";
 import classes from "./blogHome.module.scss";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Autoplay from "embla-carousel-autoplay";
-import { IBlogHomeCarouselData } from "../data/BlogHomeCarouselData";
+import { IBlogHomeCarouselData } from "../../../../data/blog/BlogHomeCarouselData";
 import { Link } from "react-router-dom";
 
 interface IProps {

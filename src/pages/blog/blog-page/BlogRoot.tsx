@@ -7,16 +7,16 @@ import classes from "./blogRoot.module.scss";
 const BlogRoot = () => {
   return (
     <div className={classes.blogRoot}>
-      <h1 className={classes.tittle}>
+      {/* <h1 className={classes.tittle}>
         <b>UpTrain</b> Blogs
-      </h1>
+      </h1> */}
       <div className={classes.row}>
         <div className={classes.col}>
           <img src={IMAGES.biasRoundedBanner} alt="" width={"100%"} />
         </div>
         <div className={classes.col}>
           <h1 className={classes.heading}>Bias in Recommender Systems</h1>
-          <p className={classes.author}> UpTrain.ai | 20.01.2023 </p>
+          <p className={classes.author}> Vipul Gupta | 21.01.2023 </p>
           <p>
             Modern-day web systems rely on user feedback (such as click activity
             or ratings) to build ML models to personalize recommendations. Such

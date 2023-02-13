@@ -6,6 +6,7 @@ const AboutRetraining = () => {
   return (
     <div className={classes.root}>
       <div className={classes.container}>
+        {/* table section */}
         <div className={classes.tableContainer}>
           <ul>
             <li className={classes.listItem}>
@@ -66,6 +67,7 @@ const AboutRetraining = () => {
             </li>
           </ul>
         </div>
+        {/* main section */}
         <div className={classes.mainContainer}>
           <div>
             <img
@@ -74,14 +76,15 @@ const AboutRetraining = () => {
               alt=""
             />
           </div>
-          <div className={classes.topSpacing} id="introduction">
-            <h1 className={classes.heading}>
-              {" "}
-              Why do we need to care about Retraining?
-            </h1>
-            <h5 className={classes.publicDate}>UpTrain.ai | 14.01.2023</h5>
-          </div>
           <div className={classes.mainContent}>
+            <div className={classes.topSpacing} id="introduction">
+              <h1 className={classes.heading}>
+                {" "}
+                Why do we need to care about Retraining?
+              </h1>
+              <h5 className={classes.publicDate}>UpTrain.ai | 14.01.2023</h5>
+            </div>
+
             <p className={classes.description}>
               In our previous blog, we introduced you to the wonderful universe
               of ML and dug deep into the various steps involved in building and

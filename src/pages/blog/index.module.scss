@@ -35,7 +35,7 @@
 .mainContainer {
     width: 70%;
     padding: 3em 2em;
-    background-color: #F5F5F5;
+    background-color: #ffffff;
 
     @media screen and (max-width:850px) {
         width: 60%
@@ -51,8 +51,8 @@
     border-radius: 15px;
 }
 
-.bannerImgHeight {
-    // aspect-ratio: 2/0.5;
+.mainContent {
+    margin-right: 40px;
 }
 
 .listItem {
@@ -126,7 +126,7 @@
     font-size: 16px;
     font-weight: 400;
     color: $black;
-    text-align: justify;
+    text-align: left;
 
     & b {
         font-size: 18px;

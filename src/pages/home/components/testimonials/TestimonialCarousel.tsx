@@ -3,7 +3,7 @@ import { memo } from "react";
 import Eclipse from "../../../../components/eclipse/Eclipse";
 import { IMAGES } from "../../../../images";
 import classes from "./testimonialCarousel.module.scss";
-import { TestimonialsCarouselData } from "../data/TestimonialsCarouseldata";
+import { TestimonialsCarouselData } from "../../../../data/home/TestimonialsCarouseldata";
 
 const TestimonialCarousel = () => {
   return (

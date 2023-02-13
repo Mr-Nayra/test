@@ -2,12 +2,13 @@ import React, { memo, useState } from "react";
 import classes from "./blogRoot.module.scss";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { BlogHomeCarouselData } from "../../home/components/data/BlogHomeCarouselData";
+import { BlogHomeCarouselData } from "../../../data/blog/BlogHomeCarouselData";
 import CustomButton from "../../../components/button/CustomButton";
 
 const BlogCards = () => {
   const [data, setData] = useState(5);
   const dataSlice = BlogHomeCarouselData.slice(0, data);
+
   return (
     <div className={classes.cardRoot}>
       <h2 className={classes.heading} style={{ textAlign: "center" }}>

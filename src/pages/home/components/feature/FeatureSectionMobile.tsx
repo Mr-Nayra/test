@@ -1,4 +1,4 @@
-import { FeatureSectionMobileData } from "../data/FeatureSectionMobileData";
+import { FeatureSectionMobileData } from "../../../../data/home/FeatureSectionMobileData";
 import classes from "./FeatureSectionMobile.module.scss";
 
 const FeatureSectionMobile = () => {
