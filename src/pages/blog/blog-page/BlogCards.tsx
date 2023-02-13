@@ -2,22 +2,22 @@ import React, { memo, useMemo, useState } from "react";
 import classes from "./blogRoot.module.scss";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { BlogHomeCarouselData } from "../../../data/blog/BlogHomeCarouselData";
 import CustomButton from "../../../components/button/CustomButton";
+import { blogData } from "../../../data/blog/blogData";
 
 const BlogCards = () => {
   const [data, setData] = useState(5);
-  const blogData = useMemo(() => {
+  const carouselData = useMemo(() => {
     let newData: any[] = [];
-    BlogHomeCarouselData.forEach((item, index) => {
+    blogData.forEach((item, index) => {
       if (index !== 0) {
         newData.push(item);
       }
     });
     return newData;
-  }, [BlogHomeCarouselData]);
+  }, [blogData]);
 
-  const dataSlice = blogData.slice(0, data);
+  const dataSlice = carouselData.slice(0, data);
 
   return (
     <div className={classes.cardRoot}>
@@ -25,15 +25,20 @@ const BlogCards = () => {
         More Reads
       </h2>
       <div className={classes.cardRow}>
-        {dataSlice.map((item, index) => {
+        {dataSlice.map((item: TBlogData, index) => {
           return (
             <div key={`${"_" + index}`} className={classes.cardCol}>
               <div className={classes.card}>
-                <img className={classes.cardImg} src={item.cardImg} alt="" />
+                <img className={classes.cardImg} src={item.cardBanner} alt="" />
                 <div className={classes.textSection}>
-                  <p className={classes.author}> {item.author} </p>
-                  <h3 className={classes.cardHeading}>{item.heading}</h3>
-                  <p className={classes.cardDescription}>{item.description}</p>
+                  <p className={classes.author}>
+                    {" "}
+                    {item.authorName} | {item.date}{" "}
+                  </p>
+                  <h3 className={classes.cardHeading}>{item.title}</h3>
+                  <p className={classes.cardDescription}>
+                    {item.cardDescription}
+                  </p>
                   <Link
                     to={`/blog/${item.id}`}
                     target={"_blank"}
@@ -60,9 +65,7 @@ const BlogCards = () => {
           onClick={() => {
             setData(data + data);
           }}
-          disabled={
-            BlogHomeCarouselData.length - 1 === dataSlice.length ? true : false
-          }
+          disabled={blogData.length - 1 === dataSlice.length ? true : false}
         />
       </div>
     </div>

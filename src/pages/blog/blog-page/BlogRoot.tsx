@@ -1,10 +1,12 @@
 import { memo } from "react";
 import { Link } from "react-router-dom";
+import { blogData } from "../../../data/blog/blogData";
 import { IMAGES } from "../../../images";
 import BlogCards from "./BlogCards";
 import classes from "./blogRoot.module.scss";
 
 const BlogRoot = () => {
+  const firstData = blogData[0];
   return (
     <div className={classes.blogRoot}>
       {/* <h1 className={classes.tittle}>
@@ -12,19 +14,18 @@ const BlogRoot = () => {
       </h1> */}
       <div className={classes.row}>
         <div className={classes.col}>
-          <img src={IMAGES.biasRoundedBanner} alt="" width={"100%"} />
+          <img src={firstData.firstPositionBanner} alt="" width={"100%"} />
         </div>
         <div className={classes.col}>
-          <h1 className={classes.heading}>Bias in Recommender Systems</h1>
-          <p className={classes.author}> Vipul Gupta | 21.01.2023 </p>
+          <h1 className={classes.heading}>{firstData.title}</h1>
+          <p className={classes.author}>
+            {" "}
+            {firstData.authorName} | {firstData.date}
+          </p>
           <p>
-            Modern-day web systems rely on user feedback (such as click activity
-            or ratings) to build ML models to personalize recommendations. Such
-            recommender systems form the core of several popular applications
-            that recommend short videos (Instagram, TikTok, YouTube), timeline
-            feeds (Twitter, Facebook), the next prod....{" "}
+            {firstData.longDescription}
             <Link
-              to={"/blog/bias-in-recommendation-systems"}
+              to={"/blog/" + firstData.id}
               className={classes.readMore}
               target="_blank"
             >
