@@ -53,6 +53,7 @@ import down_graph from "./home/iconImg/down_graph.png";
 
 // blog page
 import biasSystemBanner from "./blogPageImg/bias-system-blog-banner.png";
+import biasRoundedBanner from "./blogPageImg/bias-rounded-banner.png";
 import retrainingBanner from "./blogPageImg/blog-2-hero-img.jpg";
 import driftBanner from "./blogPageImg/blog-3-hero-img.jpg";
 import biasRatingValues from "./blogPageImg/bias-rating-values.png";
@@ -124,6 +125,7 @@ export const IMAGES = {
   down_graph,
   // blog page
   biasSystemBanner,
+  biasRoundedBanner,
   retrainingBanner,
   driftBanner,
   biasRatingValues,

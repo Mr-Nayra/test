@@ -1,6 +1,6 @@
 import React from "react";
 import WhiteCircle from "../../../../components/eclipse/WhiteCircle";
-import { TeamMemberData } from "../data/TeamMemberData";
+import { TeamMemberData } from "../../../../data/home/TeamMemberData";
 import classes from "./team.module.scss";
 import TeamCard from "./TeamCard";
 

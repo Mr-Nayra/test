@@ -15,6 +15,7 @@ interface Props {
   responsiveFont?: number;
   responsivePx?: number;
   responsivePy?: number;
+  disabled?: boolean;
 }
 
 const CustomButton: React.FC<Props> = ({
@@ -30,6 +31,7 @@ const CustomButton: React.FC<Props> = ({
   responsiveFont,
   responsivePx,
   responsivePy,
+  disabled = false,
 }) => {
   const useStyles = createStyles({
     container: {
@@ -53,7 +55,7 @@ const CustomButton: React.FC<Props> = ({
       fontWeight: fontWeight,
       color: COLORS.white,
       borderRadius: 24,
-      cursor: "pointer",
+      cursor: disabled ? "not-allowed" : "pointer",
       "@media(max-width:650px)": {
         fontSize: responsiveFont,
         paddingTop: responsivePy,
@@ -67,20 +69,36 @@ const CustomButton: React.FC<Props> = ({
       backgroundClip: type === "primary" ? "none" : "text",
       WebkitTextFillColor: type === "primary" ? "none" : "transparent",
     },
+    cardBtn: {
+      color: "#7C7C7C",
+      padding: "12px 44px",
+      cursor: "not-allowed",
+      fontSize: "17px",
+      fontWeight: 700,
+      border: "0px",
+      borderRadius: "24px",
+    },
   });
 
   const { classes } = useStyles();
   return (
-    <div className={classes.container}>
-      <button
-        className={classes.root}
-        onClick={() => {
-          onClick && onClick();
-        }}
-      >
-        <span className={classes.label}>{label}</span>
-      </button>
-    </div>
+    <>
+      {disabled === true ? (
+        <button className={classes.cardBtn}>View More</button>
+      ) : (
+        <div className={classes.container}>
+          <button
+            className={classes.root}
+            onClick={() => {
+              onClick && onClick();
+            }}
+            disabled={disabled}
+          >
+            <span className={classes.label}>{label}</span>
+          </button>
+        </div>
+      )}
+    </>
   );
 };
 

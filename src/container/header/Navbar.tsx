@@ -3,8 +3,7 @@ import { FiMenu } from "react-icons/fi";
 import { useEffect, useState } from "react";
 import { IMAGES } from "../../images";
 import CustomButton from "../../components/button/CustomButton";
-import { COLORS } from "../../colors";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const getNavDisplay = (width: number, show: boolean) => {
   if (width > 950) {
@@ -21,6 +20,9 @@ const Navbar = () => {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(!show);
   const [width, setWidth] = useState(window.innerWidth);
+  const location = useLocation();
+  const currentPath = location.pathname;
+  console.log(currentPath);
 
   useEffect(() => {
     const handleResize = () => {
@@ -52,9 +54,11 @@ const Navbar = () => {
             <ul className={classes.menu}>
               <li>
                 <Link
-                  className={`${classes.item}`}
+                  className={`${classes.item} ${
+                    currentPath === "/" && classes.active
+                  }`}
                   to="/"
-                  style={{ color: COLORS.primary }}
+                  onClick={handleClose}
                 >
                   Home
                 </Link>
@@ -71,9 +75,15 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a className={classes.item} href="#blog" onClick={handleClose}>
+                <Link
+                  className={`${classes.item} ${
+                    currentPath === "/blog" && classes.active
+                  }`}
+                  to="/blog"
+                  onClick={handleClose}
+                >
                   Blogs
-                </a>
+                </Link>
               </li>
               <a
                 href="https://github.com/uptrain-ai/uptrain"

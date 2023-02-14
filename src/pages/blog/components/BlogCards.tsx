@@ -1,11 +1,8 @@
 import { memo, useMemo } from "react";
 import BlogHomeCarousel from "../../home/components/blog/BlogHomeCarousel";
-import {
-  BlogHomeCarouselData,
-  IBlogHomeCarouselData,
-} from "../../home/components/data/BlogHomeCarouselData";
 
 import classes from "./blogHome.module.scss";
+import { blogData } from "../../../data/blog/blogData";
 
 interface IProps {
   blogId: string | undefined;
@@ -13,13 +10,12 @@ interface IProps {
 
 const BlogCards = (props: IProps) => {
   const { blogId } = props;
-  const data = useMemo((): IBlogHomeCarouselData[] => {
+  const data = useMemo((): TBlogData[] => {
     if (!blogId) {
-      return BlogHomeCarouselData;
+      return blogData;
     }
-
-    const blogData = BlogHomeCarouselData.filter((item) => item.id !== blogId);
-    return blogData;
+    const carouselData = blogData.filter((item) => item.id !== blogId);
+    return carouselData;
   }, [blogId]);
 
   return (

@@ -4,11 +4,11 @@ import { IMAGES } from "../../../../images";
 import classes from "./blogHome.module.scss";
 import { AiOutlineArrowRight } from "react-icons/ai";
 import Autoplay from "embla-carousel-autoplay";
-import { IBlogHomeCarouselData } from "../data/BlogHomeCarouselData";
+
 import { Link } from "react-router-dom";
 
 interface IProps {
-  data: IBlogHomeCarouselData[];
+  data: TBlogData[];
 }
 
 const BlogHomeCarousel = (props: IProps) => {
@@ -49,11 +49,16 @@ const BlogHomeCarousel = (props: IProps) => {
         {data.map((item, index) => (
           <Carousel.Slide key={`${"_" + index}`}>
             <div className={classes.card}>
-              <img className={classes.cardImg} src={item.cardImg} alt="" />
+              <img className={classes.cardImg} src={item.cardBanner} alt="" />
               <div className={classes.textSection}>
-                <p className={classes.author}> {item.author} </p>
-                <h3 className={classes.cardHeading}>{item.heading}</h3>
-                <p className={classes.cardDescription}>{item.description}</p>
+                <p className={classes.author}>
+                  {" "}
+                  {item.authorName} | {item.date}{" "}
+                </p>
+                <h3 className={classes.cardHeading}>{item.title}</h3>
+                <p className={classes.cardDescription}>
+                  {item.cardDescription}
+                </p>
                 <Link
                   to={`/blog/${item.id}`}
                   target={"_blank"}
@@ -62,9 +67,6 @@ const BlogHomeCarousel = (props: IProps) => {
                   <span> Read More</span>
                   <AiOutlineArrowRight size={14} />
                 </Link>
-                {/* <a href={item.href}>
-                  <span>Read More</span>
-                </a> */}
               </div>
             </div>
           </Carousel.Slide>

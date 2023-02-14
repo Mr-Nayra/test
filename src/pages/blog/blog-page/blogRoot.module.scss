@@ -1,0 +1,158 @@
+@import "../../../colors/colors";
+
+// Root Blog
+.blogRoot {
+    padding: 30px 1em;
+    width: 90%;
+    margin: auto;
+
+    @media screen and (max-width:820px) {
+        width: 95%;
+    }
+
+    @media screen and (max-width:770px) {
+        width: 100%;
+    }
+}
+
+.tittle {
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0px;
+    padding-left: 44px;
+
+    & b {
+        font-weight: 700;
+    }
+}
+
+.row {
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-between;
+
+    @media screen and (max-width:900px) {
+        flex-direction: column;
+    }
+
+}
+
+.col {
+    width: 48%;
+
+    @media screen and (max-width:900px) {
+        width: 100%;
+        margin: 10px 0px;
+    }
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0px;
+    padding-bottom: 10px;
+}
+
+.readMore {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0px;
+    color: $primary;
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+// 
+
+.cardRoot {
+    padding: 2em 0em;
+}
+
+.cardRow {
+    padding-bottom: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media screen and (max-width:770px) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+
+.cardCol {
+    width: 32%;
+    margin: 7px;
+    margin-top: 40px;
+
+    @media screen and (max-width:1200px) {
+        width: 48%;
+    }
+
+    @media screen and (max-width:770px) {
+        width: 100%;
+        margin: 0px;
+        margin-top: 40px;
+    }
+}
+
+.card {
+    background: $white;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    height: 100%;
+}
+
+.cardImg {
+    width: 100% !important;
+
+    @media screen and (max-width: 650px) {
+        aspect-ratio: 2/0.7;
+    }
+}
+
+.cardHeadingSection {
+    display: flex;
+    align-items: center;
+}
+
+
+.textSection {
+    padding: 20px;
+}
+
+.author {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0px;
+    color: $black;
+}
+
+.cardHeading {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0px;
+    padding: 20px 0px;
+}
+
+.cardDescription {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.cardReadMore {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0px;
+    display: flex;
+    color: $primary;
+    margin-top: 40px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.cardBtnSection {
+    text-align: center;
+    margin-top: 2em;
+}
