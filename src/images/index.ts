@@ -36,10 +36,10 @@ import shikha_mohanty from "./teamImg/shikha_mohanty.webp";
 import vipul_gupta from "./teamImg/vipul_gupta.webp";
 // Feature (Home)
 import graph_growth_about from "./home/feature/graph_growth_about.png";
-import model_performance from "./home/feature/model_performance_img.webp";
-import data_drift_img from "./home/feature/data_drift_img.webp";
-import edge_case_signals_img from "./home/feature/edge_case_signals_img.webp";
-import automated_refinement_img from "./home/feature/automated_refinement.webp";
+import model_performance from "./home/feature/model_performance_img.png";
+import data_drift_img from "./home/feature/data_drift_img.png";
+import edge_case_signals_img from "./home/feature/edge_case_signals_img.png";
+import automated_refinement_img from "./home/feature/automated_refinement.png";
 import seamless_integration_img from "./home/feature/seamless_integration_img.webp";
 // career (Home)
 import career_banner from "./home/career/career_banner.webp";
