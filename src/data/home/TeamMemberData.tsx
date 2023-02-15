@@ -12,7 +12,7 @@ export const TeamMemberData = [
   {
     memberImg: IMAGES.shikha_mohanty,
     name: "Shikha Mohanty",
-    memberPost: "CBO",
+    memberPost: "CMO",
     linkedinLink: "https://www.linkedin.com/in/shikhamohanty/",
     description:
       "Shikha has been a venture builder and SaaS investor in the past. She has worked with several deeptech companies and has contributed to their growth journeys. She is an alum of The University of Hong Kong.",
