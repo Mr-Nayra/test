@@ -31,7 +31,7 @@ const HeroBanner = () => {
                 />
               </a>
               <a
-                href="https://calendly.com/uptrain-ai/30min"
+                href="https://calendly.com/uptrain-sourabh/uptrain-demo"
                 target={"_blank"}
                 rel="noreferrer"
               >
