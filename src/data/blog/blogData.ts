@@ -133,12 +133,12 @@ export const blogData: TBlogData[] = [
                     biases in the data.
                   </p>
 
+                  <img src=${IMAGES.biasSystemAmplification} alt="" />
+
                   <h3>
-                    (Title) An illustration of how popularity bias can
+                    An illustration of how popularity bias can
                     exacerbate through feedback
                   </h3>
-
-                  <img src=${IMAGES.biasSystemAmplification} alt="" />
 
                   <p>
                     Feedback loops are detected by measuring the diversity of
@@ -465,7 +465,7 @@ export const blogData: TBlogData[] = [
                 by ML practitioners and we at UpTrain AI are building a smart
                 and automated pipeline to continuously monitor these issues and
                 solve them by retraining models so that they can meaningfully
-                impact your business metrics.{" "}
+                impact your business metrics.
                 <a
                   href="https://github.com/uptrain-ai/uptrain"
                   target={"_blank"}
