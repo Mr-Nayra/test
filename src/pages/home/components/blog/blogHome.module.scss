@@ -105,6 +105,8 @@
     background: $white;
     box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
+    display: block;
+    text-decoration: none;
 }
 
 .cardImg {
@@ -137,12 +139,14 @@
     font-weight: 700;
     margin: 0px;
     padding: 20px 0px;
+    color: $black;
 }
 
 .cardDescription {
     font-size: 14px;
     font-weight: 400;
     margin: 0px;
+    color: $black;
 }
 
 .readMore {
