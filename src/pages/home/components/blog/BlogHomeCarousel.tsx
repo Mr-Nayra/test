@@ -48,7 +48,11 @@ const BlogHomeCarousel = (props: IProps) => {
       >
         {data.map((item, index) => (
           <Carousel.Slide key={`${"_" + index}`}>
-            <div className={classes.card}>
+            <Link
+              to={`/blog/${item.id}`}
+              target={"_blank"}
+              className={classes.card}
+            >
               <img className={classes.cardImg} src={item.cardBanner} alt="" />
               <div className={classes.textSection}>
                 <p className={classes.author}>
@@ -68,7 +72,7 @@ const BlogHomeCarousel = (props: IProps) => {
                   <AiOutlineArrowRight size={14} />
                 </Link>
               </div>
-            </div>
+            </Link>
           </Carousel.Slide>
         ))}
       </Carousel>
