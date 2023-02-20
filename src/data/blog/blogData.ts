@@ -569,7 +569,7 @@ export const blogData: TBlogData[] = [
                 right?
               </p>
 
-              <img src=${IMAGES.retrainingBlog} alt="" />
+              <img src=${IMAGES.retrainingBlog}  alt="" />
 
               <p>
                 However, the success of the model is short lived- It was noticed
