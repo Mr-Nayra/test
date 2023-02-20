@@ -69,6 +69,12 @@ import driftBlog_5 from "./blogPageImg/drift-blog-5.png";
 import driftBlog_6 from "./blogPageImg/drift-blog-6.png";
 import driftBlog_7 from "./blogPageImg/drift-blog-7.png";
 import driftBlog_8 from "./blogPageImg/drift-blog-8.png";
+import active_learning_collage from "./blogPageImg/active_learning_collage.png";
+import active_learning_entropy from "./blogPageImg/active_learning_entropy.png";
+import active_learning_cnn from "./blogPageImg/active_learning_cnn.png";
+import active_learning_deep from "./blogPageImg/active_learning_deep.png";
+import active_learning_gan from "./blogPageImg/active_learning_gan.png";
+import active_learning_gan2 from "./blogPageImg/active_learning_gan2.png";
 
 export const IMAGES = {
   // social-logo
@@ -141,4 +147,10 @@ export const IMAGES = {
   driftBlog_6,
   driftBlog_7,
   driftBlog_8,
+  active_learning_collage,
+  active_learning_gan,
+  active_learning_gan2,
+  active_learning_deep,
+  active_learning_cnn,
+  active_learning_entropy,
 };
