@@ -3,16 +3,16 @@ export const blogData: TBlogData[] = [
   {
     id: "active_learning",
     title:
-      "Active Learning: Train Smart Machine Learning Models with Less Labeled Data",
+      "Active Learning: Train Models with Less Labeled Data",
     authorName: "Tanisha & Vipul",
     date: "19th Feb, 2023",
-    cardBanner: IMAGES.homeBlog_1,
+    cardBanner: IMAGES.home_active_learning,
     cardDescription:
       "Most supervised machine learning models require to be trained with large amounts of labeled data. Active Learning can be used to make models smarter with less labeled data.",
-    firstPositionBanner: IMAGES.biasRoundedBanner,
+    firstPositionBanner: IMAGES.home_active_learning,
     longDescription:
       "Most supervised machine learning models require to be trained with large amounts of data to get good results. In most cases, these large datasets are unlabeled since the data is too large to be labeled manually. It requires enormous human effort and time, and ....",
-    mainBanner: IMAGES.biasSystemBanner,
+    mainBanner: IMAGES.active_learning_hero,
     tableContent: [
       { title: "Introduction", id: "introduction" },
       {
@@ -61,14 +61,14 @@ export const blogData: TBlogData[] = [
                     </p>
   
                     
-                    <img src=${IMAGES.active_learning_collage} alt="" />
+                    <img src=${IMAGES.active_learning_collage} width="500px" alt="" />
                     <h3>
-                    Active learning is effective with large amounts of low-cost, unlabelled data, e.g., images and tweets (image borrowed from 
+                    Active learning is effective with large amounts of low-cost, unlabelled data, e.g., images and tweets (source: 
                     <a
                       href="https://collider.com/movie-collage-2013/"
                       target={"_blank"}
                       rel="noreferrer"
-                    >here</a>).
+                    >Collider</a>).
                     </h3>
 
                     <h2 id="behind_the_scenes">
@@ -136,7 +136,7 @@ export const blogData: TBlogData[] = [
                     8. <b>Entropy</b>: The concept of entropy comes from thermodynamics and is a  measure of disorder in a system. The entropy for each instance is calculated, and the instance with the largest value is queried. 
                     </p>
 
-                    <img src=${IMAGES.active_learning_entropy} alt="" />
+                    <img width="500px" src=${IMAGES.active_learning_entropy} alt="" />
 
                     <p>
                     9. <b>Density-weighted methods</b>: Points representative of the underlying distribution (that is, reside in the dense areas of the input space) are labeled.
@@ -195,7 +195,7 @@ export const blogData: TBlogData[] = [
 
                   <img src=${IMAGES.active_learning_cnn} alt="" />
                     <h3>
-                    Cost Effective Active Learning mode (image borrowed from the
+                    Cost Effective Active Learning mode (source:
                       <a
                       href="https://www.semanticscholar.org/reader/b5bfb2776c33f8d5de8b812da7a7d5ad56cb84e3"
                       target={"_blank"}
@@ -209,7 +209,8 @@ export const blogData: TBlogData[] = [
 
                     <img src=${IMAGES.active_learning_gan} alt=""/>
                     <h3>
-                    Principle behind the GAAL algorithm. The learner synthesizes samples for querying using GAN.
+                    Principle behind the GAAL algorithm, where the learner synthesizes samples for querying using GAN.
+                    (source: 
                       <a
                       href="https://www.semanticscholar.org/reader/e9ff047489490e505d44e573c4240b4dd8137f33"
                       target={"_blank"}
@@ -316,7 +317,7 @@ export const blogData: TBlogData[] = [
                   </p>
 
                   
-                  <img src=${IMAGES.biasRatingValues} alt="" />
+                  <img width="400px" src=${IMAGES.biasRatingValues} alt="" />
                   
 
                   <p className="blog-pt" id="exposure-bias">
@@ -371,7 +372,7 @@ export const blogData: TBlogData[] = [
                     biases in the data.
                   </p>
 
-                  <img src=${IMAGES.biasSystemAmplification} alt="" />
+                  <img src=${IMAGES.biasSystemAmplification} width="500" alt="" />
 
                   <h3>
                     An illustration of how popularity bias can

@@ -53,6 +53,8 @@
 
 .mainContent {
     margin: 0px 10%;
+    line-height: 2;
+    // font-size: large;
 
     @media screen and (max-width:780px) {
         margin: 0px;

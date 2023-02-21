@@ -11,6 +11,7 @@ import previousArrow from "./previous-arrow.png";
 import homeBlog_1 from "./home/blog/blog-1.webp";
 import homeBlog_2 from "./home/blog/blog-2.webp";
 import homeBlog_3 from "./home/blog/blog-3.webp";
+import home_active_learning from "./home/blog/blog_active_learning.png";
 // WorkFlow (Home)
 import singleImg from "./home/workFlow/single.png";
 import detectImg from "./home/workFlow/detectImg.png";
@@ -75,6 +76,7 @@ import active_learning_cnn from "./blogPageImg/active_learning_cnn.png";
 import active_learning_deep from "./blogPageImg/active_learning_deep.png";
 import active_learning_gan from "./blogPageImg/active_learning_gan.png";
 import active_learning_gan2 from "./blogPageImg/active_learning_gan2.png";
+import active_learning_hero from "./blogPageImg/active_learning_hero.png";
 
 export const IMAGES = {
   // social-logo
@@ -90,6 +92,7 @@ export const IMAGES = {
   homeBlog_1,
   homeBlog_2,
   homeBlog_3,
+  home_active_learning,
   // WorkFlow (Home)
   singleImg,
   detectImg,
@@ -153,4 +156,5 @@ export const IMAGES = {
   active_learning_deep,
   active_learning_cnn,
   active_learning_entropy,
+  active_learning_hero,
 };
