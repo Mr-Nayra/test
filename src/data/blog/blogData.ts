@@ -1,44 +1,46 @@
 import { IMAGES } from "../../images";
 export const blogData: TBlogData[] = [
   {
-      id: "active_learning",
-      title: "Active Learning: Train Smart Machine Learning Models with Less Labeled Data",
-      authorName: "Tanisha & Vipul",
-      date: "19th Feb, 2023",
-      cardBanner: IMAGES.homeBlog_1,
-      cardDescription:
-        "Most supervised machine learning models require to be trained with large amounts of labeled data. Active Learning can be used to make models smarter with less labeled data.",
-      firstPositionBanner: IMAGES.biasRoundedBanner,
-      longDescription:
-        "Most supervised machine learning models require to be trained with large amounts of data to get good results. In most cases, these large datasets are unlabeled since the data is too large to be labeled manually. It requires enormous human effort and time, and ....",
-      mainBanner: IMAGES.biasSystemBanner,
-      tableContent: [
-        { title: "Introduction", id: "introduction" },
-        { 
-          title: "Active Learning: Getting Machines Smarter With Less Work", 
-          id: "active_learning" },
-        {
-          title: "Behind the Scenes of Active Learning",
-          id: "behind_the_scenes",
-          nestedList: [
-            { title: "Scenarios", id: "scenarios" },
-            { title: "Query Strategies", id: "query_strategies" },
-          ],
-        },
-        { 
-          title: "Putting it all together (aka perform active learning)", 
-          id: "putting_it_together" 
-        },
-        { 
-          title: "Exciting Ways Active Learning Can Be Put to Use", 
-          id: "exciting_ways" 
-        },
-        { 
-          title: "Conclusion", 
-          id: "conclusion" 
-        },
-      ],
-      pageData: ` <div>
+    id: "active_learning",
+    title:
+      "Active Learning: Train Smart Machine Learning Models with Less Labeled Data",
+    authorName: "Tanisha & Vipul",
+    date: "19th Feb, 2023",
+    cardBanner: IMAGES.homeBlog_1,
+    cardDescription:
+      "Most supervised machine learning models require to be trained with large amounts of labeled data. Active Learning can be used to make models smarter with less labeled data.",
+    firstPositionBanner: IMAGES.biasRoundedBanner,
+    longDescription:
+      "Most supervised machine learning models require to be trained with large amounts of data to get good results. In most cases, these large datasets are unlabeled since the data is too large to be labeled manually. It requires enormous human effort and time, and ....",
+    mainBanner: IMAGES.biasSystemBanner,
+    tableContent: [
+      { title: "Introduction", id: "introduction" },
+      {
+        title: "Active Learning: Getting Machines Smarter With Less Work",
+        id: "active_learning",
+      },
+      {
+        title: "Behind the Scenes of Active Learning",
+        id: "behind_the_scenes",
+        nestedList: [
+          { title: "Scenarios", id: "scenarios" },
+          { title: "Query Strategies", id: "query_strategies" },
+        ],
+      },
+      {
+        title: "Putting it all together (aka perform active learning)",
+        id: "putting_it_together",
+      },
+      {
+        title: "Exciting Ways Active Learning Can Be Put to Use",
+        id: "exciting_ways",
+      },
+      {
+        title: "Conclusion",
+        id: "conclusion",
+      },
+    ],
+    pageData: ` <div>
                   <div>
                     <p>
                     Most supervised machine learning models require to be trained with large amounts of data to get good results. In most cases, these large datasets are unlabeled since the data is too large to be labeled manually. It requires enormous human effort and time, and we can end up with problems like missing or erroneous annotations, which can affect the training of the model and, hence, further impact the performance of the model. But here's the good news: active learning is here to save the day! Basically, it's a way to cut down on how much we have to label by making use of all the other examples we have lying around that we haven't labeled.
