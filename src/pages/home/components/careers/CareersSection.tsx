@@ -9,7 +9,11 @@ const CareersSection = () => {
       <div className={classes.row}>
         <div className={classes.boxCol}>
           <div className={classes.blackBox}>
-            <img src={IMAGES.career_banner} alt="career img" />
+            <img
+              src={IMAGES.career_banner}
+              alt="magnifying glass focusing on one red pawn"
+              title="careers section"
+            />
           </div>
         </div>
         <div className={classes.TextCol}>

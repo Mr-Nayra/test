@@ -17,6 +17,7 @@ const WorkFlow = () => {
             muted
             loop
             playsInline
+            title="How UpTrain works?"
           >
             <source
               src="https://uptrain-website.s3.us-west-1.amazonaws.com/how_uptrain_works.mp4"

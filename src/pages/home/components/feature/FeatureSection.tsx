@@ -154,7 +154,8 @@ const FeatureSection = () => {
                     <div className={classes.blackBox}>
                       <img
                         src={IMAGES.model_performance}
-                        alt="model_performance"
+                        alt="UpTrain’s Dashboard highlighting the performance of Machine learning model post deployment"
+                        title="UpTrain’s Model performance dashboard"
                       />
                     </div>
                   </div>
@@ -172,7 +173,11 @@ const FeatureSection = () => {
                   </p>
                   <div className={classes.whiteBox}>
                     <div className={classes.blackBox}>
-                      <img src={IMAGES.data_drift_img} alt="data_drift_img" />
+                      <img
+                        src={IMAGES.data_drift_img}
+                        alt="UpTrain’s Dashboard showing Data Distribution Shifts as they happen"
+                        title="Track Data Distribution Shifts as they happen"
+                      />
                     </div>
                   </div>
                 </div>
@@ -192,7 +197,8 @@ const FeatureSection = () => {
                     <div className={classes.blackBox}>
                       <img
                         src={IMAGES.edge_case_signals_img}
-                        alt="edge_case_signals_img"
+                        alt="UpTrain’s Dashboard showing edge case collection"
+                        title="Visualize edge cases using UpTrain"
                       />
                     </div>
                   </div>
@@ -212,7 +218,8 @@ const FeatureSection = () => {
                     <div className={classes.blackBox}>
                       <img
                         src={IMAGES.automated_refinement_img}
-                        alt="automated_refinement_img"
+                        alt="Pop-up box showcasing retraining upon edge cases collected by UpTrain"
+                        title="Smart and Automated Model Retraining"
                       />
                     </div>
                   </div>
@@ -232,7 +239,8 @@ const FeatureSection = () => {
                     <div className={classes.blackBox}>
                       <img
                         src={IMAGES.seamless_integration_img}
-                        alt="seamless_integration_img"
+                        alt="Image showing UpTrain integration with multiple ML models and cloud providers like AWS, GCP, Azure, Tensorflow, Pytorch etc."
+                        title="UpTrain integrates seamlessly with your production"
                       />
                     </div>
                   </div>
