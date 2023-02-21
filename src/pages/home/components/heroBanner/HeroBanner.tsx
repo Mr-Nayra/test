@@ -50,7 +50,11 @@ const HeroBanner = () => {
           <div className={classes.col}>
             <div className={classes.whiteBox}>
               <div className={classes.blackBox}>
-                <img src="https://uptrain-website.s3.us-west-1.amazonaws.com/uptrain_home.gif" alt="" />
+                <img
+                  src="https://uptrain-website.s3.us-west-1.amazonaws.com/uptrain_home.gif"
+                  alt="Animation of a laptop opening and closing and showing plots/graphs"
+                  title="Model monitoring tool"
+                />
               </div>
             </div>
           </div>
