@@ -13,7 +13,11 @@ const FeatureSectionMobile = () => {
             <p className={classes.description}>{item.description}</p>
             <div className={classes.whiteBox}>
               <div className={classes.blackBox}>
-                <img src={item.featureImg} alt="" />
+                <img
+                  src={item.featureImg}
+                  alt={item.altText}
+                  title={item.titleText}
+                />
               </div>
             </div>
           </div>
