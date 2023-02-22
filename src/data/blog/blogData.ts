@@ -133,10 +133,14 @@ export const blogData: TBlogData[] = [
                     </p>
                      
                     <p>
-                    8. <b>Entropy</b>: The concept of entropy comes from thermodynamics and is a  measure of disorder in a system. The entropy for each instance is calculated, and the instance with the largest value is queried. 
+                    8. <b>Entropy</b>: In information theory, the 
+                    <a href="https://en.wikipedia.org/wiki/Entropy_(information_theory)"
+                      target={"_blank"}
+                      rel="noreferrer"
+                    >entropy</a> 
+                     of a random variable is the average level of uncertainty in the variables possible outcomes. For example, an unbiased coint toss has a higher entropy than tossing a biased coin due to more uncertainty (or surprise) in the outcome of the toss. In this case, the entropy
+                    for each instance is calculated, and the instance with the largest value is queried. 
                     </p>
-
-                    <img width="500px" src=${IMAGES.active_learning_entropy} alt="" />
 
                     <p>
                     9. <b>Density-weighted methods</b>: Points representative of the underlying distribution (that is, reside in the dense areas of the input space) are labeled.
@@ -623,7 +627,7 @@ export const blogData: TBlogData[] = [
                 2015 - 2018 and it is inevitable that trends and preferences
                 would have changed significantly since then, which would lead to
                 a data shift. Hence, it becomes crucial to collect fresh data
-                and update our model accordingly.{" "}
+                and update our model accordingly.
               </p>
 
               <p className="blog-pt" id="concept-drift">
@@ -639,7 +643,7 @@ export const blogData: TBlogData[] = [
                 weak storylines are now getting flopped. This necessitates a
                 need to retrain the model as the underlying relationship between
                 the input features and resultant output has changed and the
-                model must be retrained to the new reality.{" "}
+                model must be retrained to the new reality.
               </p>
 
               <p className="blog-pt" id="label-shift">
@@ -891,7 +895,7 @@ export const blogData: TBlogData[] = [
                     the population distribution has changed.
                   </p>
 
-                  <img src=${IMAGES.driftBlog_2} alt="" />
+                  <img src=${IMAGES.driftBlog_2} alt="" width="650px" />
 
                   <p>
                     How do we quantify this?
@@ -903,7 +907,7 @@ export const blogData: TBlogData[] = [
                     sum their values for the final PSI metric.
                   </p>
 
-                  <img src=${IMAGES.driftBlog_3} alt="" />
+                  <img src=${IMAGES.driftBlog_3} alt="" width="600px" />
 
                   <p>
                     If the above calculated PSI value is less than 0.1, the
@@ -938,7 +942,7 @@ export const blogData: TBlogData[] = [
                     below.
                   </p>
 
-                  <img src=${IMAGES.driftBlog_5} alt="" />
+                  <img src=${IMAGES.driftBlog_5} alt="" width="600px" />
 
                   <p>
                     Note that KL divergence is asymmetric, you would end up with
@@ -960,7 +964,7 @@ export const blogData: TBlogData[] = [
                     formula discussed in the previous section, as shown below.
                   </p>
 
-                  <img src=${IMAGES.driftBlog_6} alt="" />
+                  <img src=${IMAGES.driftBlog_6} alt="" width="600px" />
 
                   <p>
                     Due to the normalizing, the value of the metric is
@@ -985,7 +989,7 @@ export const blogData: TBlogData[] = [
                     and new data.
                   </p>
 
-                  <img src=${IMAGES.driftBlog_7} alt="" />
+                  <img src=${IMAGES.driftBlog_7} alt="" width="600px" />
 
                   <p>
                     As it compares distribution of two data samples and performs
@@ -1044,7 +1048,7 @@ export const blogData: TBlogData[] = [
                   UpTrain is an open-source toolkit which has out-of-the-box
                   implementations for all these measures and provides a single
                   line interface for you to start monitoring drifts in your ML
-                  models. Try it out{" "}
+                  models. Try it out
                   <a
                     href="https://github.com/uptrain-ai/uptrain"
                     target={"_blank"}
