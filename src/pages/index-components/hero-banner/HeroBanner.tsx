@@ -99,15 +99,22 @@ const HeroBanner = () => {
           <div className={classes.col}>
             <div className={classes.whiteBox}>
               <div className={classes.blackBox}>
-                <Image
-                  src="https://uptrain-website.s3.us-west-1.amazonaws.com/uptrain_home.gif"
-                  alt="Animation of a laptop opening and closing and showing plots/graphs"
-                  title="Model monitoring tool"
-                  style={{ maxHeight: "auto", maxWidth: "100%" }}
-                  width={2000}
-                  height={2000}
-                  priority
-                />
+                <video
+                  width="100%"
+                  height="100%"
+                  autoPlay={true}
+                  disablePictureInPicture
+                  muted
+                  loop
+                  playsInline
+                  title="How UpTrain works?"
+                >
+                  <source
+                    src="https://uptrain-demo.s3.us-west-1.amazonaws.com/demo_video_small.mp4"
+                    type="video/mp4"
+                  />
+                  Your browser does not support the video tag.
+                </video>
               </div>
             </div>
           </div>
