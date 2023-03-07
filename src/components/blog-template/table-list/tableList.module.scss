@@ -1,0 +1,37 @@
+@import "../../../colors/colors";
+
+.listItem {
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.listItemLink {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: $white;
+
+    &:hover {
+        color: #7C00BD;
+    }
+
+}
+
+.nestedListItem {
+    list-style: disc;
+    color: $white;
+    margin: 3px 0px;
+}
+
+.nestedListItemLink {
+    color: $white;
+    text-decoration: none;
+    margin: 4px 0px;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+
+    &:hover {
+        color: #7C00BD;
+    }
+}

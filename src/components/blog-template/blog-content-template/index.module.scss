@@ -1,0 +1,92 @@
+@import "../../../colors/colors";
+
+.mainContainer {
+    width: 70%;
+    padding: 3em 2em;
+    background-color: $secondaryGradient;
+
+    @media screen and (max-width:850px) {
+        width: 60%
+    }
+
+    @media screen and (max-width:780px) {
+        width: 100%;
+    }
+}
+
+.bannerImg {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.mainContent {
+    margin: 0px 10%;
+
+    @media screen and (max-width:780px) {
+        margin: 0px;
+    }
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: 600;
+    color: $white;
+    margin-bottom: 5px;
+}
+
+.publicDate {
+    font-size: 12px;
+    font-weight: 400;
+    color: $white;
+    margin: 0px;
+}
+
+.topSpacing {
+    padding-top: 38px;
+    margin: 0px !important;
+}
+
+// data css
+
+.dataContainer {
+    & img {
+        margin: auto;
+        max-width: 100%;
+        padding-top: 1.5em;
+        overflow: hidden;
+        padding-bottom: 2em;
+        display: flex;
+        justify-self: center;
+
+        @media screen and (max-width:780px) {
+            width: 100%;
+        }
+    }
+
+    & p {
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        color: $white;
+        text-align: left;
+
+        & b {
+            font-size: 18px;
+            font-weight: 600;
+            text-align: left !important;
+            color: $white;
+        }
+    }
+
+    & h3 {
+        margin-bottom: 20px;
+        font-size: 16px;
+        font-weight: 400;
+        color: $white;
+        text-align: center;
+    }
+
+    & h2 {
+        color: $white;
+    }
+}

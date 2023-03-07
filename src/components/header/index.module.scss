@@ -1,0 +1,98 @@
+@import "../../colors/colors";
+
+.container {
+    background-color: $black;
+}
+
+.navbar {
+    width: 92%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 1.2em;
+    flex-wrap: wrap;
+    background-color: $black;
+    border-radius: 5px;
+
+    @media screen and (max-width: 950px) {
+        padding: 0.4em 1.2em;
+        display: block;
+        position: relative;
+        padding-top: 0.8em;
+    }
+}
+
+.logo {
+    width: 137px;
+}
+
+.nav {
+    @media screen and (max-width: 950px) {
+        display: none;
+    }
+}
+
+.menu {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 950px) {
+        display: block;
+    }
+}
+
+.item {
+    text-decoration: none;
+    font-weight: 600;
+    color: #7A7A7A;
+    display: inline-block;
+    margin-left: 3em;
+    font-size: 14px;
+
+    &:hover {
+        color: $white;
+    }
+
+    @media screen and (max-width: 950px) {
+        padding: 10px 0px;
+        margin-left: 0px;
+    }
+}
+
+.active {
+    color: $white;
+}
+
+.menuBar {
+    display: none;
+    position: absolute;
+    right: 1em;
+    top: 11px;
+
+    @media screen and (max-width: 950px) {
+        display: block;
+    }
+}
+
+.menuScroll {
+    right: 2.1em !important;
+}
+
+.menuBtn {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.menuIcon {
+    font-size: 30px;
+
+    @media screen and (max-width: 950px) {
+        color: $white;
+    }
+}

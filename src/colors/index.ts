@@ -1,0 +1,9 @@
+export const COLORS = {
+  primary: "#7C00BD",
+  secondary: "#7C7C7C",
+  primaryGradient: "linear-gradient(95.21deg, #6274E7 0%, #8752A3 100%)",
+  white: "#fff",
+  whiteSmoke: "#F5F5F5",
+  black: "#000000",
+  secondaryGradient: "rgba(0, 0, 0, 0.9)",
+};

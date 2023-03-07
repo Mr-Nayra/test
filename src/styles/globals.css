@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.blog-pt {
+  padding-top: 38px;
+  margin: 0px !important;
+}

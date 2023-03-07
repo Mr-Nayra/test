@@ -1,0 +1,98 @@
+@import "../../colors/colors";
+
+// Root Blog
+
+.cardRoot {
+    padding: 2em 0em;
+}
+
+.cardRow {
+    padding-bottom: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    @media screen and (max-width:770px) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+
+.cardCol {
+    width: 32%;
+    margin: 7px;
+    margin-top: 40px;
+
+    @media screen and (max-width:1200px) {
+        width: 48%;
+    }
+
+    @media screen and (max-width:770px) {
+        width: 100%;
+        margin: 0px;
+        margin-top: 40px;
+    }
+}
+
+.card {
+    background: #1C1C1C;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    height: 100%;
+    display: block;
+    text-decoration: none;
+}
+
+.cardImg {
+    width: 100% !important;
+    height: auto;
+
+}
+
+.cardHeadingSection {
+    display: flex;
+    align-items: center;
+}
+
+
+.textSection {
+    padding: 20px;
+}
+
+.author {
+    font-size: 12px;
+    font-weight: 400;
+    margin: 0px;
+    color: $white;
+}
+
+.cardHeading {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0px;
+    padding: 20px 0px;
+    color: $white;
+}
+
+.cardDescription {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0px;
+    color: $white;
+}
+
+.cardReadMore {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0px;
+    display: flex;
+    color: $primary;
+    margin-top: 40px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.cardBtnSection {
+    text-align: center;
+    margin-top: 2em;
+}

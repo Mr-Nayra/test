@@ -1,0 +1,24 @@
+@import "../../../colors/colors";
+
+.root {
+    background-image: url("./images/background.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 100%;
+    padding: 4em 1em;
+    overflow: hidden;
+    backdrop-filter: blur(100px);
+    -webkit-backdrop-filter: blur(100px);
+    position: relative;
+    padding-bottom: 6em !important;
+    background-color: $secondaryGradient;
+}
+
+.heading {
+    font-size: 24px;
+    margin: 0px;
+    font-weight: 600;
+    text-align: center;
+    color: $white;
+}
