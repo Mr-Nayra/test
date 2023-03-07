@@ -108,6 +108,7 @@ const HeroBanner = () => {
                   loop
                   playsInline
                   title="How UpTrain works?"
+                  controls
                 >
                   <source
                     src="https://uptrain-demo.s3.us-west-1.amazonaws.com/demo_video_small.mp4"
