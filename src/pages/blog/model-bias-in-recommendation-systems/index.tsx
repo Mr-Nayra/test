@@ -34,7 +34,7 @@ const index = () => {
           <DefaultBlogContentTemplate
             title="Bias in Recommendation Systems"
             authorName="Vipul Gupta"
-            date="21.01.2023"
+            date="21th Jan, 2023"
             banner={{ image: banner, alt: "biasSystemBanner" }}
           >
             <div>

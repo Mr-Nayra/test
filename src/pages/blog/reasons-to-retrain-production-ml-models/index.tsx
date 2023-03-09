@@ -33,7 +33,7 @@ const index = () => {
           <DefaultBlogContentTemplate
             title="Why do we need to care about Retraining?"
             authorName="Shikha Mohanty"
-            date="14.01.2023"
+            date="14th Jan, 2023"
             banner={{ image: banner, alt: "about Retraining" }}
           >
             <div>

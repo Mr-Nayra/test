@@ -11,8 +11,8 @@ export const blogData: TBlogData[] = [
   {
     id: "mistakes-like-data-drift-while-deploying-ML-models",
     title: "7 Mistakes People Make When Putting Their Models In Production",
-    authorName: "Tanisha & Vipul",
-    date: "19th Feb, 2023",
+    authorName: "Sourabh & Shri",
+    date: "4th March, 2023",
     cardBanner: mistake_deploying_model,
     cardDescription:
       "A critical part of the lifecycle of an ML model is post-production maintenance and performance. Many issues may arise during this period",
@@ -20,7 +20,6 @@ export const blogData: TBlogData[] = [
     longDescription:
       "A critical part of the lifecycle of an ML model is post-production maintenance and performance. Many issues may arise during this period, like degradation in accuracy or problems in the software architecture involved. It is essential to  ....",
   },
-
   {
     id: "active-learning-for-deep-neural-networks",
     title: "Active Learning: Train Models with Less Labeled Data",
@@ -33,12 +32,11 @@ export const blogData: TBlogData[] = [
     longDescription:
       "Most supervised machine learning models require to be trained with large amounts of data to get good results. In most cases, these large datasets are unlabeled since the data is too large to be labeled manually. It requires enormous human effort and time, and ....",
   },
-
   {
     id: "model-bias-in-recommendation-systems",
     title: "Bias in Recommendation Systems",
     authorName: "Vipul Gupta",
-    date: "21.01.2023",
+    date: "21th Jan, 2023",
     cardBanner: bias_recommendation_system,
     cardDescription:
       "Modern-day web systems rely on user feedback (such as click activity or ratings) to build ML models to personalize recommendations.",
@@ -46,12 +44,11 @@ export const blogData: TBlogData[] = [
     longDescription:
       "Modern-day web systems rely on user feedback (such as click activity or ratings) to build ML models to personalize recommendations. Such recommender systems form the core of several popular applications that recommend short videos (Instagram, TikTok, YouTube), timeline feeds (Twitter, Facebook), the next prod...",
   },
-
   {
     id: "reasons-to-retrain-production-ml-models",
     title: "Why do we need to care about Retraining?",
     authorName: "Shikha Mohanty",
-    date: "14.01.2023",
+    date: "14th Jan, 2023",
     cardBanner: care_about_retraining,
     cardDescription:
       "The decay in model performance is generally due to reasons like data drifts, label drifts, and concept drifts. To combat these issues, retraining is critical.",
@@ -59,12 +56,11 @@ export const blogData: TBlogData[] = [
     longDescription:
       "The decay in model performance is generally due to reasons like data drifts, label drifts, and concept drifts. To combat these issues, retraining is critical.",
   },
-
   {
     id: "statistical-methods-like-kl-divergence-for-data-drift-detection",
     title: "5 Great Statistical Methods For Data Drift Detection",
     authorName: "Shri & Sourabh",
-    date: "07.01.2023",
+    date: "07th Jan, 2023",
     cardBanner: data_drift_detection,
     cardDescription:
       "As we now know the significance of handling data distribution drifts, the first step of the process is to identify and detect these shifts.",

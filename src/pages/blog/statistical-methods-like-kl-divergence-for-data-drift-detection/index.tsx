@@ -38,7 +38,7 @@ const index = () => {
           <DefaultBlogContentTemplate
             title="5 Great Statistical Methods For Data Drift Detection"
             authorName="Shri & Sourabh"
-            date="07.01.2023"
+            date="07th Jan, 2023"
             banner={{ image: homeBlog, alt: "biasSystemBanner" }}
           >
             <div className={classes.dataContainer}>

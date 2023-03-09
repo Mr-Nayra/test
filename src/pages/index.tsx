@@ -1,3 +1,4 @@
+import UseDevicesResize from "@/helpers/UseDevicesResize";
 import Head from "next/head";
 import React, { Fragment } from "react";
 import BlogSection from "./index-components/blog/BlogSection";
@@ -9,6 +10,7 @@ import Testimonials from "./index-components/testimonials/Testimonials";
 import WorkFlow from "./index-components/workFlow/WorkFlow";
 
 const index = () => {
+  const { width } = UseDevicesResize();
   return (
     <Fragment>
       <Head>
@@ -21,13 +23,26 @@ const index = () => {
         <link rel="canonical" href="https://www.uptrain.ai" />
         <link rel="alternate" href="https://www.uptrain.ai" hrefLang="en-us" />
       </Head>
-      <HeroBanner />
-      <FeatureSection />
-      <WorkFlow />
-      <Testimonials />
-      <Team />
-      <BlogSection />
-      <CareersSection />
+      {width > 800 ? (
+        <>
+          <HeroBanner />
+          <FeatureSection />
+          <WorkFlow />
+          <Testimonials />
+          <Team />
+          <BlogSection />
+          <CareersSection />
+        </>
+      ) : (
+        <>
+          <HeroBanner />
+          <FeatureSection />
+          <Team />
+          <Testimonials />
+          <CareersSection />
+          <BlogSection />
+        </>
+      )}
     </Fragment>
   );
 };

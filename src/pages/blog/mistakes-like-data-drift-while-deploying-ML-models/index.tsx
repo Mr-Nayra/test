@@ -31,8 +31,8 @@ const index = () => {
 
           <DefaultBlogContentTemplate
             title="7 Mistakes People Make When Putting Their Models In Production"
-            authorName="Tanisha & Vipul"
-            date="19.02.2023"
+            authorName="Sourabh & Shri"
+            date="4th March, 2023"
             banner={{ image: banner, alt: "mistakes-deploying-ML-models" }}
           >
             <div>
@@ -64,7 +64,7 @@ const index = () => {
                   real data (current -time ) and the testing data (at deployment
                   time).
                 </p>
-                <p>unnoticed-data-drifts</p>
+                <p>Wondering what causes the drifts in the distribution?</p>
                 <p>
                   Dynamic changes in the global economy, market, culture,
                   varying trends or sudden changes imposed by events such as
