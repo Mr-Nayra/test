@@ -12,7 +12,7 @@ export const blogData: TBlogData[] = [
     id: "mistakes-like-data-drift-while-deploying-ML-models",
     title: "7 Mistakes People Make When Putting Their Models In Production",
     authorName: "Sourabh & Shri",
-    date: "4th March, 2023",
+    date: "04th Feb, 2023",
     cardBanner: mistake_deploying_model,
     cardDescription:
       "A critical part of the lifecycle of an ML model is post-production maintenance and performance. Many issues may arise during this period",
