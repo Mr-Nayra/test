@@ -36,7 +36,7 @@ export const blogData: TBlogData[] = [
     id: "model-bias-in-recommendation-systems",
     title: "Bias in Recommendation Systems",
     authorName: "Vipul Gupta",
-    date: "21th Jan, 2023",
+    date: "21st Jan, 2023",
     cardBanner: bias_recommendation_system,
     cardDescription:
       "Modern-day web systems rely on user feedback (such as click activity or ratings) to build ML models to personalize recommendations.",
