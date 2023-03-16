@@ -35,10 +35,10 @@ const index = () => {
                 more accurate results.
               </p>
               <p>
-                Let's explore everything you need to know about LLMs - from
+                Let{"'"}s explore everything you need to know about LLMs - from
                 background information on Natural Language Processing (NLP) to
                 state-of-the-art models and techniques for optimizing their
-                performance. We'll also introduce Uptrain - a powerful tool
+                performance. We{"'"}ll also introduce Uptrain - a powerful tool
                 designed specifically for data preparation and fine-tuning of
                 LLMs.
               </p>
@@ -46,8 +46,9 @@ const index = () => {
                 Overview of Machine Learning and Natural Language Processing
               </h2>
               <p>
-                Before diving into LLMs, it's important to understand the basics
-                of machine learning (ML) and natural language processing (NLP).
+                Before diving into LLMs, it{"'"}s important to understand the
+                basics of machine learning (ML) and natural language processing
+                (NLP).
               </p>
               <p>
                 In a nutshell, ML is a subfield of artificial intelligence that
@@ -189,14 +190,14 @@ const index = () => {
               </h2>
               <p>
                 The quality of training data is critical in fine-tuning an LLM.
-                The model can only learn from the data it's trained on, so
+                The model can only learn from the data it{"'"}s trained on, so
                 selecting appropriate data is essential.
               </p>
               <p>
                 One way to ensure that your training dataset is suitable for
                 your specific task is by defining customized signals using
-                Uptrain's data filtering technique. This technique allows you to
-                filter out irrelevant or noisy data and focus on the most
+                Uptrain{"'"}s data filtering technique. This technique allows
+                you to filter out irrelevant or noisy data and focus on the most
                 relevant information for your task.
               </p>
               <p>
@@ -217,14 +218,14 @@ const index = () => {
               <p>
                 Overall, proper selection and preparation of training datasets
                 are crucial steps in fine-tuning an LLM successfully. With
-                Uptrain's advanced features such as collaborative labeling and
-                active learning capabilities combined with its integration with
-                🤗 Trainer API makes this process more efficient than ever
+                Uptrain{"'"}s advanced features such as collaborative labeling
+                and active learning capabilities combined with its integration
+                with 🤗 Trainer API makes this process more efficient than ever
                 before!
               </p>
               <h2 id="evaluation-metrics">Evaluation Metrics</h2>
               <p>
-                Once an LLM has been fine-tuned for a specific task, it's
+                Once an LLM has been fine-tuned for a specific task, it{"'"}s
                 important to evaluate its performance. There are several metrics
                 that can be used to assess the quality of an LLM:
               </p>
@@ -248,7 +249,7 @@ const index = () => {
                 performance.
               </p>
               <p>
-                To ensure that your evaluation results are reliable, it's
+                To ensure that your evaluation results are reliable, it{"'"}s
                 essential to use appropriate validation techniques like k-fold
                 cross-validation or holdout validation. This helps prevent
                 overfitting by testing the model on data not used during
@@ -257,17 +258,17 @@ const index = () => {
               </p>
               <p>
                 The choice of evaluation metric will depend on your specific use
-                case and goals. For example, if you're building a sentiment
+                case and goals. For example, if you{"'"}re building a sentiment
                 analysis tool for social media monitoring, accuracy might be
-                less important than recall - you want to make sure you're
+                less important than recall - you want to make sure you{"'"}re
                 capturing as many relevant mentions as possible even if there is
                 some noise in the data.
               </p>
               <p>
-                In UpTrain, you can easily compare different models' performance
-                using various metrics through its built-in dashboard feature.
-                This allows for quick iteration cycles when fine-tuning models
-                based on feedback from stakeholders or end-users.
+                In UpTrain, you can easily compare different models{"'"}{" "}
+                performance using various metrics through its built-in dashboard
+                feature. This allows for quick iteration cycles when fine-tuning
+                models based on feedback from stakeholders or end-users.
               </p>
               <h2 id="overfitting-and-cross-validation">
                 Overfitting and Cross-validation
@@ -301,7 +302,7 @@ const index = () => {
                 randomly dropping out neurons during training.
               </p>
               <p>
-                Overall, it's important to carefully evaluate your LLM's
+                Overall, it{"'"}s important to carefully evaluate your LLM{"'"}s
                 performance through various evaluation metrics and use
                 appropriate techniques such as cross-validation and
                 regularization to avoid overfitting and improve generalization
@@ -324,7 +325,7 @@ const index = () => {
                 NLP or machine learning.
               </p>
               <p>
-                With Uptrain's features such as data filtering, integrity
+                With Uptrain{"'"}s features such as data filtering, integrity
                 checks, collaborative labeling and active learning capabilities
                 combined with 🤗 Trainer API integration you can easily finetune
                 your pre-trained model for optimal performance on your specific
@@ -333,9 +334,9 @@ const index = () => {
               </p>
               <p>
                 We hope that this comprehensive guide has provided you with
-                valuable insights into LLMs' potential applications and how they
-                can be leveraged by engineers like yourself to take your
-                products' NLP capabilities to new heights.
+                valuable insights into LLMs{"'"} potential applications and how
+                they can be leveraged by engineers like yourself to take your
+                products{"'"} NLP capabilities to new heights.
               </p>
             </div>
           </DefaultBlogContentTemplate>
