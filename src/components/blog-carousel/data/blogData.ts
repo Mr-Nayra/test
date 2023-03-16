@@ -6,13 +6,29 @@ import bias_recommendation_system from "../images/bias-recommendation-systems/bi
 import bias_recommendation_system_hero from "../images/bias-recommendation-systems/bias_recommendation_system_hero.webp";
 import care_about_retraining from "../images/care-about-retraining/care-about-retraining.webp";
 import data_drift_detection from "../images/data-drift-detection/data-drift-detection.webp";
+// Unlocking the Power of Language Models with UpTrain
+import unLockingThePower from "../images/unlocking-the-power/unlocking-the-power.webp";
+import unLockingThePowerLongBanner from "../images/unlocking-the-power/long-banner.webp";
+
 import { TBlogData } from "./BlogType";
 export const blogData: TBlogData[] = [
+  {
+    id: "unlocking-the-power-of-language-models-with-upTrain",
+    title: "Unlocking the Power of Language Models with UpTrain",
+    authorName: "Shikha & Vipul",
+    date: "14th March 2023",
+    cardBanner: unLockingThePower,
+    cardDescription:
+      "If you have connected to the internet in the last 60 days, it wouldn’t be of surprise that you have heard of ChatGPT(or atleast come across the word).",
+    firstPositionBanner: unLockingThePowerLongBanner,
+    longDescription:
+      "If you have connected to the internet in the last 60 days, it wouldn’t be of surprise that you have heard of ChatGPT(or atleast come across the word). But behind this modern day marvel is an interesting technology powering it, which is Large Language Models (LLMs) ....",
+  },
   {
     id: "mistakes-like-data-drift-while-deploying-ML-models",
     title: "7 Mistakes People Make When Putting Their Models In Production",
     authorName: "Sourabh & Shri",
-    date: "04th Mar, 2023",
+    date: "7th March 2023",
     cardBanner: mistake_deploying_model,
     cardDescription:
       "A critical part of the lifecycle of an ML model is post-production maintenance and performance. Many issues may arise during this period",
