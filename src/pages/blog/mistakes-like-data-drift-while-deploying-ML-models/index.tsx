@@ -32,7 +32,7 @@ const index = () => {
           <DefaultBlogContentTemplate
             title="7 Mistakes People Make When Putting Their Models In Production"
             authorName="Sourabh & Shri"
-            date="04th Mar, 2023"
+            date="7th March 2023"
             banner={{ image: banner, alt: "mistakes-deploying-ML-models" }}
           >
             <div>
