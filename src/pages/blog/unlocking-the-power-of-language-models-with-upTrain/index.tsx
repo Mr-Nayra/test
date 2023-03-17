@@ -28,7 +28,7 @@ const index = () => {
                 wouldn’t be of surprise that you have heard of ChatGPT(or
                 atleast come across the word). But behind this modern day marvel
                 is an interesting technology powering it, which is Large
-                Language Models (LLMs).LLMs are pre-trained models that can be
+                Language Models (LLMs). LLMs are pre-trained models that can be
                 fine-tuned for specific tasks such as text classification,
                 sentiment analysis, or question answering. Fine-tuning an LLM
                 can greatly improve its performance on these tasks and provide
