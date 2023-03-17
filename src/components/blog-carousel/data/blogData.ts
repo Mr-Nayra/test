@@ -9,9 +9,22 @@ import data_drift_detection from "../images/data-drift-detection/data-drift-dete
 // Unlocking the Power of Language Models with UpTrain
 import unLockingThePower from "../images/unlocking-the-power/unlocking-the-power.webp";
 import unLockingThePowerLongBanner from "../images/unlocking-the-power/long-banner.webp";
+// An Introductory Guide to Fine-tuning Large Language Models
+import introductoryBanner from "../images/an-introductory-guide/banner.webp";
+import introductoryLongBanner from "../images/an-introductory-guide/long-banner.webp";
 
 import { TBlogData } from "./BlogType";
 export const blogData: TBlogData[] = [
+  {
+    id: "an-introductory-guide-to-fine-tuning-large-language-models",
+    title: "An Introductory Guide to Fine-tuning Large Language Models",
+    authorName: "Aryan V S",
+    date: "17th March 2023",
+    cardBanner: introductoryBanner,
+    cardDescription: `A "Language Model" is a machine learning model trained to perform well on tasks related to text/language like Classification, Summarization, Translation, Prediction and Generation.`,
+    firstPositionBanner: introductoryLongBanner,
+    longDescription: `A "Language Model" is a machine learning model trained to perform well on tasks related to text/language like Classification, Summarization, Translation, Prediction and Generation. With recent developments in this field ....`,
+  },
   {
     id: "unlocking-the-power-of-language-models-with-upTrain",
     title: "Unlocking the Power of Language Models with UpTrain",
