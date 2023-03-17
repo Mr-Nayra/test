@@ -92,11 +92,3 @@ pipeline {
 
 
 }
-
-def getBuildName() {
- "${BUILD_NUMBER}_$appName:${params.RELEASE_TAG}"
-}
-
-def isMaster() {
- "${params.RELEASE_TAG}" == "master"
-}
