@@ -24,9 +24,10 @@ pipeline {
   {
     steps{
         script{
-            OutputFile=TimeStamp+".tar"
             //Using the Docker plugin to compress the image as a tar file
-            docker.image(TimeStamp).save(OutputFile)
+            sh """
+            docker save -o ${TimeStamp}.tar ${TimeStamp}
+            """
         }
     }
   }
