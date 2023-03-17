@@ -13,22 +13,38 @@ pipeline {
   stage('Build Image') {
    steps {
     script {
-      def timestamp = currentBuild.getTimeInMillis().toString()
-      timestamp="uptrain-"+timestamp
-      dockerImage = docker.build timestamp
+      TimeStamp = currentBuild.getTimeInMillis().toString()
+      TimeStamp="uptrain-"+TimeStamp
+      dockerImage = docker.build TimeStamp
     }
    }
   }
 
-//   stage('Transfer-Deployment') {
-//    steps {
-//     script {
-//       docker.withRegistry("https://registry.hub.docker.com", registryCredential) {
-//       dockerImage.push()
-//       }
-//     }
-//    }
-//   }
+  stage('Compress Image')
+  {
+    steps{
+        script{
+            OutputFile=TimeStamp+".tar"
+            //Using the Docker plugin to compress the image as a tar file
+            docker.image(timestamp).save(OutputFile)
+        }
+    }
+  }
+
+        stage('Copy image to remote server') {
+            steps {
+                script {
+                    // Set up SSH credentials for remote server
+                    sshagent(credentials: ['UptrainProd']) {
+                        // Copy Docker image to remote server using SCP
+                        sh """
+                        scp -o StrictHostKeyChecking=no /jenkins/data/workspace/Uptrain/${OutputFile} ubuntu@65.2.63.83:/home/ubuntu/${OutputFile}
+                        """
+                    }
+                }
+            }
+        }
+
 // stage('Packing AMI')
 // {
 //     steps {
