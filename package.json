@@ -8,6 +8,11 @@
     "start": "node server.js",
     "lint": "next lint"
   },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "npm run lint"
+    ]
+  },
   "dependencies": {
     "@emotion/react": "^11.10.6",
     "@mantine/carousel": "^5.10.4",
@@ -31,6 +36,8 @@
     "typewriter-effect": "^2.19.0"
   },
   "devDependencies": {
-    "@types/gtag.js": "^0.0.12"
+    "@types/gtag.js": "^0.0.12",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0"
   }
 }
