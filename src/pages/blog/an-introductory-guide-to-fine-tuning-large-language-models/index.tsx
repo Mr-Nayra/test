@@ -9,8 +9,6 @@ import lossPlot from "./images/loss-plot.png";
 import perplexityPlot from "./images/perplexity-plot.png";
 import predictions from "./images/predictions.png";
 import Image from "next/image";
-import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const index = () => {
   return (
