@@ -118,7 +118,3 @@ pipeline {
   //   sh "docker image prune -a -f"
   //  }
   // }
- }
-
-
-}
