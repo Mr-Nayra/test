@@ -204,7 +204,8 @@ const index = () => {
               {`import json
 from transformers import pipeline
 
-masked_sentence = "There are so many [MASK] and advancements in the field of AI and [MASK] these days. What a time to be [MASK]!"
+masked_sentence = "There are so many [MASK] and advancements in the field of AI
+and [MASK] these days. What a time to be [MASK]!"
 fill_masker = pipeline(model="distilbert-base-uncased")
 print(json.dumps(fill_masker(masked_sentence), indent=2))`}
             </CodeViewer>
@@ -225,7 +226,8 @@ print(json.dumps(fill_masker(masked_sentence), indent=2))`}
       "score": 0.16455209255218506,
       "token": 15463,
       "token_str": "innovations",
-      "sequence": "[CLS] there are so many innovations and advancements in the field of ai and [MASK] these days. what a time to be [MASK]! [SEP]"
+      "sequence": "[CLS] there are so many innovations and advancements in the
+      field of ai and [MASK] these days. what a time to be [MASK]! [SEP]"
     },
     <TRUNCATED>
   ],
@@ -234,7 +236,8 @@ print(json.dumps(fill_masker(masked_sentence), indent=2))`}
       "score": 0.02868303284049034,
       "token": 2974,
       "token_str": "technology",
-      "sequence": "[CLS] there are so many [MASK] and advancements in the field of ai and technology these days. what a time to be [MASK]! [SEP]"
+      "sequence": "[CLS] there are so many [MASK] and advancements in the field 
+      of ai and technology these days. what a time to be [MASK]! [SEP]"
     },
     <TRUNCATED>
   ],
@@ -243,7 +246,8 @@ print(json.dumps(fill_masker(masked_sentence), indent=2))`}
       "score": 0.023737657815217972,
       "token": 5541,
       "token_str": "creative",
-      "sequence": "[CLS] there are so many [MASK] and advancements in the field of ai and [MASK] these days. what a time to be creative! [SEP]"
+      "sequence": "[CLS] there are so many [MASK] and advancements in the field of
+       ai and [MASK] these days. what a time to be creative! [SEP]"
     },
     <TRUNCATED>
   ]
@@ -303,7 +307,8 @@ POSITIVE_SENTIMENT_ADJECTIVES = <List of Positive Sentiment Adjectives>
 
 NEGATIVE_SENTIMENT_ADJECTIVES = <List of Negative Sentiment Adjectives>
 
-ADJECTIVES = POSITIVE_SENTIMENT_ADJECTIVES + NEGATIVE_SENTIMENT_ADJECTIVES
+ADJECTIVES = POSITIVE_SENTIMENT_ADJECTIVES + 
+             NEGATIVE_SENTIMENT_ADJECTIVES
 
 COMPANIES = <List of companies that make sports gear>
 
@@ -313,7 +318,8 @@ def create_sample_dataset(dataset_size: int):
     data = []
     
     for i = 1 to dataset_size:
-        sentence = randomly generate a sentence using COMPANIES, JOINERS, PRODUCTS, and sentiment adjectives
+        sentence = randomly generate a sentence using COMPANIES, JOINERS,
+         PRODUCTS, and sentiment adjectives
         label = positive or negative depending on adjective used in sentence
         data.append((sentence, label))
     
@@ -402,7 +408,7 @@ cfg = {
     'checks': [
         {
             "type": uptrain.Monitor.EDGE_CASE,
-            "signal_formulae": \
+            "signal_formulae": 
                 uptrain.Signal("Is 'Nike' text present?", nike_text_present_func) &
                 uptrain.Signal("Is it a Nike product?", nike_product_keyword_func) &
                 uptrain.Signal("Is positive sentiment?", is_positive_sentiment_func)
@@ -512,11 +518,15 @@ retraining_dataset = load_dataset(uptrain_save_fold_name)`}
             <p>
               <b>Loss Plot</b>
             </p>
-            <Image src={lossPlot} style={{ height: "auto" }} alt="Loss Plot" />
+            <Image
+              src={lossPlot}
+              style={{ height: "auto", width: "50%" }}
+              alt="Loss Plot"
+            />
             <p>Perplexity Plot</p>
             <Image
               src={perplexityPlot}
-              style={{ height: "auto" }}
+              style={{ height: "auto", width: "50%" }}
               alt="Perplexity Plot"
             />
             <p>
@@ -569,7 +579,7 @@ Fine-tuned Top tokens: ['inexpensive', 'cheap', 'lightweight', 'versatile', 'dur
             </p>
             <Image
               src={predictions}
-              style={{ height: "auto" }}
+              style={{ height: "auto", width: "50%" }}
               alt="predictions"
             />
             <p>
