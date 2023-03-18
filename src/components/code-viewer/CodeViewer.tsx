@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import classes from "./index.module.scss";
+import Prism from "prismjs";
 interface IProps {
-  children: React.ReactNode;
+  children: string;
 }
 
 const CodeViewer: React.FC<IProps> = ({ children }) => {
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      Prism.highlightAll();
+    }
+  }, []);
   return (
     <div className={classes.root}>
-      <pre className={classes.preTag}>{children}</pre>
+      <code className="language-js">{children}</code>
     </div>
   );
 };
