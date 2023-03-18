@@ -9,6 +9,8 @@ import lossPlot from "./images/loss-plot.png";
 import perplexityPlot from "./images/perplexity-plot.png";
 import predictions from "./images/predictions.png";
 import Image from "next/image";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { dark } from "react-syntax-highlighter/dist/esm/styles/prism";
 
 const index = () => {
   return (
@@ -512,11 +514,15 @@ retraining_dataset = load_dataset(uptrain_save_fold_name)`}
             <p>
               <b>Loss Plot</b>
             </p>
-            <Image src={lossPlot} style={{ height: "auto" }} alt="Loss Plot" />
+            <Image
+              src={lossPlot}
+              style={{ height: "auto", width: "50%" }}
+              alt="Loss Plot"
+            />
             <p>Perplexity Plot</p>
             <Image
               src={perplexityPlot}
-              style={{ height: "auto" }}
+              style={{ height: "auto", width: "50%" }}
               alt="Perplexity Plot"
             />
             <p>
@@ -569,7 +575,7 @@ Fine-tuned Top tokens: ['inexpensive', 'cheap', 'lightweight', 'versatile', 'dur
             </p>
             <Image
               src={predictions}
-              style={{ height: "auto" }}
+              style={{ height: "auto", width: "50%" }}
               alt="predictions"
             />
             <p>
