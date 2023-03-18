@@ -10,6 +10,7 @@ pipeline {
 
  stages {
 
+
   stage('Build Image') {
    steps {
     script {
@@ -39,12 +40,24 @@ pipeline {
                     sshagent(credentials: ['UptrainProd']) {
                         // Copy Docker image to remote server using SCP
                         sh """
-                        scp -o StrictHostKeyChecking=no /jenkins/data/workspace/Uptrain/${OutputFile} ubuntu@65.2.63.83:/home/ubuntu/${OutputFile}
+                        scp -o StrictHostKeyChecking=no /jenkins/data/workspace/Uptrain/${TimeStamp}.tar ubuntu@65.2.63.83:/home/ubuntu/${TimeStamp}.tar
+                        ssh ubuntu@65.2.63.83 'docker load < ${TimeStamp}.tar && export image_build=${TimeStamp} && docker-compose up -d --build && find . -name 'uptrain*.tar' -delete'
                         """
                     }
                 }
             }
         }
+    stage('Garbage Collection')
+    {
+        steps{
+            script{
+             sh "docker image prune -a -f"
+             sh "find . -name 'uptrain*.tar' -delete"   
+            }
+        }
+    }
+ }
+}
 
 // stage('Packing AMI')
 // {
