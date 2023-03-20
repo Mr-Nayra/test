@@ -20,7 +20,7 @@ const index = () => {
         <DefaultBlogContentTemplate
           title="An Introductory Guide to Fine-tuning Large Language Models"
           authorName="Aryan V S"
-          date="17th March 2023"
+          date="20th March 2023"
           banner={{ image: banner, alt: "Unlocking The Power" }}
         >
           <div>
@@ -299,7 +299,7 @@ print(json.dumps(fill_masker(masked_sentence), indent=2))`}
               </a>
               .
             </p>
-            <p>Code</p>
+
             <CodeViewer>
               {`PRODUCTS = <List of Products manufactured by Nike>
 
@@ -335,7 +335,7 @@ def create_sample_dataset(dataset_size: int):
               reference using the shared link above. With all of that setup, we
               can synthesize our data.
             </p>
-            <p>Code</p>
+
             <CodeViewer>
               {`SYNTHESIZED_DATASET_SIZE = 25000
 dataset = create_sample_dataset(SYNTHESIZED_DATASET_SIZE)
@@ -379,7 +379,7 @@ save(dataset)`}
               by using & (combining signals logically with the AND operator) and
               | (combining signals logically with the OR operator) operators.
             </p>
-            <p>Code</p>
+
             <CodeViewer>
               {`def nike_text_present_func (inputs, outputs, gts=None, extra_args={}):
     """Checks if the word "Nike" is present in the text or not"""
@@ -450,7 +450,7 @@ framework = uptrain.Framework(cfg)`}
               iterates over all our data in the dataset and passes it into the
               framework.
             </p>
-            <p>Code</p>
+
             <CodeViewer>
               {`for sample in dataset:
     # We are processing data one at a time but note that you can pass data in

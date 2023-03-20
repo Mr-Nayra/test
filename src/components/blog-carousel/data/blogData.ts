@@ -19,7 +19,7 @@ export const blogData: TBlogData[] = [
     id: "an-introductory-guide-to-fine-tuning-large-language-models",
     title: "An Introductory Guide to Fine-tuning Large Language Models",
     authorName: "Aryan V S",
-    date: "17th March 2023",
+    date: "20th March 2023",
     cardBanner: introductoryBanner,
     cardDescription: `A "Language Model" is a machine learning model trained to perform well on tasks related to text/language like Classification, Summarization, Translation, Prediction and Generation.`,
     firstPositionBanner: introductoryLongBanner,
