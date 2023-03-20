@@ -19,7 +19,7 @@ export const blogData: TBlogData[] = [
     id: "an-introductory-guide-to-fine-tuning-large-language-models",
     title: "An Introductory Guide to Fine-tuning Large Language Models",
     authorName: "Aryan V S",
-    date: "20th March 2023",
+    date: "20th Mar, 2023",
     cardBanner: introductoryBanner,
     cardDescription: `A "Language Model" is a machine learning model trained to perform well on tasks related to text/language like Classification, Summarization, Translation, Prediction and Generation.`,
     firstPositionBanner: introductoryLongBanner,
@@ -29,7 +29,7 @@ export const blogData: TBlogData[] = [
     id: "unlocking-the-power-of-language-models-with-upTrain",
     title: "Unlocking the Power of Language Models with UpTrain",
     authorName: "Shikha & Vipul",
-    date: "14th March 2023",
+    date: "14th Mar, 2023",
     cardBanner: unLockingThePower,
     cardDescription:
       "If you have connected to the internet in the last 60 days, it wouldn’t be of surprise that you have heard of ChatGPT(or atleast come across the word).",
@@ -41,7 +41,7 @@ export const blogData: TBlogData[] = [
     id: "mistakes-like-data-drift-while-deploying-ML-models",
     title: "7 Mistakes People Make When Putting Their Models In Production",
     authorName: "Sourabh & Shri",
-    date: "7th March 2023",
+    date: "7th Mar, 2023",
     cardBanner: mistake_deploying_model,
     cardDescription:
       "A critical part of the lifecycle of an ML model is post-production maintenance and performance. Many issues may arise during this period",

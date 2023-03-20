@@ -20,7 +20,7 @@ const index = () => {
         <DefaultBlogContentTemplate
           title="An Introductory Guide to Fine-tuning Large Language Models"
           authorName="Aryan V S"
-          date="20th March 2023"
+          date="20th Mar, 2023"
           banner={{ image: banner, alt: "Unlocking The Power" }}
         >
           <div>
