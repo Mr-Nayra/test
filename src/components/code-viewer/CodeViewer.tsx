@@ -13,7 +13,10 @@ const CodeViewer: React.FC<IProps> = ({ children }) => {
   }, []);
   return (
     <div className={classes.root}>
-      <code className="language-js" style={{ whiteSpace: "pre-wrap" }}>
+      <code
+        className="language-js"
+        style={{ whiteSpace: "pre-wrap", wordBreak: "break-word" }}
+      >
         {children}
       </code>
     </div>
