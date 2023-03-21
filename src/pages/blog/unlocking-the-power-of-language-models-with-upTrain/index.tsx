@@ -19,7 +19,7 @@ const index = () => {
           <DefaultBlogContentTemplate
             title="Unlocking the Power of Language Models with UpTrain"
             authorName="Shikha & Vipul"
-            date="14th March 2023"
+            date="14th Mar, 2023"
             banner={{ image: banner, alt: "Unlocking The Power" }}
           >
             <div>
