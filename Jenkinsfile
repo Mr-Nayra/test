@@ -40,7 +40,7 @@ sshagent(credentials: ['UptrainProd']) {
 // Copy Docker image to remote server using SCP
 sh """
 scp -o StrictHostKeyChecking=no ${TimeStamp}.tar ubuntu@65.2.63.83:/home/ubuntu/${TimeStamp}.tar
-ssh ubuntu@65.2.63.83 'docker load < ${TimeStamp}.tar && export image_build=${TimeStamp} && docker-compose up -d --build && find . -name 'uptrain*.tar' -delete'
+ssh ubuntu@65.2.63.83 'docker load < ${TimeStamp}.tar && export image_build=${TimeStamp} && docker-compose up -d --build && find . -name 'uptrain*.tar' -delete && docker image prune -a -f'
 """
 }
 }
