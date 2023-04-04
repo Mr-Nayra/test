@@ -12,9 +12,25 @@ import unLockingThePowerLongBanner from "../images/unlocking-the-power/long-bann
 // An Introductory Guide to Fine-tuning Large Language Models
 import introductoryBanner from "../images/an-introductory-guide/banner.webp";
 import introductoryLongBanner from "../images/an-introductory-guide/long-banner.webp";
+// fine-tuning-language-models-with-uptrain
+import fineBanner from "../images/fine-tuning-language-models-with-uptrain/banner.png";
+import fineLongBanner from "../images/fine-tuning-language-models-with-uptrain/long_img.png";
 
 import { TBlogData } from "./BlogType";
 export const blogData: TBlogData[] = [
+  {
+    id: "fine-tuning-language-models-with-uptrain",
+    title:
+      "Fine-tuning Language Models with UpTrain: A Simple Guide to Enhancing Models for Custom Use-cases",
+    authorName: "Dr. Vipul Gupta",
+    date: "31st Mar, 2023",
+    cardBanner: fineBanner,
+    firstPositionBanner: fineLongBanner,
+    cardDescription:
+      "The era of large language models (LLMs) taking the world by storm has come and gone. Today, the debate between proponents of bigger models and smaller models has intensified.",
+    longDescription:
+      "The era of large language models (LLMs) taking the world by storm has come and gone. Today, the debate between proponents of bigger models and smaller models has intensified. While the debate continues, one thing is clear: not everyone needs to run large models for their specific use-cases ... ",
+  },
   {
     id: "an-introductory-guide-to-fine-tuning-large-language-models",
     title: "An Introductory Guide to Fine-tuning Large Language Models",
