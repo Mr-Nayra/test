@@ -111,7 +111,7 @@ const HeroBanner = () => {
                   controls
                 >
                   <source
-                    src="https://uptrain-demo.s3.us-west-1.amazonaws.com/demo_video_small.mp4"
+                    src="https://uptrain-demo.s3.us-west-1.amazonaws.com/full_demo.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
