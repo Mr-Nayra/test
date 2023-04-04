@@ -52,6 +52,19 @@ const TheFooter = () => {
                 </a>
               </li>
               <li>
+                <Link
+                  onClick={() => {
+                    buttonEvent("Terms-and-Conditions");
+                  }}
+                  className={classes.item}
+                  href="/terms-and-conditions"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  Terms and Conditions
+                </Link>
+              </li>
+              <li>
                 <span className={classes.item}>Social Media</span>
                 <div className={classes.SocialMedia}>
                   <a
