@@ -1,5 +1,9 @@
 import React from "react";
 import classes from "./tableList.module.scss";
+import tableListPoint from "../../../images/tableListPoint.png";
+import Image from "next/image";
+import WhiteCircle from "@/components/eclipse/WhiteCircle";
+import FillEclipse from "@/components/eclipse/FillEclipse";
 
 interface IProps {
   data: {
@@ -15,12 +19,23 @@ interface IProps {
 const TableList = (props: IProps) => {
   const { data } = props;
   return (
-    <ul>
+    <ul style={{ position: "relative" }}>
+      <WhiteCircle size={120} top={-20} left={-30} />
+      <WhiteCircle size={120} bottom={-100} right={-20} />
+      <FillEclipse size={300} left={"-55%"} top={"30%"} />
+      <FillEclipse size={300} left={"-55%"} top={"30%"} />
+
       {data.map((item) => {
         return (
           <li className={classes.listItem} key={item.id}>
             <a href={"#" + item.id} className={classes.listItemLink}>
-              - {item.title}
+              <Image
+                src={tableListPoint}
+                width={13}
+                alt="Pointer Icon"
+                style={{ marginRight: 14, marginTop: 3 }}
+              />{" "}
+              <span style={{ flex: 1 }}>{item.title}</span>
             </a>
             {item.nestedList && item.nestedList.length > 0 && (
               <ul className={classes.nestedListItem}>

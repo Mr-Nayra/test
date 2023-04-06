@@ -2,10 +2,10 @@ import React from "react";
 import { createStyles } from "@mantine/core";
 interface Props {
   size: number;
-  top?: number;
-  bottom?: number;
-  left?: number;
-  right?: number;
+  top?: number | string;
+  bottom?: number | string;
+  left?: number | string;
+  right?: number | string;
 }
 const WhiteCircle: React.FC<Props> = ({ size, bottom, left, right, top }) => {
   const useStyle = createStyles({
@@ -21,7 +21,7 @@ const WhiteCircle: React.FC<Props> = ({ size, bottom, left, right, top }) => {
       width: size,
       height: size,
       borderRadius: "50%",
-      backgroundColor: "#000000",
+      backgroundColor: "transparent",
       boxShadow:
         "inset 6px 6px 12px rgba(169, 177, 231, 0.25), inset -6px -6px 12px #0E0E0E",
       overflow: "hidden",

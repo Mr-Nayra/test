@@ -10,6 +10,7 @@ import vocabularyCoverage from "./images/vocabularyCoverage.gif";
 
 import Image from "next/image";
 import CodeViewer from "@/components/code-viewer/CodeViewer";
+import DefaultBlogTemplateCarousel from "@/components/blog-template/blog-template-carousel/DefaultBlogTemplateCarousel";
 
 const index = () => {
   return (
@@ -383,15 +384,18 @@ edge_case_asian_word = {
               handling custom use-cases like summarizing long conversations in
               the DialogSum dataset.
             </p>
-            pIn summary, fine-tuning smaller language models using tools like
-            UpTrain is an effective way to create tailored solutions for
-            specific tasks. By identifying edge cases, building custom monitors,
-            and analyzing the {"model's"} performance, we can collect
-            high-quality datasets that help improve the {"model's"} performance
-            for our particular use-case.
+            <p>
+              pIn summary, fine-tuning smaller language models using tools like
+              UpTrain is an effective way to create tailored solutions for
+              specific tasks. By identifying edge cases, building custom
+              monitors, and analyzing the {"model's"} performance, we can
+              collect high-quality datasets that help improve the {"model's"}{" "}
+              performance for our particular use-case.
+            </p>
           </div>
         </DefaultBlogContentTemplate>
       </div>
+      <DefaultBlogTemplateCarousel />
     </div>
   );
 };

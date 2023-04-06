@@ -3,15 +3,24 @@
 .mainContainer {
     width: 70%;
     padding: 3em 2em;
-    background-color: $secondaryGradient;
 
-    @media screen and (max-width:850px) {
-        width: 60%
+    position: relative;
+    padding-right: 5em;
+
+    @media screen and (max-width:1042px) {
+        width: 60%;
+        padding-right: 2em;
     }
 
     @media screen and (max-width:780px) {
-        width: 100%;
+        width: 90%;
+        padding: 3em auto;
     }
+}
+
+.innerBlock {
+    background-color: #87878733;
+    border-radius: 25px;
 }
 
 .bannerImg {
@@ -20,25 +29,25 @@
 }
 
 .mainContent {
-    margin: 0px 10%;
+    margin: 0px 25px;
     line-height: 2;
 
     @media screen and (max-width:780px) {
-        margin: 0px;
+        margin: 0px 25px;
     }
 }
 
 .heading {
     font-size: 24px;
     font-weight: 600;
-    color: $white;
+    color: #D4D4D4;
     margin-bottom: 5px;
 }
 
 .publicDate {
     font-size: 12px;
     font-weight: 400;
-    color: $white;
+    color: #C0C0C0;
     margin: 0px;
 }
 
@@ -68,14 +77,14 @@
         margin-bottom: 20px;
         font-size: 16px;
         font-weight: 400;
-        color: $white;
+        color: #C3C3C3;
         text-align: left;
 
         & b {
             font-size: 18px;
             font-weight: 600;
             text-align: left !important;
-            color: $white;
+            color: #C3C3C3;
         }
     }
 
@@ -83,12 +92,12 @@
         margin-bottom: 20px;
         font-size: 16px;
         font-weight: 400;
-        color: $white;
+        color: #C3C3C3;
         text-align: center;
     }
 
     & h2 {
-        color: $white;
+        color: #C3C3C3;
     }
 
     & a {

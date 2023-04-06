@@ -9,6 +9,7 @@ import lossPlot from "./images/loss-plot.png";
 import perplexityPlot from "./images/perplexity-plot.png";
 import predictions from "./images/predictions.png";
 import Image from "next/image";
+import DefaultBlogTemplateCarousel from "@/components/blog-template/blog-template-carousel/DefaultBlogTemplateCarousel";
 
 const index = () => {
   return (
@@ -603,6 +604,7 @@ Fine-tuned Top tokens: ['inexpensive', 'cheap', 'lightweight', 'versatile', 'dur
           </div>
         </DefaultBlogContentTemplate>
       </div>
+      <DefaultBlogTemplateCarousel />
     </div>
   );
 };

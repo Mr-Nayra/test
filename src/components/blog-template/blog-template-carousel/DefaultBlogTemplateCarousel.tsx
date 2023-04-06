@@ -17,11 +17,11 @@ const BlogCardCarousel = () => {
 
   return (
     <div className={classes.root} id="blog">
-      <h1 className={classes.heading}>More Reads</h1>
+      <h1 className={classes.heading}>Latest from UpTrain AI</h1>
       <BlogCarousel
         data={data}
         indicators={false}
-        darkTheme={true}
+        darkTheme={false}
         eventFor="blog"
       />
     </div>

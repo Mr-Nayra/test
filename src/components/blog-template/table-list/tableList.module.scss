@@ -2,14 +2,20 @@
 
 .listItem {
     list-style: none;
-    margin: 20px 0px;
+    // margin: 20px 0px;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 9999;
+
 }
 
 .listItemLink {
     font-size: 16px;
     font-weight: 500;
     text-decoration: none;
-    color: $white;
+    color: #F3F3F3;
+    display: flex;
+    flex-wrap: wrap;
 
     &:hover {
         color: #7C00BD;
@@ -21,12 +27,17 @@
     list-style: disc;
     color: $white;
     margin: 3px 0px;
+    margin-left: 35px;
+
+    & li::marker {
+        color: #C8C8C8 !important
+    }
 }
 
 .nestedListItemLink {
-    color: $white;
+    color: #C8C8C8;
     text-decoration: none;
-    margin: 4px 0px;
+    margin-top: 14px;
     font-size: 16px;
     font-weight: 400;
     display: flex;
@@ -34,4 +45,6 @@
     &:hover {
         color: #7C00BD;
     }
+
+
 }

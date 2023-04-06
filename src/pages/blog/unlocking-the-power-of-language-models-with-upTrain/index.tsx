@@ -7,6 +7,7 @@ import banner from "./images/banner.webp";
 import Image from "next/image";
 import pretainedModel from "./images/pretained-model.png";
 import fuelTuning from "./images/fuel-tuning.png";
+import DefaultBlogTemplateCarousel from "@/components/blog-template/blog-template-carousel/DefaultBlogTemplateCarousel";
 
 const index = () => {
   return (
@@ -341,6 +342,7 @@ const index = () => {
             </div>
           </DefaultBlogContentTemplate>
         </div>
+        <DefaultBlogTemplateCarousel />
       </div>
     </Fragment>
   );
