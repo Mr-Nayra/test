@@ -1,6 +1,7 @@
 import React from "react";
 import { Modal, createStyles } from "@mantine/core";
 import CustomButton from "../button/CustomButton";
+import Link from "next/link";
 
 interface IAcceptProps {
   opened: boolean;
@@ -19,6 +20,9 @@ const useStyles = createStyles({
     fontWeight: 400,
     fontSize: "18px",
     marginTop: 0,
+    "& a": {
+      color: " #F3F3F3",
+    },
   },
 });
 
@@ -34,7 +38,10 @@ const AcceptModal = (props: IAcceptProps) => {
       withCloseButton={false}
     >
       <p className={classes.description}>
-        I have read and agree to the Terms and Conditions (put T&C Page link)
+        I have read and agree to the{" "}
+        <Link href="/terms-and-conditions" target={"_blank"} rel="noreferrer">
+          Terms and Conditions
+        </Link>
       </p>
       <div>
         <a

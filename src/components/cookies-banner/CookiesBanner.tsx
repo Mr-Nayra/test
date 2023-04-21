@@ -22,7 +22,7 @@ const CookiesBanner = () => {
       {cookie === null ? (
         <div className={classes.root}>
           <p className={classes.heading}>We value your privacy</p>
-          <Flex align={"center"} justify="space-between">
+          <div className={classes.row}>
             <p className={classes.subHeading}>
               We use cookies to enhance your browsing experience, serve
               personalized ads or content, and analyze our traffic. By clicking
@@ -46,7 +46,7 @@ const CookiesBanner = () => {
                 Reject
               </button>
             </Flex>
-          </Flex>
+          </div>
         </div>
       ) : (
         <div />
