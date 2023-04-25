@@ -19,7 +19,7 @@ interface IProps {
 const TableList = (props: IProps) => {
   const { data } = props;
   return (
-    <ul style={{ position: "relative" }}>
+    <ul style={{ position: "relative", overflow: "hidden" }}>
       <WhiteCircle size={120} top={-20} left={-30} />
       <WhiteCircle size={120} bottom={-100} right={-20} />
       <FillEclipse size={300} left={"-55%"} top={"30%"} />
