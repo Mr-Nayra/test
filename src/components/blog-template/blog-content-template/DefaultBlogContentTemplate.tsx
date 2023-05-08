@@ -3,6 +3,7 @@ import React, { memo, ReactNode } from "react";
 import classes from "./index.module.scss";
 import WhiteCircle from "@/components/eclipse/WhiteCircle";
 import FillEclipse from "@/components/eclipse/FillEclipse";
+import NewsLetter from "@/components/news-letter/NewsLetter";
 
 interface IProps {
   banner: { image: StaticImageData; alt?: string; title?: string };
@@ -22,7 +23,6 @@ const DefaultBlogContentTemplate = (props: IProps) => {
       <FillEclipse size={300} bottom={"-150px"} left={"-100px"} />
       <FillEclipse size={300} bottom={"100px"} right={"-180px"} />
       <FillEclipse size={300} top={"180px"} right={10} />
-
       <div className={classes.innerBlock}>
         <div>
           <Image
@@ -43,6 +43,7 @@ const DefaultBlogContentTemplate = (props: IProps) => {
           <div className={classes.dataContainer}>{children}</div>
         </div>
       </div>
+      <NewsLetter />
     </div>
   );
 };
