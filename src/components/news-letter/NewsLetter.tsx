@@ -1,6 +1,6 @@
 import { COLORS } from "@/colors";
 import { CONSTANTS } from "@/constants";
-import { Text, TextInput, createStyles } from "@mantine/core";
+import { Notification, Text, TextInput, createStyles } from "@mantine/core";
 import { GoogleSpreadsheet } from "google-spreadsheet";
 import React, { memo, useCallback, useEffect, useMemo, useState } from "react";
 
@@ -9,6 +9,7 @@ const NewsLetter = () => {
   const [email, setEmail] = useState("");
   const [error, setError] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [notification, setNotification] = useState(false);
 
   const onChange = (e: string) => {
     const regx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
@@ -48,6 +49,10 @@ const NewsLetter = () => {
 
       if (result) {
         setEmail("");
+        setNotification(true);
+        setTimeout(() => {
+          setNotification(false);
+        }, 5000);
       }
     } catch (error) {
       console.error(error);
@@ -95,6 +100,17 @@ const NewsLetter = () => {
           </Text>
         )}
       </div>
+      {notification && (
+        <Notification
+          pos={"fixed"}
+          top={80}
+          right={20}
+          color="green"
+          onClose={() => setNotification(false)}
+        >
+          Subscribe successfully
+        </Notification>
+      )}
     </div>
   );
 };
