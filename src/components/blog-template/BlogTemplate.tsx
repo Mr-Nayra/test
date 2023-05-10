@@ -45,8 +45,8 @@ const BlogTemplate: React.FC<IProps> = ({
           {children}
         </DefaultBlogContentTemplate>
       </div>
-      <DefaultBlogTemplateCarousel />
       <NewsLetter />
+      <DefaultBlogTemplateCarousel />
     </div>
   );
 };

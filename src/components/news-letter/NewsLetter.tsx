@@ -60,9 +60,8 @@ const NewsLetter = () => {
     <div className={classes.root}>
       <h3 className={classes.tittle}>Subscribe to our newsletter</h3>
       <p className={classes.description}>
-        Don&rsquo;t miss out on read articles from UpTrain directly inside your
-        inbox.
-        <br /> Subscribe to the newsletter now.
+        Don&rsquo;t miss out on reading informative articles from UpTrain.
+        Subscribe to the newsletter now.
       </p>
       <div className={classes.inputContainer}>
         <div className={classes.inputSection}>
@@ -72,7 +71,7 @@ const NewsLetter = () => {
               input: classes.input,
             }}
             value={email}
-            placeholder="Enter your email address-Subscribe"
+            placeholder="Enter your email address"
             onChange={(e) => onChange(e.target.value)}
           />
           <button
@@ -104,26 +103,46 @@ export default memo(NewsLetter);
 
 const useStyle = createStyles({
   root: {
-    backgroundColor: "#0f172a",
-    padding: "2em 1em",
+    backgroundColor: "rgba(15, 23, 42, 1)",
+    padding: "4em 1em",
   },
   tittle: {
     color: COLORS.white,
     textAlign: "center",
     margin: "0px",
+    fontSize: "1.875rem",
+    "@media(max-width:600px)": {
+      fontSize: "1.50rem",
+    },
   },
   description: {
-    color: COLORS.white,
+    color: "rgba(203, 213 ,225,1)",
     textAlign: "center",
-    fontSize: 14,
+    fontSize: "1.25rem",
     opacity: 0.5,
+    lineHeight: "1.75rem",
+    fontWeight: 500,
+    width: "60%",
+    margin: "1.25rem auto",
+    "@media(max-width:600px)": {
+      fontSize: "1rem",
+    },
+    "@media(max-width:900px)": {
+      width: "80%",
+    },
+    "@media(max-width:450px)": {
+      width: "100%",
+    },
   },
   inputContainer: {
     width: "60%",
     margin: "auto",
     marginTop: 20,
-    "@media(max-width:1170px)": {
-      width: "90%",
+    "@media(max-width:900px)": {
+      width: "80%",
+    },
+    "@media(max-width:450px)": {
+      width: "100%",
     },
   },
   inputSection: {
@@ -131,12 +150,8 @@ const useStyle = createStyles({
     alignItems: "center",
     height: "100%",
     justifyContent: "space-between",
-
     border: "1px solid #fff",
-    borderRadius: 5,
-    "@media(max-width:570px)": {
-      flexDirection: "column",
-    },
+    borderRadius: "0.5rem",
   },
   inputRoot: {
     width: "60%",
@@ -147,18 +162,22 @@ const useStyle = createStyles({
   input: {
     background: "transparent",
     color: COLORS.white,
-    fontSize: 14,
+    fontSize: "1.125rem",
     opacity: 0.5,
     fontWeight: 400,
     border: "0px",
     borderRadius: 0,
+    minHeight: "56px",
+    "@media(max-width:600px)": {
+      fontSize: "1rem",
+    },
   },
   btn: {
     height: "100%",
-    minHeight: "36px",
-    fontSize: 14,
+    minHeight: "56px",
+    fontSize: "1rem",
     padding: "0px 20px",
-    fontWeight: 600,
+    fontWeight: 700,
     cursor: "pointer",
     marginLeft: -10,
     border: "0px",
@@ -166,10 +185,13 @@ const useStyle = createStyles({
     borderBottomRightRadius: 5,
     background: "#fff",
     color: "#0c0c0c",
-    "@media(max-width:570px)": {
-      width: "100%",
-      marginLeft: 0,
-      borderTopRightRadius: 0,
+    letterSpacing: "0.025em",
+    "@media(max-width:600px)": {
+      fontSize: "0.85rem",
+      padding: "0px 10px",
+    },
+    "&:hover": {
+      background: "rgb(203 ,213 ,225,1)",
     },
   },
 });
