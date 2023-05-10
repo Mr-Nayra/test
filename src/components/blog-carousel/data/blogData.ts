@@ -22,7 +22,7 @@ export const blogData: TBlogData[] = [
     id: "fine-tuning-language-models-with-uptrain",
     title:
       "Fine-tuning Language Models with UpTrain: A Simple Guide to Enhancing Models for Custom Use-cases",
-    authorName: "Dr. Vipul Gupta",
+    authorName: "Vipul Gupta",
     date: "31st Mar, 2023",
     cardBanner: fineBanner,
     firstPositionBanner: fineLongBanner,
