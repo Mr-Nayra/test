@@ -70,24 +70,28 @@ const BlogCarousel = (props: IProps) => {
                 alt="cardBanner"
               />
               <div className={classes.textSection}>
-                <p className={`${classes.author} ${darkTheme && classes.dark}`}>
-                  {item.authorName} | {item.date}{" "}
-                </p>
-                <h3
-                  className={`${classes.cardHeading} ${
-                    darkTheme && classes.dark
-                  } `}
-                >
-                  {item.title}
-                </h3>
-                <p
+                <div style={{ flex: 1 }}>
+                  <p
+                    className={`${classes.author} ${darkTheme && classes.dark}`}
+                  >
+                    {item.authorName} | {item.date}{" "}
+                  </p>
+                  <h3
+                    className={`${classes.cardHeading} ${
+                      darkTheme && classes.dark
+                    } `}
+                  >
+                    {item.title}
+                  </h3>
+                </div>
+                {/* <p
                   className={`${classes.cardDescription} ${
                     darkTheme && classes.dark
                   }`}
                 >
                   {item.cardDescription}
-                </p>
-                <div className={classes.readMore}>
+                </p> */}
+                <div className={classes.readMore} style={{ flex: 0 }}>
                   <span> Read More</span>
                   <AiOutlineArrowRight size={14} />
                 </div>

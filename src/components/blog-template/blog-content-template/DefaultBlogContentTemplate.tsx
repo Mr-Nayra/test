@@ -22,7 +22,6 @@ const DefaultBlogContentTemplate = (props: IProps) => {
       <FillEclipse size={300} bottom={"-150px"} left={"-100px"} />
       <FillEclipse size={300} bottom={"100px"} right={"-180px"} />
       <FillEclipse size={300} top={"180px"} right={10} />
-
       <div className={classes.innerBlock}>
         <div>
           <Image
