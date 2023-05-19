@@ -87,7 +87,7 @@ const TheFooter = () => {
                   target={"_blank"}
                   rel="noreferrer"
                 >
-                  Cookies
+                  cookie policy
                 </Link>
               </li>
               <li>
