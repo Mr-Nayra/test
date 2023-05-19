@@ -65,6 +65,32 @@ const TheFooter = () => {
                 </Link>
               </li>
               <li>
+                <Link
+                  onClick={() => {
+                    buttonEvent("Privacy-Policy");
+                  }}
+                  className={classes.item}
+                  href="/privacy-policy"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link
+                  onClick={() => {
+                    buttonEvent("cookies-policy");
+                  }}
+                  className={classes.item}
+                  href="/cookies-policy"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
+                  Cookies
+                </Link>
+              </li>
+              <li>
                 <span className={classes.item}>Social Media</span>
                 <div className={classes.SocialMedia}>
                   <a
