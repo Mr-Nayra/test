@@ -5,11 +5,11 @@ import { memo } from "react";
 import classes from "./heroBanner.module.scss";
 import combinatorLogo from "./images/combinatorLogo.webp";
 import Typewriter from "typewriter-effect";
-// import { useDisclosure } from "@mantine/hooks";
-// import AcceptModal from "@/components/modal/AcceptModal";
+import { useDisclosure } from "@mantine/hooks";
+import AcceptModal from "@/components/modal/AcceptModal";
 
 const HeroBanner = () => {
-  // const [opened, { open, close }] = useDisclosure(false);
+  const [opened, { open, close }] = useDisclosure(false);
   return (
     <>
       <div className={classes.root}>
@@ -79,7 +79,7 @@ const HeroBanner = () => {
                   />
                 </a>
 
-                {/* <CustomButton
+                <CustomButton
                   label="Book a Demo"
                   type="secondary"
                   fontSize={17}
@@ -93,8 +93,8 @@ const HeroBanner = () => {
                     open();
                     buttonEvent("Book a demo");
                   }}
-                /> */}
-                <a
+                />
+                {/* <a
                   href="https://calendly.com/uptrain-sourabh/uptrain-demo"
                   target={"_blank"}
                   rel="noreferrer"
@@ -113,7 +113,7 @@ const HeroBanner = () => {
                       buttonEvent("Book a demo");
                     }}
                   />
-                </a>
+                </a> */}
               </div>
             </div>
             <div className={classes.col}>
@@ -161,7 +161,7 @@ const HeroBanner = () => {
           </div>
         </div>
       </div>
-      {/* <AcceptModal opened={opened} close={close} /> */}
+      <AcceptModal opened={opened} close={close} />
     </>
   );
 };
