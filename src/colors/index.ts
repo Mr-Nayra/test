@@ -5,4 +5,5 @@ export const COLORS = {
   white: "#fff",
   whiteSmoke: "#F5F5F5",
   black: "#000000",
+  secondaryGradient: "rgba(0, 0, 0, 0.9)",
 };

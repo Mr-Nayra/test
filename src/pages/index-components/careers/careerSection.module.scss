@@ -1,0 +1,85 @@
+@import "../../../colors/colors";
+
+.root {
+    background-image: url("./image/careerHomeBg.webp");
+    background-color: $secondaryGradient;
+    width: 100%;
+    padding: 77px 16px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    backdrop-filter: blur(100px);
+    background-position: center;
+}
+
+.row {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media screen and (max-width: 1000px) {
+        width: 90%;
+    }
+
+    @media screen and (max-width: 790px) {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+
+.boxCol {
+    width: 45%;
+
+    @media screen and (max-width: 790px) {
+        order: 2;
+        margin-top: 40px;
+        width: 100%;
+    }
+}
+
+.TextCol {
+    width: 48%;
+
+    @media screen and (max-width: 790px) {
+        order: 1;
+        width: 100%;
+    }
+}
+
+.heading {
+    color: $white;
+    font-size: 24px;
+    margin: 0px;
+    font-weight: 600;
+}
+
+.description {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px;
+    color: $white;
+    padding-top: 25px;
+}
+
+
+.blackBox {
+    width: auto;
+    border-radius: 20px;
+
+    & img {
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+.btnSection {
+    margin-top: 50px;
+
+    @media screen and (max-width: 790px) {
+        margin-top: 20px;
+    }
+}

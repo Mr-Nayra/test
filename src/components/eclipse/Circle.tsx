@@ -5,12 +5,14 @@ interface Props {
   opacity?: boolean;
   lightShadow?: boolean;
   backgroundImageDark?: boolean;
+  darkTheme?: boolean;
 }
 const Circle: React.FC<Props> = ({
   size,
   opacity = false,
   lightShadow = false,
   backgroundImageDark = false,
+  darkTheme = false,
 }) => {
   const useStyle = createStyles({
     root: {
@@ -32,7 +34,7 @@ const Circle: React.FC<Props> = ({
       zIndex: 9999,
     },
     innerCircle: {
-      backgroundColor: "#ebe8f7",
+      backgroundColor: darkTheme ? "rgba(0, 0, 0, 0.9)" : "#ebe8f7",
       width: "50%",
       height: "50%",
       borderRadius: "50%",

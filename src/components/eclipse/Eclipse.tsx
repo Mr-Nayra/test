@@ -10,6 +10,7 @@ interface IEclipse {
   opacity?: boolean;
   lightShadow?: boolean;
   backgroundImageDark?: boolean;
+  darkTheme?: boolean;
 }
 
 const Eclipse = (props: IEclipse) => {
@@ -22,6 +23,7 @@ const Eclipse = (props: IEclipse) => {
     opacity,
     lightShadow,
     backgroundImageDark,
+    darkTheme = false,
   } = props;
   return (
     <div
@@ -40,6 +42,7 @@ const Eclipse = (props: IEclipse) => {
         opacity={opacity}
         lightShadow={lightShadow}
         backgroundImageDark={backgroundImageDark}
+        darkTheme={darkTheme}
       />
     </div>
   );

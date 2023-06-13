@@ -1,26 +1,47 @@
-import React, { Fragment, useMemo } from "react";
-import { useParams } from "react-router";
-import { blogData } from "../../data/blog/blogData";
+import { blogData } from "@/components/blog-carousel/data/blogData";
+import { NextPage } from "next";
+import Image from "next/image";
+import Link from "next/link";
+import classes from "./style/blogPageStyle.module.scss";
+import BlogCards from "../../components/blog-page/BlogCards";
+import { buttonEventBlog } from "@/helpers/buttonEvent";
 
-import BlogCards from "./components/BlogCards";
-import CommonBlogPage from "./components/CommonBlogPage";
-
-const BlogPage = () => {
-  const blogId = useParams().id;
-
-  const renderBlog = useMemo(() => {
-    const data = blogData.find((item) => item.id === blogId);
-    if (data) return data;
-    return blogData[0];
-  }, [blogId]);
-
+const index: NextPage = () => {
+  const firstData = blogData[0];
   return (
-    <Fragment>
-      <CommonBlogPage data={renderBlog} />
-
-      <BlogCards blogId={blogId} />
-    </Fragment>
+    <div className={classes.root}>
+      <div className={classes.blogRoot}>
+        <Link
+          href={"/blog/" + firstData.id}
+          target="_blank"
+          onClick={() => {
+            buttonEventBlog(firstData.title, "blog");
+          }}
+          className={classes.row}
+        >
+          <div className={classes.col}>
+            <Image
+              className={classes.bannerImg}
+              src={firstData.firstPositionBanner}
+              alt=""
+            />
+          </div>
+          <div className={classes.col}>
+            <h1 className={classes.heading}>{firstData.title}</h1>
+            <p className={classes.author}>
+              {" "}
+              {firstData.authorName} | {firstData.date}
+            </p>
+            <p className={classes.longDescription}>
+              {firstData.longDescription}
+              <span className={classes.readMore}> Read full blog</span>
+            </p>
+          </div>
+        </Link>
+        <BlogCards />
+      </div>
+    </div>
   );
 };
 
-export default BlogPage;
+export default index;

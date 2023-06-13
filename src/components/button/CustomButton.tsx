@@ -1,6 +1,6 @@
 import React from "react";
 import { createStyles } from "@mantine/core";
-import { COLORS } from "../../colors";
+import { COLORS } from "@/colors";
 
 interface Props {
   label: string;
@@ -43,7 +43,8 @@ const CustomButton: React.FC<Props> = ({
       marginLeft: ml,
     },
     root: {
-      backgroundColor: type === "primary" ? "transparent" : COLORS.white,
+      backgroundColor:
+        type === "primary" ? "transparent" : COLORS.secondaryGradient,
       paddingTop: py,
       paddingBottom: py,
       paddingLeft: px,

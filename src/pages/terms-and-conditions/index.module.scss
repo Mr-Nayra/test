@@ -1,0 +1,46 @@
+@import "../../colors/colors";
+
+.root {
+    padding: 50px 1em;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+
+    ol {
+        padding-left: 16px;
+    }
+
+    @media screen and (max-width: 600px) {
+        width: 100%;
+
+        ol {
+            padding-left: 14px;
+        }
+    }
+}
+
+.tittle {
+    text-align: center;
+    padding-bottom: 50px;
+    font-size: 28px;
+    font-weight: 800;
+    color: #333333;
+    text-transform: uppercase;
+    text-shadow: 2px 1px 3px #00458842;
+    margin: 0px;
+}
+
+.description {
+    font-size: 16px;
+    color: $black;
+    margin: 10px 0px;
+}
+
+.heading {
+    font-size: 16px;
+    color: $black;
+    margin: 14px 0px;
+    text-transform: capitalize;
+}
