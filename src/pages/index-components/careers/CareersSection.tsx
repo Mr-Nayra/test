@@ -24,7 +24,7 @@ const CareersSection = () => {
             We are looking for highly motivated folks to help us build the next
             generation of ML tooling. We are hiring for ML Engineer, Backend
             Engineer, Statistics Ninja, Community Manager and Technical Content
-            Writer
+            Writer.
           </p>
           <div className={classes.btnSection}>
             <a
