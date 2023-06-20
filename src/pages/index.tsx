@@ -5,7 +5,6 @@ import BlogSection from "./index-components/blog/BlogSection";
 import CareersSection from "./index-components/careers/CareersSection";
 import FeatureSection from "./index-components/feature-section/FeatureSection";
 import HeroBanner from "./index-components/hero-banner/HeroBanner";
-import Team from "./index-components/team/Team";
 import Testimonials from "./index-components/testimonials/Testimonials";
 import WorkFlow from "./index-components/workFlow/WorkFlow";
 
@@ -29,7 +28,6 @@ const index = () => {
           <FeatureSection />
           <WorkFlow />
           <Testimonials />
-          <Team />
           <BlogSection />
           <CareersSection />
         </>
@@ -37,7 +35,6 @@ const index = () => {
         <>
           <HeroBanner />
           <FeatureSection />
-          <Team />
           <Testimonials />
           <CareersSection />
           <BlogSection />
