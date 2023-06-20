@@ -1,0 +1,48 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Docker
+        uses: docker/setup-docker@v1
+
+      - name: Build Docker image
+        run: |
+          TimeStamp=$(date +%s)
+          TimeStamp="uptrain-${TimeStamp}"
+          docker build -t $TimeStamp .
+        
+      - name: Compress Docker image
+        run: |
+          docker save -o ${{ github.workspace }}/${TimeStamp}.tar $TimeStamp
+        
+      - name: Copy image to remote server
+        env:
+          PEM_FILE: ${{ secrets.PEM_FILE }}
+        run: |
+          echo "${PEM_FILE}" > pem_file.pem
+          chmod 600 pem_file.pem
+          scp -i pem_file.pem -o StrictHostKeyChecking=no ${{ github.workspace }}/${TimeStamp}.tar ubuntu@65.2.63.83:/home/ubuntu/${TimeStamp}.tar
+
+      - name: Deploy image on remote server
+        env:
+          PEM_FILE: ${{ secrets.PEM_FILE }}
+        run: |
+          echo "${PEM_FILE}" > pem_file.pem
+          chmod 600 pem_file.pem
+          ssh -i pem_file.pem ubuntu@65.2.63.83 "docker load < /home/ubuntu/${TimeStamp}.tar && export image_build=${TimeStamp} && docker-compose up -d --build && find . -name 'uptrain*.tar' -delete && docker image prune -a -f"
+
+      - name: Perform Garbage Collection
+        run: |
+          docker image prune -a -f
+          find . -name 'uptrain*.tar' -delete
