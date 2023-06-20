@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import footerCompanyLogo from "./image/footerLogo.svg";
 import discordLogo from "./image/discordLogo.svg";
+import isoCertification from "./image/isoCertification.png";
 import classes from "./TheFooter.module.scss";
 import {
   TiSocialLinkedinCircular,
@@ -22,6 +23,14 @@ const TheFooter = () => {
             <p className={classes.tagLine}>
               Your Open-source toolkit to refine ML models
             </p>
+            <br/><br/><br/>
+            <p className={classes.tagLine}>
+              Security & privacy is at the core of what we do
+            </p>
+            <br/>
+            <Link href="/" className={classes.certificationLogo}>
+              <Image src={isoCertification} alt="ISO Certification" />
+            </Link>
           </div>
           <div>
             <ul className={classes.menu}>
