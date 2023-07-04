@@ -1,3 +1,16 @@
 {
-  "cSpell.words": ["bais", "uptrain", "webp"]
+  "cSpell.words": [
+    "bais",
+    "uptrain",
+    "webp"
+  ],
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
+  "hide-files.files": []
 }
