@@ -7,6 +7,7 @@ import combinatorLogo from "./images/combinatorLogo.webp";
 import Typewriter from "typewriter-effect";
 import { useDisclosure } from "@mantine/hooks";
 import AcceptModal from "@/components/modal/AcceptModal";
+import GithubShield from "@/components/github-shield/GithubShield";
 
 const HeroBanner = () => {
   const [opened, { open, close }] = useDisclosure(false);
@@ -145,18 +146,8 @@ const HeroBanner = () => {
               <h1 className={classes.PoweredByText}>Backed by</h1>
               <Image className={classes.logo} src={combinatorLogo} alt="logo" />
             </div>
-            <div className={` ${classes.PoweredByCol}`}>
-              <Image
-                className={classes.githubShield}
-                src={
-                  "https://img.shields.io/github/stars/uptrain-ai/uptrain?style=social"
-                }
-                alt="github"
-                style={{ maxHeight: "auto", maxWidth: "100%" }}
-                width={20}
-                height={20}
-                priority
-              />
+            <div className={`${classes.PoweredByCol} ${classes.githubShield}`}>
+              <GithubShield/>
             </div>
           </div>
         </div>

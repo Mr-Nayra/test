@@ -22,12 +22,13 @@
     "@types/prismjs": "^1.26.0",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
+    "badge-maker": "^3.3.1",
     "embla-carousel-autoplay": "^7.0.9",
     "embla-carousel-react": "^7.0.9",
     "eslint": "8.34.0",
     "eslint-config-next": "13.2.1",
     "google-spreadsheet": "^3.3.0",
-    "next": "13.2.1",
+    "next": "^13.2.1",
     "prismjs": "^1.29.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -40,6 +41,7 @@
   "devDependencies": {
     "@types/google-spreadsheet": "^3.3.1",
     "@types/gtag.js": "^0.0.12",
+    "@types/jquery": "^3.5.16",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.0"
   }
