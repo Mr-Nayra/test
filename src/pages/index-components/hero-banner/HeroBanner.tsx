@@ -18,7 +18,7 @@ const HeroBanner = () => {
           <div className={classes.row}>
             <div className={`${classes.col} ${classes.textCol}`}>
               <div className={classes.heading}>
-                <h1 className={classes.bgText}>
+                {/* <h1 className={classes.bgText}>
                   <Typewriter
                     onInit={(typewriter) => {
                       typewriter.pauseFor(500).deleteAll().start();
@@ -35,9 +35,9 @@ const HeroBanner = () => {
                       cursorClassName: classes.cursorClassName,
                     }}
                   />
-                </h1>
+                </h1> */}
+                Framework to{" "}
                 <br />
-                in your{" "}
                 <h1 className={classes.bgText}>
                   <Typewriter
                     onInit={(typewriter) => {
@@ -45,10 +45,11 @@ const HeroBanner = () => {
                     }}
                     options={{
                       strings: [
-                        "prediction models ",
-                        "language models    ",
-                        "recommendation models ",
-                        "vision models      ",
+                        "Prompt-test LLM changes",
+                        "Validate against incorrect outputs",
+                        "Monitor hallucinations",
+                        "Analyse retrieval quality",
+                        "Run model grading evaluations",
                       ],
                       autoStart: true,
                       loop: true,
@@ -58,8 +59,7 @@ const HeroBanner = () => {
                 </h1>
               </div>
               <p className={classes.description}>
-                Observe and refine AI applications by seamlessly adding custom
-                monitors
+              Ensures your LLM applications are performing reliably by checking on aspects such as correctness, structural integrity, bias, hallucination, etc.
               </p>
               <div className={classes.btnSection}>
                 <a
@@ -118,7 +118,10 @@ const HeroBanner = () => {
               </div>
             </div>
             <div className={classes.col}>
-              <div className={classes.whiteBox}>
+              <div className={classes.comingSoon}>
+                  More details soon!
+              </div>
+              {/* <div className={classes.whiteBox}>
                 <div className={classes.blackBox}>
                   <video
                     width="100%"
@@ -138,8 +141,8 @@ const HeroBanner = () => {
                     Your browser does not support the video tag.
                   </video>
                 </div>
-              </div>
-            </div>
+              </div> */}
+            </div> 
           </div>
           <div className={classes.PoweredBySection}>
             <div className={`${classes.BackedBy} ${classes.PoweredByCol}`}>
@@ -152,7 +155,7 @@ const HeroBanner = () => {
           </div>
         </div>
       </div>
-      <AcceptModal opened={opened} close={close} />
+      {/* <AcceptModal opened={opened} close={close} /> */}
     </>
   );
 };

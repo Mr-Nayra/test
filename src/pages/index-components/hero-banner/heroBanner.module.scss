@@ -132,7 +132,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 180px;
 }
 
 .PoweredByCol {
@@ -187,4 +187,22 @@
         width: 100px;
         padding-left: 5px;
     }
+}
+
+// Big white text
+.comingSoon {
+    font-size: 64px;
+    font-weight: 800;
+    color: $white;
+    margin: 0px;
+    text-align: center;
+
+    @media screen and (max-width: 1033px) {
+        font-size: 48px;
+    }
+
+    @media screen and (max-width: 470px) {
+        font-size: 32px;
+    }
+
 }

@@ -2,6 +2,9 @@ import React from "react";
 import Image from "next/image";
 import footerCompanyLogo from "./image/footerLogo.svg";
 import discordLogo from "./image/discordLogo.svg";
+import slackLogo from "./image/slackLogo.svg";
+import twitterLogo from "./image/twitterLogo.svg";
+import linkedinLogo from "./image/linkedinLogo.svg";
 import isoCertification from "./image/isoCertification.png";
 import gdprCertification from "./image/gdprCertification.png";
 import classes from "./TheFooter.module.scss";
@@ -110,7 +113,7 @@ const TheFooter = () => {
               <li>
                 <span className={classes.item}>Social Media</span>
                 <div className={classes.SocialMedia}>
-                  <a
+                  {/* <a
                     onClick={() => {
                       buttonEvent("Discord");
                     }}
@@ -125,6 +128,22 @@ const TheFooter = () => {
                       width={20}
                       title="discord"
                     />
+                  </a> */}
+                  <a
+                    onClick={() => {
+                      buttonEvent("Slack");
+                    }}
+                    href="https://join.slack.com/t/uptraincommunity/shared_invite/zt-1yih3aojn-CEoR_gAh6PDSknhFmuaJeg"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    <Image
+                      src={slackLogo}
+                      className={classes.socialIcon}
+                      alt="slack-Logo"
+                      width={20}
+                      title="slack"
+                    />
                   </a>
                   <a
                     onClick={() => {
@@ -135,10 +154,17 @@ const TheFooter = () => {
                     rel="noreferrer"
                     className={classes.iconMargin}
                   >
-                    <TiSocialTwitterCircular
+                    <Image
+                      src={twitterLogo}
+                      className={classes.socialIcon}
+                      alt="twitter-Logo"
+                      width={20}
+                      title="twitter"
+                    />
+                    {/* <TiSocialTwitterCircular
                       className={classes.socialIcon}
                       size={27}
-                    />
+                    /> */}
                   </a>
                   <a
                     onClick={() => {
@@ -148,9 +174,16 @@ const TheFooter = () => {
                     target={"_blank"}
                     rel="noreferrer"
                   >
-                    <TiSocialLinkedinCircular
+                    {/* <TiSocialLinkedinCircular
                       className={classes.socialIcon}
                       size={26}
+                    /> */}
+                    <Image
+                      src={linkedinLogo}
+                      className={classes.socialIcon}
+                      alt="linkedin-Logo"
+                      width={20}
+                      title="linkedin"
                     />
                   </a>
                 </div>

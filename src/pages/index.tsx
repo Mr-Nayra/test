@@ -25,18 +25,18 @@ const index = () => {
       {width > 800 ? (
         <>
           <HeroBanner />
-          <FeatureSection />
-          <WorkFlow />
-          <Testimonials />
-          <BlogSection />
-          <CareersSection />
+          {/* <FeatureSection /> */}
+          {/* <WorkFlow /> */}
+          {/* <Testimonials /> */}
+          {/* <BlogSection /> */}
+          {/* <CareersSection /> */}
         </>
       ) : (
         <>
           <HeroBanner />
-          <FeatureSection />
-          <Testimonials />
-          <CareersSection />
+          {/* <FeatureSection /> */}
+          {/* <Testimonials /> */}
+          {/* <CareersSection /> */}
           <BlogSection />
         </>
       )}
