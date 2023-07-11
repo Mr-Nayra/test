@@ -25,7 +25,7 @@ const TheFooter = () => {
               <Image src={footerCompanyLogo} alt="logo" />
             </Link>
             <p className={classes.tagLine}>
-              Your Open-source toolkit to refine ML models
+              Your Open-source LLMOps toolkit 
             </p>
             <br />
             <br />

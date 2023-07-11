@@ -13,7 +13,7 @@ const index = () => {
   return (
     <Fragment>
       <Head>
-        <title>UpTrain | Open-Source ML Observability and Refinement</title>
+        <title>UpTrain | Open-Source LLMOps Toolkit</title>
 
         <meta
           name="description"
