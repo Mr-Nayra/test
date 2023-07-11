@@ -84,10 +84,10 @@ const Header = () => {
               </li>
               <li>
                 <Link
-                  className={`${classes.item} ${
-                    currentPath === "/blog" && classes.active
-                  }`}
-                  href="/blog"
+                  className={classes.item}
+                  href="https://blog.uptrain.ai/"
+                  target={"_blank"}
+                  rel="noreferrer"
                   onClick={() => {
                     buttonEvent("Blogs");
                     handleClose();
