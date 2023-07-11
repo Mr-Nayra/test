@@ -121,7 +121,7 @@
 }
 
 .btnSection {
-    margin-top: 50px;
+    margin-top: 25px;
 
     @media screen and (max-width: 750px) {
         margin-top: 30px;
@@ -132,7 +132,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 180px;
+    margin-top: 105px;
+    margin-left: 125px;
+    margin-bottom: 0px;
+
+    @media screen and (max-width: 1033px) {
+        margin-top: 50px;
+        margin-left: 0px;
+    }
 }
 
 .PoweredByCol {
@@ -184,12 +191,11 @@
     height: 100%;
 
     @media screen and (max-width: 600px) {
-        width: 100px;
-        padding-left: 5px;
+        width: 120px;
+        padding-left: 0px;
     }
 }
 
-// Big white text
 .comingSoon {
     font-size: 64px;
     font-weight: 800;

@@ -37,7 +37,7 @@ const index = () => {
           {/* <FeatureSection /> */}
           {/* <Testimonials /> */}
           {/* <CareersSection /> */}
-          <BlogSection />
+          {/* <BlogSection /> */}
         </>
       )}
     </Fragment>

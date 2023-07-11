@@ -8,9 +8,12 @@ import Typewriter from "typewriter-effect";
 import { useDisclosure } from "@mantine/hooks";
 import AcceptModal from "@/components/modal/AcceptModal";
 import GithubShield from "@/components/github-shield/GithubShield";
+import GithubSheildMobile from "@/components/github-shield/GithubShieldMobile";
+import UseDevicesResize from "@/helpers/UseDevicesResize";
 
 const HeroBanner = () => {
   const [opened, { open, close }] = useDisclosure(false);
+  const { width } = UseDevicesResize();
   return (
     <>
       <div className={classes.root}>
@@ -150,7 +153,8 @@ const HeroBanner = () => {
               <Image className={classes.logo} src={combinatorLogo} alt="logo" />
             </div>
             <div className={`${classes.PoweredByCol} ${classes.githubShield}`}>
-              <GithubShield/>
+              {/* If on mobile, show class GithubShieldMobile else GithubShield */}
+              { width > 800 ? <GithubShield/> : <GithubSheildMobile/>}
             </div>
           </div>
         </div>
