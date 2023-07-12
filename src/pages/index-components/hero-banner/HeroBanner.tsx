@@ -83,6 +83,14 @@ const HeroBanner = () => {
                   />
                 </a>
 
+                <a
+                  onClick={() => {
+                    buttonEvent("Book a demo");
+                  }}
+                  href="https://calendly.com/uptrain-sourabh/uptrain-demo"
+                  target={"_blank"}
+                  rel="noreferrer"
+                >
                 <CustomButton
                   label="Book a Demo"
                   type="secondary"
@@ -98,6 +106,7 @@ const HeroBanner = () => {
                     buttonEvent("Book a demo");
                   }}
                 />
+                </a>
                 {/* <a
                   href="https://calendly.com/uptrain-sourabh/uptrain-demo"
                   target={"_blank"}
