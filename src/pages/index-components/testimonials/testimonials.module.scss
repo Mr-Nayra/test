@@ -158,3 +158,21 @@
     color: $black;
     line-height: 20px;
 }
+
+.comingSoon {
+    font-size: 64px;
+    font-weight: 800;
+    color: $white;
+    margin: 0px;
+    text-align: center;
+    background-color: $black;
+
+    @media screen and (max-width: 1033px) {
+        font-size: 48px;
+    }
+
+    @media screen and (max-width: 470px) {
+        font-size: 32px;
+    }
+
+}

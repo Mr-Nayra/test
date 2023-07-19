@@ -27,7 +27,7 @@ const index = () => {
           <HeroBanner />
           {/* <FeatureSection /> */}
           {/* <WorkFlow /> */}
-          {/* <Testimonials /> */}
+          <Testimonials />
           {/* <BlogSection /> */}
           {/* <CareersSection /> */}
         </>
@@ -35,7 +35,7 @@ const index = () => {
         <>
           <HeroBanner />
           {/* <FeatureSection /> */}
-          {/* <Testimonials /> */}
+          <Testimonials />
           {/* <CareersSection /> */}
           {/* <BlogSection /> */}
         </>

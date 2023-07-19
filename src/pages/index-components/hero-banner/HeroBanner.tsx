@@ -130,10 +130,7 @@ const HeroBanner = () => {
               </div>
             </div>
             <div className={classes.col}>
-              <div className={classes.comingSoon}>
-                  More details soon!
-              </div>
-              {/* <div className={classes.whiteBox}>
+              <div className={classes.whiteBox}>
                 <div className={classes.blackBox}>
                   <video
                     width="100%"
@@ -147,13 +144,13 @@ const HeroBanner = () => {
                     controls
                   >
                     <source
-                      src="https://uptrain-demo.s3.us-west-1.amazonaws.com/full_demo.mp4"
+                      src="https://uptrain-assets.s3.ap-south-1.amazonaws.com/videos/llm_experimentation_demo.mp4"
                       type="video/mp4"
                     />
                     Your browser does not support the video tag.
                   </video>
                 </div>
-              </div> */}
+              </div>
             </div> 
           </div>
           <div className={classes.PoweredBySection}>
