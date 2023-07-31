@@ -46,10 +46,10 @@ const GithubShieldMobile = () => {
           <a target="_blank" href="https://github.com/uptrain-ai/uptrain/stargazers">
             <rect width="30" x="60" height="20" fill="rgba(0,0,0,0)" />
             <text aria-hidden="true" x="745" y="150" fill="#fff" transform="scale(.1)" textLength="210">
-              1.5k
+              1.6k
             </text>
             <text id="rlink" x="745" y="140" transform="scale(.1)" textLength="210">
-              1.5k
+              1.6k
             </text>
           </a>
         </g>

@@ -46,10 +46,10 @@ const GithubShield = () => {
         <a target="_blank" href="https://github.com/uptrain-ai/uptrain/stargazers">
           <rect width="64.5" x="90" height="30" fill="rgba(0,0,0,0)" />
           <text aria-hidden="true" x="1117.5" y="225" fill="#fff" transform="scale(.1)" textLength="315">
-            1.5k
+            1.6k
           </text>
           <text id="rlink" x="1117.5" y="210" transform="scale(.1)" textLength="315">
-            1.5k
+            1.6k
           </text>
         </a>
       </g>
