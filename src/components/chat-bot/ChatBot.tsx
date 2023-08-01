@@ -118,7 +118,7 @@ const ChatBot: React.FC = () => {
               {message.content}
             </li>
           ))}
-          {scores.map((score, index) => (
+          {messages.length > 1 && scores.map((score, index) => (
             <li key={index} className="chatbot">
               {score.name}: {score.value}
             </li>
