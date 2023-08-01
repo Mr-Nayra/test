@@ -7,6 +7,7 @@ import FeatureSection from "./index-components/feature-section/FeatureSection";
 import HeroBanner from "./index-components/hero-banner/HeroBanner";
 import Testimonials from "./index-components/testimonials/Testimonials";
 import WorkFlow from "./index-components/workFlow/WorkFlow";
+import ChatBot from "@/components/chat-bot/ChatBot";
 
 const index = () => {
   const { width } = UseDevicesResize();
@@ -27,7 +28,8 @@ const index = () => {
           <HeroBanner />
           {/* <FeatureSection /> */}
           {/* <WorkFlow /> */}
-          <Testimonials />
+          {/* <Testimonials /> */}
+          <ChatBot />
           {/* <BlogSection /> */}
           {/* <CareersSection /> */}
         </>
@@ -35,7 +37,8 @@ const index = () => {
         <>
           <HeroBanner />
           {/* <FeatureSection /> */}
-          <Testimonials />
+          {/* <Testimonials /> */}
+          <ChatBot />
           {/* <CareersSection /> */}
           {/* <BlogSection /> */}
         </>
