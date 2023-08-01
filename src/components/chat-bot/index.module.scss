@@ -1,0 +1,61 @@
+// Variables for dark mode
+$background-color: #111;
+$text-color: #fff;
+$user-message-bg: #1a1a1a;
+$chatbot-message-bg: #333;
+
+// Define styles for dark mode
+.chatbot {
+  background-color: $background-color;
+  color: $text-color;
+
+  .chatWindow {
+    background-color: $background-color;
+    color: $text-color;
+
+    ul {
+      li {
+        background-color: $user-message-bg;
+        &.chatbot {
+          background-color: $chatbot-message-bg;
+        }
+      }
+    }
+  }
+
+  // Dropdown menu styles
+  .dropdownContainer {
+    select {
+      background-color: $background-color;
+      color: $text-color;
+      border: 1px solid $text-color;
+      padding: 8px;
+      margin-bottom: 10px;
+      font-size: 16px;
+      border-radius: 4px;
+      width: 100%;
+      appearance: none;
+
+      option {
+        background-color: $background-color;
+        color: $text-color;
+      }
+    }
+  }
+
+  // Message input styles
+  .messageInput {
+    background-color: $background-color;
+    color: $text-color;
+    border: 1px solid $text-color;
+
+    input {
+      color: $text-color;
+    }
+
+    button {
+      color: $text-color;
+      background-color: $background-color;
+    }
+  }
+}
