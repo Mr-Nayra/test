@@ -3,10 +3,26 @@ import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import MessageInput from './MessageInput';
 import classes from './index.module.scss';
 
+function convertObjectToArray(inputObj: { [key: string]: number }): { name: string; value: number }[] {
+  const resultArray: { name: string; value: number }[] = [];
+
+  Object.keys(inputObj).forEach((key, index) => {
+    const entry = {
+      name: key,
+      value: inputObj[key]
+    };
+
+    resultArray[index] = entry;
+  });
+
+  return resultArray;
+}
+
 const ChatBot: React.FC = () => {
   const [messages, setMessages] = useState<{ role: string; content: string }[]>([]);
   const [inputValue, setInputValue] = useState<string>('');
-  const [selectedDocument, setSelectedDocument] = useState<string>(''); // State for selected document
+  const [selectedDocument, setSelectedDocument] = useState<string>('');
+  const [scores, setScores] = useState<{ name: String; value: number; }[]>([]);
 
   // Handle user input and call the API for the chatbot response
   const handleUserInput = async () => {
@@ -44,6 +60,9 @@ const ChatBot: React.FC = () => {
           content: `ChatBot: ${chatbotResponse}`,
         };
         setMessages((prevMessages) => [...prevMessages, newChatbotMessage]);
+
+        const newScores = convertObjectToArray(data.scores);
+        setScores(newScores);
       } catch (error) {
         console.error('Error fetching chatbot response:', error);
       }
@@ -99,6 +118,11 @@ const ChatBot: React.FC = () => {
               {message.content}
             </li>
           ))}
+          {scores.map((score, index) => (
+            <li key={index} className="chatbot">
+              {score.name}: {score.value}
+            </li>
+          ))}
         </ul>
       </div>
     </div>
@@ -106,3 +130,4 @@ const ChatBot: React.FC = () => {
 };
 
 export default ChatBot;
+
