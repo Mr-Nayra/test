@@ -21,7 +21,7 @@ const ChatBot: React.FC = () => {
         role: 'user',
         content: inputValue,
       };
-      setMessages((prevMessages) => [...prevMessages, newMessage]);
+      setMessages(() => [newMessage]);
 
       try {
         const response = await fetch('http://localhost:9000/question', {
