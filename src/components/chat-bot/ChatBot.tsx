@@ -3,13 +3,18 @@ import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import MessageInput from './MessageInput';
 import classes from './index.module.scss';
 
-function convertObjectToArray(inputObj: { [key: string]: number }): { name: string; value: number }[] {
-  const resultArray: { name: string; value: number }[] = [];
+function convertObjectToArray(inputObj: { [key: string] : { title: string; description: string; example: string; value: number; explanation: string; }}): { title: string; description: string; example: string; value: number; explanation: string; }[] {
+  const resultArray: { title: string; description: string; example: string; value: number; explanation: string; }[] = [];
+
+  console.log(inputObj);
 
   Object.keys(inputObj).forEach((key, index) => {
     const entry = {
-      name: key,
-      value: inputObj[key]
+      title: inputObj[key].title,
+      value: inputObj[key].value,
+      description: inputObj[key].description,
+      example: inputObj[key].example,
+      explanation: inputObj[key].explanation,
     };
 
     resultArray[index] = entry;
@@ -22,7 +27,7 @@ const ChatBot: React.FC = () => {
   const [messages, setMessages] = useState<{ role: string; content: string }[]>([]);
   const [inputValue, setInputValue] = useState<string>('');
   const [selectedDocument, setSelectedDocument] = useState<string>('');
-  const [scores, setScores] = useState<{ name: String; value: number; }[]>([]);
+  const [scores, setScores] = useState<{ title: string; description: string; example: string; value: number; explanation: string; }[]>([]);
 
   // Handle user input and call the API for the chatbot response
   const handleUserInput = async () => {
@@ -87,7 +92,7 @@ const ChatBot: React.FC = () => {
   }, [messages]);
 
   // List of documents in the dropdown menu
-  const documentOptions = ["LangChain", "LlamaIndex", "UpTrain"];
+  const documentOptions = ["LangChain", "LlamaIndex", "UpTrain", "Pandas"];
 
   return (
     <div className={classes.chatbot}>
@@ -120,7 +125,7 @@ const ChatBot: React.FC = () => {
           ))}
           {messages.length > 1 && scores.map((score, index) => (
             <li key={index} className="chatbot">
-              {score.name}: {score.value}
+              {score.title}: {score.value}
             </li>
           ))}
         </ul>
