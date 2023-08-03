@@ -45,7 +45,7 @@ const ChatBot: React.FC = () => {
       setMessages(() => [newMessage]);
 
       try {
-        const response = await fetch('http://localhost:9000/question', {
+        const response = await fetch("https://demo.uptrain.ai/chatbot_api/question", {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
