@@ -6,40 +6,124 @@ $chatbot-message-bg: #333;
 
 // Define styles for dark mode
 .chatbot {
+  background: url("./chatboxBackground.png");
   background-color: $background-color;
+  background-size: cover;
+  background-position: center;
   color: $text-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 0;
 
-  .chatWindow {
-    background-color: $background-color;
-    color: $text-color;
+  .textCont {
+    .heading {
+      text-align: center;
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
 
-    ul {
-      li {
-        background-color: $user-message-bg;
-        &.chatbot {
-          background-color: $chatbot-message-bg;
+    .parah {
+      font-size: 24px;
+    }
+  }
+
+  .inputCont {
+    display: flex;
+    width: 100%;
+    max-width: 1100px;
+
+    // Dropdown menu styles
+    .dropdownContainer {
+      .inputParah {
+        color: #767676;
+        font-size: 16px;
+        margin: 0 0 3px;
+      }
+
+      select {
+        border-radius: 14px;
+        background: linear-gradient(139deg, #212121 0%, #3f3e3f);
+        border: 0;
+        backdrop-filter: blur(10px);
+        color: #f3f3f3;
+        padding: 16px 26px;
+
+        option {
+          border-radius: 14px;
+          background: linear-gradient(139deg, #212121 0%, #3f3e3f);
         }
       }
     }
   }
 
-  // Dropdown menu styles
-  .dropdownContainer {
-    select {
-      background-color: $background-color;
-      color: $text-color;
-      border: 1px solid $text-color;
-      padding: 8px;
-      margin-bottom: 10px;
-      font-size: 16px;
-      border-radius: 4px;
-      width: 100%;
-      appearance: none;
+  .chatWindow {
+    width: 100%;
+    max-width: 1100px;
+    margin-top: 20px;
 
-      option {
-        background-color: $background-color;
-        color: $text-color;
-      }
+    .question {
+      margin-top: 10px;
+      width: 100%;
+      border-radius: 14px;
+      background: linear-gradient(139deg, #212121 0%, #3f3e3f);
+      border: 0;
+      backdrop-filter: blur(10px);
+      color: #f3f3f3;
+      padding: 16px 26px;
+    }
+  }
+
+  .animationCont {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1100px;
+  }
+
+  .qualityCont {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    .card {
+      border-radius: 14px;
+      background: linear-gradient(139deg, #212121 0%, #3f3e3f);
+      border: 0;
+      backdrop-filter: blur(10px);
+      padding: 30px 22px;
+      flex: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .card h3 {
+      font-size: 18px;
+      font-weight: 500;
+      color: #d0d0d0;
+      min-height: 50px;
+    }
+
+    .card h3 span {
+      font-size: 26px;
+      color: #fefefe;
+    }
+
+    .card p {
+      color: #898989;
+      font-weight: 500;
+      font-size: 16px;
+    }
+
+    .card button {
+      color: #6274e7;
+      background: transparent;
+      border: 0;
+      font-size: 16px;
     }
   }
 
