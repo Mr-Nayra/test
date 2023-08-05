@@ -50,8 +50,8 @@ const ChatBot: React.FC = () => {
   const [messages, setMessages] = useState<{ role: string; content: string }[]>(
     []
   );
-  const [inputValue, setInputValue] = useState<string>("");
-  const [selectedDocument, setSelectedDocument] = useState<string>("");
+  const [selectedDocument, setSelectedDocument] = useState<string>("LangChain");
+  const [inputValue, setInputValue] = useState<string>(`What is ${selectedDocument}?`);
   const [scores, setScores] = useState<
     {
       title: string;
@@ -63,20 +63,18 @@ const ChatBot: React.FC = () => {
   >([]);
   const [modal, setModal] = useState(0);
 
-  // Handle user input and call the API for the chatbot response
   const handleUserInput = async () => {
     if (inputValue.trim() !== "") {
-      // Include selected document in the request body
       const requestBody = {
         question: inputValue,
         document: selectedDocument,
       };
-      console.log(messages);
       const newMessage = {
         role: "user",
         content: inputValue,
       };
       setMessages(() => [newMessage]);
+      console.log(requestBody)
 
       try {
         const response = await fetch(
@@ -158,9 +156,8 @@ const ChatBot: React.FC = () => {
             <div className={classes.cont}>
               <select
                 value={selectedDocument}
-                onChange={(e) => setSelectedDocument(e.target.value)}
+                onChange={(e) => {setSelectedDocument(e.target.value); setInputValue(`What is ${e.target.value}?`)}}
               >
-                <option value="">Choose Documentation</option>
                 {documentOptions.map((document, index) => (
                   <option key={index} value={document}>
                     {document}
