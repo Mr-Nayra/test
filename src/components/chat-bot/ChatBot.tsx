@@ -143,8 +143,10 @@ const ChatBot: React.FC = () => {
           explanation={scores[modal - 1].explanation}
         />
       )}
+      {/* Create an anchor called demo */}
       <div className={classes.chatbot}>
         <div className={classes.textCont}>
+          <a id="demo"></a>
           <h2 className={classes.heading}>Try it out Yourself</h2>
           <p className={classes.parah}>
             LLM Evaluations for a developer docs QnA bot
