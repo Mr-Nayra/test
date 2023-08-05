@@ -154,17 +154,19 @@ const ChatBot: React.FC = () => {
         <div className={classes.inputCont}>
           <div className={classes.dropdownContainer}>
             <p className={classes.inputParah}>Select package</p>
-            <select
-              value={selectedDocument}
-              onChange={(e) => setSelectedDocument(e.target.value)}
-            >
-              <option value="">Choose Documentation</option>
-              {documentOptions.map((document, index) => (
-                <option key={index} value={document}>
-                  {document}
-                </option>
-              ))}
-            </select>
+            <div className={classes.cont}>
+              <select
+                value={selectedDocument}
+                onChange={(e) => setSelectedDocument(e.target.value)}
+              >
+                <option value="">Choose Documentation</option>
+                {documentOptions.map((document, index) => (
+                  <option key={index} value={document}>
+                    {document}
+                  </option>
+                ))}
+              </select>
+            </div>
           </div>
           <MessageInput
             placeholder="Type a message..."
@@ -199,7 +201,10 @@ const ChatBot: React.FC = () => {
                     </h3>
                     <p>{score.description}</p>
                   </div>
-                  <button onClick={() => setModal(index + 1)} className={classes.learnMore}>
+                  <button
+                    onClick={() => setModal(index + 1)}
+                    className={classes.learnMore}
+                  >
                     Learn more
                   </button>
                 </div>
