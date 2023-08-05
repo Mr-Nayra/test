@@ -199,7 +199,7 @@ const ChatBot: React.FC = () => {
                     </h3>
                     <p>{score.description}</p>
                   </div>
-                  <button onClick={() => setModal(index + 1)}>
+                  <button onClick={() => setModal(index + 1)} className={classes.learnMore}>
                     Learn more
                   </button>
                 </div>
