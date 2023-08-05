@@ -2,7 +2,16 @@ import React from "react";
 import classes from "./Modal.module.css";
 import DisplayTextWithNewlines from "./DisplayTextWithNewlines";
 
-const Modal = (props) => {
+interface ModalProps {
+  close: () => void;
+  title: string;
+  score: number;
+  description: string;
+  explanation: string;
+  example: string;
+}
+
+const Modal: React.FC<ModalProps> = (props) => {
   return (
     <div onClick={props.close} className={classes.backdrop}>
       <div className={classes.card}>
@@ -26,3 +35,4 @@ const Modal = (props) => {
 };
 
 export default Modal;
+
