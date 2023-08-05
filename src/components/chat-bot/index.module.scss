@@ -51,14 +51,14 @@ $chatbot-message-bg: #333;
 
         select {
           border: 0;
-          margin-right: 16px;
+          margin-right: 5px;
           color: #f3f3f3;
           padding: 16px 26px;
           cursor: pointer;
           background: transparent;
 
           &:active {
-            border: 0;
+            border:0;
           }
 
           option {

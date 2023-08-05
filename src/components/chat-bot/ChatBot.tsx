@@ -4,6 +4,7 @@ import MessageInput from "./MessageInput";
 import classes from "./index.module.scss";
 import styles from "./animation.module.css";
 import Modal from "./Modal";
+import DisplayTextWithNewlines from "./DisplayTextWithNewlines";
 
 function convertObjectToArray(inputObj: {
   [key: string]: {
@@ -179,9 +180,16 @@ const ChatBot: React.FC = () => {
         <div className={classes.chatWindow}>
           {messages.map((message, index) => (
             <>
-              <p key={index} className={classes.question}>
-                {index == 0 && "Q."} {message.content}
-              </p>
+              {index == 0 && (
+                <p key={index} className={classes.question}>
+                  Q. {message.content}
+                </p>
+              )}
+              {index == 1 && (
+                <p key={index} className={classes.question}>
+                  <DisplayTextWithNewlines textWithNewlines={message.content} />
+                </p>
+              )}
             </>
           ))}
           {messages.length == 1 && (
