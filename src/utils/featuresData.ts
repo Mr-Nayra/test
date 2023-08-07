@@ -13,46 +13,50 @@ import monitoring_gif from "./images/features/monitoring.gif";
 export const featureData = [
   {
     featureImg: dimensions_llm_evaluations,
-    heading: "Track Model Performance in Real-time", 
+    heading: "Use UpTrain to Evaluate specific Dimensions", 
     description:
-      "UpTrain observes the performance of your model and pin-points (any) dip in model’s accuracy to a specific feature combination",
+      "UpTrain monitors your model's performance and precisely identifies decreases in accuracy, attributing them to specific combinations of dimensions.",
     altText:
-      "UpTrain’s Dashboard highlighting the performance of Machine learning model post deployment",
+      "Visualization of UpTrain's ability to track model performance and identify accuracy declines linked to specific feature combinations.",
     titleText: "UpTrain’s Model performance dashboard",
   },
+  
   {
     featureImg: experimentation_gif,
-    heading: "Track Data Distribution Shifts as they happen",
+    heading: "Use UpTrain to find Optimal LLM Settings by Experimentation",
     description:
-    "UpTrain framework can be used to experiment across multiple prompts, model providers, chain configurations, etc. and get quantitative scores to compare them..",
+    "Perform experimentation using multiple prompts, model providers, custom configurations and measurable scores for direct comparison.",
     altText:
-    "UpTrain’s Dashboard showing Data Distribution Shifts as they happen",
+    "Visual representation of UpTrain's ability to support experimentation across prompts, model providers, and chain configurations, resulting in quantifiable scores for comparative analysis.",
     titleText: "Track Data Distribution Shifts as they happen",
   },
+  
   {
     featureImg: monitoring_gif,
-    heading: "Define Signals to Collect Edge-cases",
+    heading: "Utilize UpTrain to Detect LLM Breaking Points with Monitoring",
     description:
-      "UpTrain allows you to define “Signals” as a way to incorporate your domain-specific knowledge which are used to filter out specific subsets of data which can be used to retrain the model",
-    altText: "UpTrain’s Dashboard showing edge case collection",
+      "Within UpTrain, you have the capability to establish 'Signals,' a means to integrate your specialized domain knowledge. These Signals serve the purpose of filtering distinct data subsets, which can then be applied for the purpose of model retraining.",
+    altText: "UpTrain enables customized data filtering for improved model retraining.",
     titleText: "Visualize edge cases using UpTrain",
   },
+  
   {
     featureImg: validation_gif,
-    heading: "Smart and Automated Model Retraining",
+    heading: "UpTrain Harnesses Intelligent and Automated Model Retraining.",
     description:
-      "With UpTrain, you can attach your existing data annotation, model training, and deployment pipelines to activate a completely automated continuous model improvement cycle",
+      "Achieve a fully automated model improvement cycle by integrating your data annotation, model training, and deployment pipelines with UpTrain.",
     altText:
-      "Pop-up box showcasing retraining upon edge cases collected by UpTrain",
+      "Achieve automated model enhancement by integrating data annotation, training, and deployment with UpTrain.",
     titleText: "Smart and Automated Model Retraining",
   },
+  
   {
     featureImg: seamless_integration_img,
-    heading: "Seamless Integration into your existing pipelines",
+    heading: "UpTrain Seamlessly Integrates with your Existing Pipelines",
     description:
-      "UpTrain offers seamless integration with all the major ML libraries and MLOps tools, allowing you to get started in less than 5 minutes",
+      "Get started in under 5 minutes with UpTrain's effortless integration into leading ML libraries and MLOps tools.",
     altText:
-      "Image showing UpTrain integration with multiple ML models and cloud providers like AWS, GCP, Azure, Tensorflow, Pytorch etc.",
+      "UpTrain seamlessly integrates with key ML libraries and MLOps tools for quick initiation in 5 minutes",
     titleText: "UpTrain integrates seamlessly with your production",
   },
 ];
