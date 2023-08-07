@@ -127,7 +127,7 @@ const ChatBot: React.FC = () => {
   }, [messages]);
 
   // List of documents in the dropdown menu
-  const documentOptions = ["LangChain", "LlamaIndex", "UpTrain", "Pandas"];
+  const documentOptions = ["LangChain", "UpTrain", "Pandas"];
 
   return (
     <>
