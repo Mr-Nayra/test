@@ -18,26 +18,26 @@ export const featureData = [
       "UpTrain monitors your model's performance and precisely identifies decreases in accuracy, attributing them to specific combinations of dimensions.",
     altText:
       "Visualization of UpTrain's ability to track model performance and identify accuracy declines linked to specific feature combinations.",
-    titleText: "UpTrain’s Model performance dashboard",
+    titleText: "UpTrain Pinpoints Accuracy and Dimensions",
   },
   
   {
     featureImg: experimentation_gif,
     heading: "Use UpTrain to find Optimal LLM Settings by Experimentation",
     description:
-    "Perform experimentation using multiple prompts, model providers, custom configurations and measurable scores for direct comparison.",
+    "UpTrain enables experimentation with multiple prompts, model providers, and custom configuration, offering measurable scores for direct comparison and optimization.",
     altText:
-    "Visual representation of UpTrain's ability to support experimentation across prompts, model providers, and chain configurations, resulting in quantifiable scores for comparative analysis.",
-    titleText: "Track Data Distribution Shifts as they happen",
+    "UpTrain supports prompt, model, and chain experimentation, yielding quantifiable scores for comparison.",
+    titleText: "UpTrain: Scored Experimentation for Model Optimization",
   },
   
   {
     featureImg: monitoring_gif,
     heading: "Utilize UpTrain to Detect LLM Breaking Points with Monitoring",
     description:
-      "Within UpTrain, you have the capability to establish 'Signals,' a means to integrate your specialized domain knowledge. These Signals serve the purpose of filtering distinct data subsets, which can then be applied for the purpose of model retraining.",
+      "Utilize UpTrain to integrate 'Signals' that leverage domain knowledge, filtering data subsets for enhanced model retraining and targeted improvements.",
     altText: "UpTrain enables customized data filtering for improved model retraining.",
-    titleText: "Visualize edge cases using UpTrain",
+    titleText: "Enhanced Model Retraining with UpTrain's Domain Signals",
   },
   
   {
