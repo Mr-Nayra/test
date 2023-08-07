@@ -4,9 +4,15 @@ import edge_case_signals_img from "./images/edge_case_signals_img.webp";
 import automated_refinement_img from "./images/automated_refinement.webp";
 import seamless_integration_img from "./images/seamless_integration_img.webp";
 
+import dimensions_llm_evaluations from "./images/features/dimensions_llm_evaluations.png";
+import experimentation_gif from "./images/features/experimentation.gif";
+import validation_gif from "./images/features/validation.gif";
+import monitoring_gif from "./images/features/monitoring.gif";
+
+
 export const featureData = [
   {
-    featureImg: model_performance,
+    featureImg: dimensions_llm_evaluations,
     heading: "Track Model Performance in Real-time", 
     description:
       "UpTrain observes the performance of your model and pin-points (any) dip in model’s accuracy to a specific feature combination",
@@ -15,16 +21,16 @@ export const featureData = [
     titleText: "UpTrain’s Model performance dashboard",
   },
   {
-    featureImg: data_drift_img,
+    featureImg: experimentation_gif,
     heading: "Track Data Distribution Shifts as they happen",
     description:
-      "UpTrain compares your production data-points’ distribution against your training dataset and detects out-of-distribution cases",
+    "UpTrain framework can be used to experiment across multiple prompts, model providers, chain configurations, etc. and get quantitative scores to compare them..",
     altText:
-      "UpTrain’s Dashboard showing Data Distribution Shifts as they happen",
+    "UpTrain’s Dashboard showing Data Distribution Shifts as they happen",
     titleText: "Track Data Distribution Shifts as they happen",
   },
   {
-    featureImg: edge_case_signals_img,
+    featureImg: monitoring_gif,
     heading: "Define Signals to Collect Edge-cases",
     description:
       "UpTrain allows you to define “Signals” as a way to incorporate your domain-specific knowledge which are used to filter out specific subsets of data which can be used to retrain the model",
@@ -32,7 +38,7 @@ export const featureData = [
     titleText: "Visualize edge cases using UpTrain",
   },
   {
-    featureImg: automated_refinement_img,
+    featureImg: validation_gif,
     heading: "Smart and Automated Model Retraining",
     description:
       "With UpTrain, you can attach your existing data annotation, model training, and deployment pipelines to activate a completely automated continuous model improvement cycle",

@@ -26,7 +26,7 @@ const FeatureSection = () => {
               <div className={classes.circle}>
                 <CircleImg
                   size={50}
-                  top={"-48%"}
+                  top={"-55%"}
                   right={"32%"}
                   lightShadow={true}
                   opacity={active === 1 ? false : true}
@@ -36,56 +36,59 @@ const FeatureSection = () => {
                   }}
                   textPosition={true}
                   topPositionHeadingSection={"-48%"}
-                  rightPositionHeadingSection={"-138%"}
-                  topText="Model"
-                  bottomText={"Performance"}
+                  rightPositionHeadingSection={"-118%"}
+                  topText={"Diverse LLM"}
+                  bottomText={"Evaluations"}
                   featureIcon={grow_graph}
                 />
                 <CircleImg
                   size={50}
-                  top={"-21%"}
-                  right={"-50%"}
+                  top={"-27%"}
+                  right={"-35%"}
                   lightShadow={true}
                   opacity={active === 2 ? false : true}
                   onClick={() => {
                     setActive(2);
                     buttonEvent("Data Drift button");
                   }}
-                  topText={"Data "}
-                  bottomText={"Drift"}
+                  textPosition={true}
+                  topPositionHeadingSection={"29%"}
+                  rightPositionHeadingSection={"-180%"}
+                  topText={"Experimentation"}
+                  // bottomText={""}
                   featureIcon={trade_graph}
                 />
                 <CircleImg
                   size={50}
                   top={"34%"}
-                  right={"-96%"}
+                  right={"-99%"}
                   lightShadow={true}
                   opacity={active === 3 ? false : true}
                   onClick={() => {
                     setActive(3);
                     buttonEvent("Edge Case Signals");
                   }}
-                  topText={"Edge-case"}
-                  bottomText={"Signals"}
+                  topText={"Monitoring"}
+                  // bottomText={""}
                   featureIcon={search_graph}
                 />
                 <CircleImg
                   size={50}
-                  bottom={"-14%"}
-                  right={"-86%"}
+                  bottom={"-19%"}
+                  right={"-79%"}
                   lightShadow={true}
                   opacity={active === 4 ? false : true}
                   onClick={() => {
                     setActive(4);
                     buttonEvent("Automated Refinement");
                   }}
-                  topText={"Automated"}
-                  bottomText={"Refinement"}
+                  topText={"Validation"}
+                  // bottomText={""}
                   featureIcon={highlight_graph}
                 />
                 <CircleImg
                   size={50}
-                  bottom={"-49%"}
+                  bottom={"-55%"}
                   right={"30%"}
                   lightShadow={true}
                   opacity={active === 5 ? false : true}
@@ -94,8 +97,8 @@ const FeatureSection = () => {
                     buttonEvent("Seamless Integration");
                   }}
                   textPosition={true}
-                  rightPositionHeadingSection={"-118%"}
-                  bottomPositionHeadingSection={"-26%"}
+                  rightPositionHeadingSection={"-108%"}
+                  bottomPositionHeadingSection={"-46%"}
                   topText={"Seamless"}
                   bottomText={"Integration"}
                   featureIcon={upload_icon}
