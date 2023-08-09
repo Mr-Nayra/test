@@ -171,12 +171,14 @@ const FeatureSection = () => {
                       <p className={classes.description}>{item.description}</p>
                       <div className={classes.whiteBox}>
                         <div className={classes.blackBox}>
+                          <a href={item.link} target="_blank">
                           <Image
                             src={item.featureImg}
                             alt={item.altText}
                             title={item.titleText}
                             style={{ height: "auto" }}
                           />
+                          </a>
                         </div>
                       </div>
                     </div>
