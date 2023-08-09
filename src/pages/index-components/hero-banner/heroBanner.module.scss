@@ -136,17 +136,18 @@
     margin-left: 125px;
     margin-bottom: 0px;
 
-    @media screen and (max-width: 1033px) {
+    @media (max-width: 768px) {
         margin-top: 50px;
-        margin-left: 0px;
+        margin-left:5%;
+        // margin-right: 5%;
     }
 }
 
 .PoweredByCol {
     width: 50%;
 
-    @media screen and (max-width: 1033px) {
-        width: auto;
+    @media (max-width: 1033px) {
+        width: 70%;
     }
 }
 
