@@ -39,4 +39,34 @@
             font-weight: 500;
         }
     }
+
+    @media (max-width: 767px) {
+    .backdrop {
+        background: rgba(0, 0, 0, 0.75);
+        backdrop-filter: blur(5px);
+    }
+
+    .card {
+        width: 90%;
+        max-width: 90%;
+        padding: 20px;
+        overflow-y: auto;
+        height: 80%;
+
+        .parah {
+            font-size: 14px;
+        }
+
+        .heading {
+            font-size: 22px;
+            line-height: 24px;
+        }
+
+        .heading2 {
+            font-size: 14px;
+        }
+    }
+}
+
+
 }
