@@ -27,6 +27,7 @@ $chatbot-message-bg: #333;
 
     .parah {
       font-size: 20px;
+      text-align: center;
     }
   }
 
@@ -171,18 +172,19 @@ $chatbot-message-bg: #333;
     .chatbot {
       padding: 20px 0; 
     }
-
+    
     .textCont {
       .heading {
         font-size: 24px;
       }
-
+      
       .parah {
         font-size: 16px;
         padding-left: 5%;
+        text-align: center;
       }
     }
-
+    
     .inputCont {
       width: 90%;
       flex-direction: column;
@@ -196,26 +198,26 @@ $chatbot-message-bg: #333;
         }
       }
     }
-
+    
     .chatWindow {
       width: 90%;
     }
-
+    
     .cardsCont {
       display: flex;
       justify-content: center;
       flex-direction: row;
     }
-
+    
     .qualityCont {
       display: flex;
-      width: 85%;
+      width: 99%;
       flex-direction: column;
       .card {
         padding: 20px 18px; 
       }
     }
-
+    
     .otherEvals {
       padding-top: 30px; 
     }
