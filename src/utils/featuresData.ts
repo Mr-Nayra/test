@@ -4,7 +4,7 @@ import edge_case_signals_img from "./images/edge_case_signals_img.webp";
 import automated_refinement_img from "./images/automated_refinement.webp";
 import seamless_integration_img from "./images/seamless_integration_img.webp";
 
-import dimensions_llm_evaluations from "./images/features/dimensions_llm_evaluations.png";
+import dimensions_llm_evaluations from "./images/features/diverse_llm_evaluations.gif";
 import experimentation_gif from "./images/features/experimentation.gif";
 import validation_gif from "./images/features/validation.gif";
 import monitoring_gif from "./images/features/monitoring.gif";
