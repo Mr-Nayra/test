@@ -99,7 +99,7 @@ const FeatureSection = () => {
                   textPosition={true}
                   rightPositionHeadingSection={"-108%"}
                   bottomPositionHeadingSection={"-46%"}
-                  topText={"Seamless"}
+                  topText={"Single-line"}
                   bottomText={"Integration"}
                   featureIcon={upload_icon}
                 />
