@@ -25,7 +25,7 @@ const Modal: React.FC<ModalProps> = (props) => {
         <p className={classes.parah}>
           <DisplayTextWithNewlines textWithNewlines={props.explanation} />
         </p>
-        <h3 className={classes.heading2}>How it works?</h3>
+        <h3 className={classes.heading2}>How it works:</h3>
         <p className={classes.parah}>
           <DisplayTextWithNewlines textWithNewlines={props.example} />
         </p>

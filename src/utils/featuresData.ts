@@ -19,6 +19,7 @@ export const featureData = [
     altText:
       "Visualization of UpTrain's ability to track model performance and identify accuracy declines linked to specific feature combinations.",
     titleText: "UpTrain Pinpoints Accuracy and Dimensions",
+    link: "https://demo.uptrain.ai/evals_demo/",
   },
   
   {
