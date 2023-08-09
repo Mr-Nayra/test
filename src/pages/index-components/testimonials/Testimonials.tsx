@@ -1,5 +1,4 @@
 import { memo } from "react";
-import TestimonialCarousel from "./components/TestimonialCarousel";
 import classes from "./testimonials.module.scss";
 
 const Testimonials = () => {

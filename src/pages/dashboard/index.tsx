@@ -5,7 +5,6 @@ import BlogSection from "../index-components/blog/BlogSection";
 import CareersSection from "../index-components/careers/CareersSection";
 import FeatureSection from "../index-components/feature-section/FeatureSection";
 import DashboardHeroBanner from "@/pages/dashboard-components/hero-banner/DashboardHeroBanner";
-import Testimonials from "../index-components/testimonials/Testimonials";
 import WorkFlow from "../index-components/workFlow/WorkFlow";
 import ChatBot from "@/components/chat-bot/ChatBot";
 
