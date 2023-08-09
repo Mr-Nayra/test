@@ -97,7 +97,7 @@ const ChatBot: React.FC = () => {
         const chatbotResponse = data.answer;
         const newChatbotMessage = {
           role: "chatbot",
-          content: `ChatBot: ${chatbotResponse}`,
+          content: `LLM Response: ${chatbotResponse}`,
         };
         setMessages((prevMessages) => [...prevMessages, newChatbotMessage]);
 
@@ -147,9 +147,9 @@ const ChatBot: React.FC = () => {
       <div className={classes.chatbot}>
         <div className={classes.textCont}>
           <a id="demo"></a>
-          <h2 className={classes.heading}>Try it out Yourself</h2>
+          <h2 className={classes.heading}>See UpTrain in Action</h2>
           <p className={classes.parah}>
-            LLM Evaluations for a developer docs QnA bot
+            Evaluate LLM response quality for a QnA bot that can answer any questions related to developer documents
           </p>
         </div>
         <div className={classes.inputCont}>
@@ -181,7 +181,7 @@ const ChatBot: React.FC = () => {
             <>
               {index == 0 && (
                 <p key={index} className={classes.question}>
-                  Q. {message.content}
+                  Input Question:  {message.content}
                 </p>
               )}
               {index == 1 && (

@@ -39,7 +39,7 @@ const HeroBanner = () => {
                     }}
                   />
                 </h1> */}
-                Framework to{" "}
+                Your toolkit to{" "}
                 <br />
                 <h1 className={classes.bgText}>
                   <Typewriter
@@ -48,11 +48,11 @@ const HeroBanner = () => {
                     }}
                     options={{
                       strings: [
-                        "Prompt-test LLM changes",
-                        "Validate against incorrect outputs",
-                        "Monitor hallucinations",
-                        "Analyse retrieval quality",
-                        "Run model grading evaluations",
+                        "prompt-test LLM changes",
+                        "validate against incorrect outputs",
+                        "monitor hallucinations",
+                        "analyse retrieval quality",
+                        "run model grading evaluations",
                       ],
                       autoStart: true,
                       loop: true,
@@ -67,14 +67,14 @@ const HeroBanner = () => {
               <div className={classes.btnSection}>
                 <a
                   onClick={() => {
-                    buttonEvent("Get started- GitHub");
+                    buttonEvent("Get started- Free");
                   }}
                   href="https://github.com/uptrain-ai/uptrain"
                   target={"_blank"}
                   rel="noreferrer"
                 >
                   <CustomButton
-                    label="Get Started - GitHub"
+                    label="Get Started - Free"
                     fontSize={17}
                     fontWeight={700}
                     responsiveFont={12}
@@ -92,7 +92,7 @@ const HeroBanner = () => {
                   rel="noreferrer"
                 >
                 <CustomButton
-                  label="Book a Demo"
+                  label="Book Demo | 15 min"
                   type="secondary"
                   fontSize={17}
                   fontWeight={700}

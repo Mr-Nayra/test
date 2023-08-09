@@ -31,7 +31,7 @@ const index = () => {
           {/* <WorkFlow /> */}
           {/* <Testimonials /> */}
           {/* <BlogSection /> */}
-          {/* <CareersSection /> */}
+          <CareersSection />
         </>
       ) : (
         <>
@@ -39,7 +39,7 @@ const index = () => {
           <ChatBot />
           <FeatureSection />
           {/* <Testimonials /> */}
-          {/* <CareersSection /> */}
+          <CareersSection />
           {/* <BlogSection /> */}
         </>
       )}

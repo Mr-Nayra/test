@@ -22,8 +22,8 @@ const CareersSection = () => {
           <h3 className={classes.heading}>We Are Hiring</h3>
           <p className={classes.description}>
             We are looking for highly motivated folks to help us build the next
-            generation of ML tooling. We are hiring for ML Engineer, Backend
-            Engineer, Statistics Ninja, Community Manager and Technical Content
+            generation of LLM tooling. We are hiring for ML Engineer, Full Stack Developer,
+            Marketing Folks and Technical Content
             Writer.
           </p>
           <div className={classes.btnSection}>
