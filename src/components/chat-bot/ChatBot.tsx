@@ -199,6 +199,7 @@ const ChatBot: React.FC = () => {
               </div>
             </div>
           )}
+          <div className={classes.cardsCont}>
           <div className={classes.qualityCont}>
             {messages.length > 1 &&
               scores.map((score, index) => (
@@ -217,6 +218,7 @@ const ChatBot: React.FC = () => {
                   </button>
                 </div>
               ))}
+          </div>
           </div>
             {messages.length > 1 && 
               <div className={classes.otherEvals}>

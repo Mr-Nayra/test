@@ -34,7 +34,7 @@ $chatbot-message-bg: #333;
     display: flex;
     width: 100%;
     max-width: 1100px;
-
+    
     // Dropdown menu styles
     .dropdownContainer {
       .inputParah {
@@ -42,8 +42,9 @@ $chatbot-message-bg: #333;
         font-size: 16px;
         margin: 0 0 3px;
       }
-
+      
       .cont {
+        flex-direction: column;
         background: linear-gradient(139deg, #212121 0%, #3f3e3f);
         border-radius: 14px;
         backdrop-filter: blur(10px);
@@ -162,6 +163,61 @@ $chatbot-message-bg: #333;
     button {
       color: $text-color;
       background-color: $background-color;
+    }
+  }
+
+    // Media Queries for Mobile
+  @media (max-width: 768px) {
+    .chatbot {
+      padding: 20px 0; 
+    }
+
+    .textCont {
+      .heading {
+        font-size: 24px;
+      }
+
+      .parah {
+        font-size: 16px;
+        padding-left: 5%;
+      }
+    }
+
+    .inputCont {
+      width: 90%;
+      flex-direction: column;
+      .dropdownContainer {
+        margin: 0 0 16px;
+        .cont {
+          select {
+            padding: 12px 20px;
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .chatWindow {
+      width: 90%;
+    }
+
+    .cardsCont {
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+    }
+
+    .qualityCont {
+      display: flex;
+      width: 85%;
+      flex-direction: column;
+      .card {
+        padding: 20px 18px; 
+      }
+    }
+
+    .otherEvals {
+      padding-top: 30px; 
     }
   }
 }

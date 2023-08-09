@@ -35,4 +35,19 @@
     color: white;
     cursor: pointer;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+
+    .inputField {
+      width: 100%;
+      margin: 0 0 8px;
+    }
+
+    .inputFeildContainer {
+      width: 100%;
+      margin: 0 0 8px;
+    }
+  }
 }
