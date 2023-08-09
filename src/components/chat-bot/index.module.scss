@@ -142,6 +142,13 @@ $chatbot-message-bg: #333;
     }
   }
 
+  .otherEvals {
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
   // Message input styles
   .messageInput {
     background-color: $background-color;

@@ -5,6 +5,7 @@ import classes from "./index.module.scss";
 import styles from "./animation.module.css";
 import Modal from "./Modal";
 import DisplayTextWithNewlines from "./DisplayTextWithNewlines";
+import CustomButton from "../button/CustomButton";
 
 function convertObjectToArray(inputObj: {
   [key: string]: {
@@ -217,6 +218,15 @@ const ChatBot: React.FC = () => {
                 </div>
               ))}
           </div>
+            {messages.length > 1 && 
+              <div className={classes.otherEvals}>
+                <a href="https://demo.uptrain.ai/evals_demo" target="_blank">
+                <CustomButton
+                  label="Try Other Evaluations"
+                  ></CustomButton>
+                </a>
+              </div>
+            }
         </div>
       </div>
     </>
