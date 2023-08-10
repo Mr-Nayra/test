@@ -19,13 +19,13 @@ const DashboardHeroBanner = () => {
   const [userName, setUserName] = useState("");
   const [apiKey, setApiKey] = useState("");
   async function checkLogin() {
-      const response = await fetch("https://demo.uptrain.ai/api/login/login/status", {
-        "credentials" : "include",
-      });
-
-      if (response.ok) {
-          const data = await response.json();
-          setLoggedIn(true);
+    const response = await fetch("https://demo.uptrain.ai/api/login/login/status", {
+      "credentials" : "include",
+    });
+    
+    if (response.ok) {
+      const data = await response.json();
+      setLoggedIn(true);
           setUserName(data.user_name);
           if (data.api_key !== null) {
               setApiKey(data.api_key);
@@ -111,54 +111,6 @@ const DashboardHeroBanner = () => {
                       responsiveFont={12}
                       responsivePx={17}
                       responsivePy={12}
-                    />
-                  </a>
-
-                  <a
-                    onClick={() => {
-                      buttonEvent("Book a demo");
-                    }}
-                    href="https://calendly.com/uptrain-sourabh/uptrain-demo"
-                    target={"_blank"}
-                    rel="noreferrer"
-                  >
-                    <CustomButton
-                      label="Upgrade"
-                      type="secondary"
-                      fontSize={17}
-                      fontWeight={700}
-                      px={31}
-                      ml={17}
-                      responsiveFont={12}
-                      responsivePx={17}
-                      responsivePy={12}
-                      onClick={() => {
-                        open();
-                        buttonEvent("Book a demo");
-                      }}
-                    />
-                  </a>
-                  <a
-                  onClick={() => {
-                    buttonEvent("Logout");
-                    document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-                    window.location.reload();
-                  }}
-                  rel="noreferrer"
-                  >
-                    <CustomButton
-                      label="Logout"
-                      type="secondary"
-                      fontSize={17}
-                      fontWeight={700}
-                      px={31}
-                      ml={17}
-                      responsiveFont={12}
-                      responsivePx={17}
-                      responsivePy={12}
-                      onClick={() => {
-                        buttonEvent("Logout");
-                      }}
                     />
                   </a>
                 </div>
