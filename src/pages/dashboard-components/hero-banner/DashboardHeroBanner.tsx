@@ -1,7 +1,7 @@
 import CustomButton from "@/components/button/CustomButton";
 import { buttonEvent } from "@/helpers/buttonEvent";
 import Image from "next/image";
-import { memo } from "react";
+import { memo, useState } from "react";
 import classes from "./dashboardHeroBanner.module.scss";
 import combinatorLogo from "./images/combinatorLogo.webp";
 import Typewriter from "typewriter-effect";
@@ -10,11 +10,34 @@ import AcceptModal from "@/components/modal/AcceptModal";
 import GithubShield from "@/components/github-shield/GithubShield";
 import GithubSheildMobile from "@/components/github-shield/GithubShieldMobile";
 import UseDevicesResize from "@/helpers/UseDevicesResize";
+import { BsAlignBottom } from "react-icons/bs";
 
 const DashboardHeroBanner = () => {
   const [opened, { open, close }] = useDisclosure(false);
   const { width } = UseDevicesResize();
-  const loggedIn = true;
+  const [loggedIn, setLoggedIn] = useState(false);
+  const [userName, setUserName] = useState("");
+  const [apiKey, setApiKey] = useState("");
+  async function checkLogin() {
+      const response = await fetch("https://demo.uptrain.ai/api/login/login/status", {
+        "credentials" : "include",
+      });
+
+      if (response.ok) {
+          const data = await response.json();
+          setLoggedIn(true);
+          setUserName(data.user_name);
+          if (data.api_key !== null) {
+              setApiKey(data.api_key);
+          } else {
+              setApiKey("None");
+          }
+      } else {
+          console.log('Not logged in');
+      }
+  }
+  checkLogin();
+
   return (
     <>
       {loggedIn ? (
@@ -24,10 +47,10 @@ const DashboardHeroBanner = () => {
               <div className={`${classes.col} ${classes.textCol}`}>
                 <div className={classes.heading}>
                   Welcome, <br />
-                  <h1 className={classes.bgText}>dhruv@uptrain.ai</h1>
+                  <h1 className={classes.bgText}>{userName}</h1>
                 </div>
                 <p className={classes.description}>
-                  API Key: <strong>None</strong> <br />
+                  API Key: <strong>{apiKey}</strong> <br />
                   <br />
                   Credits Used: <strong>20</strong> <br />
                   <br />
@@ -37,14 +60,52 @@ const DashboardHeroBanner = () => {
                 <div className={classes.btnSection}>
                   <a
                     onClick={() => {
-                      buttonEvent("Get started- GitHub");
+                      buttonEvent("Create API Key");
+                      if (apiKey === "None") {
+                        fetch("https://demo.uptrain.ai/api/login/api-key/create", {
+                          method: "POST",
+                          credentials: "include"
+                        })
+                          .then((response) => {
+                            if (response.ok) {
+                              return response.json();                                                    ;
+                            } else {
+                              console.log("Error");
+                            }
+                          })
+                          .then((data) => {
+                            setApiKey(data.api_key);
+                          })
+                          .catch((error) => {
+                            console.log("Error:", error);
+                          });
+                      } else {
+                        fetch("https://demo.uptrain.ai/api/login/api-key/revoke", {
+                          method: "POST",
+                          credentials: "include"
+                        })
+                          .then((response) => {
+                            if (response.ok) {
+                              setApiKey("None");
+                              return response.json();
+                            } else {
+                              console.log("Error");
+                            }
+                          })
+                          .then((data) => {
+                            console.log(data);
+                          })
+                          .catch((error) => {
+                            console.log("Error:", error);
+                          });
+                        
+                      }
                     }}
-                    href="https://github.com/uptrain-ai/uptrain"
                     target={"_blank"}
                     rel="noreferrer"
                   >
                     <CustomButton
-                      label="Create API Key"
+                      label={apiKey=="None" ? "Create API Key" : "Revoke API Key"}
                       fontSize={17}
                       fontWeight={700}
                       responsiveFont={12}
@@ -74,6 +135,29 @@ const DashboardHeroBanner = () => {
                       onClick={() => {
                         open();
                         buttonEvent("Book a demo");
+                      }}
+                    />
+                  </a>
+                  <a
+                  onClick={() => {
+                    buttonEvent("Logout");
+                    document.cookie = "token=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+                    window.location.reload();
+                  }}
+                  rel="noreferrer"
+                  >
+                    <CustomButton
+                      label="Logout"
+                      type="secondary"
+                      fontSize={17}
+                      fontWeight={700}
+                      px={31}
+                      ml={17}
+                      responsiveFont={12}
+                      responsivePx={17}
+                      responsivePy={12}
+                      onClick={() => {
+                        buttonEvent("Logout");
                       }}
                     />
                   </a>
@@ -141,23 +225,22 @@ const DashboardHeroBanner = () => {
               <div className={classes.col}>
                 <div className={classes.whiteBox}>
                   <div className={classes.blackBox}>
-                    <video
-                      width="100%"
-                      height="100%"
-                      autoPlay={true}
-                      disablePictureInPicture
-                      muted
-                      loop
-                      playsInline
-                      title="How UpTrain works?"
-                      controls
+                    <a 
+                      onClick={() => {
+                      buttonEvent("Login with Google");
+                    }}
+                    href="https://demo.uptrain.ai/api/login/google/login"
+                    target={"_self"}
+                    rel="noreferrer"
                     >
-                      <source
-                        src="https://uptrain-assets.s3.ap-south-1.amazonaws.com/videos/llm_experimentation_demo.mp4"
-                        type="video/mp4"
-                      />
-                      Your browser does not support the video tag.
-                    </video>
+                    <CustomButton
+                      label="Login with Google"
+                      fontSize={18}
+                      onClick={() => {
+                        buttonEvent("Login with Google");
+                       }}
+                    />
+                    </a>
                   </div>
                 </div>
               </div>
