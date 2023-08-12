@@ -11,6 +11,8 @@ import GithubShield from "@/components/github-shield/GithubShield";
 import GithubSheildMobile from "@/components/github-shield/GithubShieldMobile";
 import UseDevicesResize from "@/helpers/UseDevicesResize";
 import { BsAlignBottom } from "react-icons/bs";
+import Link from "next/link";
+import companyLogo from "./images/logo.svg";
 
 const DashboardHeroBanner = () => {
   const [opened, { open, close }] = useDisclosure(false);
@@ -19,22 +21,25 @@ const DashboardHeroBanner = () => {
   const [userName, setUserName] = useState("");
   const [apiKey, setApiKey] = useState("");
   async function checkLogin() {
-    const response = await fetch("https://demo.uptrain.ai/api/login/login/status", {
-      "credentials" : "include",
-    });
-    
+    const response = await fetch(
+      "https://demo.uptrain.ai/api/login/login/status",
+      {
+        credentials: "include",
+      }
+    );
+
     if (response.ok) {
       const data = await response.json();
       setLoggedIn(true);
-          setUserName(data.user_name);
-          if (data.api_key !== null) {
-              setApiKey(data.api_key);
-          } else {
-              setApiKey("None");
-          }
+      setUserName(data.user_name);
+      if (data.api_key !== null) {
+        setApiKey(data.api_key);
       } else {
-          console.log('Not logged in');
+        setApiKey("None");
       }
+    } else {
+      console.log("Not logged in");
+    }
   }
   checkLogin();
 
@@ -62,13 +67,16 @@ const DashboardHeroBanner = () => {
                     onClick={() => {
                       buttonEvent("Create API Key");
                       if (apiKey === "None") {
-                        fetch("https://demo.uptrain.ai/api/login/api-key/create", {
-                          method: "POST",
-                          credentials: "include"
-                        })
+                        fetch(
+                          "https://demo.uptrain.ai/api/login/api-key/create",
+                          {
+                            method: "POST",
+                            credentials: "include",
+                          }
+                        )
                           .then((response) => {
                             if (response.ok) {
-                              return response.json();                                                    ;
+                              return response.json();
                             } else {
                               console.log("Error");
                             }
@@ -80,10 +88,13 @@ const DashboardHeroBanner = () => {
                             console.log("Error:", error);
                           });
                       } else {
-                        fetch("https://demo.uptrain.ai/api/login/api-key/revoke", {
-                          method: "POST",
-                          credentials: "include"
-                        })
+                        fetch(
+                          "https://demo.uptrain.ai/api/login/api-key/revoke",
+                          {
+                            method: "POST",
+                            credentials: "include",
+                          }
+                        )
                           .then((response) => {
                             if (response.ok) {
                               setApiKey("None");
@@ -98,14 +109,15 @@ const DashboardHeroBanner = () => {
                           .catch((error) => {
                             console.log("Error:", error);
                           });
-                        
                       }
                     }}
                     target={"_blank"}
                     rel="noreferrer"
                   >
                     <CustomButton
-                      label={apiKey=="None" ? "Create API Key" : "Revoke API Key"}
+                      label={
+                        apiKey == "None" ? "Create API Key" : "Revoke API Key"
+                      }
                       fontSize={17}
                       fontWeight={700}
                       responsiveFont={12}
@@ -147,15 +159,30 @@ const DashboardHeroBanner = () => {
             <div className={classes.row}>
               <div className={`${classes.col} ${classes.textCol}`}>
                 <div className={classes.heading}>
-                  <h1 className={classes.bgText}>Monitor Drifts</h1>
-                  <br />
-                  in your <h1 className={classes.bgText}>prediction models</h1>
+                  Your toolkit to <br />
+                  <h1 className={classes.bgText}>
+                    <Typewriter
+                      onInit={(typewriter) => {
+                        typewriter.pauseFor(500).deleteAll().start();
+                      }}
+                      options={{
+                        strings: [
+                          "prompt-test LLM changes",
+                          "validate against incorrect outputs",
+                          "monitor hallucinations",
+                          "analyse retrieval quality",
+                          "run model grading evaluations",
+                        ],
+                        autoStart: true,
+                        loop: true,
+                        cursorClassName: classes.cursorClassName,
+                      }}
+                    />
+                  </h1>
                 </div>
-                <p className={classes.description}>
-                  Define customized dashboards to observe and uncover model{" "}
-                  <br />
-                  issues in production
-                </p>
+              <p className={classes.description}>
+              Ensures your LLM applications are performing reliably by checking on aspects such as correctness, structural integrity, bias, hallucination, etc.
+              </p>
                 <div className={classes.PoweredBySection}>
                   <div
                     className={`${classes.BackedBy} ${classes.PoweredByCol}`}
@@ -174,24 +201,36 @@ const DashboardHeroBanner = () => {
                   </div>
                 </div>
               </div>
-              <div className={classes.col}>
-                <div className={classes.whiteBox}>
-                  <div className={classes.blackBox}>
-                    <a 
-                      onClick={() => {
-                      buttonEvent("Login with Google");
-                    }}
-                    href="https://demo.uptrain.ai/api/login/google/login"
-                    target={"_self"}
-                    rel="noreferrer"
-                    >
-                    <CustomButton
-                      label="Login with Google"
-                      fontSize={18}
+              <div className={classes.logInCol}>
+                <div className={classes.logInWhiteBox}>
+                  <div className={classes.logInBlackBox}>
+                    <div>
+                      <Link href="/">
+                        <Image
+                          className={classes.logo}
+                          src={companyLogo}
+                          alt="uptrain"
+                          style={{ height: "auto" }}
+                          priority
+                        />
+                      </Link>
+                    </div>
+                    <a
                       onClick={() => {
                         buttonEvent("Login with Google");
-                       }}
-                    />
+                      }}
+                      href="https://demo.uptrain.ai/api/login/google/login"
+                      target={"_self"}
+                      rel="noreferrer"
+                      className={classes.googleButton}
+                    >
+                      <CustomButton
+                        label="Login with Google"
+                        fontSize={18}
+                        onClick={() => {
+                          buttonEvent("Login with Google");
+                        }}
+                      />
                     </a>
                   </div>
                 </div>

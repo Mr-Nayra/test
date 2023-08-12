@@ -21,24 +21,6 @@ const HeroBanner = () => {
           <div className={classes.row}>
             <div className={`${classes.col} ${classes.textCol}`}>
               <div className={classes.heading}>
-                {/* <h1 className={classes.bgText}>
-                  <Typewriter
-                    onInit={(typewriter) => {
-                      typewriter.pauseFor(500).deleteAll().start();
-                    }}
-                    options={{
-                      strings: [
-                        "Monitor drifts    ",
-                        "Analyse embeddings ",
-                        "Quantify model bias   ",
-                        "Collect edge cases ",
-                      ],
-                      autoStart: true,
-                      loop: true,
-                      cursorClassName: classes.cursorClassName,
-                    }}
-                  />
-                </h1> */}
                 Your toolkit to{" "}
                 <br />
                 <h1 className={classes.bgText}>
