@@ -20,6 +20,8 @@ const DashboardHeroBanner = () => {
   const [loggedIn, setLoggedIn] = useState(false);
   const [userName, setUserName] = useState("");
   const [apiKey, setApiKey] = useState("");
+  const [creditsUsed, setCreditsUsed] = useState(0);
+  const [creditsTotal, setcreditsTotal] = useState(0);
   async function checkLogin() {
     const response = await fetch(
       "https://demo.uptrain.ai/api/login/login/status",
@@ -32,6 +34,8 @@ const DashboardHeroBanner = () => {
       const data = await response.json();
       setLoggedIn(true);
       setUserName(data.user_name);
+      setCreditsUsed(data.credits_used);
+      setcreditsTotal(data.credits_total);
       if (data.api_key !== null) {
         setApiKey(data.api_key);
       } else {
@@ -57,10 +61,18 @@ const DashboardHeroBanner = () => {
                 <p className={classes.description}>
                   API Key: <strong>{apiKey}</strong> <br />
                   <br />
-                  Credits Used: <strong>20</strong> <br />
+                  Credits Used: <strong>{creditsUsed}</strong> <br />
                   <br />
-                  Total Credits: <strong>100</strong> <br />
+                  Total Credits: <strong>{creditsTotal}</strong> <br />
                   <br />
+                  {creditsUsed > creditsTotal && (
+                    <p className={classes.alert}>
+                      <strong>
+                        You have exhausted your credits. Please contact us to
+                        purchase more credits.
+                      </strong>
+                    </p>
+                  )}
                 </p>
                 <div className={classes.btnSection}>
                   <a
@@ -125,6 +137,30 @@ const DashboardHeroBanner = () => {
                       responsivePy={12}
                     />
                   </a>
+                  <a
+                    onClick={() => {
+                      buttonEvent("Book a demo");
+                    }}
+                    href="https://calendly.com/uptrain-sourabh/uptrain-demo"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    <CustomButton
+                      label="Upgrade"
+                      type="secondary"
+                      fontSize={17}
+                      fontWeight={700}
+                      px={31}
+                      ml={17}
+                      responsiveFont={12}
+                      responsivePx={17}
+                      responsivePy={12}
+                      onClick={() => {
+                        open();
+                        buttonEvent("Book a demo");
+                      }}
+                    />
+                  </a>
                 </div>
               </div>
               <div className={classes.col}>
@@ -180,9 +216,11 @@ const DashboardHeroBanner = () => {
                     />
                   </h1>
                 </div>
-              <p className={classes.description}>
-              Ensures your LLM applications are performing reliably by checking on aspects such as correctness, structural integrity, bias, hallucination, etc.
-              </p>
+                <p className={classes.description}>
+                  Ensures your LLM applications are performing reliably by
+                  checking on aspects such as correctness, structural integrity,
+                  bias, hallucination, etc.
+                </p>
                 <div className={classes.PoweredBySection}>
                   <div
                     className={`${classes.BackedBy} ${classes.PoweredByCol}`}

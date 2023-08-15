@@ -92,6 +92,19 @@
     }
 }
 
+.alert {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 0px;
+    padding: 20px 0px;
+    color: red;
+    
+    @media screen and (max-width: 470px) {
+        font-size: 15px;
+    }
+}
+
+
 .whiteBox {
     padding: 16px;
     width: 90%;
