@@ -51,8 +51,8 @@ const HeroBanner = () => {
                   onClick={() => {
                     buttonEvent("Get started- Free");
                   }}
-                  href="https://github.com/uptrain-ai/uptrain"
-                  target={"_blank"}
+                  href="/dashboard"
+                  target={"_self"}
                   rel="noreferrer"
                 >
                   <CustomButton

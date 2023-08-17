@@ -96,6 +96,20 @@ const Header = () => {
                   Blogs
                 </Link>
               </li>
+              <li>
+                <Link
+                  className={`${classes.item} ${
+                    currentPath === "/dashboard" && classes.active
+                  } `}
+                  href="/dashboard"
+                  onClick={() => {
+                    buttonEvent("Dashboard");
+                    handleClose();
+                  }}
+                >
+                  Dashboard
+                </Link>
+              </li>
               <a
                 href="https://github.com/uptrain-ai/uptrain"
                 target={"_blank"}
