@@ -10,6 +10,7 @@ import AcceptModal from "@/components/modal/AcceptModal";
 import GithubShield from "@/components/github-shield/GithubShield";
 import GithubSheildMobile from "@/components/github-shield/GithubShieldMobile";
 import UseDevicesResize from "@/helpers/UseDevicesResize";
+import Link from "next/link";
 
 const HeroBanner = () => {
   const [opened, { open, close }] = useDisclosure(false);
@@ -47,9 +48,9 @@ const HeroBanner = () => {
               Ensures your LLM applications are performing reliably by checking on aspects such as correctness, structural integrity, bias, hallucination, etc.
               </p>
               <div className={classes.btnSection}>
-                <a
+                <Link
                   onClick={() => {
-                    buttonEvent("Get started- Free");
+                    buttonEvent("Get Started - Free");
                   }}
                   href="/dashboard"
                   target={"_self"}
@@ -62,8 +63,11 @@ const HeroBanner = () => {
                     responsiveFont={12}
                     responsivePx={17}
                     responsivePy={12}
+                    onClick={() => {
+                      buttonEvent("Get Started - Free");
+                    }}
                   />
-                </a>
+                </Link>
 
                 <a
                   onClick={() => {
