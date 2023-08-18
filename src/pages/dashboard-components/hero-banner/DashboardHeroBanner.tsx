@@ -17,7 +17,7 @@ import companyLogo from "./images/logo.svg";
 const DashboardHeroBanner = () => {
   const [opened, { open, close }] = useDisclosure(false);
   const { width } = UseDevicesResize();
-  const [loggedIn, setLoggedIn] = useState(false);
+  const [loggedIn, setLoggedIn] = useState(true);
   const [userName, setUserName] = useState("");
   const [apiKey, setApiKey] = useState("");
   const [creditsUsed, setCreditsUsed] = useState(0);
@@ -135,6 +135,30 @@ const DashboardHeroBanner = () => {
                       responsiveFont={12}
                       responsivePx={17}
                       responsivePy={12}
+                    />
+                  </a>
+                  <a
+                    onClick={() => {
+                      buttonEvent("Go to console");
+                    }}
+                    href="https://demo.uptrain.ai/dashboard"
+                    target={"_blank"}
+                    rel="noreferrer"
+                  >
+                    <CustomButton
+                      label="Go to Console"
+                      type="secondary"
+                      fontSize={17}
+                      fontWeight={700}
+                      px={31}
+                      ml={17}
+                      responsiveFont={12}
+                      responsivePx={17}
+                      responsivePy={12}
+                      onClick={() => {
+                        open();
+                        buttonEvent("Go to console");
+                      }}
                     />
                   </a>
                   <a
