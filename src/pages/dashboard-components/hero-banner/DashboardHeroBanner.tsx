@@ -17,7 +17,7 @@ import companyLogo from "./images/logo.svg";
 const DashboardHeroBanner = () => {
   const [opened, { open, close }] = useDisclosure(false);
   const { width } = UseDevicesResize();
-  const [loggedIn, setLoggedIn] = useState(true);
+  const [loggedIn, setLoggedIn] = useState(false);
   const [userName, setUserName] = useState("");
   const [apiKey, setApiKey] = useState("");
   const [creditsUsed, setCreditsUsed] = useState(0);

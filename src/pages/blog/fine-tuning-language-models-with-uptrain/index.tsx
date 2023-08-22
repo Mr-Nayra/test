@@ -14,7 +14,7 @@ const index = () => {
     <BlogTemplate
       tablelist={tableList}
       title="Fine-tuning Language Models with UpTrain: A Simple Guide to Enhancing Models for Custom Use-cases"
-      authorName="Vipul Gupta"
+      authorName="Sourabh Agrawal"
       date="31st Mar, 2023"
       banner={{ image: banner, alt: "Unlocking The Power" }}
     >

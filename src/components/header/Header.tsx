@@ -93,7 +93,7 @@ const Header = () => {
                     handleClose();
                   }}
                 >
-                  Blogs
+                  Blog
                 </Link>
               </li>
               <li>

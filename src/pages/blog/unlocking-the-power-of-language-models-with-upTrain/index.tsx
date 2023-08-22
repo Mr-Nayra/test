@@ -13,7 +13,7 @@ const index = () => {
       <BlogTemplate
         tablelist={tableList}
         title="Unlocking the Power of Language Models with UpTrain"
-        authorName="Shikha & Vipul"
+        authorName="Shikha Mohanty"
         date="14th Mar, 2023"
         banner={{ image: banner, alt: "Unlocking The Power" }}
       >
