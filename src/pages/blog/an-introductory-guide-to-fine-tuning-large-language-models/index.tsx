@@ -9,16 +9,31 @@ import Image from "next/image";
 
 import BlogTemplate from "@/components/blog-template/BlogTemplate";
 
+
+
+
 const index = () => {
   return (
     <>
+    
+      <meta
+
+      name="keywords"
+      
+      content= "Fine-tuning BERT, BERT fine-tuning, Fine-tuning language models, BERT model retraining, Improve BERT performance, BERT sentiment analysis, Masked Language Modelling with BERT, Enhancing BERT predictions, UpTrain framework, UpTrain data integrity checks, Monitor BERT performance, Model bias tracking, UpTrain edge case detection, Improve NLP models with UpTrain, UpTrain custom metric monitoring." 
+
+      />
+     
       <BlogTemplate
         tablelist={tableList}
         title="An Introductory Guide to Fine-tuning Large Language Models"
         authorName="Aryan V S"
         date="20th Mar, 2023"
         banner={{ image: banner, alt: "Unlocking The Power" }}
+        
       >
+   
+      
         <div>
           <h2 id="what-is-a-large-language-model">
             What is a Large Language Model?

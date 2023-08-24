@@ -19,8 +19,8 @@ const index = () => {
         </title>
 
         <meta
-          name="description"
-          content="Applications of active learning in ML models. How to retrain ML models with less data. Different query strategies and applications of active training"
+          name="keywords"
+          content="Active learning, supervised machine learning, data labeling, unlabeled datasets, training models, query strategies, semi-supervised learning, machine learning algorithms, data selection, data prioritization, uncertainty sampling, query by committee, least confidence strategy, margin sampling, expected model change, expected error reduction, entropy in active learning, density-weighted methods, applications of active learning, Natural Language Processing (NLP), image segmentation, object detection, Generative Adversarial Networks (GAN), curriculum learning, cost-effective active learning, deep active learning, active learning in computer vision, active learning in NLP, training efficiency, labeling cost reduction"
         />
       </Head>
       <BlogTemplate

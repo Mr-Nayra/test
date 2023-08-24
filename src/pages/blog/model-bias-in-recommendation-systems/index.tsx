@@ -18,8 +18,10 @@ const index = () => {
         </title>
 
         <meta
-          name="description"
-          content="Different types of model bias like exposure bias, selection bias, popularity bias, position bias in recommendation sustems. Propensity score to solve it"
+          name="keywords"
+          
+          content = "Bias in Recommendation Systems, User Interaction Adds Bias, Selection bias, Exposure bias, Conformity bias, Position bias, Biases present in data, Popularity bias, Unfairness in training data, Feedback Loop in recommender systems, How to solve bias in recommender systems, Propensity Score, Data Imputation, Modeling Popularity Influence, Sampling for bias reduction, Click Models for position bias, Regularization for bias mitigation, Rebalancing for fairness, Adversarial Learning for bias reduction, Reinforcement Learning for bias counteraction, Conclusion, UpTrain AI, Solving bias with UpTrain AI, ML Practitioner, Data Scientist, Product Lead"
+
         />
       </Head>
       <BlogTemplate
