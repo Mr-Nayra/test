@@ -17,8 +17,8 @@ const index = () => {
         <title>UpTrain | Open-Source LLMOps Toolkit</title>
 
         <meta
-          name="description"
-          content="Open-source observability tool to monitor ML models in production and continuously improve them over time by monitoring their performance, checking for (data) distribution shifts, and collecting edge cases to retrain them upon; built by a company that values your privacy."
+          name="keywords"
+          content="Open-source observability tool to monitor ML models in production and continuously improve them over time by monitoring their performance, checking for (data) distribution shifts, and collecting edge cases to retrain them upon; built by a company that values your privacy , Open-source, observability tool, monitor, machine learning models, production, continuous improvement, performance optimization, data distribution shifts, edge cases, retraining, model refinement, real-time monitoring, privacy-centric, data security, transparency, accountability, insights, actionable metrics, predictive analytics, anomaly detection, scalability, reliability, robustness, automation, model evaluation, model validation, model tracking, model governance, model interpretability"
         />
         <link rel="canonical" href="https://www.uptrain.ai" />
         <link rel="alternate" href="https://www.uptrain.ai" hrefLang="en-us" />
