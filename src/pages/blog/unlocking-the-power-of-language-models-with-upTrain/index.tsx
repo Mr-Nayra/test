@@ -6,13 +6,18 @@ import Image from "next/image";
 import pretainedModel from "./images/pretained-model.png";
 import fuelTuning from "./images/fuel-tuning.png";
 import BlogTemplate from "@/components/blog-template/BlogTemplate";
-
-
+import Head from "next/head";
 
 const index = () => {
   return (
-    <Fragment>
+    <>
       <Head>
+        <title>Unlocking the Power of Language Models with UpTrain</title>
+        <meta
+          name="keywords"
+          content="Connected to the internet, ChatGPT, Large Language Models, LLMs, Technology, Behind, Modern marvel, Interesting technology, Powering, Pre-trained models, Fine-tuned, Text classification, Sentiment analysis, Question answering, Performance improvement, Background information, Natural Language Processing, NLP, Overview, Machine Learning, NLP tasks, Handcrafted rules, Statistical models, Deep learning techniques, Neural networks, Unsupervised learning, Masked language modeling, Next sentence prediction, General patterns, Syntax, Fine-tuning, Downstream tasks, Nike, Automate, Writing product descriptions, Positive sentiment, Language semantics, Pretrained LLM, State-of-the-art results, BERT, GPT-2, RoBERTa, XLNet, ALBERT, Transformer-based model, Google, OpenAI, Generative Pre-trained Transformer 2, Optimized version, eXtra Long Network, A Lite BERT, Pretrained models, Developing applications, Data preparation, Fine-tuning techniques, Full Fine-Tuning, Freezing Layers, Mixing Pre-Trained Weights, Selection, Training Data, Quality, Customized signals, Data filtering technique, Irrelevant, Noisy data, Relevant information, Integrity checks, High-quality annotations, Collaborative labeling, Active learning techniques, Limited labeled training data, Evaluation Metrics, Accuracy, Precision, Recall, F1 score, AUC-ROC curve, Validation techniques, K-fold cross-validation, Holdout validation, Overfitting, Cross-validation, K-fold validation, Leave-one-out validation, Regularization techniques, L1/L2 regularization, Dropout, Generalization capabilities, Conclusion, Revolutionized, Data preparation, Hyperparameter tuning, Optimization, Expertise, Valuable insights, Potential applications, Leveraged, Engineers, NLP capabilities."
+        />
+      </Head>
       <BlogTemplate
         tablelist={tableList}
         title="Unlocking the Power of Language Models with UpTrain"
@@ -20,15 +25,6 @@ const index = () => {
         date="14th Mar, 2023"
         banner={{ image: banner, alt: "Unlocking The Power" }}
       >
-      <meta
-
-      name="keywords"
-      
-      content= "Connected to the internet, ChatGPT, Large Language Models, LLMs, Technology, Behind, Modern marvel, Interesting technology, Powering, Pre-trained models, Fine-tuned, Text classification, Sentiment analysis, Question answering, Performance improvement, Background information, Natural Language Processing, NLP, Overview, Machine Learning, NLP tasks, Handcrafted rules, Statistical models, Deep learning techniques, Neural networks, Unsupervised learning, Masked language modeling, Next sentence prediction, General patterns, Syntax, Fine-tuning, Downstream tasks, Nike, Automate, Writing product descriptions, Positive sentiment, Language semantics, Pretrained LLM, State-of-the-art results, BERT, GPT-2, RoBERTa, XLNet, ALBERT, Transformer-based model, Google, OpenAI, Generative Pre-trained Transformer 2, Optimized version, eXtra Long Network, A Lite BERT, Pretrained models, Developing applications, Data preparation, Fine-tuning techniques, Full Fine-Tuning, Freezing Layers, Mixing Pre-Trained Weights, Selection, Training Data, Quality, Customized signals, Data filtering technique, Irrelevant, Noisy data, Relevant information, Integrity checks, High-quality annotations, Collaborative labeling, Active learning techniques, Limited labeled training data, Evaluation Metrics, Accuracy, Precision, Recall, F1 score, AUC-ROC curve, Validation techniques, K-fold cross-validation, Holdout validation, Overfitting, Cross-validation, K-fold validation, Leave-one-out validation, Regularization techniques, L1/L2 regularization, Dropout, Generalization capabilities, Conclusion, Revolutionized, Data preparation, Hyperparameter tuning, Optimization, Expertise, Valuable insights, Potential applications, Leveraged, Engineers, NLP capabilities."
-      />
-
-      
-      </Head>  
         <div>
           <p>
             If you have connected to the internet in the last 60 days, it
@@ -334,7 +330,7 @@ const index = () => {
           </p>
         </div>
       </BlogTemplate>
-    </Fragment>
+    </>
   );
 };
 

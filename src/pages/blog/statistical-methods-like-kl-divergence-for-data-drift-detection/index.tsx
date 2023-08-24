@@ -15,7 +15,7 @@ import BlogTemplate from "@/components/blog-template/BlogTemplate";
 
 const index = () => {
   return (
-    <Fragment>
+    <>
       <Head>
         <title>
           Data drift issues and methods like Kullback-Leibler Divergence
@@ -23,9 +23,7 @@ const index = () => {
 
         <meta
           name="keywords"
-          content = "AI for business, Sales forecasts, Inventory management, Customer demand insights, Machine learning model deployment, Monitoring post-production, ML model failure, Performance degradation, Data distribution shift, Model re-training, UpTrain AI, UpTrain AI toolkit, UpTrain AI platform, Handling data distribution drifts, Real-world data shifts, Unseen data distribution, Global economy dynamics, Cultural shifts affecting data, Concept drift, Input-target relationship change, Remote work impact on models, Data drift, User demographic shift, Marketing campaign influence, Detecting data distribution shifts, Statistical methods for drift detection, Population Stability Index (PSI), Population shift, Drift identification, Financial data based ML models, Kullback–Leibler Divergence, Probability distribution difference, Relative entropy calculation, Jensen-Shannon Distance, Normalized score, KL divergence formula, Kolmogorov-Smirnov Test, Non-parametric test, Cumulative probability distribution difference, Page-Hinkley Method, Drift detection, Mean value monitoring, Drift alarms, Statistical test selection, KL divergence for large datasets, Jenson-Shannon sensitivity, Kolmogorov-Smirnov for small samples, Wasserstein for higher-dimensional data, Model-based drift detection, Time-window drift detection, UpTrain AI toolkit"
-        
-        
+          content="AI for business, Sales forecasts, Inventory management, Customer demand insights, Machine learning model deployment, Monitoring post-production, ML model failure, Performance degradation, Data distribution shift, Model re-training, UpTrain AI, UpTrain AI toolkit, UpTrain AI platform, Handling data distribution drifts, Real-world data shifts, Unseen data distribution, Global economy dynamics, Cultural shifts affecting data, Concept drift, Input-target relationship change, Remote work impact on models, Data drift, User demographic shift, Marketing campaign influence, Detecting data distribution shifts, Statistical methods for drift detection, Population Stability Index (PSI), Population shift, Drift identification, Financial data based ML models, Kullback–Leibler Divergence, Probability distribution difference, Relative entropy calculation, Jensen-Shannon Distance, Normalized score, KL divergence formula, Kolmogorov-Smirnov Test, Non-parametric test, Cumulative probability distribution difference, Page-Hinkley Method, Drift detection, Mean value monitoring, Drift alarms, Statistical test selection, KL divergence for large datasets, Jenson-Shannon sensitivity, Kolmogorov-Smirnov for small samples, Wasserstein for higher-dimensional data, Model-based drift detection, Time-window drift detection, UpTrain AI toolkit"
         />
       </Head>
       <BlogTemplate
@@ -317,7 +315,7 @@ const index = () => {
           </div>
         </div>
       </BlogTemplate>
-    </Fragment>
+    </>
   );
 };
 

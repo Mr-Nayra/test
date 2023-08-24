@@ -12,7 +12,7 @@ import BlogTemplate from "@/components/blog-template/BlogTemplate";
 
 const index = () => {
   return (
-    <Fragment>
+    <>
       <Head>
         <title>
           Strategies and applications of Active learning for neural networks
@@ -384,7 +384,7 @@ const index = () => {
           </div>
         </div>
       </BlogTemplate>
-    </Fragment>
+    </>
   );
 };
 

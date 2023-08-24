@@ -8,16 +8,15 @@ import BlogTemplate from "@/components/blog-template/BlogTemplate";
 
 const index = () => {
   return (
-    <Fragment>
+    <>
       <Head>
         <title>
-          Mistakes while productionizing machine learning models like lack of AI
-          governance and not monitoring model biases
+          7 Mistakes People Make When Putting Their Models In Production
         </title>
 
         <meta
-          name = "keywords"
-          contetnt = "ML model post-production maintenance, ML model performance, Automate workflow, Prevent pipeline flaws, AI adoption challenges, Deploying ML models, Data drift in ML models, Real data distribution drift, Performance degradation in ML models, Monitor performance post-production, Unnoticed data drift detection, Data drift causes, Seasonal data drifts, Cost of model exceeding value, Model accuracy degradation, User input validation for ML models, Data validation for ML models, Handling data input mismatches, Pydantic data validation, Test set for ML models, Optimal test dataset for ML models, Generalization to unseen data, A/B testing methodology, Updating test dataset, Choosing ML architectures, Simple use-cases for ML models, Business problem definition for ML, Value/Cost ratio for ML solutions, Neural network vs. logistic regression, Tree-based models for ML, Automated model refinement pipelines, Efficient ML model development, Automated issue resolution, Feature engineering automation, Hyperparameter tuning automation, Model selection automation, AI governance, Data science and ML techniques, AI governance process, Deployment strategy for ML, Blue-green deployment, Canary deployment, Shadow deployment, Rollback system for ML models, Cross-functional team communication, Monitoring model biases, Tracking model biases, Fair AI adoption, MLOps tools for bias identification, Preventing model bias, Conclusion, ML model problems, Solution compatibility with stacks and libraries, Automating dynamic endpoint updates, Continuous deployment tools, Uptrain, Uptrain benefits, Uptrain platform, Uptrain use-cases, Uptrain features"
+          name="keywords"
+          content="ML model post-production maintenance, ML model performance, Automate workflow, Prevent pipeline flaws, AI adoption challenges, Deploying ML models, Data drift in ML models, Real data distribution drift, Performance degradation in ML models, Monitor performance post-production, Unnoticed data drift detection, Data drift causes, Seasonal data drifts, Cost of model exceeding value, Model accuracy degradation, User input validation for ML models, Data validation for ML models, Handling data input mismatches, Pydantic data validation, Test set for ML models, Optimal test dataset for ML models, Generalization to unseen data, A/B testing methodology, Updating test dataset, Choosing ML architectures, Simple use-cases for ML models, Business problem definition for ML, Value/Cost ratio for ML solutions, Neural network vs. logistic regression, Tree-based models for ML, Automated model refinement pipelines, Efficient ML model development, Automated issue resolution, Feature engineering automation, Hyperparameter tuning automation, Model selection automation, AI governance, Data science and ML techniques, AI governance process, Deployment strategy for ML, Blue-green deployment, Canary deployment, Shadow deployment, Rollback system for ML models, Cross-functional team communication, Monitoring model biases, Tracking model biases, Fair AI adoption, MLOps tools for bias identification, Preventing model bias, Conclusion, ML model problems, Solution compatibility with stacks and libraries, Automating dynamic endpoint updates, Continuous deployment tools, Uptrain, Uptrain benefits, Uptrain platform, Uptrain use-cases, Uptrain features"
         />
       </Head>
       <BlogTemplate
@@ -229,7 +228,7 @@ const index = () => {
           </div>
         </div>
       </BlogTemplate>
-    </Fragment>
+    </>
   );
 };
 
