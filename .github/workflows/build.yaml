@@ -39,7 +39,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.PEM_FILE }}
           script: |
-            docker load < /home/ubuntu/image.tar
+            docker load < image.tar/github/workspace/image.tar
             export image_build=image
             docker-compose up -d --build
             find . -name 'uptrain*.tar' -delete
