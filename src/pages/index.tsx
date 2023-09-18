@@ -7,6 +7,12 @@ import FeatureSection from "./index-components/feature-section/FeatureSection";
 import HeroBanner from "./index-components/hero-banner/HeroBanner";
 import WorkFlow from "./index-components/workFlow/WorkFlow";
 import ChatBot from "@/components/chat-bot/ChatBot";
+import FiguresReached from "./index-components/figures-reached/figuresReached";
+import KeyFeatures from "./index-components/key-features/keyFeatures";
+import PlansSection from "./index-components/plans-section/plansSection";
+import FaqSection from "./index-components/faq-section/faqSection";
+import ConcludingBanner from "./index-components/concluding-banner/concludingBanner";
+import Advantages from "./index-components/advantages-section/advantages";
 
 const index = () => {
   const { width } = UseDevicesResize();
@@ -25,21 +31,24 @@ const index = () => {
       {width > 800 ? (
         <>
           <HeroBanner />
+          <FiguresReached />
+          <Advantages />
+          <KeyFeatures />
           <ChatBot />
-          <FeatureSection />
-          {/* <WorkFlow /> */}
-          {/* <Testimonials /> */}
-          {/* <BlogSection /> */}
-          <CareersSection />
+          <PlansSection />
+          <FaqSection />
+          <ConcludingBanner />
         </>
       ) : (
         <>
           <HeroBanner />
+          <FiguresReached />
+          <Advantages />
+          <KeyFeatures />
           <ChatBot />
-          <FeatureSection />
-          {/* <Testimonials /> */}
-          <CareersSection />
-          {/* <BlogSection /> */}
+          <PlansSection />
+          <FaqSection />
+          <ConcludingBanner />
         </>
       )}
     </Fragment>

@@ -44,20 +44,20 @@ const CustomButton: React.FC<Props> = ({
     },
     root: {
       backgroundColor:
-        type === "primary" ? "transparent" : COLORS.secondaryGradient,
+        type === "primary" ? "transparent" : COLORS.black,
       paddingTop: py,
       paddingBottom: py,
       paddingLeft: px,
       paddingRight: px,
       height: "auto",
-      border: "1px solid transparent",
+      border: type === "primary" ? "1px solid transparent" : COLORS.primaryGradient,
       borderColor: COLORS.primaryGradient,
       fontSize: fontSize,
       fontWeight: fontWeight,
       color: COLORS.white,
       borderRadius: 24,
       cursor: disabled ? "not-allowed" : "pointer",
-      "@media(max-width:650px)": {
+      "@media(max-width:750px)": {
         fontSize: responsiveFont,
         paddingTop: responsivePy,
         paddingBottom: responsivePy,

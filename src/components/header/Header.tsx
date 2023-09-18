@@ -120,7 +120,7 @@ const Header = () => {
                   handleClose();
                 }}
               >
-                <CustomButton label="Github" type="primary" px={51} />
+                <CustomButton label="Github" type="secondary" px={51} />
               </a>
             </ul>
           </div>

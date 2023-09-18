@@ -1,7 +1,7 @@
 export const COLORS = {
   primary: "#7C00BD",
   secondary: "#7C7C7C",
-  primaryGradient: "linear-gradient(95.21deg, #6274E7 0%, #8752A3 100%)",
+  primaryGradient: "var(--Gred-Ani-01, linear-gradient(101deg, #E0867E 3.75%, #7676FB 51.26%, #1CD4C2 96.82%));",
   white: "#fff",
   whiteSmoke: "#F5F5F5",
   black: "#000000",

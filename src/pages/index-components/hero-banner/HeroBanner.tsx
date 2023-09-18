@@ -22,30 +22,12 @@ const HeroBanner = () => {
           <div className={classes.row}>
             <div className={`${classes.col} ${classes.textCol}`}>
               <div className={classes.heading}>
-                Your toolkit to{" "}
+                Monitor drifts
                 <br />
-                <h1 className={classes.bgText}>
-                  <Typewriter
-                    onInit={(typewriter) => {
-                      typewriter.pauseFor(500).deleteAll().start();
-                    }}
-                    options={{
-                      strings: [
-                        "prompt-test LLM changes",
-                        "validate against incorrect outputs",
-                        "monitor hallucinations",
-                        "analyse retrieval quality",
-                        "run model grading evaluations",
-                      ],
-                      autoStart: true,
-                      loop: true,
-                      cursorClassName: classes.cursorClassName,
-                    }}
-                  />
-                </h1>
+                <span className={classes.heading}>in your </span><span className={classes.bgText}>prediction models</span>
               </div>
               <p className={classes.description}>
-              Ensures your LLM applications are performing reliably by checking on aspects such as correctness, structural integrity, bias, hallucination, etc.
+                Define customised dashboards to observe and uncover model issues in production
               </p>
               <div className={classes.btnSection}>
                 <Link
@@ -114,6 +96,16 @@ const HeroBanner = () => {
                   />
                 </a> */}
               </div>
+              <div className={classes.PoweredBySection}>
+                <div className={`${classes.BackedBy} ${classes.PoweredByCol}`}>
+                  <h1 className={classes.PoweredByText}>Backed by</h1>
+                  <Image className={classes.logo} src={combinatorLogo} alt="logo" />
+                </div>
+                <div className={`${classes.PoweredByCol} ${classes.githubShield}`}>
+                  {/* If on mobile, show class GithubShieldMobile else GithubShield */}
+                  { width > 800 ? <GithubShield/> : <GithubSheildMobile/>}
+                </div>
+              </div>
             </div>
             <div className={classes.col}>
               <div className={classes.whiteBox}>
@@ -138,16 +130,6 @@ const HeroBanner = () => {
                 </div>
               </div>
             </div> 
-          </div>
-          <div className={classes.PoweredBySection}>
-            <div className={`${classes.BackedBy} ${classes.PoweredByCol}`}>
-              <h1 className={classes.PoweredByText}>Backed by</h1>
-              <Image className={classes.logo} src={combinatorLogo} alt="logo" />
-            </div>
-            <div className={`${classes.PoweredByCol} ${classes.githubShield}`}>
-              {/* If on mobile, show class GithubShieldMobile else GithubShield */}
-              { width > 800 ? <GithubShield/> : <GithubSheildMobile/>}
-            </div>
           </div>
         </div>
       </div>
