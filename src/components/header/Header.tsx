@@ -10,10 +10,11 @@ import UseDevicesResize from "@/helpers/UseDevicesResize";
 import { buttonEvent } from "@/helpers/buttonEvent";
 
 const getNavDisplay = (width: number, show: boolean) => {
+  
   if (width > 950) {
     return "block";
   }
-
+  
   if (show) {
     return "block";
   }
@@ -85,6 +86,20 @@ const Header = () => {
               <li>
                 <Link
                   className={classes.item}
+                  href="#plans-section"
+                  rel="noreferrer"
+                  scroll={false}
+                  onClick={() => {
+                    buttonEvent("Pricing");
+                    handleClose();
+                  }}
+                >
+                  Pricing
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className={classes.item}
                   href="https://blog.uptrain.ai/"
                   target={"_blank"}
                   rel="noreferrer"
@@ -93,7 +108,7 @@ const Header = () => {
                     handleClose();
                   }}
                 >
-                  Blog
+                  Blogs
                 </Link>
               </li>
               <li>
@@ -107,7 +122,7 @@ const Header = () => {
                     handleClose();
                   }}
                 >
-                  Dashboard
+                  My Account
                 </Link>
               </li>
               <a

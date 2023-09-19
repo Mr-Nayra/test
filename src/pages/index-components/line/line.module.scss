@@ -1,0 +1,15 @@
+@import "../../../colors/colors";
+
+.root {
+    height: 2vh;
+    padding: 1em 0em;
+    background-color: $secondaryGradient;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+}
+
+.line {
+    margin: auto;
+    width: 70vw;
+}

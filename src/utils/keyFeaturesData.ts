@@ -25,6 +25,6 @@ export const keyFeaturesData = [
     backgroundImg: custom_bg,
     heading: "Customization",
     description: 
-      "When it comes to AI, there is no one size-fits-all solution. Hence, UpTrain is built with customization at its core, allowing you to configure custom grading prompts and operators with just a python function",
+      "When it comes to AI, there is no one size-fits-all solution. Hence, UpTrain is built with customization at its core, allowing you to configure custom grading prompts and operators with just a python function.",
   },
 ];

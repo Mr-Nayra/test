@@ -34,8 +34,8 @@ const index = () => {
           <FiguresReached />
           <Advantages />
           <KeyFeatures />
-          <ChatBot />
           <PlansSection />
+          <ChatBot />
           <FaqSection />
           <ConcludingBanner />
         </>
@@ -45,8 +45,8 @@ const index = () => {
           <FiguresReached />
           <Advantages />
           <KeyFeatures />
-          <ChatBot />
           <PlansSection />
+          <ChatBot />
           <FaqSection />
           <ConcludingBanner />
         </>

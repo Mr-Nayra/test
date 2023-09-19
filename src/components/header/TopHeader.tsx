@@ -6,8 +6,6 @@ const useStyles = createStyles({
     backgroundImage: COLORS.primaryGradient,
     textAlign: "center",
     width: "100%",
-    position: "sticky",
-    zIndex: 99999,
     top: " 0px",
   },
   heading: {

@@ -2,6 +2,9 @@
 
 .container {
     background-color: $black;
+    position: sticky;
+    z-index: 99999;
+    top: 0px;
 }
 
 .navbar {

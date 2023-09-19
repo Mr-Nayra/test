@@ -1,18 +1,20 @@
 import React from "react";
 import classes from "./concludingBanner.module.scss";
 import CustomButton from "@/components/button/CustomButton";
-
 import { buttonEvent } from "@/helpers/buttonEvent";
-
 import Link from "next/link";
+import UseDevicesResize from "@/helpers/UseDevicesResize";
+
 
 const ConcludingBanner = () => {
+  const {width} = UseDevicesResize();
+  
   return(
     <>
       <div className={classes.root}>
       <div style={{ width: "100%" }}>
-        <div className={classes.heading}>
-          Are you ready to
+        <div className={classes.headingContainer}>
+          <span className={classes.heading}>Are you ready to</span>
           <br />
           <span className={classes.bgText}>accelerate </span>
           <span className={classes.heading}>and </span>
@@ -20,9 +22,9 @@ const ConcludingBanner = () => {
           <span className={classes.heading}>your journey?</span>
         </div>
         <p className={classes.description}>
-          Demo two line text, demo two line text, demo two line text, Demo two line text, demo two 
-        <br />
-          line text, demo two line text, Demo two line text.
+          You can’t improve what you can’t measure.
+          {width>700 && <br />}
+          Use UpTrain to power evaluation of LLM applications and pull ahead of competitors.
         </p>
         <div className={classes.btnSection}>
         <Link

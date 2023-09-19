@@ -6,7 +6,7 @@ import PlansSectionCard from "./plansSectionCard";
 const PlansSection = () => {
   return(
     <>
-      <div className={classes.root}>
+      <div id="plans-section" className={classes.root}>
         <h1 className={classes.heading}>Start for free. Pay as you grow. Switch at any time.</h1>
         <p className={classes.description}>
         No matter how many team members you have - our pricing is simple, transparent and adapts to the size of your company.

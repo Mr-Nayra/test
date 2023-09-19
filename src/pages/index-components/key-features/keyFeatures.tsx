@@ -2,6 +2,7 @@ import React from "react";
 import { keyFeaturesData } from "@/utils/keyFeaturesData";
 import classes from "./keyFeatures.module.scss";
 import KeyFeaturesCard from "./keyFeatureCard";
+import Line from "../line/line";
 
 const KeyFeatures = () => {
     return(
@@ -25,6 +26,7 @@ const KeyFeatures = () => {
               ))}
             </div>
           </div>
+          <Line />
         </>
     )
 }

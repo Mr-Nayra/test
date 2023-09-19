@@ -3,6 +3,7 @@ import classes from "./advantages.module.scss";
 import { advantagesData } from "@/utils/advantagesData";
 import Image from "next/image";
 import UseDevicesResize from "@/helpers/UseDevicesResize";
+import Line from "../line/line";
 
 const Advantages = () => {
   const { width } = UseDevicesResize();
@@ -55,6 +56,7 @@ const Advantages = () => {
           </div>
         </div>
       </div>
+      <Line />
     </>
   )
 
