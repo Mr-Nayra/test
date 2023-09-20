@@ -10,11 +10,11 @@ export default function Document() {
           rel="stylesheet"
         />
 
-        <script
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-K18N6CKMVE"
         />
-        <script
+        <Script
           id="google-tag"
           dangerouslySetInnerHTML={{
             __html: `
