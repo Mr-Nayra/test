@@ -11,7 +11,7 @@ import { PostHogProvider } from "posthog-js/react";
 import posthog from "posthog-js";
 
 if (typeof window !== "undefined") {
-  posthog.init("phc_ibE2MAlMhn6iqLciTp4SgrTfbsj3YySIAk66AX34V1w", {
+  posthog.init("", {
     api_host: "https://app.posthog.com",
   });
 }
