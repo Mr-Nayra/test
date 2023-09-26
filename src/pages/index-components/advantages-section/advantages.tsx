@@ -19,7 +19,7 @@ const Advantages = () => {
             {width > 768 ?
             advantagesData.map((advantage, index) => (
               (index+1)%2 == 1 ? 
-                <div className={classes.row}>
+                <div className={classes.row} key={index}>
                   <div className={classes.text}>
                     <div className={classes.advantageNumber}>{`0${index+1}`}</div>
                     <div className={classes.heading}>{advantage.heading}</div>
@@ -29,7 +29,7 @@ const Advantages = () => {
                     <Image src={advantage.image} alt="advantage" className={classes.image} />
                   </div>
                 </div> 
-              : <div className={classes.row}>
+              : <div className={classes.row} key={index}>
                   <div className={classes.imageContainer}>
                     <Image src={advantage.image} alt="advantage" className={classes.image} />
                   </div>
@@ -42,7 +42,7 @@ const Advantages = () => {
                 </div>
             )) : 
             advantagesData.map((advantage, index) => (
-              <div className={classes.row}>
+              <div className={classes.row} key={index}>
                   <div className={classes.text}>
                     <div className={classes.advantageNumber}>{`0${index+1}`}</div>
                     <div className={classes.heading}>{advantage.heading}</div>

@@ -33,7 +33,7 @@ const PlansSectionCard = (props: IPlansSectionCard) => {
           </div>
 
           <div className={classes.description}>
-            {description.map((item, index) => (
+            {description?.map((item, index) => (
                 <div className={classes.descriptionItem} key={`${"_" + index}`}>
                   <Image src={checkIcon} alt="check_icon" className={classes.checkIcon} />
                   <p className={classes.descriptionText}>{item}</p>

@@ -11,7 +11,7 @@ const FaqSection = () => {
         <h1 className={classes.heading}>Frequently Asked Questions</h1>
         <div className={classes.accordion}>
           {faqData.map((faq, index) => (
-            <div>
+            <div key={index}>
             <FAQ
               question={faq.question}
               answer={faq.answer}
