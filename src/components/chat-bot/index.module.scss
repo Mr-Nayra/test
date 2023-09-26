@@ -3,11 +3,11 @@ $background-color: #111;
 $text-color: #fff;
 $user-message-bg: #1a1a1a;
 $chatbot-message-bg: #333;
+$secondaryGradient: #010201;
 
 // Define styles for dark mode
 .chatbot {
-  background: url("./images/chatboxBackground.webp");
-  background-color: $background-color;
+  background-color: $secondaryGradient;
   background-size: cover;
   background-position: center;
   color: $text-color;

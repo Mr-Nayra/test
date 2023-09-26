@@ -8,10 +8,6 @@ import linkedinLogo from "./image/linkedinLogo.svg";
 import isoCertification from "./image/isoCertification.png";
 import gdprCertification from "./image/gdprCertification.png";
 import classes from "./TheFooter.module.scss";
-import {
-  TiSocialLinkedinCircular,
-  TiSocialTwitterCircular,
-} from "react-icons/ti";
 import Link from "next/link";
 import { buttonEvent } from "@/helpers/buttonEvent";
 
@@ -25,13 +21,15 @@ const TheFooter = () => {
               <Image src={footerCompanyLogo} alt="logo" />
             </Link>
             <p className={classes.tagLine}>
-              Your Open-source LLMOps toolkit 
+            Open-source toolkit to evaluate LLM applications 
             </p>
             <br />
             <br />
             <br />
             <p className={classes.tagLine}>
-              Security & privacy is at the core of what we do
+              Security & privacy is at the 
+              <br />
+              core of what we do
             </p>
             <br />
             <div className={classes.certificationsContainer}>

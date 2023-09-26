@@ -43,7 +43,7 @@ const MessageInput: React.FC<MessageInputProps> = ({
         />
       </div>
       <button onClick={handleSendButtonClick} className={classes.sendButton}>
-        Generate
+        Ask
       </button>
     </div>
   );
