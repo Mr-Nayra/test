@@ -18,9 +18,9 @@ export const plansSectionData = [
     backgroundImage: plan1_bg,
     heading: "Managed",
     targetUser: "For small teams",
-    charges: "$ 99/month",
+    charges: "$ 50/month",
     description: [
-      "10,000 evaluations per month",
+      "5,000 evaluations per month",
       "OpenAI API Cost included",
       "Realtime dashboards",
       "Monthly consultations for custom metrics",
