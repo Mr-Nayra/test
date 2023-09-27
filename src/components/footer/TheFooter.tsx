@@ -18,7 +18,7 @@ const TheFooter = () => {
         <div className={classes.container}>
           <div>
             <Link href="/" className={classes.logo}>
-              <Image src={footerCompanyLogo} alt="logo" />
+              <Image src={footerCompanyLogo} alt="Logo of UpTrain, an open-source LLM evaluation tool, backed by YCombinator" />
             </Link>
             <p className={classes.tagLine}>
             Open-source toolkit to evaluate LLM applications 
@@ -34,10 +34,10 @@ const TheFooter = () => {
             <br />
             <div className={classes.certificationsContainer}>
               <Link href="/" className={classes.certificationLogo}>
-                <Image src={isoCertification} alt="ISO Certification" />
+                <Image src={isoCertification} alt="ISO Certification for UpTrain, an open-source LLM evaluation tool" />
               </Link>
               <Link href="/" className={classes.certificationLogo}>
-                <Image src={gdprCertification} alt="GDPR Certification" />
+                <Image src={gdprCertification} alt="GDPR Certification for UpTrain, an open-source LLM evaluation tool" />
               </Link>
             </div>
           </div>

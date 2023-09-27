@@ -5,12 +5,13 @@ import Image,{ StaticImageData } from "next/image";
 interface IKeyFeaturesCard {
     heading: string;
     description: string;
+    alt: string;
     keyFeatureImg: StaticImageData;
     backgroundImg: StaticImageData;
 }
 
 const KeyFeaturesCard = (props: IKeyFeaturesCard) => {
-    const {heading, description, keyFeatureImg, backgroundImg} = props;
+    const {heading, description, alt, keyFeatureImg, backgroundImg} = props;
 
     return(
       <>
@@ -18,7 +19,7 @@ const KeyFeaturesCard = (props: IKeyFeaturesCard) => {
           <Image src={backgroundImg} alt="background_img" className={classes.backgroundImage}/>
           <div className={classes.text}>
             <div className={classes.keyFeatureImg}>
-              <Image src={keyFeatureImg} alt="key-feature" className={classes.imageKeyFeature} />
+              <Image src={keyFeatureImg} alt={alt} className={classes.imageKeyFeature} />
             </div>
             <div className={classes.cardText}>
               <h2 className={classes.cardHeading}>{heading}</h2>

@@ -19,6 +19,7 @@ const KeyFeatures = () => {
                   <KeyFeaturesCard
                     heading={feature.heading}
                     description={feature.description}
+                    alt={feature.alt}
                     keyFeatureImg={feature.featureImg}
                     backgroundImg={feature.backgroundImg}
                   />

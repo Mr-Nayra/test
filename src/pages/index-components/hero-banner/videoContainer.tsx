@@ -14,7 +14,7 @@ const VideoContainer = (isMobile:boolean) => {
               muted
               loop
               playsInline
-              title="How UpTrain works?"
+              title="Demo of How UpTrain evaluation works?"
               controls
             >
               <source src={isMobile ? "/backgroundVideoMobile.mp4" : "/backgroundVideo.mp4"} type="video/mp4" />

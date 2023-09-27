@@ -38,7 +38,7 @@ const Header = () => {
               <Image
                 className={classes.logo}
                 src={companyLogo}
-                alt="uptrain"
+                alt="logo of UpTrain, an open-source LLM evaluation tool, backed by YCombinator"
                 style={{ height: "auto" }}
                 priority
               />
