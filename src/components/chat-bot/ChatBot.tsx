@@ -7,6 +7,50 @@ import Modal from "./Modal";
 import DisplayTextWithNewlines from "./DisplayTextWithNewlines";
 import CustomButton from "../button/CustomButton";
 
+const defaultMessages = [
+  {
+    "role": "user",
+    "content": "What is LangChain?"
+  },
+  {
+  "role": "chatbot",
+  "content": "LLM Response: LangChain is a collection of various chains or modules that can be used for different purposes such as math, summarization, symbol math, moderation, crawling, extraction, tagging, and more."
+}]
+
+const defaultdata = {
+  "answer": "LangChain is a collection of various chains or modules that can be used for different purposes such as math, summarization, symbol math, moderation, crawling, extraction, tagging, and more.",
+  "scores": {
+    '0': {
+    "description": "Measures if the response answers all aspects of the given question",
+    "example": "If the question is 'What is UpTrain and how to install it' and the LLM response is 'UpTrain is an open-source LLM evaluation tool to check your application's performance on aspects like hallucinations, response quality, language quality, bias, etc.', the completeness score should be 0.5 as it didn't answer one part of the question i.e. how to install UpTrain",
+    "explanation": "1. The question asks for the definition of \"LangChain\".\n2. The response provides a list of various chains such as llm, bash, math, requests, summarization checker, symbolic math, loading, mapreduce, moderation, natbot, openai functions, prompt selector, qa generation, qa with sources, and query constructor.\n3. The response does not directly define \"LangChain\" but instead provides a list of chains that are part of it.\n4. However, the response does provide relevant information about the components or elements that make up \"LangChain\".\n5. While the response does not directly answer the question by providing a definition, it does answer the question adequately by providing information about the different chains that are part of \"LangChain\".\n\nBased on the reasoning above, the ans",
+    "title": "Response_Completeness Score",
+    "value": 1
+  },
+  '1': {
+    "description": "Measures if the response contains any irrelevant information",
+    "example": "If the question is 'What is UpTrain' and the LLM response is 'UpTrain is an open-source LLM evaluation tool to check your application's performance on aspects like hallucinations, response quality, language quality, bias, etc. You can install UpTrain by simplying running the command - pip install uptrain', the relevancy score should be 0.5 as it has additional (irrelevant) information on how to install UpTrain",
+    "explanation": "1. The question asks for information about LangChain.\n2. The response provides a list of various chains, including llm, bash, math, requests, summarization checker, symbolic math, loading, mapreduce, moderation, natbot, openai functions, prompt selector, qa generation, qa with sources, and query constructor.\n3. None of the chains listed in the response are directly relevant to the question.\n4. Therefore, the generated answer has a lot of additional irrelevant information.\n",
+    "title": "Response_Relevance Score",
+    "value": 0
+  },
+  '2': {
+    "description": "Measures if the queried context has sufficient information to answer the given question",
+    "example": "If the question is 'What are the key features of UpTrain' and the retrieved context only has information about How to install UpTrain, the context retrieval quality will be 0.1 as the retrieved context don't have sufficient information to answer the given question",
+    "explanation": "To determine if the extracted context can answer the given question completely, we need to compare the semantic similarity between the extracted context and the question.\n\nThe question is \"What is LangChain?\"\n\nLooking at the extracted context, we can see that it consists of a list of different chains or modules related to LangChain. However, it does not provide a direct definition or explanation of what LangChain is.\n\nTherefore, the extracted context does not contain any information to answer the given question.\n",
+    "title": "Context_Relevance Score",
+    "value": 0
+  },
+  "3": {
+    "description": "Measures hallucinations i.e. if the response has any made-up information or not with respect to the provided context",
+    "example": "When discussing climate change, if the question is 'What are the primary greenhouse gases?', a reliable response would be: 'The main greenhouse gases responsible for trapping heat in the Earth's atmosphere are carbon dioxide, methane, and water vapour.' we can give it a factual accuracy score of 0.9. For the same question, if the response is 'The primary greenhouse gases include helium balloons, fairy dust, and unicorn breath.' it will yield a factual accuracy score of 0.1",
+    "explanation": "1. LangChain is a collection of various chains or modules.\nReason: yes. The context mentions multiple chains or modules within LangChain.\n2. The chains or modules are used for different purposes such as math, summarization, checking, symbol math, loading, mapreduce, moderation, crawling, extraction, tagging, and question answering.\nReason: yes. The context lists multiple purposes for which the chains or modules are used.\n",
+    "title": "Factual_Accuracy Score",
+    "value": 0
+  }
+}
+};
+
 function convertObjectToArray(inputObj: {
   [key: string]: {
     title: string;
@@ -29,8 +73,6 @@ function convertObjectToArray(inputObj: {
     value: number;
     explanation: string;
   }[] = [];
-
-  console.log(inputObj);
 
   Object.keys(inputObj).forEach((key, index) => {
     const entry = {
@@ -61,7 +103,7 @@ const ChatBot: React.FC = () => {
       value: number;
       explanation: string;
     }[]
-  >([]);
+  >(convertObjectToArray(defaultdata.scores));
   const [modal, setModal] = useState(0);
 
   const handleUserInput = async () => {
@@ -75,7 +117,6 @@ const ChatBot: React.FC = () => {
         content: inputValue,
       };
       setMessages(() => [newMessage]);
-      console.log(requestBody)
 
       try {
         const response = await fetch(
@@ -203,6 +244,23 @@ const ChatBot: React.FC = () => {
           <div className={classes.qualityCont}>
             {messages.length > 1 &&
               scores.map((score, index) => (
+                <div key={index} className={classes.card}>
+                  <div>
+                    <h3>
+                      {score.title}: <span>{score.value}</span>
+                    </h3>
+                    <p>{score.description}</p>
+                  </div>
+                  <button
+                    onClick={() => setModal(index + 1)}
+                    className={classes.learnMore}
+                  >
+                    Learn more
+                  </button>
+                </div>
+              ))}
+              {messages.length < 1 && 
+              convertObjectToArray(defaultdata.scores).map((score, index) => (
                 <div key={index} className={classes.card}>
                   <div>
                     <h3>
