@@ -9,7 +9,7 @@ export const faqData = [
   },
   {
     question: "How long does it take to integrate UpTrain?",
-    answer: "UpTrain provides a single-line integration for both Python and JavaScript. Checkout the docs here",
+    answer: "UpTrain provides a single-line integration for both Python and JavaScript. Checkout the docs.",
   },
   {
     question: "Can I try UpTrain before purchasing?",
@@ -17,6 +17,6 @@ export const faqData = [
   },
   {
     question: "What is the difference between open-source and managed version?",
-    answer: "All the pre-defined checks like hallucinations, retrieval quality, response relevance, tonality, etc. are part of the paid plan. Other than that, the whole toolkit is open-sourced under Apache 2.0 license and provide powerful capabilities to define and run any evaluations",
+    answer: "The whole toolkit is open-sourced under Apache 2.0 license and provide powerful capabilities to define and run any evaluations. In the managed version, we run these evaluations for you with no additional OpenAI costs, as well as provide realtime dashboards and alerts for deeper analysis.",
   },
 ];

@@ -31,7 +31,7 @@ const ConcludingBanner = () => {
                   onClick={() => {
                     buttonEvent("Get Started - Free");
                   }}
-                  href="/dashboard"
+                  href="https://demo.uptrain.ai/api/login/google/login" // "/dashboard"
                   target={"_self"}
                   rel="noreferrer"
                 >

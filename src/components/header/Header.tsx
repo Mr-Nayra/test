@@ -113,10 +113,24 @@ const Header = () => {
               </li>
               <li>
                 <Link
+                  className={classes.item}
+                  href="https://github.com/uptrain-ai/uptrain"
+                  target={"_blank"}
+                  rel="noreferrer"
+                  onClick={() => {
+                    buttonEvent("Github");
+                    handleClose();
+                  }}
+                >
+                  Github
+                </Link>
+              </li>
+              <li>
+                <Link
                   className={`${classes.item} ${
                     currentPath === "/dashboard" && classes.active
                   } `}
-                  href="/dashboard"
+                  href="https://demo.uptrain.ai/api/login/google/login" // "/dashboard"
                   onClick={() => {
                     buttonEvent("Dashboard");
                     handleClose();
@@ -126,16 +140,16 @@ const Header = () => {
                 </Link>
               </li>
               <a
-                href="https://github.com/uptrain-ai/uptrain"
+                href="https://demo.uptrain.ai/api/login/google/login"
                 target={"_blank"}
                 rel="noreferrer"
                 className={classes.item}
                 onClick={() => {
-                  buttonEvent("GitHub");
+                  buttonEvent("Get Started");
                   handleClose();
                 }}
               >
-                <CustomButton label="Github" type="secondary" px={51} />
+                <CustomButton label="Get Started" type="secondary" px={51} />
               </a>
             </ul>
           </div>

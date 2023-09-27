@@ -10,7 +10,7 @@ const KeyFeatures = () => {
           <div className={classes.root}>
             <h1 className={classes.heading}>Built for developers, by developers</h1>
             <p className={classes.description}>
-              Experience the UpTrain, Uncover a World, Accelerate and Elevate Your journey
+              Unleash unparalleled power with a single line of code and tailor every detail as per as your use-case
             </p>
 
             <div className={classes.row}>

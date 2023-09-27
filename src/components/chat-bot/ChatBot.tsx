@@ -148,9 +148,9 @@ const ChatBot: React.FC = () => {
       <div className={classes.chatbot}>
         <div className={classes.textCont}>
           <a id="demo"></a>
-          <h2 className={classes.heading}>See UpTrain in Action</h2>
+          <h2 className={classes.heading}>Try Out Live Demo</h2>
           <p className={classes.parah}>
-            Evaluate LLM response quality for a QnA bot that can answer any questions related to developer documents
+            Ask any question and see how UpTrain evaluates the QnA bot's quality
           </p>
         </div>
         <div className={classes.inputCont}>
