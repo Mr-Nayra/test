@@ -6,11 +6,9 @@ import classes from "./dashboardHeroBanner.module.scss";
 import combinatorLogo from "./images/combinatorLogo.webp";
 import Typewriter from "typewriter-effect";
 import { useDisclosure } from "@mantine/hooks";
-import AcceptModal from "@/components/modal/AcceptModal";
 import GithubShield from "@/components/github-shield/GithubShield";
 import GithubSheildMobile from "@/components/github-shield/GithubShieldMobile";
 import UseDevicesResize from "@/helpers/UseDevicesResize";
-import { BsAlignBottom } from "react-icons/bs";
 import Link from "next/link";
 import companyLogo from "./images/logo.svg";
 
@@ -156,7 +154,6 @@ const DashboardHeroBanner = () => {
                       responsivePx={17}
                       responsivePy={12}
                       onClick={() => {
-                        open();
                         buttonEvent("Go to console");
                       }}
                     />
@@ -180,7 +177,6 @@ const DashboardHeroBanner = () => {
                       responsivePx={17}
                       responsivePy={12}
                       onClick={() => {
-                        open();
                         buttonEvent("Book a demo");
                       }}
                     />

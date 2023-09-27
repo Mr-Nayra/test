@@ -17,7 +17,7 @@ const VideoContainer = (isMobile:boolean) => {
               title="Demo of How UpTrain evaluation works?"
               controls
             >
-              <source src={isMobile ? "/backgroundVideoMobile.mp4" : "/backgroundVideo.mp4"} type="video/mp4" />
+              <source src={isMobile ? "https://uptrain-assets.s3.ap-south-1.amazonaws.com/videos/backgroundVideoMobile.mp4" : "https://uptrain-assets.s3.ap-south-1.amazonaws.com/videos/backgroundVideo.mp4"} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>

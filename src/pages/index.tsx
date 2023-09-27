@@ -1,11 +1,7 @@
 import UseDevicesResize from "@/helpers/UseDevicesResize";
 import Head from "next/head";
 import React, { Fragment } from "react";
-import BlogSection from "./index-components/blog/BlogSection";
-import CareersSection from "./index-components/careers/CareersSection";
-import FeatureSection from "./index-components/feature-section/FeatureSection";
 import HeroBanner from "./index-components/hero-banner/HeroBanner";
-import WorkFlow from "./index-components/workFlow/WorkFlow";
 import ChatBot from "@/components/chat-bot/ChatBot";
 import FiguresReached from "./index-components/figures-reached/figuresReached";
 import KeyFeatures from "./index-components/key-features/keyFeatures";

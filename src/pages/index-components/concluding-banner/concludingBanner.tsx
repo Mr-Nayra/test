@@ -67,7 +67,6 @@ const ConcludingBanner = () => {
                   responsivePx={17}
                   responsivePy={12}
                   onClick={() => {
-                    open();
                     buttonEvent("Book a demo");
                   }}
                 />

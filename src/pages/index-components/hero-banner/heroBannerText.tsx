@@ -1,11 +1,7 @@
 import React from "react";
 import CustomButton from "@/components/button/CustomButton";
 import { buttonEvent } from "@/helpers/buttonEvent";
-import Image from "next/image";
 import classes from "./heroBanner.module.scss";
-import combinatorLogo from "./images/combinatorLogo.webp";
-import GithubShield from "@/components/github-shield/GithubShield";
-import GithubSheildMobile from "@/components/github-shield/GithubShieldMobile";
 import Link from "next/link";
 import UseDevicesResize from "@/helpers/UseDevicesResize";
 
@@ -64,7 +60,6 @@ const HeroBannerText = () => {
             responsivePx={17}
             responsivePy={12}
             onClick={() => {
-              open();
               buttonEvent("Book a demo");
             }}
           />

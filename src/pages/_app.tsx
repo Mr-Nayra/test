@@ -1,11 +1,10 @@
-import React, { Fragment } from "react";
+import React from "react";
 import Header from "@/components/header/Header";
 import TopHeader from "@/components/header/TopHeader";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import TheFooter from "@/components/footer/TheFooter";
 import "../styles/prism-darcula.css";
-import CookiesBanner from "@/components/cookies-banner/CookiesBanner";
 import { MantineProvider } from "@mantine/core";
 import { PostHogProvider } from "posthog-js/react";
 import posthog from "posthog-js";
