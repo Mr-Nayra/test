@@ -19,11 +19,11 @@ const index = () => {
   return (
     <Fragment>
       <Head>
-        <title>UpTrain | Open-Source LLMOps Toolkit</title>
+        <title>UpTrain | Open-Source LLM Evaluation Tool</title>
 
         <meta
           name="description"
-          content="Open-source observability tool to monitor ML models in production and continuously improve them over time by monitoring their performance, checking for (data) distribution shifts, and collecting edge cases to retrain them upon; built by a company that values your privacy , Open-source, observability tool, monitor, machine learning models, production, continuous improvement, performance optimization, data distribution shifts, edge cases, retraining, model refinement, real-time monitoring, privacy-centric, data security, transparency, accountability, insights, actionable metrics, predictive analytics, anomaly detection, scalability, reliability, robustness, automation, model evaluation, model validation, model tracking, model governance, model interpretability"
+          content="Open-source tool to evaluate LLM applications on aspects such as factual accuracy, hallucinations, retrieved-context quality, response relevance, guideline adherence, tonality, harmlessness, toxicity and many more. Users utilze UpTrain's open-source LLM evaluation tool to understand how their applications behave in production as well as experiment across multiple models like GPT-4, ChatGPT, Claude, PALM 2, as well as multiple prompts and chain configurations. Evaluation, Observability, Hallucinations, Correctness, Response Quality, Open-source"
         />
         <link rel="canonical" href="https://www.uptrain.ai" />
         <link rel="alternate" href="https://www.uptrain.ai" hrefLang="en-us" />
