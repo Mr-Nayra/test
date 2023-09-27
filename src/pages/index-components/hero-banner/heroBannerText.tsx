@@ -20,7 +20,7 @@ const HeroBannerText = () => {
         <span className={classes.bgText}>LLM applications</span>
       </div>
       <p className={classes.description}>
-        Get scores for factual accuracy, context retrieval quality, tonality,
+        Get scores for factual accuracy, context retrieval quality, guideline adherence, tonality,
         and many more
       </p>
       <div className={classes.btnSection}>
@@ -28,7 +28,7 @@ const HeroBannerText = () => {
           onClick={() => {
             buttonEvent("Get Started - Free");
           }}
-          href="/dashboard"
+          href="https://demo.uptrain.ai/api/login/google/login" //"/dashboard"
           target={"_self"}
           rel="noreferrer"
         >

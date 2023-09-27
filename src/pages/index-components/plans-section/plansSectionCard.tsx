@@ -46,7 +46,7 @@ const PlansSectionCard = (props: IPlansSectionCard) => {
               onClick={() => {
                 buttonEvent(`${buttonText}`);
               }}
-              href="/"
+              href={(buttonText=="Start Free Trial") ? "https://demo.uptrain.ai/api/login/google/login" : (buttonText=="Read Docs") ? "https://github.com/uptrain-ai/uptrain#get-started-": "https://calendly.com/uptrain-sourabh/uptrain-demo"}
               target={"_self"}
               rel="noreferrer"
             >

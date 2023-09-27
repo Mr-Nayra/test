@@ -12,8 +12,8 @@ const Advantages = () => {
     <>
       <div className={classes.root}>
         <div style={{width: "100%"}}>
-          <h1 className={classes.sectionHeading}>Experience the Advantages</h1>
-          <p className={classes.sectionDescription}>See how LLM developers leverage UpTrain to iterate faster and break ahead of competition</p>
+          <h1 className={classes.sectionHeading}>Experience the Benefits</h1>
+          <p className={classes.sectionDescription}>See how LLM developers leverage UpTrain to iterate faster and stay ahead of competitors</p>
 
           <div className={classes.col}>
             {width > 768 ?
