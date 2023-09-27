@@ -42,7 +42,7 @@ const PoweredBy = () => {
       <WhiteCircle size={189} bottom={-100} right={-20} />
       <div className={classes.content}>
         <h1 className={classes.heading}>Powered By</h1>
-        <Image className={classes.logo} src={logo} alt="logo" />
+        <Image className={classes.logo} src={logo} alt="Logo of UpTrain, an open-source LLM evaluation tool, backed by Ycombinator" />
       </div>
     </div>
   );

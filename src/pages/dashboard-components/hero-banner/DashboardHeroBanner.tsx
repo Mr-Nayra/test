@@ -253,7 +253,7 @@ const DashboardHeroBanner = () => {
                     <Image
                       className={classes.logo}
                       src={combinatorLogo}
-                      alt="logo"
+                      alt="UpTrain, open-source LLM evaluation tool is backed by YCombinator and was part of Winter 23 batch"
                     />
                   </div>
                   <div
@@ -271,7 +271,7 @@ const DashboardHeroBanner = () => {
                         <Image
                           className={classes.logo}
                           src={companyLogo}
-                          alt="uptrain"
+                          alt="Logo of UpTrain, open-source LLM evaluation tool"
                           style={{ height: "auto" }}
                           priority
                         />

@@ -18,7 +18,7 @@ const PoweredBy = () => {
                 <Image
                   className={classes.logo}
                   src={combinatorLogo}
-                  alt="logo"
+                  alt="Logo for YCombinator who backed UpTrain, an open-source LLM evaluation."
                 />
               </div>
               <div

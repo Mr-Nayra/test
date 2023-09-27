@@ -26,12 +26,12 @@ const Advantages = () => {
                     <div className={classes.description}>{advantage.description}</div>
                   </div>
                   <div className={classes.imageContainer}>
-                    <Image src={advantage.image} alt="advantage" className={classes.image} />
+                    <Image src={advantage.image} alt={advantage.alt} className={classes.image} />
                   </div>
                 </div> 
               : <div className={classes.row} key={index}>
                   <div className={classes.imageContainer}>
-                    <Image src={advantage.image} alt="advantage" className={classes.image} />
+                    <Image src={advantage.image} alt={advantage.alt} className={classes.image} />
                   </div>
                   <div className={classes.text}>
                     <div>{`0${index+1}`}</div>
@@ -49,7 +49,7 @@ const Advantages = () => {
                     <div className={classes.description}>{advantage.description}</div>
                   </div>
                   <div className={classes.imageContainer}>
-                    <Image src={advantage.image} alt="advantage" className={classes.image} />
+                    <Image src={advantage.image} alt={advantage.alt} className={classes.image} />
                   </div>
                 </div> 
             ))}
