@@ -11,6 +11,11 @@ export default function Document() {
         />
 
         <Script
+        async
+        src="https://static.mobilemonkey.com/js/business_ab4f808e-407f-4f79-9c31-885385422c8c-29351683.js"
+        ></Script>
+
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-K18N6CKMVE"
         />
