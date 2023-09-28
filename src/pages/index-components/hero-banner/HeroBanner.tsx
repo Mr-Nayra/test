@@ -37,7 +37,7 @@ const HeroBanner = () => {
                   >
                     <source
                       // src="https://uptrain-assets.s3.ap-south-1.amazonaws.com/videos/backgroundVideo.mp4"
-                      src="./new square video.mov"
+                      src="./heroVideo.webm"
                       type="video/mp4"
                     />
                     Your browser does not support the video tag.
@@ -66,7 +66,7 @@ const HeroBanner = () => {
                     playsInline
                     title="Demo of How UpTrain evaluation works?"
                   >
-                    <source src="./new square video.mov" type="video/mp4" />
+                    <source src="./heroVideo.webm" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>
