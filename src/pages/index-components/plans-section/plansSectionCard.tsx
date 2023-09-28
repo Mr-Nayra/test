@@ -7,7 +7,6 @@ import { buttonEvent } from "@/helpers/buttonEvent";
 import Link from "next/link";
 
 interface IPlansSectionCard {
-  backgroundImage: StaticImageData;
   heading: string;
   targetUser: string;
   charges: string;
@@ -16,12 +15,16 @@ interface IPlansSectionCard {
 }
 
 const PlansSectionCard = (props: IPlansSectionCard) => {
-  const {backgroundImage, heading, targetUser, charges, description, buttonText} = props;
+  const { heading, targetUser, charges, description, buttonText } = props;
 
-  return(
+  return (
     <>
       <div className={classes.card}>
-        <Image src={backgroundImage} alt="background_img" className={classes.backgroundImage} />
+        {/* <Image
+          src={backgroundImage}
+          alt="background_img"
+          className={classes.backgroundImage}
+        /> */}
         <div className={classes.text}>
           <div className={classes.cardHeader}>
             <h2 className={classes.cardHeading}>{heading}</h2>
@@ -34,19 +37,29 @@ const PlansSectionCard = (props: IPlansSectionCard) => {
 
           <div className={classes.description}>
             {description?.map((item, index) => (
-                <div className={classes.descriptionItem} key={`${"_" + index}`}>
-                  <Image src={checkIcon} alt="check_icon" className={classes.checkIcon} />
-                  <p className={classes.descriptionText}>{item}</p>
-                </div>
+              <div className={classes.descriptionItem} key={`${"_" + index}`}>
+                <Image
+                  src={checkIcon}
+                  alt="check_icon"
+                  className={classes.checkIcon}
+                />
+                <p className={classes.descriptionText}>{item}</p>
+              </div>
             ))}
           </div>
-          
+
           <div className={classes.buttonSection}>
-            <Link 
+            <Link
               onClick={() => {
                 buttonEvent(`${buttonText}`);
               }}
-              href={(buttonText=="Start Free Trial") ? "https://demo.uptrain.ai/api/login/google/login" : (buttonText=="Read Docs") ? "https://github.com/uptrain-ai/uptrain#get-started-": "https://calendly.com/uptrain-sourabh/uptrain-demo"}
+              href={
+                buttonText == "Start Free Trial"
+                  ? "https://demo.uptrain.ai/api/login/google/login"
+                  : buttonText == "Read Docs"
+                  ? "https://github.com/uptrain-ai/uptrain#get-started-"
+                  : "https://calendly.com/uptrain-sourabh/uptrain-demo"
+              }
               target={"_self"}
               rel="noreferrer"
             >
@@ -67,7 +80,7 @@ const PlansSectionCard = (props: IPlansSectionCard) => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
 export default PlansSectionCard;

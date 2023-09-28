@@ -65,14 +65,8 @@ const HeroBanner = () => {
                     loop
                     playsInline
                     title="Demo of How UpTrain evaluation works?"
-                    controls
                   >
-                    <source
-                      src={
-                        "https://uptrain-assets.s3.ap-south-1.amazonaws.com/videos/backgroundVideoMobile.mp4"
-                      }
-                      type="video/mp4"
-                    />
+                    <source src="./new square video.mov" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 </div>

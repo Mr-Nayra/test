@@ -16,7 +16,6 @@ const PlansSection = () => {
           {plansSectionData.map((plan, index) => (
             <div className={classes.col} key={`${"_" + index}`}>
               <PlansSectionCard
-                backgroundImage={plan.backgroundImage}
                 heading={plan.heading}
                 targetUser={plan.targetUser}
                 charges={plan.charges}
