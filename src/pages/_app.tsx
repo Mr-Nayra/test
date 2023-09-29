@@ -10,8 +10,7 @@ import { PostHogProvider } from "posthog-js/react";
 import posthog from "posthog-js";
 
 if (typeof window !== "undefined") {
-  console.log(process.env.NEXT_PUBLIC_POSTHOG_KEY);
-  posthog.init("", {
+  posthog.init(process.env.NEXT_PUBLIC_POSTHOG_KEY || "", {
     api_host: "https://app.posthog.com",
   });
 }
