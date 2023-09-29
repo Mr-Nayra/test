@@ -5,31 +5,32 @@ import KeyFeaturesCard from "./keyFeatureCard";
 import Line from "../line/line";
 
 const KeyFeatures = () => {
-    return(
-        <>
-          <div className={classes.root}>
-            <h1 className={classes.heading}>Built for developers, by developers</h1>
-            <p className={classes.description}>
-              Unleash unparalleled power with a single line of code and tailor every detail as per as your use-case
-            </p>
+  return (
+    <>
+      <div className={classes.root}>
+        <h1 className={classes.heading}>Built for developers, by developers</h1>
+        <p className={classes.description}>
+          Unleash unparalleled power with a single line of code and tailor every
+          detail as per as your use-case
+        </p>
 
-            <div className={classes.row}>
-              {keyFeaturesData.map((feature, index) => (
-                <div className={classes.col} key={`${"_" + index}`}>
-                  <KeyFeaturesCard
-                    heading={feature.heading}
-                    description={feature.description}
-                    alt={feature.alt}
-                    keyFeatureImg={feature.featureImg}
-                    backgroundImg={feature.backgroundImg}
-                  />
-                </div>
-              ))}
+        <div className={classes.row}>
+          {keyFeaturesData.map((feature, index) => (
+            <div className={classes.col} key={`${"_" + index}`}>
+              <KeyFeaturesCard
+                heading={feature.heading}
+                description={feature.description}
+                alt={feature.alt}
+                keyFeatureImg={feature.featureImg}
+                index={index}
+              />
             </div>
-          </div>
-          <Line />
-        </>
-    )
-}
+          ))}
+        </div>
+      </div>
+      <Line />
+    </>
+  );
+};
 
 export default KeyFeatures;
